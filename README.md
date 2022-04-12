@@ -1,12 +1,18 @@
-# TÍTULO DO PROJETO
+# BREF
 
-`CURSO`
+`Análise e Desenvolvimento de Sistema`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento Web Front End`
 
-`SEMESTRE`
+`01/2022`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O objetivo desse projeto é criar um sistema com informações úteis que auxiliem o cliente a verificar os horários disponíveis (inclusive horários em dias especiais), o cardápio e as opções de pagamento.  
+
+Pode-se considerar como objetivos específicos:
+ - Destacar os restaurantes de acordo com o local indicado pelo cliente
+ - Permitir o agendamento do horário selecionado, nas condições de reservas gratuitas e pagas; 
+ - Listar as opções de pagamento dos restaurantes cadastrados;   
+ - Criar um formulário de feedback simples e eficiente. 
 
 ## Integrantes
 
@@ -20,7 +26,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Orientador
 
-* Nome completo do professor 1
+* Joyce Christina De Paiva Carvalho
 
 ## Instruções de utilização
 
