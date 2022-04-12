@@ -14,6 +14,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Bruno de Melo Ruas
 * Lucas Célio Neves Silva
 * Thassia Diandra Ferreira
+* Mikaelly
 
 ## Orientador
 
