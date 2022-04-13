@@ -22,7 +22,7 @@ Pode-se considerar como objetivos específicos:
 * Thassia Diandra Ferreira
 * Mikaelly da Silva Carneiro
 * Marina Gonçalves Duque
-* Diego Menezes Soare
+* Diego Menezes Soares
 
 ## Orientador
 
