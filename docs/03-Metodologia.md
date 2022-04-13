@@ -19,7 +19,7 @@ Na tabela a seguir temos a relação dos ambientes de trabalho com suas respecti
 |:---:|:---:|:---:|
 |Repositório de código fonte|GitHub|[Github](https://github.com/)|
 |Documentos do projeto|GitHub|[Github](https://github.com/)|
-|Projeto de Interface e Wireframes |MarvelApp |[MArvelApp](https://marvelapp.com/)|
+|Projeto de Interface e Wireframes |MarvelApp |[MarvelApp](https://marvelapp.com/)|
 |Gerenciamento do Projeto |GitHub|[Github](https://github.com/) |
 
 ### Gestão de código fonte
