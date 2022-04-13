@@ -27,9 +27,9 @@ A solução implementada conta com os seguintes módulos:
 
 O site utiliza as seguintes ferramentas:
 
-* HTML: utilizada para a estruturação do site, com o objetivo de enquadrar cada informação.
-* CSS: utilizada para estilizar o site e organizar as informações visualmente.
-* JavaScript: utilizado para a estruturação das funções que o site fornece.
+- **HTML**: utilizada para a estruturação do site, com o objetivo de enquadrar cada informação.
+- **CSS**: utilizada para estilizar o site e organizar as informações visualmente.
+- **JavaScript**: utilizado para a estruturação das funções que o site fornece.
 
 ## Hospedagem
 
