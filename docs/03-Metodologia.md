@@ -42,14 +42,13 @@ Equipe de desenvolvimento:  Lucas, Mikaelly, Marina, Thassia, Bruno, Diego e Gab
 
 #### Fluxo de produção
 
->*Backlog:* recebe as tarefas a serem trabalhadas e representa o Product Backlog. 
-
->*To do:* Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando. 
->*In progress:* Quando uma tarefa tiver sido iniciada, ela é movida para cá. 
->*Implemented:* A tarefa foi implementada e está pronta para a fase de testes. 
+>*Backlog:* recebe as tarefas a serem trabalhadas e representa o Product Backlog.  
+>*To do:* Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando.  
+>*In progress:* Quando uma tarefa tiver sido iniciada, ela é movida para cá.  
+>*Implemented:* A tarefa foi implementada e está pronta para a fase de testes.  
 >*Test and review:* Checagem de qualidade.  
 >*Done:* Tarefas concluídas e enviadas.  
->*Locked:* Tarefas que impedem o progresso do projeto. 
+>*Locked:* Tarefas que impedem o progresso do projeto.  
 A tarefas são, ainda, etiquetadas em nível de prioridades: Highest, High, Low e Next sprint.
 
 PAREI AQUI
