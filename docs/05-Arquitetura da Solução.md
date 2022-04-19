@@ -33,7 +33,7 @@ O site utiliza as seguintes ferramentas:
 
 ## Hospedagem
 
-O método de hospedagem será o Github Pages. (DÚDIVA) 
+O método de hospedagem será o Github Pages. (DÚDIVA) -> FICA A NOSSO CRITÉRIO
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.
 
