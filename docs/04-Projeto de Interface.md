@@ -7,7 +7,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 ## User Flow
 O fluxo de usuário (User Flow) mostra como o será a navegação do usuário pelas páginas do site.
 
-![UserFlow](img/fluxo-de-usuario.png)
+![UserFlow](img/Fluxo-bem-feito.png)
 
 ## Wireframes
 
