@@ -26,7 +26,7 @@ Na tabela a seguir temos a relação dos ambientes de trabalho com suas respecti
 
 O fluxo de controle de código ideal é Main – Develop – Feature. Foi utilizado a branch Main para gerar as novas versões no projeto, já a Develop é usada especialmente para realizar merge entre a Main e as novas branchs de Features no final das sprints. 
 
-![Gestão do codigo fonte ](img/gitflow-feature-develop.png)
+![Gestão do codigo fonte ](img/gitflow-feature-dev.png)
 
 ## Gerenciamento de Projeto
 
