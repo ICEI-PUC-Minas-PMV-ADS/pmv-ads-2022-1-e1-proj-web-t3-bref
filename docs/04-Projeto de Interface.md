@@ -15,13 +15,13 @@ Protótipos de como serão o design de interface do site.
 
  ### Página Inicial
 
-A página inicial, mostra os restaurantes mais bem avaliados da plataforma. Uma barra de pesquisa e navegação, informações de como entrar em contato e recurso que ajuda na acessibilidade, ultilizado para aumentar e reduzir o tamanho da fonte. Ao clicar na miniatura de um restaurante o cliente será redirecionado para uma página com mais informações. 
+A página inicial, mostra os restaurantes mais bem avaliados da plataforma, uma barra de pesquisa e navegação, informações de como entrar em contato e recurso que ajuda na acessibilidade, ultilizado para aumentar e reduzir o tamanho da fonte. Ao clicar na miniatura de um restaurante o cliente será redirecionado para uma página com mais informações. 
 
 ![Página inicial](img/Pagina_Inicial.png)
 
 ### Tela de entrar
 
-Tela de entrar possui na direita imagens randômicas sobre os restaurantes, um campo para e-mail e senha onde usuário terá acesso a sua conta. Caso ele não possua cadastro poderá clicar no botão de registrar uma nova conta. Se ele não lembrar de sua senha estará disponível um botão de recuperar senha. 
+Tela de entrar possui na direita imagens randômicas sobre os restaurantes, campos para e-mail e senha onde usuário terá acesso a sua conta. Caso ele não possua cadastro poderá clicar no botão de registrar uma nova conta. Se ele não lembrar de sua senha estará disponível um botão de recuperar senha. 
 
 ![Entrar](img/Entrar.png)
 
