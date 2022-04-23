@@ -78,4 +78,4 @@ O usuário poderá dar *feedback* da sua  experiência sobre o restaurante e ava
 
  Espaço destinado a conhecer melhor sobre o site e suas funcionalidades. Ao clicar na logo o usuário retornará a página inicial.
 
-![Sobre Nós]
+![Sobre Nós](img/sobre-nos.png)
