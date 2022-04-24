@@ -24,7 +24,7 @@ As filas nos estabelecimentos causam desconforto aos usuários. Elas surgem devi
 
 Do ponto de vista da inteligência de negócio. Como afirma a teoria moderna dos mercados (AKERLOF, 1978), a falta de comunicação entre empresas e clientes produz efeitos negativos que podem levar à uma queda na qualidade e, em casos mais extremos, até mesmo a prejudicar a possibilidade de determinado mercado alcançar a alocação otimizada dos recursos. 
 
-Desse modo, a solução proposta tem o potencial de melhorar concomitantemente a realidade individual tanto da empresa cadastrada, pela melhora da comunicação com sua base de clientes, como do mercado local de food service à medida que a base de clientes e estabelecimentos cadastrados cresce.
+Desse modo, a solução proposta tem o potencial de melhorar, concomitantemente, tanto a realidade individual da empresa cadastrada, pela melhora da comunicação com sua base de clientes, como do mercado local de food service à medida que a base de clientes e estabelecimentos cadastrados cresce.
 
 ## Público-Alvo
 
