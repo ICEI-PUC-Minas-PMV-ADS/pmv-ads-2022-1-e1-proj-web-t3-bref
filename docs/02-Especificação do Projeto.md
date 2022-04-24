@@ -28,7 +28,7 @@ A seguir estão apresentadas as personas que foram encontradas durante a pesquis
 |:---:|:---:|:---:|
 | ![Persona Vitor Andrade](img/persona-vitor-andrade.png) | **Ocupação:** Desenvolvedor Backend, com foco em resolver os problemas dos clientes da maneira mais fácil, rápida e eficaz.| **Aplicativos:** Telegram YouTube LinkedIn Whatsapp Teams|
 | **Motivações**| **Frustrações**| **Hobbies e História** |
-|Ajudar os clientes a alcançarem os melhores resultados. Deixar seu trabalho e seus projetos o mais visível possível.|Se sente desconfortável em usar um aplicativo que não seja código aberto. Tem muito apego às suas informações.|Paintball com os amigos. Gosta de frequentar restaurantes elegantes. Comidas apimentadas. |
+|Ajudar os clientes a alcançarem os melhores resultados. Deixar seu trabalho e seus projetos o mais visível possível.|Se sente desconfortável em usar um aplicativo que não tenha a informação de quem participou do desenvolvimento.|Paintball com os amigos. Gosta de frequentar restaurantes elegantes. Comidas apimentadas. |
 
 
 ## Histórias de Usuários
@@ -42,7 +42,6 @@ Registramos as histórias das personas encontradas para o projeto e analisamos s
 | **Maria Helen** | Ter uma forma de comunicar com o restaurante sem precisar ligar ou ir até ele. |Economizar tempo de espera em uma ligação e sanar dúvidas antes de chegar no local.|
 | **Fabrício Ferreira**| Poder dar nota ao atendimento, refeição e espera. |Poder escolher baseado em opiniões.|
 |**Fabrício Ferreira**|Ter informações do restaurante, como endereço, número, ponto de referência.  |Não perder tempo procurando o restaurante.|
-| **Vitor Andrade**| Desejo que o aplicativo seja de código aberto. |Preciso saber de que forma minhas informações estão sendo usadas.|
 |**Fabrício Ferreira**|Fazer reservas online.  | Não é sempre que posso entrar em contato para reservar pelo celular.|
 | **Vitor Andrade**| Desejo que na página do aplicativo tenha o contato social dos desenvolvedores.|Para poder comunica-los sobre um possível erro crítico no sistema.|
 |**Tereza Santos**|Desejo que eu possa alterar o tamanho da fonte no site.   |Para poder ler sem forçar as vistas ou ter que usar óculos.|
@@ -67,13 +66,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | **RF-009** | O site deve permitir que o cliente tenha meios de contato direto com os restaurantes escolhidos (janela de chat).  |MÉDIA   |
 | **RF-010** | O site deve permitir que usuários possam dar avaliações sobre os restaurantes. | MÉDIA  |
 | **RF-011** | O site deve permitir que o usuário possa alterar o tamanho da fonte.  | ALTA       |
+| **RF-012** |O site deve ter uma página de contato com os desenvolvedores da solução.  |ALTA|
 
 ### Requisitos não Funcionais
 
 | **ID**      | **Descrição do Requisito**                                            | **Prioridade** |
 | ------- | ----------------------------------------------------------------- | ---------- |
 | **RNF-001** | O site deverá ser responsivo permitindo a visualização em um celular de forma adequada.|ALTA|
-| **RNF-002** |O site deve ter uma página de contato com os desenvolvedores da solução.  |ALTA|
 | **RNF-003** | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Opera GX).|ALTA|
 | **RNF-004** | O site deve ser publicado em um ambiente acessível publicamente na Internet (GitHub Pages, Heroku). | ALTA|
 | **RNF-005** | O site de ter seu código-fonte disponível em alguma plataforma pública de acesso (Github, Gitbucket, Gitlab) com a licença de uso Creative Commons ou MIT.|ALTA|
@@ -87,8 +86,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 | **ID**  | **Restrição**                                    |
 | --- | ----------------------------------------------------- |
-| 01  | Não se pode utilizar banco de dados, apenas JSON ou CSV. |
-| 02  |O projeto completo deve ser entregue no dia 26/06/2022. |
-| 03  | A equipe não pode terceirizar o desenvolvimento do projeto. |
-| 04  | A equipe somente deve utilizar as linguagens HTML, CSS e JS. |
+| 01  | Não se pode utilizar banco de dados, apenas JSON ou CSV. | Alta |
+| 02  | O projeto completo deve ser entregue no dia 26/06/2022. | Alta |
+| 03  | A equipe não pode terceirizar o desenvolvimento do projeto. | Alta |
+| 04  | A equipe somente deve utilizar as linguagens HTML, CSS e JS. | Alta |
 
