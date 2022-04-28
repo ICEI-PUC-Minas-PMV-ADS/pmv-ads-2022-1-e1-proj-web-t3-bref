@@ -1,0 +1,117 @@
+body {
+    background-color: #483A20;
+}
+
+.container {
+    height: 700px;
+    display: grid;
+    grid-template-columns: 10% 10% 9% 40% 9% 10% 10%;
+    grid-template-rows: 3% 20% 74% 3%;
+    grid-gap: 5px;
+}
+
+/* application grid system */
+header {
+    background-color: #483A20;
+    text-align: center;
+    display: grid;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: span 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+/* options in header */
+#sobre {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#fale {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#entrar {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#pesq {
+    grid-column-start: 7;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+/* logo */
+#bref {
+    text-align: center;
+    background-color: #FFC300;
+    grid-column-start: 1;
+    grid-column-end: span 7;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+/* places list */
+#places {
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: span 7;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+#place1 {
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+#place2 {
+    grid-column-start: 5;
+    grid-column-end: span 7;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+#place3 {
+    grid-column-start: 7;
+    grid-column-end: span 7;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+/* footer */
+footer {
+    background-color: #483A20;
+    display: grid;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: span 7;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+#mail {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+#phone {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
