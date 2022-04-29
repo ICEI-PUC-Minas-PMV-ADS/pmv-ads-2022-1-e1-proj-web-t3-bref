@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
+
+body {
+    background-color: #483A20;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    height: 690px;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 40% 10% 10% 10%;
+    grid-template-rows: 5% 20% 75% 3%;
+    row-gap: 5px;
+}
+
+/* application grid system */
+header {
+    background-color: #483A20;
+    text-align: center;
+    display: grid;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-top: 10px;
+}
+
+/* options in header */
+#sobre {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#fale {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#entrar {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#pesq {
+    grid-column-start: 7;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+/* logo */
+#bref {
+    text-align: center;
+    color: #483A20;
+    background-color: #FFC300;
+    grid-column-start: 1;
+    grid-column-end: span 7;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#name {
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: -20px;
+    margin-top: 10px;
+}
+
+/* places list */
+#place1 {
+    text-align: center;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+#place2 {
+    text-align: center;
+    background-color: white;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+#place3 {
+    text-align: center;
+    background-color: white;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.place-img {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: block;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* footer */
+footer {
+    background-color: #483A20;
+    display: grid;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: span 7;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+#mail {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+#phone {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
