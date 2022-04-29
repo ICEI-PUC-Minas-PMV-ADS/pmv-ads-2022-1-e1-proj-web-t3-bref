@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
+
 body {
     background-color: #483A20;
+    font-family: 'Lato', sans-serif;
 }
 
 .container {
-    height: 700px;
+    height: 690px;
     display: grid;
-    grid-template-columns: 10% 10% 9% 40% 9% 10% 10%;
-    grid-template-rows: 3% 20% 74% 3%;
-    grid-gap: 5px;
+    grid-template-columns: 10% 10% 10% 40% 10% 10% 10%;
+    grid-template-rows: 5% 20% 75% 3%;
+    row-gap: 5px;
 }
 
 /* application grid system */
@@ -17,9 +20,10 @@ header {
     display: grid;
     color: white;
     grid-column-start: 1;
-    grid-column-end: span 7;
+    grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 1;
+    margin-top: 10px;
 }
 
 /* options in header */
@@ -54,6 +58,7 @@ header {
 /* logo */
 #bref {
     text-align: center;
+    color: #483A20;
     background-color: #FFC300;
     grid-column-start: 1;
     grid-column-end: span 7;
@@ -61,34 +66,50 @@ header {
     grid-row-end: 2;
 }
 
-/* places list */
-#places {
-    background-color: white;
-    grid-column-start: 1;
-    grid-column-end: span 7;
-    grid-row-start: 3;
-    grid-row-end: 3;
+#name {
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: -20px;
+    margin-top: 10px;
 }
 
+/* places list */
 #place1 {
+    text-align: center;
+    background-color: white;
     grid-column-start: 1;
-    grid-column-end: span 4;
+    grid-column-end: span 3;
     grid-row-start: 3;
     grid-row-end: 3;
 }
 
 #place2 {
-    grid-column-start: 5;
-    grid-column-end: span 7;
+    text-align: center;
+    background-color: white;
+    grid-column-start: 4;
+    grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 3;
 }
 
 #place3 {
-    grid-column-start: 7;
-    grid-column-end: span 7;
+    text-align: center;
+    background-color: white;
+    grid-column-start: 5;
+    grid-column-end: 8;
     grid-row-start: 3;
     grid-row-end: 3;
+}
+
+.place-img {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: block;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* footer */
