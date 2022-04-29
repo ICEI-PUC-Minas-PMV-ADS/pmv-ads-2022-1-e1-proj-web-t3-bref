@@ -5,13 +5,13 @@ Definição de como serão as páginas e suas funcionalidades.
 
 
 O template é composto pelos seguintes layouts:
-- **Tela principal** -
-- **Melhores restaurantes** -
-- **Menu de navegação** -
-  - **Sobre nós** -
-  - **Fale conosco** -
-  - **Barra de pesquisa** -
-  - **Entrar/Cadastrar** -
+- **Tela principal**
+- **Melhores restaurantes**
+- **Menu de navegação**
+  - **Sobre nós**
+  - **Fale conosco**
+  - **Barra de pesquisa**
+  - **Entrar/Cadastrar**
   
 ## Tela Principal
 
@@ -27,7 +27,9 @@ Esse layout é utilizado para apresentar os três restaurantes com melhores nota
 
 ## Menu de Navegação
 
-![Menu de Navegação](img/
+![Menu de Navegação](img/menu-de-navegacao.PNG)
+
+Local onde o usuário tem a opção de navegar através das páginas do site.
 
 
 
