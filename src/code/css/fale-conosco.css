@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
+
+body {
+    background-color: #483A20;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    height: 690px;
+    display: flex;
+    row-gap: 5px;
+}
+
+
+
+/* application grid system */
+header {
+    background-color: #483A20;
+    text-align: start;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#brefTitle {
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: -20px;
+    margin-top: 10px;
+}

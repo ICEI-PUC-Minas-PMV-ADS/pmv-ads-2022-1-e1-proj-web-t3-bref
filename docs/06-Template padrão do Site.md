@@ -1,12 +1,33 @@
-# Template padrão do site
+# Template do site
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
+Definição de como serão as páginas e suas funcionalidades.
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+
+O template é composto pelos seguintes layouts:
+- **Tela principal**
+- **Melhores restaurantes**
+- **Menu de navegação**
+  - **Sobre nós**
+  - **Fale conosco**
+  - **Barra de pesquisa**
+  - **Entrar/Cadastrar**
+  
+## Tela Principal
+
+![Pagina Inicial](img/Pagina_Inicial.png)
+
+Tela que abrange todas as visualizações iniciais do site e a lista de notícias gerais.
+
+## Melhores Restaurantes
+
+![Melhores Restaurantes](img/melhores-restaurantes.PNG)
+
+Esse layout é utilizado para apresentar os três restaurantes com melhores notas.
+
+## Menu de Navegação
+
+![Menu de Navegação](img/menu-de-navegacao.PNG)
+
+Local onde o usuário tem a opção de navegar através das páginas do site.
+
