@@ -31,7 +31,3 @@ Esse layout é utilizado para apresentar os três restaurantes com melhores nota
 
 Local onde o usuário tem a opção de navegar através das páginas do site.
 
-
-
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
-
