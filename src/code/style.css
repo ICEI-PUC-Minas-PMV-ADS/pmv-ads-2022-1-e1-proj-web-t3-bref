@@ -3,11 +3,11 @@ body {
 }
 
 .container {
-    height: 700px;
+    height: 690px;
     display: grid;
-    grid-template-columns: 10% 10% 9% 40% 9% 10% 10%;
+    grid-template-columns: 10% 10% 10% 40% 10% 10% 10%;
     grid-template-rows: 3% 20% 74% 3%;
-    grid-gap: 5px;
+    row-gap: 5px;
 }
 
 /* application grid system */
@@ -62,33 +62,38 @@ header {
 }
 
 /* places list */
-#places {
+#place1 {
     background-color: white;
     grid-column-start: 1;
-    grid-column-end: span 7;
-    grid-row-start: 3;
-    grid-row-end: 3;
-}
-
-#place1 {
-    grid-column-start: 1;
-    grid-column-end: span 4;
+    grid-column-end: span 3;
     grid-row-start: 3;
     grid-row-end: 3;
 }
 
 #place2 {
-    grid-column-start: 5;
-    grid-column-end: span 7;
+    background-color: white;
+    grid-column-start: 4;
+    grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 3;
 }
 
 #place3 {
-    grid-column-start: 7;
-    grid-column-end: span 7;
+    background-color: white;
+    grid-column-start: 5;
+    grid-column-end: 8;
     grid-row-start: 3;
     grid-row-end: 3;
+}
+
+.place-img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: block;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 /* footer */
