@@ -11,19 +11,46 @@
 <body>
     <div class="container">
         <header id="header">
-            <div>
+            <div id="hLeft">
                 <p id="brefTitle">BREFF</p>
             </div>
-            <div>
-                <div id="sobre">Sobre Nós</div>
-            <div id="fale">Fale Conosco</div>
+            <div id="hRight" >
+                <div class="hRight">Sobre Nós</div>
+                <div class="hRight">Entrar ou cadastrar</div>
             </div>
         </header>
-
-        <footer>
-            <div id="mail">fakemailbref@dominio.com</div>
-            <div id="phone">(XX) 4002-8922</div>
-        </footer>
+        <div id="barColor"></div>
+        <div id="main">
+            <div class="separator"></div>
+            <div id="formulary">
+                <div id="separatorForm">
+                    <div>
+                        <p id="title">Fale conosco</p>
+                        <div class="containerInfos">
+                            <p class="titleInfo">Nome completo</p>
+                            <input class="inputInfo" placeholder="Nome completo">
+                        </div>
+                        <div class="containerInfos">
+                            <p class="titleInfo">Email</p>
+                            <input class="inputInfo" placeholder="Email">
+                        </div>
+                        <div class="containerInfos">
+                            <p class="titleInfo">Telefone</p>
+                            <input class="inputInfo" placeholder="(XX) X XXXX-XXXX">
+                        </div>
+                        <div class="containerInfos">
+                            <p class="titleInfo">Mensagem</p>
+                            <textarea rows="10" id="msgInput" class="inputInfo"></textarea>
+                        </div>
+                        <Button class="btn">Enviar</Button>
+                    </div>
+                </div>
+            </div>
+            <div id="brefSeparator">
+                <p class="breffRight">BREFF</p>
+            </div>
+            <div class="separator"></div>
+        </div>
     </div>
 </body>
 </html>
