@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
+
+body {
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+/* ESTILO DO CABEÇALHO DA PÁGINA */
+.header {
+    background-color: #483A20;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .header-item {
+    margin-left: 50px;
+}
+
+.header a:link {
+    text-decoration: none;
+}
+
+.header a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.header a:hover {
+    text-decoration: none;
+    color: #FFC300;
+}
+
+.header a:active {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bref-title {
+    color: #FFC300;
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+.bar-color {
+    height: 30px;
+    background-color: #FFC300;
+}
+
+/* BARRA DE PESQUISA */
+.input-icon {
+    position: absolute;
+    left: calc(100% - 20px);
+    /* Mantém o ícone centralizado, independentemente da altura do input */
+    top: calc(50% - 0.5em);
+    color: #483A20;
+}
+
+.input-with-icon {
+    padding-right: 20px;
+}
+
+.input-with-icon-wrapper {
+    position: relative;
+    width: max-content;
+}
+
+/* ESTILOS DOS BOTÕES PARA AUMENTAR E DIMINUIR FONTE */
+.font-size-button-group {
+    display: flex;
+    align-items: center;
+}
+
+.font-size-button {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    width: 30px;
+    height: 27px;
+}
+
+.font-size-button.increase {
+    font-size: 12px;
+}
+
+.font-size-button.decrease {
+    font-size: 9px;
+}
