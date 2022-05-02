@@ -99,10 +99,6 @@ button:hover {
     transform: scale(1.01);
 }
 
-#retangulo::before {
-    transform: scale(2.0);
-}
-
 
   
   
