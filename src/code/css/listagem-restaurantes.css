@@ -3,6 +3,8 @@
 body {
     background-color: white;
     font-family: 'Lato', sans-serif;
+    color: #483A20;
+    font-size: 16px;
 }
 
 /* ESTILO DO CABEÇALHO DA PÁGINA */
@@ -99,4 +101,52 @@ body {
 
 .font-size-button.decrease {
     font-size: 9px;
+}
+
+/* ESTILOS PARA O CENTRO DA PÁGINA */
+#main {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+#filters {
+    flex-grow: 1;
+    flex: 1;
+    background-color: #FFF8E7;
+    padding: 10px;
+}
+
+/* FORMATAÇÃO DE FORMULÁRIO */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ESTILOS PARA ESPAÇAMENTOS */
+
+.mb-1 {
+    margin-bottom: 12px;
+}
+
+/* ESTILOS DA LISTA DE RESTAURANTES */
+#restaurant-list {
+    background-color: #483A20;
+    flex-grow: 5;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: #483A20;
+    height: 5px;
+    margin-top: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    border: solid 1px gray;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
 }
