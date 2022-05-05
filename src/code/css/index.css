@@ -3,10 +3,12 @@
 body {
     background-color: #483A20;
     font-family: 'Lato', sans-serif;
+    height: 100vh;
+    width: 100vw;
 }
 
 .container {
-    height: 690px;
+    height: 95%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20% 20%;
     grid-template-rows: 5% 20% 75% 3%;
