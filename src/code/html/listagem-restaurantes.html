@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/listagem-restaurantes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -15,32 +16,43 @@
 
 <body>
 
+    <!-- Header exibido no topo da página. Possui elementos posicionados à direita e esquerda da tela. -->
     <header class="header">
         <div>
-            <p class="bref-title">BREF</p>
+            <div class="bref-title">
+                <a href="index.html">BREF</a>
+            </div>
         </div>
-        <div class="header-right">
-            <div class="header-item font-size-button-group">
 
+        <!-- Grupo de elementos que estão posicionados à direita do header. -->
+        <div class="header-right">
+
+            <div class="header-item font-size-button-group">
                 <button class="font-size-button increase">A+</button>
                 <button class="font-size-button decrease">A-</button>
-
             </div>
 
             <div class="header-item">
-                <a href="index.html">Entrar/Cadastrar</a>
+                <a href="entrar.html">Entrar/Cadastrar</a>
             </div>
         </div>
     </header>
+    <!-- Barra amarela que atravessa toda a página. Logo abaixo do header. -->
     <div class="bar-color"></div>
+
+    <!-- Elemento semântico main que contém o conteúdo principal da página. O elemento main é um elemento do HTML5. -->
     <main id="main">
+
+        <!-- Barra lateral esquerda que contém os filtros disponíveis na página de listagem. -->
         <div id="filters">
 
+            <!-- Input de pesquisa personalizado com ícone. -->
             <div class="input-with-icon-wrapper mb-1">
                 <input id="restaurant-search-input" class="input-with-icon" type="search" placeholder="Pesquisar">
                 <label for="restaurant-search-input" class="fa fa-search input-icon"></label>
             </div>
 
+            <!-- Formulário que contém os campos para realização dos filtros da listagem de restaurantes. -->
             <form class="form">
 
                 <label for="average-price">Média de preços:</label>
@@ -80,12 +92,19 @@
             </form>
         </div>
 
+        <!-- 
+            Listagem dos cards dos restaurantes. Ao clicar no card, o usuário será direcionado para a 
+            tela de detalhamento do restaurante. Observa-se que existe um evento onClick que recebe a página de detalhamento
+            como parâmetro e realiza o redirecionamento.SSS
+          -->
         <div id="restaurant-list">
 
             <div class="card" onclick="openPage('index.html')">
 
-                <img class="card-image" src="../imgs/place6.jpg" alt="Restaurante Madero">
+                <!-- Imagem do local. -->
+                <img class="card-image" src="../imgs/place6.jpg" alt="MC Donalds">
 
+                <!--  Informações principais do restaurante. -->
                 <div class="card-info-group">
 
                     <span class="card-title">MC Donalds</span>
@@ -108,15 +127,15 @@
                             <div class="card-item">
                                 <span><strong>Tempo de Espera:</strong> 15'</span>
                             </div>
-
                         </div>
+                        
                     </div>
                 </div>
             </div>
 
             <div class="card" onclick="openPage('index.html')">
 
-                <img class="card-image" src="../imgs/place7.jpg" alt="Restaurante Madero">
+                <img class="card-image" src="../imgs/place7.jpg" alt="Burger King">
 
                 <div class="card-info-group">
 
@@ -137,7 +156,7 @@
                                 <span><strong>Lotação:</strong> 90%</span>
                             </div>
                             <div class="card-item">
-                                <span><strong>Tempo de Espera:</strong> 40''</span>
+                                <span><strong>Tempo de Espera:</strong> 40'</span>
                             </div>
 
                         </div>
@@ -146,11 +165,11 @@
             </div>
             <div class="card" onclick="openPage('index.html')">
 
-                <img class="card-image" src="../imgs/place5.jpg" alt="Restaurante Madero">
+                <img class="card-image" src="../imgs/place5.jpg" alt="Madero">
 
                 <div class="card-info-group">
 
-                    <span class="card-title">Restaurante Madero</span>
+                    <span class="card-title">Madero</span>
 
                     <div class="card-item-group-container">
 
@@ -180,7 +199,7 @@
 
                 <div class="card-info-group">
 
-                    <span class="card-title">fujiyama</span>
+                    <span class="card-title">Fujiyama</span>
 
                     <div class="card-item-group-container">
 
