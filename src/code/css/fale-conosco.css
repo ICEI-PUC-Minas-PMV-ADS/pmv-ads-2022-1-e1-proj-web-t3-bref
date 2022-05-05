@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
+
+body {
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.container {
+    width: 100%;
+}
+
+/* application grid system */
+#header {
+    width: 100%;
+    background-color: #483A20;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    color: white;
+}
+
+#hRight{
+    flex: 50%;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+#barColor {
+    height: 30px;
+    background-color: #FFC300;
+}
+
+.hRight{
+    margin-left: 20px;
+}
+
+#hLeft{
+    flex: 50%;
+    align-self: start;
+}
+
+#brefTitle {
+    color: #FFC300;
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 25px;
+}
+
+#formulary{
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 25px;
+    align-content: center;
+    flex: 50%;
+}
+
+#title{
+    color: black;
+    font-weight:bolder;
+    align-content: center;
+}
+
+.separator{
+    flex: 15%;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.containerInfos{
+    align-content: center;
+    padding: 0;
+}
+
+.titleInfo {
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.inputInfo {
+    padding: 8px;
+    font-size: 22px;
+    border-radius: 5px;
+    border-color: gray;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+#msgInput{
+    height: 200px;
+    width: 100%;
+}
+
+.breffRight {
+    color: #FFC300;
+    font-size: 70px;
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#separatorForm {
+    display: flex;
+    flex-direction: row;
+}
+
+#brefSeparator {
+    flex: 20%;
+    align-self: center;
+    align-content: center;
+}
+
+.btn {
+    background-color: #483A20;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    border-color: transparent;
+    padding: 10px;
+    align-items: center;
+}
