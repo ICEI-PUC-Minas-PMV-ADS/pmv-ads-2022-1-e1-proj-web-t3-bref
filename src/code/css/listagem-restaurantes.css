@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
+
+/*
+    LINKS IMPORTANTES USADOS COMO REFERÊNCIA NO DESENVOLVIMENTO
+
+    - Flexbox para posicionamento/responsividade dos elementos: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+/*
+ ESTILOS PADRÕES PARA O CORPO DA PÁGINA
+
+ - Foi usado o `min-width: fit-content;` para que o tamanho mínimo
+  do corpo da página respeite o tamanho do maior elemento. Assim, o redimensionamento
+  garante que todos os elementos vão caber na tela com o tamanho correto.
+*/
+body {
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    color: #483A20;
+    font-size: 16px;
+    min-width: fit-content;
+}
+
+/*
+
+ ESTILO DO CABEÇALHO DA PÁGINA
+
+- Na classe header foi necessário usar o flexbox para que os elementos 
+ ficassem dispostos lado a lado em forma de linha (flex-direction: row).
+
+ - Para que os elementos ficassem alinhados nas extremidades do header,
+  foi necessário usar a propriedade justify-content com o valor space-between.
+
+ */
+.header {
+    background-color: #483A20;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .header-item {
+    margin-left: 50px;
+}
+
+.header a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.header a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.header a:hover {
+    text-decoration: none;
+    color: #FFC300;
+}
+
+.header a:active {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bref-title {
+    color: #FFC300;
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.bref-title a:link {
+    text-decoration: none;
+}
+
+.bref-title a:visited {
+    text-decoration: none;
+    color: #FFC300;
+}
+
+.bref-title a:hover {
+    text-decoration: none;
+    color: #FFC300;
+}
+
+.bref-title a:active {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bar-color {
+    height: 30px;
+    background-color: #FFC300;
+}
+
+/* BARRA DE PESQUISA */
+.input-with-icon-wrapper {
+    /* Foi usado para que o ícone do input de pesquisa pudesse ser posicionado da maneira correta. */
+    position: relative;
+    width: max-content;
+}
+
+.input-with-icon {
+    padding-right: 20px;
+}
+
+.input-icon {
+    /* Usa position absolute para que o ícone fique por cima do input de pesquisa, 
+    para dar a impressão que o ícone é do elemento input. */
+    position: absolute;
+    left: calc(100% - 20px); /* Posiciona o ícone da lupa ao canto esquerdo do input. */
+    /* Mantém o ícone centralizado, independentemente da altura do input */
+    top: calc(50% - 0.5em);
+    color: #483A20;
+}
+
+/* ESTILOS DOS BOTÕES PARA AUMENTAR E DIMINUIR FONTE */
+.font-size-button-group {
+    display: flex;
+    align-items: center;
+}
+
+.font-size-button {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    width: 30px;
+    height: 27px;
+}
+
+.font-size-button.increase {
+    font-size: 12px;
+}
+
+.font-size-button.decrease {
+    font-size: 9px;
+}
+
+/* ESTILOS PARA O CENTRO DA PÁGINA */
+#main {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+#filters {
+    flex-grow: 1;
+    flex: 1;
+    background-color: rgb(245, 240, 240);
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 10px;
+}
+
+/* FORMATAÇÃO DE FORMULÁRIO */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ESTILOS PARA ESPAÇAMENTOS */
+
+.mb-1 {
+    margin-bottom: 12px;
+}
+
+/* ESTILOS DA LISTA DE RESTAURANTES */
+#restaurant-list {
+    background-color: white;
+    flex-grow: 5;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: gray;
+    height: 5px;
+    margin-top: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    border: solid 1px gray;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+}
+
+/* ESTILOS PARA CARDS REASTAURANTE*/
+.card {
+    background-color: rgb(245, 240, 240);
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid 0, 5px gray;
+    cursor: pointer;
+}
+
+.card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.card-title {
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.card-item-group-container {
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+    flex-wrap: wrap;
+}
+
+.card-info-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-item-group {
+    display: flex;
+    flex-direction: column;
+    border: gray;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.card-item {
+    display: flex;
+    font-size: 20px;
+    color: #483A20;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+    margin: 2px;
+    border-radius: 3px;
+    border: solid 2px gray;
+    white-space: nowrap;
+}
