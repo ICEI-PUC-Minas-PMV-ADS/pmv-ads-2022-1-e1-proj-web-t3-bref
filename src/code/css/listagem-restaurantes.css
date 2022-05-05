@@ -6,12 +6,19 @@
     - Flexbox para posicionamento/responsividade dos elementos: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 */
 
-/* ESTILOS PADRÕES PARA O CORPO DA PÁGINA */
+/*
+ ESTILOS PADRÕES PARA O CORPO DA PÁGINA
+
+ - Foi usado o `min-width: fit-content;` para que o tamanho mínimo
+  do corpo da página respeite o tamanho do maior elemento. Assim, o redimensionamento
+  garante que todos os elementos vão caber na tela com o tamanho correto.
+*/
 body {
     background-color: white;
     font-family: 'Lato', sans-serif;
     color: #483A20;
     font-size: 16px;
+    min-width: fit-content;
 }
 
 /*
