@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
+
 * {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
@@ -14,7 +16,6 @@ div.container-fluid {
 /* Logo BREF */
 nav.navbar.navbar-expand-lg.navbar-light.bg-light > a.navbar-brand {
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
-    font-weight: bolder;
     font-size: 35px;
     font-stretch: condensed;
     color: #FFC300;
