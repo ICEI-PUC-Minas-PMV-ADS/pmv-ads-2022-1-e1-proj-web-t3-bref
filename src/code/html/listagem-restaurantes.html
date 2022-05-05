@@ -10,6 +10,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Bref - Economize seu Tempo</title>
+    <script src="../scripts/listagem-restaurantes.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -23,6 +24,7 @@
 
                 <button class="font-size-button increase">A+</button>
                 <button class="font-size-button decrease">A-</button>
+
             </div>
 
             <div class="header-item">
@@ -50,13 +52,14 @@
                 <label for="waiting-time">Tempo de Espera:</label>
                 <input class="mb-1" type="range" id="waiting-time" name="waiting-time" min="0">
 
-                <select class="mb-1" name="restaurant-type" >
+                <select class="mb-1" name="restaurant-type">
                     <option value="-1" selected>Tipo de Restaurante</option>
                     <option value="1">Japonês</option>
                     <option value="2">Italiano</option>
                     <option value="3">Brasileiro</option>
                     <option value="4">Indiano</option>
                     <option value="5">Fast-food</option>
+                    <option value="5">Australiano</option>
                 </select>
 
 
@@ -77,12 +80,196 @@
             </form>
         </div>
 
-        <div id="restaurant-list"> 
-                Cards...
+        <div id="restaurant-list">
+
+            <div class="card" onclick="openPage('index.html')">
+
+                <img class="card-image" src="../imgs/place6.jpg" alt="Restaurante Madero">
+
+                <div class="card-info-group">
+
+                    <span class="card-title">MC Donalds</span>
+
+                    <div class="card-item-group-container">
+
+                        <div class="card-item-group">
+                            <div class="card-item">
+                                <span><strong>Média de preços:</strong> $$</span>
+                            </div>
+                            <div class="card-item">
+                                <span><strong>Tipo:</strong> Fast-food</span>
+                            </div>
+                        </div>
+
+                        <div class="card-item-group">
+                            <div class="card-item">
+                                <span><strong>Lotação:</strong> 60%</span>
+                            </div>
+                            <div class="card-item">
+                                <span><strong>Tempo de Espera:</strong> 15'</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="openPage('index.html')">
+
+                <img class="card-image" src="../imgs/place7.jpg" alt="Restaurante Madero">
+
+                <div class="card-info-group">
+
+                    <span class="card-title">Burger King</span>
+
+                    <div class="card-item-group-container">
+
+                        <div class="card-item-group">
+                            <div class="card-item">
+                                <span><strong>Média de preços:</strong> $$</span>
+                            </div>
+                            <div class="card-item"><span><strong>Tipo:</strong> Fast-food</span>
+                            </div>
+                        </div>
+
+                        <div class="card-item-group">
+                            <div class="card-item">
+                                <span><strong>Lotação:</strong> 90%</span>
+                            </div>
+                            <div class="card-item">
+                                <span><strong>Tempo de Espera:</strong> 40''</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openPage('index.html')">
+
+                <img class="card-image" src="../imgs/place5.jpg" alt="Restaurante Madero">
+
+                <div class="card-info-group">
+
+                    <span class="card-title">Restaurante Madero</span>
+
+                    <div class="card-item-group-container">
+
+                        <div class="card-item-group">
+                            <div class="card-item">
+                                <span><strong>Média de preços:</strong> $$$$</span>
+                            </div>
+                            <div class="card-item">
+                                <span><strong>Tipo:</strong> Australiano</span>
+                            </div>
+                        </div>
+
+                        <div class="card-item-group">
+                            <div class="card-item">
+                                <span><strong>Lotação:</strong> 30%</span>
+                            </div>
+                            <div class="card-item">
+                                <span><strong>Tempo de Espera:</strong> 60'</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openPage('index.html')">
+
+                <img class="card-image" src="../imgs/place8.jpg" alt="Fujiyama">
+
+                <div class="card-info-group">
+
+                    <span class="card-title">fujiyama</span>
+
+                    <div class="card-item-group-container">
+
+                        <div class="card-item-group">
+                            <div class="card-item">
+                                <span><strong>Média de preços:</strong> $</span>
+                            </div>
+                            <div class="card-item">
+                                <span><strong>Tipo:</strong> Pastelaria</span>
+                            </div>
+                        </div>
+
+                        <div class="card-item-group">
+                            <div class="card-item">
+                                <span><strong>Lotação:</strong> 20%</span>
+                            </div>
+                            <div class="card-item">
+                                <span><strong>Tempo de Espera:</strong> 15'</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openPage('index.html')">
+
+                <img class="card-image" src="../imgs/place9.jpg" alt="Spoleto">
+
+                <div class="card-info-group">
+
+                    <span class="card-title">Spoleto</span>
+
+                    <div class="card-item-group-container">
+
+                        <div class="card-item-group">
+                            <div class="card-item">
+                                <span><strong>Média de preços:</strong> $$</span>
+                            </div>
+                            <div class="card-item">
+                                <span><strong>Tipo:</strong> Brasileiro</span>
+                            </div>
+                        </div>
+
+                        <div class="card-item-group">
+                            <div class="card-item">
+                                <span><strong>Lotação:</strong> 10%</span>
+                            </div>
+                            <div class="card-item">
+                                <span><strong>Tempo de Espera:</strong> 20'</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openPage('index.html')">
+
+                <img class="card-image" src="../imgs/place10.jpg" alt="Sushi Japa Chan">
+
+                <div class="card-info-group">
+
+                    <span class="card-title">Sushi Japa Chan</span>
+
+                    <div class="card-item-group-container">
+
+                        <div class="card-item-group">
+                            <div class="card-item">
+                                <span><strong>Média de preços:</strong> $$$$</span>
+                            </div>
+                            <div class="card-item">
+                                <span><strong>Tipo:</strong> Japonesa</span>
+                            </div>
+                        </div>
+
+                        <div class="card-item-group">
+                            <div class="card-item">
+                                <span><strong>Lotação:</strong> 30%</span>
+                            </div>
+                            <div class="card-item">
+                                <span><strong>Tempo de Espera:</strong> 5'</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </main>
-
+    <div class="bar-color"></div>
 </body>
 
 </html>
