@@ -56,7 +56,6 @@ input {
     transform: scale(1.03);
     margin-bottom: 10px;
 }
-
 button {
     cursor: pointer;
     background: #483A20;
@@ -72,6 +71,14 @@ button {
 button:hover {
     background: rgb(110, 79, 22);
     transform: scale(1.01);
+}
+
+input::placeholder {
+    opacity: 0.5;
+}
+
+#botao-verificar-codigo {
+    opacity: 0.5;
 }
 
 #footer {
