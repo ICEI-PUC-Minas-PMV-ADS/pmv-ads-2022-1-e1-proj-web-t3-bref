@@ -1,0 +1,112 @@
+body {
+    background: #FFFFF4;
+    color: #483A20;
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+  
+main {
+    flex-direction: column;
+    text-align: center;
+    flex-basis: 50%;
+    flex-grow: 1;
+    
+}
+  
+#bref {
+    font-family: 'Oswald', sans-serif;
+    font-size: 150px;
+    margin: 0px;
+    color: #FFC300;
+}
+
+.entrar {
+    font-size: 30px;
+}
+
+input {
+    width: 325px;
+    margin: 3px;
+    padding:10px;
+    border-radius: 4px;
+    text-indent: 0.1rem;
+    border-width: 1px;
+    outline: 0;
+    background-color: #FFFFF4;
+    border-style: solid;
+}
+
+#botoes {
+    margin: 5px 0px 2px 0px;
+    border-radius: 4px;
+    border: 0px;
+    width: 250px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.8s all;
+    color: #fff;
+    background: #483A20;
+}
+
+#esqueci-senha {
+    margin-top: 50px;
+    color: darkred;
+    text-decoration: none;
+}
+#termos-condicoes {
+    font-size: 10px;
+}
+
+aside {
+    background-repeat: no-repeat;
+    background-image: url("https://cdn.discordapp.com/attachments/965947265036455957/965947378102321202/unknown.png");
+    width: 50vw;
+    height: 49vw;
+
+}
+
+#retangulo {
+    display: block;
+    position:absolute;
+    background: #FFC300;
+    width: 96%;
+    height: 80px;
+    bottom: 7%;
+    right: 0;
+    transition: 2s all;
+}
+
+#retangulinho {
+    display: block;
+    position:absolute;
+    background: #FFC300;
+    width: 1.4%;
+    height: 80px;
+    bottom: 7%;
+    left: 1%;
+    transition: 2s all;
+}
+
+#retangulao {
+    background: #FFC300;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+
+#botoes:hover {
+    background: rgb(110, 79, 22);
+    transform: scale(1.01);
+}
+
+
+  
+  
+  
+  
+  

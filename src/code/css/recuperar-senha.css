@@ -1,0 +1,91 @@
+.container {
+    background: #FFFFF4;
+}
+
+header {
+    background: #483A20;
+}
+.o-header {
+    color: #FFC300;
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 25px;
+}
+
+#barColor {
+    height: 30px;
+    background: #FFC300;
+}
+
+.o-main {
+    text-align: center;
+    color: #483A20;
+    background-color: #FFFFF4;
+    font-family: Lato, sans-serif;
+    margin-bottom: 61px;
+}
+
+  
+.page-title {
+    color: #FFC300;
+    font-size: 100px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+}
+
+.bref-logo {
+    width: 150px;
+    height: 150px;
+}
+
+input, input::placeholder {
+    text-indent: 0.1rem;
+    outline: 0;
+    margin: 5px;
+    color: #483a20;
+    background-color: #FFFFF4;
+    transform: scale(1.03);
+}
+
+input {
+    padding:10px;
+    width: 25%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    transform: scale(1.03);
+    margin-bottom: 10px;
+}
+button {
+    cursor: pointer;
+    background: #483A20;
+    transition: 0.8s all;
+    color: #fff;
+    border: 0px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 155px;
+    padding: 8px 30px;
+}
+
+button:hover {
+    background: rgb(110, 79, 22);
+    transform: scale(1.01);
+}
+
+input::placeholder {
+    opacity: 0.5;
+}
+
+#botao-verificar-codigo {
+    opacity: 0.5;
+}
+
+#footer {
+    height: 30px;
+    background: #FFC300;
+    bottom: 0px;
+    vertical-align: bottom;
+}
+
+
