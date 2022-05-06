@@ -85,6 +85,7 @@ input::placeholder {
     height: 30px;
     background: #FFC300;
     bottom: 0px;
+    vertical-align: bottom;
 }
 
 
