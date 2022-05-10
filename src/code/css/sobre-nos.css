@@ -40,18 +40,62 @@ div.collapse.navbar-collapse#navbarSupportedContent > ul.navbar-nav.mr-auto > li
 
 /* Barra sub Navegação */ 
 div.row.sub-nav {
-    
     background-color: #FFC300;
     text-align: right;
-    margin-bottom: 10px;
 }
 
-/* Conteúdo, textos, imagens */
+/* Rows do container-fluid */
 div.container-fluid > div.row {
-    width: auto;
-    padding: 15px 0;
+    width: inherit;
+    padding: 0;
+    margin: 0;
 }
 
-div.container-fluid > div.row.col-md-3 {
+div.container-fluid > div.row > div.col-md-3 {
     padding: 0;
+}
+
+div.container-fluid > div.row > div.col-md-12.sobre-nos {
+    height: 500px;
+    padding: 15px 0;
+    background: url('../imgs/background-sobre-nos.jpg')  center;
+/* background: rgb(255,195,0), url('../imgs/background-sobre-nos.jpg')  center;
+background: -moz-linear-gradient(0deg, rgba(255,195,0,0) 0%, rgba(255,195,0,0.21922272326899506) 74%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
+background: -webkit-linear-gradient(0deg, rgba(255,195,0,0) 0%, rgba(255,195,0,0.21922272326899506) 74%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
+background: linear-gradient(0deg, rgba(255,195,0,0) 0%, rgba(255,195,0,0.21922272326899506) 74%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc300",endColorstr="#ffc300",GradientType=1); */
+/* background: rgb(255,195,0), url('../imgs/background-sobre-nos.jpg')  center;
+background: -moz-linear-gradient(0deg, rgba(255,195,0,0) 79%, rgba(255,195,0,0.3144608185070903) 91%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
+background: -webkit-linear-gradient(0deg, rgba(255,195,0,0) 79%, rgba(255,195,0,0.3144608185070903) 91%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
+background: linear-gradient(0deg, rgba(255,195,0,0) 79%, rgba(255,195,0,0.3144608185070903) 91%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc300",endColorstr="#ffc300",GradientType=1); */
+
+background: rgb(255,195,0), url('../imgs/background-sobre-nos.jpg')  center;
+background: -moz-linear-gradient(0deg, rgba(255,195,0,0) 91%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
+background: -webkit-linear-gradient(0deg, rgba(255,195,0,0) 91%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
+background: linear-gradient(0deg, rgba(255,195,0,0) 91%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc300",endColorstr="#ffc300",GradientType=1);
+
+
+
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+div.container-fluid > div.row > div.col-md-12.sobre-nos > div {
+    background-color: transparent;
+    box-shadow: #483A20;
+    width: fit-content;
+    margin: 170px 0 0 110px;
+}
+
+div.container-fluid > div.row > div.col-md-12.sobre-nos > div > h3 {
+    color: #FFFFFA;
+}
+
+div.container-fluid > div.row > div.col-md-12.sobre-nos > div > p {
+    color: #FFFFFA;
 }
