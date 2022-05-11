@@ -55,47 +55,57 @@ div.container-fluid > div.row > div.col-md-3 {
     padding: 0;
 }
 
-div.container-fluid > div.row > div.col-md-12.sobre-nos {
-    height: 500px;
+/* Bloco de Boas-vindas */
+
+div.container-fluid > div.row > div.col-md-12.boas-vindas {
+    height: 650px;
     padding: 15px 0;
-    background: url('../imgs/background-sobre-nos.jpg')  center;
-/* background: rgb(255,195,0), url('../imgs/background-sobre-nos.jpg')  center;
-background: -moz-linear-gradient(0deg, rgba(255,195,0,0) 0%, rgba(255,195,0,0.21922272326899506) 74%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
-background: -webkit-linear-gradient(0deg, rgba(255,195,0,0) 0%, rgba(255,195,0,0.21922272326899506) 74%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
-background: linear-gradient(0deg, rgba(255,195,0,0) 0%, rgba(255,195,0,0.21922272326899506) 74%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc300",endColorstr="#ffc300",GradientType=1); */
-/* background: rgb(255,195,0), url('../imgs/background-sobre-nos.jpg')  center;
-background: -moz-linear-gradient(0deg, rgba(255,195,0,0) 79%, rgba(255,195,0,0.3144608185070903) 91%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
-background: -webkit-linear-gradient(0deg, rgba(255,195,0,0) 79%, rgba(255,195,0,0.3144608185070903) 91%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
-background: linear-gradient(0deg, rgba(255,195,0,0) 79%, rgba(255,195,0,0.3144608185070903) 91%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc300",endColorstr="#ffc300",GradientType=1); */
-
-background: rgb(255,195,0), url('../imgs/background-sobre-nos.jpg')  center;
-background: -moz-linear-gradient(0deg, rgba(255,195,0,0) 91%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
-background: -webkit-linear-gradient(0deg, rgba(255,195,0,0) 91%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
-background: linear-gradient(0deg, rgba(255,195,0,0) 91%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc300",endColorstr="#ffc300",GradientType=1);
-
-
-
-
+    background: rgb(255,195,0), url('../imgs/background-sobre-nos.jpg')  center;
+    background: -moz-linear-gradient(180deg, rgba(255,195,0,0) 71%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
+    background: -webkit-linear-gradient(180deg, rgba(255,195,0,0) 71%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
+    background: linear-gradient(180deg, rgba(255,195,0,0) 71%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc300",endColorstr="#ffc300",GradientType=1);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
-div.container-fluid > div.row > div.col-md-12.sobre-nos > div {
+div.container-fluid > div.row > div.col-md-12.boas-vindas > div {
     background-color: transparent;
     box-shadow: #483A20;
     width: fit-content;
-    margin: 170px 0 0 110px;
+    margin: 180px 0 0 130px;
 }
 
-div.container-fluid > div.row > div.col-md-12.sobre-nos > div > h3 {
+div.container-fluid > div.row > div.col-md-12.boas-vindas > div > h1 {
     color: #FFFFFA;
 }
 
-div.container-fluid > div.row > div.col-md-12.sobre-nos > div > p {
+div.container-fluid > div.row > div.col-md-12.boas-vindas > div > p {
+    padding-top: 10px;
+    font-size: 1.2rem;
     color: #FFFFFA;
+}
+
+/* Blocos de Nossos Valores */
+
+div.container-fluid > div.row > div.row {
+    background-color: #FFC300;
+    margin: 0;
+    width: inherit;
+    
+}
+div.container-fluid > div.row > div.row > div.col-md-12.nossos-valores{
+    padding-top: 30px;
+}
+
+div.container-fluid > div.row > h1.nossos-valores{
+    background-color: #FFC300;
+}
+
+div.container-fluid > div.row > div.row > div.card-deck{
+    margin: 0;
+    padding: 50px 0 20px 0;
+    background-color: #FFC300;
 }
