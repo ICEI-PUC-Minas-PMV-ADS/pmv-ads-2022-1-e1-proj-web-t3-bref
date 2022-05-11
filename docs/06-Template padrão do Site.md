@@ -44,6 +44,6 @@ Tela da visualização inicial ao introduzir a opção de reserva de mesa.
 
 Campos para preenchimeto com dados dos clientes para reserva de mesas em um dos restaurantes cadastrados no sistema.
 
-![preenchimentoDados](img/preenchimentoDados.png)
+![preenchimentoDados](img/dados.png)
 
 
