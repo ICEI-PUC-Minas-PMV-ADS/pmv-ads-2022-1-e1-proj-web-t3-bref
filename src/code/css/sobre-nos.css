@@ -94,18 +94,45 @@ div.container-fluid > div.row > div.row {
     background-color: #FFC300;
     margin: 0;
     width: inherit;
-    
-}
-div.container-fluid > div.row > div.row > div.col-md-12.nossos-valores{
-    padding-top: 30px;
 }
 
-div.container-fluid > div.row > h1.nossos-valores{
-    background-color: #FFC300;
+div.container-fluid > div.row > div.row > div.col-md-12.nossos-valores {
+    padding-top: 30px;
+    padding-left: 65px;
+    
+}
+
+div.container-fluid > div.row > div.row > div.col-md-12.nossos-valores > h2.font-weight-bold {
+    color: #483A20;
+    text-shadow: 0 1px 1px #483A20;
 }
 
 div.container-fluid > div.row > div.row > div.card-deck{
-    margin: 0;
+    margin: auto;
     padding: 50px 0 20px 0;
     background-color: #FFC300;
+}
+
+div.container-fluid > div.row > div.row > div.card-deck > div.card {
+    max-width: 380px;
+    margin: 0 50px;
+    background: url('http://source.unsplash.com/random') center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.espaco-vazio{
+    vertical-align: middle;
+    width: 100%;
+    height: 200px;
+}
+div.container-fluid > div.row > div.row > div.card-deck > div.card > div.card-body{
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.40689779329700626) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.40689779329700626) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.40689779329700626) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    color: #FFFFFA;
 }
