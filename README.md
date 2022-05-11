@@ -16,13 +16,13 @@ Pode-se considerar como objetivos específicos:
 
 ## Integrantes
 
-* Gabriel da Silva Oliveira
 * Bruno de Melo Ruas
-* Lucas Célio Neves Silva
-* Thassia Diandra Ferreira
-* Mikaelly da Silva Carneiro
-* Marina Gonçalves Duque
 * Diego Menezes Soares
+* Gabriel da Silva Oliveira
+* Lucas Célio Neves Silva
+* Marina Gonçalves Duque
+* Mikaelly da Silva Carneiro
+* Thassia Diandra Ferreira
 
 ## Orientador
 
