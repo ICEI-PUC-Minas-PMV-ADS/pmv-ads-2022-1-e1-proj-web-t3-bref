@@ -6,10 +6,15 @@ html,body {
   header {
     background-color: #483a20;
     height: 52px;
+  }
+  a {
+    color: #ffc300;
+    font-size: 35px;
+    font-family: 'Oswald',sans-serif;
+    margin-left: 5px;
 
   }
   .container {
-    justify-content: center;
     background: #FFFFF4;
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -58,7 +63,7 @@ html,body {
     text-indent: 0.1rem;
 
   }
-  button {
+ button {
     font-size: 25px;
     padding: 2px;
     color: #FFFFF4;
@@ -78,7 +83,7 @@ html,body {
     font-family: 'lato', sans-serif;
   }
   hr {
-    margin: 3px 0px 3px 0px;
+    margin: 9px 0px 9px 0px;
   }
   #footer {
     margin-top: 6px;
@@ -89,5 +94,5 @@ html,body {
     background: #ffc300;
     height: 20px;
     margin-bottom: 20px;
+    margin-top: 0pX;
   }
-
