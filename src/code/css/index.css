@@ -34,6 +34,8 @@ header {
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
+    color: white;
+    text-decoration: none;
 }
 
 #fale {
@@ -41,6 +43,8 @@ header {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
+    color: white;
+    text-decoration: none;
 }
 
 #entrar {
@@ -48,6 +52,8 @@ header {
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 1;
+    color: white;
+    text-decoration: none;
 }
 
 #pesq {
@@ -55,6 +61,8 @@ header {
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 1;
+    color: white;
+    text-decoration: none;
 }
 
 /* logo */
