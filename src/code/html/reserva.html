@@ -3,23 +3,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="reserva.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="reserva.js" ></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap"rel="stylesheet">
   <title>Reserva</title>
 
   <body>
     <header class="header">
-      <a href="index.html">BREF</a>  
+      <a href="index.html">BREF</a>   
     </header>
-      <div id="barColor"></div>
+    <div id="barColor">
+      <button class="font-size-button" onclick={aumentar()}>A+</button>
+      <button class="font-size-button" onclick={diminuir()}>A-</button>
+    </div>
     <div class="container">
         <main>
           <h2>BREF</h2>
-          <img src="IMG_6238.png" alt="Logo Bref">
+          <img src="IMG_6238 (1).png" alt="Logo Bref"/>
 
             <h3>Reserva</h3>
 
@@ -30,7 +32,7 @@
           
 
           <a href="reserva_concluída.html">
-            <button>Reservar</button>
+              <button class="botao-reserva">Reservar</button>
           </a>
           <hr>
           <p>O comprovante das reservas será enviado para o seu e-mail</p>
