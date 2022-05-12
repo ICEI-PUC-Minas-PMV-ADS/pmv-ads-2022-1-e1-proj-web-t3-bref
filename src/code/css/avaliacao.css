@@ -7,7 +7,7 @@ body {
 
 
 .container {
-    width: 100%;
+    width: 100vw;
 }
 
 /* application grid system */
@@ -54,15 +54,14 @@ body {
 }
 
 #formulary{
-    font-size: 36px;
+    font-size: 25px;
     font-family: 'Lato', sans-serif;
-    padding: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-left: 25px;
     align-content: center;
     flex: 50%;
+}
+
+#middle {
+    align-content: center;
 }
 
 #title{
@@ -71,11 +70,12 @@ body {
     align-content: center;
     font-size: 50px;
     margin-bottom: 20px;
-    margin-left: 300px;
+    margin-left: 0px;
+    text-align: center;
 }
 
 .separator{
-    flex: 15%;
+    flex: 40%;
 }
 
 #main{
@@ -92,11 +92,9 @@ body {
 }
 
 .titleInfo {
-    font-size: 28px;
-    padding: 0;
-    margin: 0;
+    font-size: 18px;
     font-weight: bold;
-    margin-left: 5px;
+    margin-bottom: 0px;
 }
 
 .inputInfo {
@@ -119,15 +117,24 @@ body {
 }
 
 #StarSelect {
-    margin-left: 200px;
+    margin-left: 100px;
     margin-bottom: 20px;
+}
+
+.nota {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    height: 40px;
+    vertical-align: middle;
+    margin-top: -20px;
 }
 
 .btn {
     background-color: #483A20;
     color: white;
     border-radius: 10px;
-    width: 100%;
+    width: 104%;
     border-color: transparent;
     padding: 10px;
     align-items: center;
@@ -139,7 +146,6 @@ body {
     font-size: 0;
     white-space: nowrap;
     display: inline-block;
-    /* width: 250px; remove this */
     height: 50px;
     overflow: hidden;
     position: relative;
