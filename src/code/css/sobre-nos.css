@@ -8,10 +8,12 @@ body{
     background-color: #FFFFFA;
 }
 
+
 /* Classe do container */
 div.container-fluid {
     padding: 0;
 }
+
 
 /* Logo BREF */
 nav.navbar.navbar-expand-lg.navbar-light.bg-light > a.navbar-brand {
@@ -21,6 +23,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light > a.navbar-brand {
     color: #FFC300;
     padding-left: 30px;
 }
+
 
 /* Barra de Navegação */ 
 div.collapse.navbar-collapse#navbarSupportedContent > ul.navbar-nav.mr-auto
@@ -33,16 +36,19 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     background-color: #483A20!important;
 }
 
+
 /* links da barra de navegação */
 div.collapse.navbar-collapse#navbarSupportedContent > ul.navbar-nav.mr-auto > li > a {
     color: #FFC300;
 }
+
 
 /* Barra sub Navegação */ 
 div.row.sub-nav {
     background-color: #FFC300;
     text-align: right;
 }
+
 
 /* Rows do container-fluid */
 div.container-fluid > div.row {
@@ -55,15 +61,15 @@ div.container-fluid > div.row > div.col-md-3 {
     padding: 0;
 }
 
-/* Bloco de Boas-vindas */
 
+/* Bloco de Boas-vindas */
 div.container-fluid > div.row > div.col-md-12.boas-vindas {
     height: 650px;
     padding: 15px 0;
     background: rgb(255,195,0), url('../imgs/background-sobre-nos.jpg')  center;
-    background: -moz-linear-gradient(180deg, rgba(255,195,0,0) 71%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
-    background: -webkit-linear-gradient(180deg, rgba(255,195,0,0) 71%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
-    background: linear-gradient(180deg, rgba(255,195,0,0) 71%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
+    background: -moz-linear-gradient(180deg, rgba(255,195,0,0) 79%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
+    background: -webkit-linear-gradient(180deg, rgba(255,195,0,0) 79%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
+    background: linear-gradient(180deg, rgba(255,195,0,0) 79%, rgba(255,195,0,1) 100%), url('../imgs/background-sobre-nos.jpg')  center;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc300",endColorstr="#ffc300",GradientType=1);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -88,8 +94,8 @@ div.container-fluid > div.row > div.col-md-12.boas-vindas > div > p {
     color: #FFFFFA;
 }
 
-/* Blocos de Nossos Valores */
 
+/* Blocos de Nossos Valores */
 div.container-fluid > div.row > div.row {
     background-color: #FFC300;
     margin: 0;
@@ -97,7 +103,7 @@ div.container-fluid > div.row > div.row {
 }
 
 div.container-fluid > div.row > div.row > div.col-md-12.nossos-valores {
-    padding-top: 30px;
+    padding-top: 40px;
     padding-left: 65px;
     
 }
@@ -109,14 +115,40 @@ div.container-fluid > div.row > div.row > div.col-md-12.nossos-valores > h2.font
 
 div.container-fluid > div.row > div.row > div.card-deck{
     margin: auto;
-    padding: 50px 0 20px 0;
+    padding: 35px 0 45px 0;
     background-color: #FFC300;
 }
 
 div.container-fluid > div.row > div.row > div.card-deck > div.card {
-    max-width: 380px;
+    max-width: 430px;
     margin: 0 50px;
-    background: url('http://source.unsplash.com/random') center;
+}
+
+div.container-fluid > div.row > div.row > div.card-deck > div.card > div.card-body{
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7150210425967262) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7150210425967262) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7150210425967262) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    color: #FFFFFA;
+}
+
+#card1{
+    background: url('../imgs/simplicidade-sobre-nos.jpg') center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+#card2{
+    background: url('../imgs/praticidade-sobre-nos.jpg') center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+#card3{
+    background: url('../imgs/confianca-sobre-nos.jpg') center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -126,13 +158,29 @@ div.container-fluid > div.row > div.row > div.card-deck > div.card {
 .espaco-vazio{
     vertical-align: middle;
     width: 100%;
-    height: 200px;
+    height: 400px;
 }
-div.container-fluid > div.row > div.row > div.card-deck > div.card > div.card-body{
-    background: rgb(0,0,0);
-    background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.40689779329700626) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.40689779329700626) 100%);
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.40689779329700626) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
-    color: #FFFFFA;
+
+
+/* Bloco Nossa Missao */
+#img-missao{
+    padding: 0;
+    height: 500px;
+    background: url('../imgs/img-missao-sobre-nos.jpg') center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#texto-missao{
+    margin: auto;
+}
+
+
+/* Rodape */
+#footer{
+    background-color: #483A20;
+    height: 300px;
+    margin: auto;
 }
