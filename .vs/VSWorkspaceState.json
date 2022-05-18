@@ -4,8 +4,10 @@
     "\\docs",
     "\\presentation",
     "\\src",
-    "\\src\\code"
+    "\\src\\code",
+    "\\src\\code\\bootstrap-css",
+    "\\src\\code\\css",
+    "\\src\\code\\html"
   ],
-  "SelectedNode": "\\src\\code\\imgs",
   "PreviewInSolutionExplorer": false
 }
