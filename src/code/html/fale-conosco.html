@@ -14,12 +14,15 @@
             <div id="hLeft">
                 <p id="brefTitle">BREF</p>
             </div>
-            <div id="hRight" >
+            <div id="hRight">
                 <div class="hRight">Sobre Nós</div>
                 <div class="hRight">Entrar ou cadastrar</div>
             </div>
         </header>
-        <div id="barColor"></div>
+        <div id="barColor">
+            <button class="changeFontsButtons" onclick="changeFontSize(false);">Font -</button>
+            <button class="changeFontsButtons" onclick="changeFontSize(true);">Font +</button>
+        </div>
         <div id="main">
             <div class="separator"></div>
             <div id="formulary">
@@ -52,5 +55,25 @@
             <div class="separator"></div>
         </div>
     </div>
+    <script type="text/javascript">
+        function changeFontSize(isAddValueFontSize) {
+
+            let myWindowSize = window.getComputedStyle(document.body).fontSize;
+            let currentTextSize = parseInt(myWindowSize.replace('px', ''));
+
+            if (currentTextSize <= 0) {
+                return;
+            }
+
+            if (isAddValueFontSize) {
+                document.body.style.fontSize = (currentTextSize + 5) + 'px';
+                return;
+            }   
+
+            document.body.style.fontSize = (currentTextSize - 5) + 'px';
+            return;
+
+        }
+    </script>
 </body>
 </html>
