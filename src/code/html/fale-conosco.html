@@ -22,6 +22,7 @@
         <div id="barColor">
             <button class="changeFontsButtons" onclick="changeFontSize(false);">Font -</button>
             <button class="changeFontsButtons" onclick="changeFontSize(true);">Font +</button>
+            <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
         </div>
         <div id="main">
             <div class="separator"></div>
@@ -50,16 +51,25 @@
                 </div>
             </div>
             <div id="brefSeparator">
-                <p class="breffRight">BREF</p>
+                <p id="breffBig" class="breffRight">BREF</p>
             </div>
             <div class="separator"></div>
         </div>
     </div>
     <script type="text/javascript">
+
+        var defaultSizeWindow = 0;
+        var countClicksSize = 1;
+
         function changeFontSize(isAddValueFontSize) {
 
             let myWindowSize = window.getComputedStyle(document.body).fontSize;
             let currentTextSize = parseInt(myWindowSize.replace('px', ''));
+
+            if (defaultSizeWindow == 0)
+                defaultSizeWindow = currentTextSize;
+
+            hiddenBigBreff(isAddValueFontSize);
 
             if (currentTextSize <= 0) {
                 return;
@@ -74,6 +84,42 @@
             return;
 
         }
+
+        function resetDocumentSizes() {
+            if (isValidDefaultSizeWindow()) {
+                document.body.style.fontSize = defaultSizeWindow + 'px';
+                let myBigBreff = document.getElementById('breffBig');
+                myBigBreff.style.visibility = "visible";
+                defaultSizeWindow = 0;
+            }    
+        }
+
+        function hiddenBigBreff(isAddFontSize) {
+            if (isValidDefaultSizeWindow()) {
+                let myBigBreff = document.getElementById('breffBig');
+
+                if (!isAddFontSize) {
+                    countClicksSize--;
+                    if (countClicksSize <= 3) {
+                        myBigBreff.style.visibility = "visible";
+                        console.log(countClicksSize);
+                    }
+                    return;
+                }
+
+                countClicksSize++;
+                if (countClicksSize > 3) {
+                    myBigBreff.style.visibility = "hidden";
+                    console.log(countClicksSize);
+                }
+                
+            }
+        }
+
+        function isValidDefaultSizeWindow() {
+            return defaultSizeWindow > 0;
+        }
+
     </script>
 </body>
 </html>
