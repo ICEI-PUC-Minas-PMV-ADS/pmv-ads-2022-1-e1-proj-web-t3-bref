@@ -69,20 +69,27 @@
             if (defaultSizeWindow == 0)
                 defaultSizeWindow = currentTextSize;
 
+            if (defaultSizeWindow == currentTextSize)
+                countClicksSize = 1;
+
             hiddenBigBreff(isAddValueFontSize);
+            console.log(countClicksSize);
 
             if (currentTextSize <= 0) {
                 return;
             }
 
-            if (isAddValueFontSize) {
-                document.body.style.fontSize = (currentTextSize + 5) + 'px';
+            if (isAddValueFontSize && countClicksSize <= 6) {
+                countClicksSize++;
+                document.body.style.fontSize = (currentTextSize + 3) + 'px';
                 return;
-            }   
+            }
 
-            document.body.style.fontSize = (currentTextSize - 5) + 'px';
-            return;
-
+            if (!isAddValueFontSize && countClicksSize >= -1) {
+                document.body.style.fontSize = (currentTextSize - 3) + 'px';
+                countClicksSize--;
+                return;
+            }
         }
 
         function resetDocumentSizes() {
@@ -91,6 +98,7 @@
                 let myBigBreff = document.getElementById('breffBig');
                 myBigBreff.style.visibility = "visible";
                 defaultSizeWindow = 0;
+                countClicksSize = 1;
             }    
         }
 
@@ -99,18 +107,14 @@
                 let myBigBreff = document.getElementById('breffBig');
 
                 if (!isAddFontSize) {
-                    countClicksSize--;
                     if (countClicksSize <= 3) {
                         myBigBreff.style.visibility = "visible";
-                        console.log(countClicksSize);
                     }
                     return;
                 }
 
-                countClicksSize++;
                 if (countClicksSize > 3) {
                     myBigBreff.style.visibility = "hidden";
-                    console.log(countClicksSize);
                 }
                 
             }
