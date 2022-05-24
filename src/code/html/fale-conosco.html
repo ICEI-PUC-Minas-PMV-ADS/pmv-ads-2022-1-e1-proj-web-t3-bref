@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/fale-conosco.css">
     <title>Fale conosco - Bref</title>
 </head>
-<body>
+<body onload="startWindow()">
     <div class="container">
         <header id="header">
             <div id="hLeft">
@@ -20,8 +20,8 @@
             </div>
         </header>
         <div id="barColor">
-            <button class="changeFontsButtons" onclick="changeFontSize(false);">Font -</button>
-            <button class="changeFontsButtons" onclick="changeFontSize(true);">Font +</button>
+            <button class="changeFontsButtons" onclick="changeSizeAllItems(false);">Font -</button>
+            <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
             <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
         </div>
         <div id="main">
@@ -46,82 +46,74 @@
                             <p class="titleInfo">Mensagem</p>
                             <textarea rows="10" id="msgInput" class="inputInfo"></textarea>
                         </div>
-                        <Button class="btn">Enviar</Button>
+                        <Button id="testeButton" class="btn">Enviar</Button>
                     </div>
                 </div>
             </div>
             <div id="brefSeparator">
-                <p id="breffBig" class="breffRight">BREF</p>
+                <p class="breffRight">BREF</p>
             </div>
             <div class="separator"></div>
         </div>
     </div>
     <script type="text/javascript">
 
+        var maxClicksAddMoreSize = 4;
+        var maxClicksSubtractMoreSize = -2;
+
+        var countClicksToHiddenItems = 3;
         var defaultSizeWindow = 0;
-        var countClicksSize = 1;
 
-        function changeFontSize(isAddValueFontSize) {
+        var countClicksChangeSizeItems = 0;
+        var namesItemToHidden = ['breffBig'];
 
-            let myWindowSize = window.getComputedStyle(document.body).fontSize;
-            let currentTextSize = parseInt(myWindowSize.replace('px', ''));
-
+        function startWindow() {
+            let currentDefaultWindowSize = getCurrentWindowSizeValue();
             if (defaultSizeWindow == 0)
-                defaultSizeWindow = currentTextSize;
-
-            if (defaultSizeWindow == currentTextSize)
-                countClicksSize = 1;
-
-            hiddenBigBreff(isAddValueFontSize);
-            console.log(countClicksSize);
-
-            if (currentTextSize <= 0) {
-                return;
-            }
-
-            if (isAddValueFontSize && countClicksSize <= 6) {
-                countClicksSize++;
-                document.body.style.fontSize = (currentTextSize + 3) + 'px';
-                return;
-            }
-
-            if (!isAddValueFontSize && countClicksSize >= -1) {
-                document.body.style.fontSize = (currentTextSize - 3) + 'px';
-                countClicksSize--;
-                return;
-            }
+                defaultSizeWindow = currentDefaultWindowSize;
         }
 
+        function changeSizeAllItems(isAddMoreSize) {
+            let currentWindowSize = getCurrentWindowSizeValue();
+            if (isAddMoreSize && isValidAddMoreSize()) {
+                countClicksChangeSizeItems++;
+                document.body.style.fontSize = (currentWindowSize + 3) + 'px';
+            }
+            if (!isAddMoreSize && isValidSubtractMoreSize()) {
+                countClicksChangeSizeItems--;
+                document.body.style.fontSize = (currentWindowSize - 3) + 'px';
+            }
+            actionAboutShowableItems(namesItemToHidden, countClicksChangeSizeItems, countClicksToHiddenItems);
+        }
+
+        function getCurrentWindowSizeValue() {
+            let myWindowSize = window.getComputedStyle(document.body).fontSize;
+            let currentDefaultWindowSize = parseInt(myWindowSize.replace('px', ''));
+
+            return currentDefaultWindowSize;
+        }
+
+        function isValidAddMoreSize() {
+            return countClicksChangeSizeItems < maxClicksAddMoreSize;
+        }
+
+        function isValidSubtractMoreSize() {
+            return countClicksChangeSizeItems > maxClicksSubtractMoreSize;
+        }
+        
         function resetDocumentSizes() {
-            if (isValidDefaultSizeWindow()) {
-                document.body.style.fontSize = defaultSizeWindow + 'px';
-                let myBigBreff = document.getElementById('breffBig');
-                myBigBreff.style.visibility = "visible";
-                defaultSizeWindow = 0;
-                countClicksSize = 1;
-            }    
+            document.body.style.fontSize = defaultSizeWindow + 'px';
+            countClicksChangeSizeItems = 0;
         }
 
-        function hiddenBigBreff(isAddFontSize) {
-            if (isValidDefaultSizeWindow()) {
-                let myBigBreff = document.getElementById('breffBig');
-
-                if (!isAddFontSize) {
-                    if (countClicksSize <= 3) {
-                        myBigBreff.style.visibility = "visible";
-                    }
-                    return;
-                }
-
-                if (countClicksSize > 3) {
-                    myBigBreff.style.visibility = "hidden";
-                }
-                
+        function actionAboutShowableItems(namesItemToHidden, currentCount, maxClicksToHiddenItems) {
+            let show = 'visible';
+            let notShow = 'hidden'; 
+            let action = currentCount >= maxClicksToHiddenItems  ? notShow : show;
+            for (x = 0; namesItemToHidden.length > x; x++) {
+                let myBigBreff = document.getElementById(namesItemToHidden[x]);
+                myBigBreff.style.visibility = action;
             }
-        }
-
-        function isValidDefaultSizeWindow() {
-            return defaultSizeWindow > 0;
         }
 
     </script>
