@@ -58,21 +58,21 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | **RF-001** | O site deve apresentar de forma clara o cardápio e formas de pagamentos dos restaurantes. | ALTA |
 | **RF-002** | O site deve apresentar, para cada restaurante, o seu endereço.   | ALTA  |
 | **RF-003** | O site deve permitir ao usuário visualizar o tempo de espera e as reservas que podem ser feitas no dia | ALTA |
-| **RF-004** | O site deve oferecer ao usuário entrar na fila online ou fazer uma reserva quando o restaurante disponibilizar esse serviço.    | MÉDIA |
-| **RF-005**| O site deve oferecer uma forma de pesquisa para localidades dos restaurantes, de forma a facilitar o cliente saber como chegar ao local. | MÉDIA |
-| **RF-006** | O site deve permitir que o usuário encontre a melhor opção de restaurante por sua localidade, formas de pagamento ou produtos presentes no menu utilizando uma ferramenta de filtro.    | BAIXA      |
-| **RF-007** | Deve ser disponibilizado uma barra de busca, para ser encontrado algum restaurante em específico.  | MÉDIA      |
+| **RF-004** | O site deve oferecer ao usuário entrar na fila online ou fazer uma reserva quando o restaurante disponibilizar esse serviço.    | BAIXA |
+| **RF-005**| O site deve oferecer uma forma de pesquisa para localidades dos restaurantes. | MÉDIA |
+| **RF-006** | O site deve permitir que o usuário encontre a melhor opção de restaurante por sua localidade, formas de pagamento ou produtos presentes no menu utilizando uma ferramenta de filtro.    | MEDIA      |
+| **RF-007** | Deve ser disponibilizado uma barra de busca, para ser encontrado algum restaurante em específico.  | ALTA      |
 | **RF-008** | O site deve apresentar um menu de categorias, para categorizar os restaurantes de acordo com o tipo de comida que é servido.   | BAIXA    |
-| **RF-009** | O site deve permitir que o cliente tenha meios de contato direto com os restaurantes escolhidos (janela de chat).  |MÉDIA   |
+| **RF-009** | O site deve permitir que o cliente tenha meios de contato direto com os restaurantes escolhidos (janela de chat).  |BAIXA   |
 | **RF-010** | O site deve permitir que usuários possam dar avaliações sobre os restaurantes. | MÉDIA  |
 | **RF-011** | O site deve permitir que o usuário possa alterar o tamanho da fonte.  | ALTA       |
-| **RF-012** |O site deve ter uma página de contato com os desenvolvedores da solução.  |ALTA|
+| **RF-012** |O site deve ter uma página de contato com a empresa BREF.  |ALTA|
 
 ### Requisitos não Funcionais
 
 | **ID**      | **Descrição do Requisito**                                            | **Prioridade** |
 | ------- | ----------------------------------------------------------------- | ---------- |
-| **RNF-001** | O site deverá ser responsivo permitindo a visualização em um celular de forma adequada.|ALTA|
+| **RNF-001** | O site deverá ser responsivo permitindo a visualização em um celular de forma adequada.|MEDIA|
 | **RNF-003** | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Opera GX).|ALTA|
 | **RNF-004** | O site deve ser publicado em um ambiente acessível publicamente na Internet (GitHub Pages, Heroku). | ALTA|
 | **RNF-005** | O site de ter seu código-fonte disponível em alguma plataforma pública de acesso (Github, Gitbucket, Gitlab) com a licença de uso Creative Commons ou MIT.|ALTA|
