@@ -1,0 +1,24 @@
+/* Logo Bref */
+#logo-bref {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-stretch: condensed;
+    color: #FFC300;
+    padding-left: 30px;
+}
+
+/* Barra de Navegação */
+div.collapse.navbar-collapse#navbarSupportedContent > ul.navbar-nav.mr-auto
+{
+    margin-right: 0!important;
+    margin-left: auto;
+    padding: 12px 0;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: #483A20!important;
+}
+
+/* links da barra de navegação */
+div.collapse.navbar-collapse#navbarSupportedContent > ul.navbar-nav.mr-auto > li > a {
+    color: #FFC300;
+}

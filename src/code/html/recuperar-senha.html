@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/recuperar-senha.css">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap-css/bootstrap.min.css">
+    <!-- Footer e Header -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header-bref.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -13,36 +20,84 @@
 
 
 <body onload="startWindow()">
-    <div class="container">
-        <header id="header">
-            <div id="hLeft">
-                <p href="index.html" id="brefTitle">BREF</p>
-            </div>
-            <div id="hRight">
+    <div class="container-fluid">
+        <!-- NAV --> 
+        <div class="container-main">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" id="logo-bref" href="../html/index.html">BREF</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./fale-conosco.html">Fale Conosco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./entrar.html">Entrar/Cadastrar</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+            <!-- <header id="header">
+                <div id="hLeft">
+                    <p href="index.html" id="brefTitle">BREF</p>
+                </div>
+                <div id="hRight">
 
+                </div>
+            </header> -->
+
+            <!-- Conteúdo principal -->
+            <div id="barColor">
+                <button class="changeFontsButtons" onclick="changeSizeAllItems(false);">Font -</button>
+                <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
+                <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
             </div>
-        </header>
-        <div id="barColor">
-            <button class="changeFontsButtons" onclick="changeSizeAllItems(false);">Font -</button>
-            <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
-            <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
+            <main class="o-main">
+                <div id="items">
+                    <h1 id="bigBreff" class=page-title>BREF</h1>
+                    <img src="../imgs/IMG_6238 (1).png"
+                        class="bref-logo" id="spoons"><br>
+                </div>
+
+                <h2 id="recuperar senha">Recuperar senha</h2>
+
+                <div>
+                    <input class="input" placeholder="Informe seu e-mail"><br>
+                    <button class="button" id="botao-enviar-codigo">Enviar código</button><br>
+                    <input class="input" placeholder="Informe seu código"><br>
+                    <button class="button" id="botao-verificar-codigo">Verificar código</button><br>
+                </div>
+            </main>
+
+            <!-- FOOTER -->
+            <div class="row" id="footer">
+                <div class="col-md-12">
+                <ul>
+                    <li><a id="logo-bref" href="../html/index.html">BREF</a></li>
+                    <li>
+                    <ul class="share">
+                        <a href="#"><li id="facebook-icon"></li></a>
+                        <a href="#"><li id="twitter-icon"></li></a>
+                        <a href="#"><li id="instagram-icon"></li></a>
+                    </ul>
+                    </li>
+                    <li id="footer-links">
+                        <a href="./sobre-nos.html">Sobre nós</a>
+                        <span class="footer-ponto">&#9679;</span>
+                        <a href="./fale-conosco.html">Fale conosco</a>
+                        <span class="footer-ponto">&#9679;</span>
+                        <a href="./entrar.html">Entrar/Cadastrar</a>
+                    </li>
+                    <li>
+                    <p id="footer-copyright">© 2022 Bref Company LTDA</p>
+                    </li>
+                </ul>
+                </div>
+            </div>
         </div>
-        <main class="o-main">
-            <div id="items">
-                <h1 id="bigBreff" class=page-title>BREF</h1>
-                <img src="../imgs/IMG_6238 (1).png"
-                     class="bref-logo" id="spoons"><br>
-            </div>
-
-            <h2 id="recuperar senha">Recuperar senha</h2>
-
-            <div>
-                <input class="input" placeholder="Informe seu e-mail"><br>
-                <button class="button" id="botao-enviar-codigo">Enviar código</button><br>
-                <input class="input" placeholder="Informe seu código"><br>
-                <button class="button" id="botao-verificar-codigo">Verificar código</button><br>
-            </div>
-        </main>
     </div>
     
     <script type="text/javascript">
