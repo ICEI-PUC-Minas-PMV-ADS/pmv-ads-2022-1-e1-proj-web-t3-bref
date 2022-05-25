@@ -25,7 +25,7 @@ header {
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 1;
-    margin-top: 10px;
+    margin-top: 6px;
 }
 
 /* options in header */
