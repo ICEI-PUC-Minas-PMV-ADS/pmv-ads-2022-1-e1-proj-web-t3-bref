@@ -1,4 +1,17 @@
-.container {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
+
+/* Ajustes Bootstrap */
+* {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+div.container-fluid {
+    padding: 0;
+}
+
+
+/* CSS Conteúdo principal */
+.container-main {
     height: 100%;
 }
 
@@ -79,6 +92,7 @@ header {
     font-family: Lato, sans-serif;
     min-width: fit-content;
     height: 100%;
+    margin-bottom: 3rem;
 }
 
 .bref-logo {

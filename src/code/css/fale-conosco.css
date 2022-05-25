@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
 
+/* Ajustes Bootstrap */
+* {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+div.container-fluid {
+    padding: 0;
+}
+
+/* CSS Corpo */
 body {
     background-color: white;
     font-family: 'Lato', sans-serif;
 }
 
 
-.container {
+.container-main {
     width: 100%;
 }
 
@@ -95,6 +105,7 @@ body {
     align-items: center;
     width: 100%;
     padding: 10px;
+    margin: 2rem 0;
 }
 
 .containerInfos{
@@ -145,7 +156,7 @@ body {
     align-content: center;
 }
 
-.btn {
+.btn#testeButton{
     background-color: #483A20;
     color: white;
     border-radius: 10px;
