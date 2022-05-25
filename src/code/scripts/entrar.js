@@ -44,7 +44,55 @@ function NavegacaoAbas() {
     }
 }
 
+function MostrarSenhaEntrar() {
+	  
+	let btn = document.querySelector(".fa-eye")
+	
+		btn.addEventListener("click", ()=>{
+			let inputSenha = document.querySelector("#senha")
+
+			if(inputSenha.getAttribute("type") == "password"){
+					inputSenha.setAttribute("type" , "type")
+				} else {
+					inputSenha.setAttribute("type", "password")
+				}
+		}) 
+}
+
+function MostrarSenhaCadastro() {
+
+	let btnConfirm = document.querySelector("#verConfirmarSenha")
+
+		btnConfirm.addEventListener("click", ()=>{
+			let inputConfirmarSenha = document.querySelector("#confirmar-senha")
+
+			if(inputConfirmarSenha.getAttribute("type") == "password"){
+					inputConfirmarSenha.setAttribute("type" , "type")
+			} else {
+					inputConfirmarSenha.setAttribute("type", "password")
+			}
+		})
+}
+
+function ValidarSenha() {
+	let senha = $("#senhaCadastro")
+	let confirmarSenha = $("#confirmar-senha")
+
+	confirmarSenha.addEventListener("keyup", () => {
+		if(senha.value != confirmarSenha.value) {
+			confirmarSenha.setAttribute("style", "border-color: red")
+		} else {
+			confirmarSenha.setAttribute("style", "border-color: green")
+		}
+	})
+}
+
 window.addEventListener('load', () => {
-    const navegacaoAbas = NavegacaoAbas()
-    navegacaoAbas.iniciar()
+	const navegacaoAbas = NavegacaoAbas()
+	navegacaoAbas.iniciar()
+	MostrarSenhaEntrar();
+	MostrarSenhaCadastro();
+	ValidarSenha();
+
 })
+
