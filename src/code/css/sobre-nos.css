@@ -16,7 +16,7 @@ div.container-fluid {
 
 
 /* Logo BREF */
-nav.navbar.navbar-expand-lg.navbar-light.bg-light > a.navbar-brand {
+#logo-bref {
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
     font-size: 35px;
     font-stretch: condensed;
@@ -183,4 +183,95 @@ div.container-fluid > div.row > div.row > div.card-deck > div.card > div.card-bo
     background-color: #483A20;
     height: 300px;
     margin: auto;
+}
+
+#footer .col-md-12{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer #logo-bref {
+    padding-left: 0;
+    margin: 0;
+}
+
+#footer #first-column {
+    padding-inline-start: 40px;
+    padding-top: 20px;
+}
+
+#footer ul {
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+#footer ul li{
+    float: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#footer ul li a{
+    text-decoration: none;
+    color: #FFC300;
+}
+
+#footer .share{
+    padding-top: 10px;
+}
+
+#footer .share li{
+    float: none;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+}
+
+#facebook-icon{
+    background: url('../imgs/rodape/facebook.png') center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#twitter-icon{
+    background: url('../imgs/rodape/twitter.png') center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#instagram-icon{
+    background: url('../imgs/rodape/instagram.png') center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+#footer #footer-links {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 15px;
+}
+
+.footer-ponto {
+    color: #FFFFFA;
+    font-size: 8px;
+    text-align: center;
+    padding: 0 8px;
+}
+
+#footer-copyright{
+    color: #755f36;
+    font-weight: bold;
+    padding-top: 15px;
 }

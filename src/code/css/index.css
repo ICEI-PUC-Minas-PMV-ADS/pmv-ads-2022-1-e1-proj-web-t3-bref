@@ -10,8 +10,8 @@ body {
 .container {
     height: 95%;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20% 20%;
-    grid-template-rows: 5% 20% 75% 3%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 4% 20% 75% 1%;
     row-gap: 5px;
 }
 
@@ -92,6 +92,7 @@ header {
     display: grid;
     padding-left: 5%;
     padding-right: 5%;
+    margin-bottom: 1px;
 }
 
 #place1 {
@@ -133,6 +134,7 @@ header {
 
 /* footer */
 footer {
+    height: 20px;
     background-color: #483A20;
     display: grid;
     color: white;
@@ -141,8 +143,8 @@ footer {
     grid-row-start: 4;
     grid-row-end: 4;
 }
-
 #mail {
+    height: 20px;
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 4;
@@ -150,6 +152,7 @@ footer {
 }
 
 #phone {
+    height: 20px;
     grid-column-start: 6;
     grid-column-end: 6;
     grid-row-start: 4;

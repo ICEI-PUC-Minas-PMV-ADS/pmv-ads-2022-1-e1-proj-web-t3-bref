@@ -13,7 +13,7 @@
     <div class="container-fluid">
         <!-- NAV --> 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="../html/index.html">BREF</a>
+            <a class="navbar-brand" id="logo-bref" href="../html/index.html">BREF</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,10 +27,6 @@
                     <a class="nav-link" href="./entrar.html">Entrar/Cadastrar</a>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
-              </form>
             </div>
         </nav>
         <!-- <div class="row sub-nav">
@@ -61,8 +57,6 @@
               <div class="card-deck">
                 <div class="card" id="card1">
                   <div class="espaco-vazio" ></div>
-                  
-                  <!-- <img class="card-img-top" src="http://source.unsplash.com/random/276x200" alt="Card image cap"> -->
                   <div class="card-body">
                     <h4 class="card-title font-weight-bold">Simplicidade</h4>
                     <p class="card-text">A simplicidade é o último grau de sofisticação.</p>
@@ -71,7 +65,6 @@
                 </div>
                 <div class="card" id="card2">
                   <div class="espaco-vazio" ></div>
-                  <!-- <img class="card-img-top" src="http://source.unsplash.com/random/276x200" alt="Card image cap"> -->
                   <div class="card-body">
                     <h4 class="card-title font-weight-bold">Praticidade</h4>
                     <p class="card-text">Resolva os problemas do dia a dia com praticidade e facilidade.</p>
@@ -79,7 +72,6 @@
                 </div>
                 <div class="card" id="card3">
                   <div class="espaco-vazio"></div>
-                  <!-- <img class="card-img-top" src="http://source.unsplash.com/random/276x200" alt="Card image cap"> -->
                   <div class="card-body">
                     <h4 class="card-title font-weight-bold">Confiança</h4>
                     <p class="card-text">Sua confiança em nós nos move.</p>
@@ -99,9 +91,28 @@
         </div>
 
         <!-- FOOTER -->
-        <div class="row">
-          <div class="col-md-12" id="footer">
-            <h1 class="font-weight-bold" style="color: #FFF; margin: auto;">Aqui terá um rodapé.</h1>
+        <div class="row" id="footer">
+          <div class="col-md-12">
+            <ul>
+              <li><a id="logo-bref" href="../html/index.html">BREF</a></li>
+              <li>
+                <ul class="share">
+                  <a href="#"><li id="facebook-icon"></li></a>
+                  <a href="#"><li id="twitter-icon"></li></a>
+                  <a href="#"><li id="instagram-icon"></li></a>
+                </ul>
+              </li>
+              <li id="footer-links">
+                  <a href="./sobre-nos.html">Sobre nós</a>
+                  <span class="footer-ponto">&#9679;</span>
+                  <a href="./fale-conosco.html">Fale conosco</a>
+                  <span class="footer-ponto">&#9679;</span>
+                  <a href="./entrar.html">Entrar/Cadastrar</a>
+              </li>
+              <li>
+                <p id="footer-copyright">© 2022 Bref Company LTDA</p>
+              </li>
+            </ul>
           </div>
         </div>
     </div>

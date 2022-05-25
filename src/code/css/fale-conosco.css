@@ -25,16 +25,28 @@ body {
     display: flex;
     align-self: center;
     justify-content: flex-end;
-    padding: 10px;
+    padding: 1rem;
 }
 
 #barColor {
-    height: 30px;
+    height: 2em;
     background-color: #FFC300;
+    display: flex;
+    flex-direction: row;
+}
+
+.changeFontsButtons {
+    font-size: 1em;
+    background-color: #FFC300;
+    border: outset;
+    color: black;
+    font-weight: bold;
+    justify-content: flex-end;
 }
 
 .hRight{
-    margin-left: 20px;
+    margin-left: 1rem;
+    font-size: 1.4em;
 }
 
 #hLeft{
@@ -44,7 +56,7 @@ body {
 
 #brefTitle {
     color: #FFC300;
-    font-size: 36px;
+    font-size: 3em;
     font-family: 'Oswald', sans-serif;
     padding: 0;
     margin-right: 0;
@@ -54,7 +66,7 @@ body {
 }
 
 #formulary{
-    font-size: 36px;
+    font-size: 3em;
     font-family: 'Lato', sans-serif;
     padding: 0;
     margin-right: 0;
@@ -68,7 +80,9 @@ body {
 #title{
     color: black;
     font-weight:bolder;
-    align-content: center;
+    align-content: start;
+    font-size: 1em;
+    margin-bottom: 0.8em;
 }
 
 .separator{
@@ -89,7 +103,7 @@ body {
 }
 
 .titleInfo {
-    font-size: 28px;
+    font-size: 0.8em;
     padding: 0;
     margin: 0;
     font-weight: bold;
@@ -98,10 +112,10 @@ body {
 
 .inputInfo {
     padding: 8px;
-    font-size: 22px;
+    font-size: 0.6em;
     border-radius: 5px;
     border-color: gray;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     width: 100%;
 }
 
@@ -112,7 +126,7 @@ body {
 
 .breffRight {
     color: #FFC300;
-    font-size: 70px;
+    font-size: 5em;
     font-family: 'Oswald', sans-serif;
     padding: 0;
     margin-right: 0;
@@ -136,6 +150,7 @@ body {
     color: white;
     border-radius: 10px;
     width: 100%;
+    font-size: 0.6em;
     border-color: transparent;
     padding: 10px;
     align-items: center;
