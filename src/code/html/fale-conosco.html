@@ -51,14 +51,14 @@
                 </div>
             </div>
             <div id="brefSeparator">
-                <p class="breffRight">BREF</p>
+                <p class="breffRight" id="breffBig">BREF</p>
             </div>
             <div class="separator"></div>
         </div>
     </div>
     <script type="text/javascript">
 
-        var maxClicksAddMoreSize = 4;
+        var maxClicksAddMoreSize = 6;
         var maxClicksSubtractMoreSize = -2;
 
         var countClicksToHiddenItems = 3;
@@ -104,12 +104,17 @@
         function resetDocumentSizes() {
             document.body.style.fontSize = defaultSizeWindow + 'px';
             countClicksChangeSizeItems = 0;
+            showHiddenItems(namesItemToHidden, 'visible');
         }
 
         function actionAboutShowableItems(namesItemToHidden, currentCount, maxClicksToHiddenItems) {
             let show = 'visible';
             let notShow = 'hidden'; 
-            let action = currentCount >= maxClicksToHiddenItems  ? notShow : show;
+            let action = currentCount >= maxClicksToHiddenItems ? notShow : show;
+            showHiddenItems(namesItemToHidden, action);        
+        }
+
+        function showHiddenItems(namesItemToHidden, action) {
             for (x = 0; namesItemToHidden.length > x; x++) {
                 let myBigBreff = document.getElementById(namesItemToHidden[x]);
                 myBigBreff.style.visibility = action;
