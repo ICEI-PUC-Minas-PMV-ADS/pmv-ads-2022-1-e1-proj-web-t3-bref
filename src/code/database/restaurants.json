@@ -36,7 +36,7 @@
                         "classfication": 3
                     }
                 ],
-                "Bebidas": [
+                "bebidas": [
                     {
                         "nomePrato": "Coca Cola1",
                         "price": 15,
@@ -56,7 +56,7 @@
                         "classfication": 5
                     }
                 ],
-                "Sobremesa": [
+                "sobremesa": [
                     {
                         "nomePrato": "Sorvete1",
                         "price": 50,
@@ -114,7 +114,7 @@
                         "classfication": 3
                     }
                 ],
-                "Bebidas": [
+                "bebidas": [
                     {
                         "nomePrato": "Coca Cola2",
                         "price": 15,
@@ -134,7 +134,7 @@
                         "classfication": 5
                     }
                 ],
-                "Sobremesa": [
+                "sobremesa": [
                     {
                         "nomePrato": "Sorvete2",
                         "price": 50,
@@ -192,7 +192,7 @@
                         "classfication": 3
                     }
                 ],
-                "Bebidas": [
+                "bebidas": [
                     {
                         "nomePrato": "Coca Cola3",
                         "price": 15,
@@ -212,7 +212,7 @@
                         "classfication": 5
                     }
                 ],
-                "Sobremesa": [
+                "sobremesa": [
                     {
                         "nomePrato": "Sorvete3",
                         "price": 50,
@@ -268,7 +268,7 @@
                         "classfication": 3
                     }
                 ],
-                "Bebidas": [
+                "bebidas": [
                     {
                         "nomePrato": "Coca Cola4",
                         "price": 15,
@@ -288,7 +288,7 @@
                         "classfication": 5
                     }
                 ],
-                "Sobremesa": [
+                "sobremesa": [
                     {
                         "nomePrato": "Sorvete4",
                         "price": 50,
@@ -346,7 +346,7 @@
                         "classfication": 3
                     }
                 ],
-                "Bebidas": [
+                "bebidas": [
                     {
                         "nomePrato": "Coca Cola5",
                         "price": 15,
@@ -366,7 +366,7 @@
                         "classfication": 5
                     }
                 ],
-                "Sobremesa": [
+                "sobremesa": [
                     {
                         "nomePrato": "Sorvete5",
                         "price": 50,
@@ -423,7 +423,7 @@
                         "classfication": 3
                     }
                 ],
-                "Bebidas": [
+                "bebidas": [
                     {
                         "nomePrato": "Coca Cola6",
                         "price": 15,
@@ -443,7 +443,7 @@
                         "classfication": 5
                     }
                 ],
-                "Sobremesa": [
+                "sobremesa": [
                     {
                         "nomePrato": "Sorvete6",
                         "price": 50,
