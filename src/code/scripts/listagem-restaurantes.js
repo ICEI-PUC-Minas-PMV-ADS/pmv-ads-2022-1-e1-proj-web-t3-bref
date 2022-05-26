@@ -80,7 +80,7 @@ function getRestaurantsBasedOnFilter(filter) {
         return restaurantsDatabase;
 
     const filteredRestaurants = restaurantsDatabase.filter(r =>
-        r.name.toUpperCase().includes(filter.name.toUpperCase())
+        (filter.name == null || r.name.toUpperCase().includes(filter.name.toUpperCase()))    
         && (Number.isNaN(filter.capacity) || r.capacity <= filter.capacity));
 
     return filteredRestaurants;
