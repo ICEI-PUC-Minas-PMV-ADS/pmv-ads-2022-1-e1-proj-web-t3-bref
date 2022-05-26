@@ -1,164 +1,175 @@
 body {
-    background: #FFFFF4;
-    color: #483A20;
-    font-family: 'Lato', sans-serif;
+	background: #FFFFF4;
+	color: #483A20;
+	font-family: 'Lato', sans-serif;
 }
 .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-}
-  
-main {
-    flex-direction: column;
-    text-align: center;
-    flex-basis: 50%;
-    flex-grow: 1;
-    
-}
-  
-#bref {
-    font-family: 'Oswald', sans-serif;
-    font-size: 150px;
-    margin: 0px;
-    color: #FFC300;
-    text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-items: center;
 }
 
-.entrar {
-    font-size: 30px;
+main {
+	flex-direction: column;
+	text-align: center;
+	flex-basis: 50%;
+	flex-grow: 1;
+	
+}
+
+#bref {
+	font-family: 'Oswald', sans-serif;
+	font-size: 150px;
+	margin: 0px;
+	color: #FFC300;
+	text-decoration: none;
+}
+
+#entrar {
+	position: relative;
+	font-size: 15px;
+}
+
+#cadastro {
+	position: relative;
+}
+
+.fa-eye {
+	position: relative;
+	color: #483A20;
+	left: 279px;
+  bottom: 61px;
+	cursor: pointer;
 }
 
 input {
-    width: 325px;
-    margin: 5px;
-    padding:10px;
-    border-radius: 4px;
-    text-indent: 0.1rem;
-    border-width: 1px;
-    outline: 0;
-    background-color: #FFFFF4;
-    border-style: solid;
+	width: 325px;
+	margin: 5px;
+	padding:10px;
+	border-radius: 4px;
+	text-indent: 0.1rem;
+	border-width: 1px;
+	outline: 0;
+	background-color: #FFFFF4;
+	border-style: solid;
 }
 
 #botoes {
-    margin: 20px 0px 2px 0px;
-    border-radius: 4px;
-    border: 0px;
-    width: 250px;
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.8s all;
-    color: #fff;
-    background: #483A20;
+	margin: 20px 0px 2px 0px;
+	border-radius: 4px;
+	border: 0px;
+	width: 250px;
+	padding: 10px;
+	cursor: pointer;
+	transition: 0.4s all;
+	color: #fff;
+	background: #483A20;
 }
 
 #esqueceu-senha {
-    height: 5px;
-    color: darkred;
-    text-decoration: none;
+	height: 5px;
+	color: darkred;
+	text-decoration: none;
 }
 #termos-condicoes {
-    font-size: 12px;
+	font-size: 12px;
 }
 
 aside {
-    background-repeat: no-repeat;
-    background-image: url("https://cdn.discordapp.com/attachments/965947265036455957/965947378102321202/unknown.png");
-    width: 50vw;
-    height: 100vh;
+	background-repeat: no-repeat;
+	background-image: url("https://cdn.discordapp.com/attachments/965947265036455957/965947378102321202/unknown.png");
+	width: 50vw;
+	height: 100vh;
 
 }
 
 #retangulo {
-    display: block;
-    position:absolute;
-    background: #FFC300;
-    width: 96%;
-    height: 80px;
-    bottom: 7%;
-    right: 0;
-    transition: 2s all;
+	display: block;
+	position:absolute;
+	background: #FFC300;
+	width: 96%;
+	height: 80px;
+	bottom: 7%;
+	right: 0;
+	transition: 2s all;
 }
 
 #retangulinho {
-    display: block;
-    position:absolute;
-    background: #FFC300;
-    width: 1.4%;
-    height: 80px;
-    bottom: 7%;
-    left: 1%;
-    transition: 2s all;
+	display: block;
+	position:absolute;
+	background: #FFC300;
+	width: 1.4%;
+	height: 80px;
+	bottom: 7%;
+	left: 1%;
+	transition: 2s all;
 }
 
 #retangulao {
-    background: #FFC300;
-    width: 100%;
-    height: 100%;
-    opacity: 0.1;
+	background: #FFC300;
+	width: 100%;
+	height: 100%;
+	opacity: 0.1;
 }
 
 
 .links-abas > button {
-    font-size: 22px;
-    
-    margin-top: 55px;
-    margin-bottom: 15px;
+	font-size: 22px;
+	margin-top: 55px;
+	margin-bottom: 15px;
 }
 
 #botoes:hover {
-    background: rgb(110, 79, 22);
-    transform: scale(1.01);
+	background: rgb(110, 79, 22);
+	transform: scale(1.01);
 }
 
 button {
-    color: #483A20;
-    border: none;
-    outline: none;
-    background: none;
-    position: relative;
-    transition: 0.8s all;
+	color: #483A20;
+	border: none;
+	outline: none;
+	background: none;
+	position: relative;
+	transition: 0.8s all;
 
 }
 
 button::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: '';
-    height: 2px;
-    width: 0%;
-    background: #FFC300;
-    transition: .2s;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+	height: 2px;
+	width: 0%;
+	background: #FFC300;
+	transition: .2s;
 }
 
 button:hover {
-    transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 button:hover::after,
 button.active::after {
-    width: 100%;
+	width: 100%;
 }
 
 .conteudo-abas>section {
-    animation: up 1s;
+	animation: up 1s;
 }
 
 @keyframes up {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-    }
+	from {
+			opacity: 0;
+			transform: translateY(15px);
+	}
+	to {
+			opacity: 1;
+	}
 }
 
-  
-  
-  
-  
-  
+
+
+
+
