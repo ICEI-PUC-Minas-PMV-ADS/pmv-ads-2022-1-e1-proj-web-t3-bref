@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
 
+
+
+/* Ajustes Bootstrap */
+* {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+div.container-fluid {
+    padding: 0;
+}
+
+
+/* Conteúdo principal  */
 body {
     background-color: #483A20;
     font-family: 'Lato', sans-serif;
@@ -7,7 +20,7 @@ body {
     width: 100vw;
 }
 
-.container {
+.container-main {
     height: 95%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -133,7 +146,7 @@ header {
 }
 
 /* footer */
-footer {
+/* footer {
     height: 20px;
     background-color: #483A20;
     display: grid;
@@ -158,3 +171,4 @@ footer {
     grid-row-start: 4;
     grid-row-end: 4;
 }
+ */
