@@ -1,0 +1,469 @@
+{
+    "restaurants": [
+        {
+            "id": 1,
+            "name": "MC Donalds",
+            "averagePrice": 2,
+            "type": "Fast-food",
+            "capacity": 60,
+            "waitingTimeMinutes": 15,
+            "paymentMethods": [
+                "Cartão de Crédito",
+                "Cartão de Débito",
+                "PIX",
+                "Cartão Refeição",
+                "Dinheiro"
+            ],
+            "image": "place6.jpg",
+            "infoRestaurant": {
+                "pratoPrincipal": [
+                    {
+                        "nomePrato": "Pizza1",
+                        "price": 150,
+                        "timePrep": 20,
+                        "classfication": 5
+                    },
+                    {
+                        "nomePrato": "Carbonara1",
+                        "price": 100,
+                        "timePrep": 12,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Batata Frita1",
+                        "price": 50,
+                        "timePrep": 5,
+                        "classfication": 3
+                    }
+                ],
+                "Bebidas": [
+                    {
+                        "nomePrato": "Coca Cola1",
+                        "price": 15,
+                        "timePrep": 0,
+                        "classfication": 2
+                    },
+                    {
+                        "nomePrato": "Sprite1",
+                        "price": 10,
+                        "timePrep": 0,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Fanta Uva1",
+                        "price": 5,
+                        "timePrep": 0,
+                        "classfication": 5
+                    }
+                ],
+                "Sobremesa": [
+                    {
+                        "nomePrato": "Sorvete1",
+                        "price": 50,
+                        "timePrep": 0,
+                        "classfication": 5
+                    },
+                    {
+                        "nomePrato": "Bala Doce1",
+                        "price": 1,
+                        "timePrep": 0,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Quebra Queixo1",
+                        "price": 5,
+                        "timePrep": 0,
+                        "classfication": 1
+                    }
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "name": "Burger King",
+            "averagePrice": 2,
+            "type": "Fast-food",
+            "capacity": 90,
+            "waitingTimeMinutes": 40,
+            "paymentMethods": [
+                "Cartão de Crédito",
+                "Cartão de Débito",
+                "PIX",
+                "Cartão Refeição",
+                "Dinheiro"
+            ],
+            "image": "place7.jpg",
+            "infoRestaurant": {
+                "pratoPrincipal": [
+                    {
+                        "nomePrato": "Pizza2",
+                        "price": 150,
+                        "timePrep": 20,
+                        "classfication": 5
+                    },
+                    {
+                        "nomePrato": "Carbonara2",
+                        "price": 100,
+                        "timePrep": 12,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Batata Frita2",
+                        "price": 50,
+                        "timePrep": 5,
+                        "classfication": 3
+                    }
+                ],
+                "Bebidas": [
+                    {
+                        "nomePrato": "Coca Cola2",
+                        "price": 15,
+                        "timePrep": 0,
+                        "classfication": 2
+                    },
+                    {
+                        "nomePrato": "Sprite2",
+                        "price": 10,
+                        "timePrep": 0,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Fanta Uva2",
+                        "price": 5,
+                        "timePrep": 0,
+                        "classfication": 5
+                    }
+                ],
+                "Sobremesa": [
+                    {
+                        "nomePrato": "Sorvete2",
+                        "price": 50,
+                        "timePrep": 0,
+                        "classfication": 5
+                    },
+                    {
+                        "nomePrato": "Bala Doce2",
+                        "price": 1,
+                        "timePrep": 0,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Quebra Queixo2",
+                        "price": 5,
+                        "timePrep": 0,
+                        "classfication": 1
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "name": "Madero",
+            "averagePrice": 5,
+            "type": "Australiano",
+            "capacity": 30,
+            "waitingTimeMinutes": 60,
+            "paymentMethods": [
+                "Cartão de Crédito",
+                "Cartão de Débito",
+                "PIX",
+                "Cartão Refeição",
+                "Dinheiro"
+            ],
+            "image": "place5.jpg",
+            "infoRestaurant": {
+                "pratoPrincipal": [
+                    {
+                        "nomePrato": "Pizza3",
+                        "price": 150,
+                        "timePrep": 20,
+                        "classfication": 5
+                    },
+                    {
+                        "nomePrato": "Carbonara3",
+                        "price": 100,
+                        "timePrep": 12,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Batata Frita3",
+                        "price": 50,
+                        "timePrep": 5,
+                        "classfication": 3
+                    }
+                ],
+                "Bebidas": [
+                    {
+                        "nomePrato": "Coca Cola3",
+                        "price": 15,
+                        "timePrep": 0,
+                        "classfication": 2
+                    },
+                    {
+                        "nomePrato": "Sprite3",
+                        "price": 10,
+                        "timePrep": 0,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Fanta Uva3",
+                        "price": 5,
+                        "timePrep": 0,
+                        "classfication": 5
+                    }
+                ],
+                "Sobremesa": [
+                    {
+                        "nomePrato": "Sorvete3",
+                        "price": 50,
+                        "timePrep": 0,
+                        "classfication": 5
+                    },
+                    {
+                        "nomePrato": "Bala Doce3",
+                        "price": 1,
+                        "timePrep": 0,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Quebra Queixo3",
+                        "price": 5,
+                        "timePrep": 0,
+                        "classfication": 1
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "name": "Fujiyama",
+            "averagePrice": 1,
+            "type": "Pastelaria",
+            "capacity": 20,
+            "waitingTimeMinutes": 15,
+            "paymentMethods": [
+                "Cartão de Crédito",
+                "Cartão de Débito",
+                "Dinheiro"
+            ],
+            "image": "place8.jpg",
+            "infoRestaurant": {
+                "pratoPrincipal": [
+                    {
+                        "nomePrato": "Pizza4",
+                        "price": 150,
+                        "timePrep": 20,
+                        "classfication": 5
+                    },
+                    {
+                        "nomePrato": "Carbonara4",
+                        "price": 100,
+                        "timePrep": 12,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Batata Frita4",
+                        "price": 50,
+                        "timePrep": 5,
+                        "classfication": 3
+                    }
+                ],
+                "Bebidas": [
+                    {
+                        "nomePrato": "Coca Cola4",
+                        "price": 15,
+                        "timePrep": 0,
+                        "classfication": 2
+                    },
+                    {
+                        "nomePrato": "Sprite4",
+                        "price": 10,
+                        "timePrep": 0,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Fanta Uva4",
+                        "price": 5,
+                        "timePrep": 0,
+                        "classfication": 5
+                    }
+                ],
+                "Sobremesa": [
+                    {
+                        "nomePrato": "Sorvete4",
+                        "price": 50,
+                        "timePrep": 0,
+                        "classfication": 5
+                    },
+                    {
+                        "nomePrato": "Bala Doce4",
+                        "price": 1,
+                        "timePrep": 0,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Quebra Queixo4",
+                        "price": 5,
+                        "timePrep": 0,
+                        "classfication": 1
+                    }
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "name": "Spoleto",
+            "averagePrice": 2,
+            "type": "Brasileiro",
+            "capacity": 10,
+            "waitingTimeMinutes": 20,
+            "paymentMethods": [
+                "Cartão de Crédito",
+                "Cartão de Débito",
+                "PIX",
+                "Cartão Refeição",
+                "Dinheiro"
+            ],
+            "image": "place9.jpg",
+            "infoRestaurant": {
+                "pratoPrincipal": [
+                    {
+                        "nomePrato": "Pizza5",
+                        "price": 150,
+                        "timePrep": 20,
+                        "classfication": 5
+                    },
+                    {
+                        "nomePrato": "Carbonara5",
+                        "price": 100,
+                        "timePrep": 12,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Batata Frita5",
+                        "price": 50,
+                        "timePrep": 5,
+                        "classfication": 3
+                    }
+                ],
+                "Bebidas": [
+                    {
+                        "nomePrato": "Coca Cola5",
+                        "price": 15,
+                        "timePrep": 0,
+                        "classfication": 2
+                    },
+                    {
+                        "nomePrato": "Sprite5",
+                        "price": 10,
+                        "timePrep": 0,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Fanta Uva5",
+                        "price": 5,
+                        "timePrep": 0,
+                        "classfication": 5
+                    }
+                ],
+                "Sobremesa": [
+                    {
+                        "nomePrato": "Sorvete5",
+                        "price": 50,
+                        "timePrep": 0,
+                        "classfication": 5
+                    },
+                    {
+                        "nomePrato": "Bala Doce5",
+                        "price": 1,
+                        "timePrep": 0,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Quebra Queixo5",
+                        "price": 5,
+                        "timePrep": 0,
+                        "classfication": 1
+                    }
+                ]
+            }
+        },
+        {
+            "id": 6,
+            "name": "Sushi Japa Chan",
+            "averagePrice": 4,
+            "type": "Japonese",
+            "capacity": 30,
+            "waitingTimeMinutes": 5,
+            "paymentMethods": [
+                "Cartão de Crédito",
+                "Cartão de Débito",
+                "PIX",
+                "Cartão Refeição"
+            ],
+            "image": "place10.jpg",
+            "infoRestaurant": {
+                "pratoPrincipal": [
+                    {
+                        "nomePrato": "Pizza6",
+                        "price": 150,
+                        "timePrep": 20,
+                        "classfication": 5
+                    },
+                    {
+                        "nomePrato": "Carbonara6",
+                        "price": 100,
+                        "timePrep": 12,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Batata Frita6",
+                        "price": 50,
+                        "timePrep": 5,
+                        "classfication": 3
+                    }
+                ],
+                "Bebidas": [
+                    {
+                        "nomePrato": "Coca Cola6",
+                        "price": 15,
+                        "timePrep": 0,
+                        "classfication": 2
+                    },
+                    {
+                        "nomePrato": "Sprite6",
+                        "price": 10,
+                        "timePrep": 0,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Fanta Uva6",
+                        "price": 5,
+                        "timePrep": 0,
+                        "classfication": 5
+                    }
+                ],
+                "Sobremesa": [
+                    {
+                        "nomePrato": "Sorvete6",
+                        "price": 50,
+                        "timePrep": 0,
+                        "classfication": 5
+                    },
+                    {
+                        "nomePrato": "Bala Doce6",
+                        "price": 1,
+                        "timePrep": 0,
+                        "classfication": 4
+                    },
+                    {
+                        "nomePrato": "Quebra Queixo6",
+                        "price": 5,
+                        "timePrep": 0,
+                        "classfication": 1
+                    }
+                ]
+            }
+        }
+    ]
+}
