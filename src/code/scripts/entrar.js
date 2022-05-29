@@ -1,14 +1,12 @@
 function Entrar() {
-	/* Ver senhas */
+	/* Mostrar senhas */
 	const btn = document.querySelector(".fa-eye");
 	const btnSenhaCadastro = document.querySelector("#verSenha")
 	const btnConfirm = document.querySelector("#verConfirmarSenha")
 	/* Inputs */
 	const inputSenha = document.querySelector("#senha")
 	const inputSenhaCadastro = document.querySelector("#senhaCadastro")
-	const inputConfirmarSenha = document.querySelector("#confirmar-senha")
-	/* Comparação das Senhas */
-	const confirmarSenha = document.querySelector("#confirmar-senha")
+	const inputConfirmarSenha = document.querySelector("#confirmarSenha")
 	
 	function NavegacaoAbas() {
     
@@ -99,7 +97,6 @@ function Entrar() {
 			mostrarSenhaEntrar()
 			mostrarSenhaCadastro()
 			mostrarConfirmarSenhaCadastro()
-
 		}
 
 		return {
@@ -107,15 +104,41 @@ function Entrar() {
 		}
 	}
 
-	function compararSenhas() {
+	function CompararSenhas() {
 
-		confirmarSenha.addEventListener("keyup", () => {
-			if(inputSenhaCadastro.value != confirmarSenha.value) {
-				confirmarSenha.setAttribute("style", "border-color: red")
-			} else {
-				confirmarSenha.setAttribute("style", "border-color: green")
-			}
-		})
+		/* Fazer uma variável para o outro input ou conseguir deixar o keyup para os dois inputs */
+
+		function compararSenhaComConfirmar(){
+			inputSenhaCadastro.addEventListener("keyup", ()=> {
+				if(inputConfirmarSenha.value != inputSenhaCadastro.value) {
+					inputSenhaCadastro.setAttribute("style", "border-color: red")
+					inputConfirmarSenha.setAttribute("style", "border-color: red")
+				} else {
+					inputSenhaCadastro.setAttribute("style", "border-color: green")
+					inputConfirmarSenha.setAttribute("style", "border-color: green")
+				}
+			})
+		}
+
+		function compararConfirmarComSenha() {
+			inputConfirmarSenha.addEventListener("keyup", ()=> {
+				if(inputSenhaCadastro.value != inputConfirmarSenha.value) {
+					inputConfirmarSenha.setAttribute("style", "border-color: red")
+					inputSenhaCadastro.setAttribute("style", "border-color: red")
+				} else {
+					inputConfirmarSenha.setAttribute("style", "border-color: green")
+					inputSenhaCadastro.setAttribute("style", "border-color: green")
+				}
+			})
+		}
+		function iniciar(){
+			compararSenhaComConfirmar();
+			compararConfirmarComSenha();
+		}
+
+		return {
+			iniciar
+		}
 	}
 
 	function cadastrar() {
@@ -129,8 +152,10 @@ function Entrar() {
 
 		const mostrarSenhas = MostrarSenhas()
 		mostrarSenhas.iniciar();
+
+		const compararSenhas = CompararSenhas()
+		compararSenhas.iniciar();
 		
-		compararSenhas();
 		cadastrar();
 	}
 
