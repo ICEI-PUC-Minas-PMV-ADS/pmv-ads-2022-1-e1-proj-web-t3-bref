@@ -27,20 +27,30 @@ main {
 }
 
 #entrar {
-	position: relative;
 	font-size: 15px;
 }
 
-#cadastro {
-	position: relative;
+.fa-eye {
+	cursor: pointer;
+	color: #483A20;
 }
 
-.fa-eye {
+#primeiroOlho {
 	position: relative;
-	color: #483A20;
 	left: 279px;
   bottom: 61px;
-	cursor: pointer;
+}
+
+#verSenha {
+	position: relative;
+	left: 154px;
+  bottom: 81px;
+}
+
+#verConfirmarSenha {
+	position: relative;
+	left: 154px;
+  bottom: 53px;
 }
 
 input {
@@ -55,7 +65,7 @@ input {
 	border-style: solid;
 }
 
-#botoes {
+#btnEntrar {
 	margin: 20px 0px 2px 0px;
 	border-radius: 4px;
 	border: 0px;
@@ -65,6 +75,22 @@ input {
 	transition: 0.4s all;
 	color: #fff;
 	background: #483A20;
+}
+
+#btnCadastrar {
+	border-radius: 4px;
+	border: 0px;
+	width: 250px;
+	padding: 10px;
+	cursor: pointer;
+	transition: 0.4s all;
+	color: #fff;
+	background: #483A20;
+}
+
+#footerCadastrar {
+	position: relative;
+	bottom: 24px;
 }
 
 #esqueceu-senha {

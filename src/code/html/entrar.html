@@ -30,25 +30,31 @@
 						<section id="entrar">
 							<input id="email" type="email" placeholder="Email"><br>
 							<input id="senha" type="password" placeholder="Senha"><br>
-							<i class="fa fa-eye" aria-hidden="true"></i>
+							<i id="primeiroOlho" class="fa fa-eye" aria-hidden="true"></i>
 							
-							<input type="submit" value="Entrar" id="botoes"/>
+							<input type="submit" value="Entrar" id="btnEntrar"/>
 							<p id="termos-condicoes"> Para logar sua conta, é necessário aceitar <br> nossos Termos &
 								Condições.</p>
 							<a href="../html/recuperar-senha.html" id="esqueceu-senha">Esqueceu a senha?</a>
 						</section>
 
 						<section id="cadastrar">
-							<input id="nome" type="text" placeholder="Nome completo"><br>
-							<input id="data" type="date" placeholder="Data de nascimento"><br>
-							<input id="emailCadastro" type="email" placeholder="Email"><br>
-							<input id="senhaCadastro" type="password" placeholder="Senha"><br>
-							<!-- <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i> -->
-							<input id="confirmar-senha" type="password" placeholder="Confirme a senha"><br>
-							<i id="verConfirmarSenha" class="fa fa-eye" aria-hidden="true"></i>
-							<input onclick="cadastrar()" type="submit" value="Cadastrar" id="botoes"/><br>
-							<h3 id="termos-condicoes"> Para cadastrar sua conta, é necessário aceitar <br> nossos Termos
-								& Condições.</h3>
+
+							<input required id="nome" type="text" placeholder="Nome completo"><br>
+							<input required id="data" type="date" placeholder="Data de nascimento"><br>
+							<input required id="emailCadastro" type="email" placeholder="Email"><br>
+							<input required id="senhaCadastro" type="password" placeholder="Senha"><br>
+							<input required id="confirmar-senha" type="password" placeholder="Confirme a senha"><br>
+
+							<i id="verSenha" class="fa fa-eye" aria-hidden="true"></i><br>
+							<i id="verConfirmarSenha" class="fa fa-eye" aria-hidden="true"></i><br>
+
+							<div id="footerCadastrar">
+								<input onclick="cadastrar()" type="submit" value="Cadastrar" id="btnCadastrar"/><br>
+								<h3 id="termos-condicoes"> Para cadastrar sua conta, é necessário aceitar <br> nossos Termos
+									& Condições.</h3>
+							</div>
+
 						</section>
 					</div>
 
