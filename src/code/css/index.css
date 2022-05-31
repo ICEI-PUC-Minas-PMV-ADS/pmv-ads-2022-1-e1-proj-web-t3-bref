@@ -19,8 +19,8 @@ div.row{
 body {
     background-color: #483A20;
     font-family: 'Lato', sans-serif;
-    height: 100vh;
-    width: 100vw;
+   /*  height: 100vh;
+    width: 100vw; */
 }
 
 .container-main {
@@ -46,6 +46,51 @@ body {
 }
 
 /* Barra de apresentação */
+/* 
+
+#barra-apresentacao > div.card-img{
+    height: 350px;
+    background: rgb(0,0,0) url('../imgs/index/background-card-apresentacao.jpg') center;
+    background: -moz-linear-gradient(207deg, rgba(0,0,0,0) 70%, rgba(0,0,0,0.32566530029980745) 94%) url('../imgs/index/background-card-apresentacao.jpg')center;
+    background: -webkit-linear-gradient(207deg, rgba(0,0,0,0) 70%, rgba(0,0,0,0.32566530029980745) 94%) url('../imgs/index/background-card-apresentacao.jpg') center;
+    background: linear-gradient(207deg, rgba(0,0,0,0) 70%, rgba(0,0,0,0.32566530029980745) 94%) url('../imgs/index/background-card-apresentacao.jpg') center;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#barra-apresentacao > div.card-img-overlay{
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(207deg, rgba(0,0,0,0) 70%, rgba(0,0,0,0.32566530029980745) 94%);
+    background: -webkit-linear-gradient(207deg, rgba(0,0,0,0) 70%, rgba(0,0,0,0.32566530029980745) 94%);
+    background: linear-gradient(207deg, rgba(0,0,0,0) 70%, rgba(0,0,0,0.32566530029980745) 94%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+
+    padding: 2.25rem;
+    color: #483A20;
+}
+
+#barra-apresentacao > div.card-img-overlay > h2.card-title{
+    font-weight: bold;
+}
+
+#barra-apresentacao > div.card-img-overlay > p.card-text{
+    font-size: large;
+}
+ */
+
+ .linha-vertical {
+    height: auto; 
+    padding: 10px;
+    background: rgb(0,0,0);
+background: -moz-linear-gradient(90deg, rgba(0,0,0,0) 49%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 51%);
+background: -webkit-linear-gradient(90deg, rgba(0,0,0,0) 49%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 51%);
+background: linear-gradient(90deg, rgba(0,0,0,0) 49%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 51%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+  }
+
 #barra-apresentacao{
     background-color: #FFC300;
     color: #483A20;
@@ -63,6 +108,9 @@ body {
 #barra-apresentacao ul {
     padding-inline-start: 0;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #barra-apresentacao ul li{
@@ -85,7 +133,7 @@ body {
 /* Cards de demonstração */
 #cards-demo{
     background-color: #FFFFFA;
-    margin: 40px 20px;
+    margin: 0 20px 40px 20px;
 }
 
 #cards-demo .col-md-4{
@@ -93,6 +141,11 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+#cards-demo-text{
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 
@@ -160,10 +213,8 @@ header {
 }
 
 #name {
-    font-size: 60px;
+    font-size: 65px;
     font-family: 'Oswald', sans-serif;
-    margin-bottom: -20px;
-    margin-top: 10px;
 }
 
 /* places list */
