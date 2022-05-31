@@ -46,14 +46,15 @@
         <!-- Barra lateral esquerda que contém os filtros disponíveis na página de listagem. -->
         <div id="filters">
 
-            <!-- Input de pesquisa personalizado com ícone. -->
-            <div class="input-with-icon-wrapper mb-1">
-                <input id="restaurant-search-input" class="input-with-icon" type="search" placeholder="Pesquisar">
-                <label for="restaurant-search-input" class="fa fa-search input-icon"></label>
-            </div>
-
             <!-- Formulário que contém os campos para realização dos filtros da listagem de restaurantes. -->
             <form class="form">
+
+                <!-- Input de pesquisa personalizado com ícone. -->
+                <div class="input-with-icon-wrapper mb-1">
+                    <label for="restaurant-search-input" class="fa fa-search input-icon"></label>
+                    <input type="text" id="restaurant-search-input" name="pesq"
+                        class="input-with-icon" type="search" placeholder="Pesquisar">
+                </div>
 
                 <label for="average-price">Média de preços:</label>
                 <input class="mb-1" type="range" id="average-price" name="average-price" min="0">

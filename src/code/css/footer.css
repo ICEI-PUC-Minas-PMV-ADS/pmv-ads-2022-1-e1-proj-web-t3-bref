@@ -1,12 +1,11 @@
 /* Rodape */
 #footer{
     background-color: #483A20;
-    height: 300px;
     margin: auto;
 }
 
 #footer .col-md-12{
-    margin: auto;
+    margin: 15px auto 10px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
