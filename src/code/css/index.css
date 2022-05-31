@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
 
 
-
+/* Alterações (Gabriel) */
 /* Ajustes Bootstrap */
 * {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
@@ -11,6 +11,9 @@ div.container-fluid {
     padding: 0;
 }
 
+div.row{
+    margin: 0;
+}
 
 /* Conteúdo principal  */
 body {
@@ -27,6 +30,73 @@ body {
     grid-template-rows: 4% 20% 75% 1%;
     row-gap: 5px;
 }
+
+/* header  cabeçalho */
+#header{
+    background-color: #483A20;
+    display: flex;
+    align-items: center;
+}
+
+#header .col-md-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Barra de apresentação */
+#barra-apresentacao{
+    background-color: #FFC300;
+    color: #483A20;
+    height: 300px;
+}
+
+#barra-apresentacao .col-md-12{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#barra-apresentacao ul {
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+#barra-apresentacao ul li{
+    float: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#barra-apresentacao ul li p{
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+#barra-apresentacao ul li a{
+    text-decoration: none;
+    color: #FFC300;
+}
+
+/* Cards de demonstração */
+#cards-demo{
+    background-color: #FFFFFA;
+    margin: 40px 20px;
+}
+
+#cards-demo .col-md-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Fim alterações (Gabriel) */
 
 /* application grid system */
 header {
