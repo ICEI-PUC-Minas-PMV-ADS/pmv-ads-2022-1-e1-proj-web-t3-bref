@@ -91,7 +91,6 @@ span {
 	cursor: pointer;
 	transition: 0.4s all;
 	color: #fff;
-	background: #483A20;
 }
 
 #btnCadastrar {
@@ -102,7 +101,11 @@ span {
 	cursor: pointer;
 	transition: 0.4s all;
 	color: #fff;
+}
+
+.botoes {
 	background: #483A20;
+	transition: 1.5s all;
 }
 
 #footerCadastrar {
@@ -156,14 +159,14 @@ aside {
 	opacity: 0.1;
 }
 
-
 .links-abas > button {
 	font-size: 22px;
 	margin-top: 55px;
 	margin-bottom: 15px;
 }
 
-#botoes:hover {
+
+.botoes:hover {
 	background: rgb(110, 79, 22);
 	transform: scale(1.01);
 }

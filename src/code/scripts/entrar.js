@@ -8,7 +8,13 @@ function Entrar() {
 	const inputEmailCadastro = document.querySelector("#emailCadastro")
 	const inputSenhaCadastro = document.querySelector("#senhaCadastro")
 	const inputConfirmarSenha = document.querySelector("#confirmarSenha")
-	/* outro */
+	/* Validações */
+	const validNome = false
+	const validData = false
+	const validEmail = false
+	const validSenha = false
+	const validConfirmarSenha = false
+	/* Outro */
 	const errorEmail = document.querySelector("#errorEmail")
 	
 	function NavegacaoAbas() {
@@ -27,9 +33,9 @@ function Entrar() {
 
     function mostrarAbaAtual(id){
 
-			const tabcontent = document.querySelector('#' + id);
+			const conteudoAba	 = document.querySelector('#' + id);
 			
-			tabcontent.style.display = "block"
+			conteudoAba.style.display = "block"
     }
 
     function selecionarAba(event) {
@@ -165,11 +171,16 @@ function Entrar() {
 			iniciar
 		}
 	}
-
-	function cadastrar() {
 	
+	function cadastrar() {
+		if(validNome || validData || validEmail || validSenha || validConfirmarSenha){
+	
+		} else {
+			alert("Escreve nos lugarzinho aí namoral?!")
+		}
 	}
-
+	document.getElementById("btnCadastrar").addEventListener("click", cadastrar);
+	
 	function iniciar() {
 
 		const navegacaoAbas = NavegacaoAbas()
@@ -183,10 +194,8 @@ function Entrar() {
 
 		const validacaoInputs = ValidacaoInputs()
 		validacaoInputs.iniciar();
-		
-		cadastrar();
 	}
-
+	
 	return {
 		iniciar
 	}
