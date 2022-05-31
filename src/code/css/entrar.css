@@ -65,6 +65,23 @@ input {
 	border-style: solid;
 }
 
+input:invalid {
+	border-color:crimson;
+	box-shadow: 0 0 4px crimson;
+}
+
+input:focus {
+	outline: none;
+}
+
+input:focus:invalid {
+	box-shadow: none;
+}
+
+span {
+	color: crimson;
+}
+
 #btnEntrar {
 	margin: 20px 0px 2px 0px;
 	border-radius: 4px;

@@ -5,8 +5,11 @@ function Entrar() {
 	const btnConfirm = document.querySelector("#verConfirmarSenha")
 	/* Inputs */
 	const inputSenha = document.querySelector("#senha")
+	const inputEmailCadastro = document.querySelector("#emailCadastro")
 	const inputSenhaCadastro = document.querySelector("#senhaCadastro")
 	const inputConfirmarSenha = document.querySelector("#confirmarSenha")
+	/* outro */
+	const errorEmail = document.querySelector("#errorEmail")
 	
 	function NavegacaoAbas() {
     
@@ -106,16 +109,14 @@ function Entrar() {
 
 	function CompararSenhas() {
 
-		/* Fazer uma variável para o outro input ou conseguir deixar o keyup para os dois inputs */
-
 		function compararSenhaComConfirmar(){
 			inputSenhaCadastro.addEventListener("keyup", ()=> {
 				if(inputConfirmarSenha.value != inputSenhaCadastro.value) {
-					inputSenhaCadastro.setAttribute("style", "border-color: red")
-					inputConfirmarSenha.setAttribute("style", "border-color: red")
+					inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 4px crimson")
+					inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 4px crimson")
 				} else {
-					inputSenhaCadastro.setAttribute("style", "border-color: green")
-					inputConfirmarSenha.setAttribute("style", "border-color: green")
+					inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 4px green")
+					inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 4px green")
 				}
 			})
 		}
@@ -123,17 +124,41 @@ function Entrar() {
 		function compararConfirmarComSenha() {
 			inputConfirmarSenha.addEventListener("keyup", ()=> {
 				if(inputSenhaCadastro.value != inputConfirmarSenha.value) {
-					inputConfirmarSenha.setAttribute("style", "border-color: red")
-					inputSenhaCadastro.setAttribute("style", "border-color: red")
+					inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 4px crimson")
+					inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 4px crimson")
 				} else {
-					inputConfirmarSenha.setAttribute("style", "border-color: green")
-					inputSenhaCadastro.setAttribute("style", "border-color: green")
+					inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 4px green")
+					inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 4px green")
 				}
 			})
 		}
 		function iniciar(){
-			compararSenhaComConfirmar();
-			compararConfirmarComSenha();
+			compararSenhaComConfirmar()
+			compararConfirmarComSenha()
+		}
+
+		return {
+			iniciar
+		}
+	}
+
+	function ValidacaoInputs() {
+		
+		function validarEmail() {
+			if(!inputEmailCadastro.checkValidity()){
+				errorEmail.innerHTML = "Email inválido";
+			}
+		}
+
+		function redefinirMsg() {
+			if(errorEmail.innerHTML == "Email inválido"){
+				errorEmail.innerHTML = "";
+			}
+		}
+
+		function iniciar(){
+			validarEmail()
+			redefinirMsg()
 		}
 
 		return {
@@ -155,6 +180,9 @@ function Entrar() {
 
 		const compararSenhas = CompararSenhas()
 		compararSenhas.iniciar();
+
+		const validacaoInputs = ValidacaoInputs()
+		validacaoInputs.iniciar();
 		
 		cadastrar();
 	}
