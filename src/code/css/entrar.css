@@ -27,20 +27,30 @@ main {
 }
 
 #entrar {
-	position: relative;
 	font-size: 15px;
 }
 
-#cadastro {
-	position: relative;
+.fa-eye {
+	cursor: pointer;
+	color: #483A20;
 }
 
-.fa-eye {
+#primeiroOlho {
 	position: relative;
-	color: #483A20;
 	left: 279px;
   bottom: 61px;
-	cursor: pointer;
+}
+
+#verSenha {
+	position: relative;
+	left: 154px;
+  bottom: 81px;
+}
+
+#verConfirmarSenha {
+	position: relative;
+	left: 154px;
+  bottom: 53px;
 }
 
 input {
@@ -55,7 +65,24 @@ input {
 	border-style: solid;
 }
 
-#botoes {
+input:invalid {
+	border-color:crimson;
+	box-shadow: 0 0 4px crimson;
+}
+
+input:focus {
+	outline: none;
+}
+
+input:focus:invalid {
+	box-shadow: none;
+}
+
+span {
+	color: crimson;
+}
+
+#btnEntrar {
 	margin: 20px 0px 2px 0px;
 	border-radius: 4px;
 	border: 0px;
@@ -64,7 +91,26 @@ input {
 	cursor: pointer;
 	transition: 0.4s all;
 	color: #fff;
+}
+
+#btnCadastrar {
+	border-radius: 4px;
+	border: 0px;
+	width: 250px;
+	padding: 10px;
+	cursor: pointer;
+	transition: 0.4s all;
+	color: #fff;
+}
+
+.botoes {
 	background: #483A20;
+	transition: 1.5s all;
+}
+
+#footerCadastrar {
+	position: relative;
+	bottom: 24px;
 }
 
 #esqueceu-senha {
@@ -113,14 +159,14 @@ aside {
 	opacity: 0.1;
 }
 
-
 .links-abas > button {
 	font-size: 22px;
 	margin-top: 55px;
 	margin-bottom: 15px;
 }
 
-#botoes:hover {
+
+.botoes:hover {
 	background: rgb(110, 79, 22);
 	transform: scale(1.01);
 }

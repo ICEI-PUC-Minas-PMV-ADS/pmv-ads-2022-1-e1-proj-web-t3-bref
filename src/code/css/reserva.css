@@ -1,55 +1,68 @@
 html,body {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-  header {
+/*CABEÇALHO*/
+header {
     background-color: #483a20;
     height: 52px;
-  }
-  a {
+}
+#barColor {
+    background: #ffc300;
+    height: 20px;
+    margin-bottom: 0px;
+    margin-top: 0pX;
+} 
+/*LINK COM OUTRAS PAGINAS*/
+a {
     color: #ffc300;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Oswald',sans-serif;
     margin-left: 5px;
+    text-decoration: none;
+    margin-top: 0;
+}
 
-  }
-  .container {
+.container {
     background: #FFFFF4;
     font-family: 'Lato', sans-serif;
     text-align: center;
-  }
-  h1 {
+}
+/*BREF 1*/
+h1 {
     text-align: left;
     font-family: 'Oswald', sans-serif;
     color: #ffc300;
-    font-size: 35px;
+    font-size: 30px;
     margin: 0;
     margin-left: 3%;
-  }
-  h2{
+}
+/*BREF 2*/
+h2{
     text-align: center;
     margin: 0;
     font-family: 'Oswald', sans-serif;
     font-size: 90px;
     color: #ffc300;
-  }
-  img {
+}
+/*LOGO*/
+img {
     width: 8%;
     margin: 0;
     margin-top: -1%;
-  }
-
-  h3 {
+}
+/*RESERVA*/
+h3 {
     text-align: center;
     margin: 0;
     color: #483a20;
     font-family: 'lato', sans-serif;
     font-size: 30px;
     margin-top:-5px;
-  }
-
-  input { 
+}
+/*INPUTS*/
+input { 
     text-align: center;
     margin: 3px;
     padding: 10px;
@@ -61,9 +74,9 @@ html,body {
     outline: 0;
     width: 325px;
     text-indent: 0.1rem;
-
-  }
- button {
+}
+/*BOTÃO RESERVAR*/
+button {
     font-size: 25px;
     padding: 2px;
     color: #FFFFF4;
@@ -73,26 +86,29 @@ html,body {
     cursor: pointer;
     transition: .8px all;
     width: 210px;
-    margin: 5px 0px 2px 0px;
-
-  }
-  p {
+    margin: 2px 0px 2px 0px;
+}
+/*MENSAGEM COMPROVANTE*/
+p {
     margin: 3px 0px 3px 0px;  
     font-size: 15px;
     color: #483a20;
     font-family: 'lato', sans-serif;
-  }
-  hr {
-    margin: 9px 0px 9px 0px;
-  }
-  #footer {
-    margin-top: 6px;
+}
+hr {
+    margin: 4px 0px 4px 0px;
+}
+/*RODAPÉ*/
+#footer {
+    margin-top: 4px;
     background: #ffc300;
     height: 40px;
-  }
-  #barColor {
-    background: #ffc300;
-    height: 20px;
-    margin-bottom: 20px;
-    margin-top: 0pX;
-  }
+}
+/*MENSAGEM ERROS*/
+.error {
+    color: #FFFFF4;
+    background: red;
+    width: 330px;       
+    margin-left: 38%;
+    display: none;
+}

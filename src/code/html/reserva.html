@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/reserva.css">
+  <link rel="stylesheet" href="reserva.css">
   <script src="reserva.js" ></script>
    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +15,6 @@
       <a href="index.html">BREF</a>   
     </header>
     <div id="barColor">
-      <button class="font-size-button" onclick={aumentar()}>A+</button>
-      <button class="font-size-button" onclick={diminuir()}>A-</button>
     </div>
     <div class="container">
         <main>
@@ -26,14 +24,16 @@
             <h3>Reserva</h3>
 
             <input type='text' placeholder="Número de contato"><br>
-            <input type='text' placeholder="E-mail"><br>
-            <input type='text' placeholder="Quantidade de cadeiras"><br>
-            <input type='text' placeholder="Data/Hora"><br>
-          
-
-          <a href="reserva_concluída.html">
-              <button class="botao-reserva">Reservar</button>
-          </a>
+            <input type="email" name="email" id="email" onchange="validateFields()" placeholder="Email"><br>
+            <div class="error" id="email-required-error">Email é obrigatório</div>
+            <input type='number' placeholder="Quantidade de cadeiras"><br>
+            <input type='datetime-local' placeholder="Data/Hora"><br>
+            
+            <div class="error" id="email-invalid-error">O email inserido é inválido</div>
+            
+            <a href="reserva_concluída.html">
+                <button type="button" class="botao-reserva" id="recover-button">Reservar</button>
+            </a>
           <hr>
           <p>O comprovante das reservas será enviado para o seu e-mail</p>
         </main>
