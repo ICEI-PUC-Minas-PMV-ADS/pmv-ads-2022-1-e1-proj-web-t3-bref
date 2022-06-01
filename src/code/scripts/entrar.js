@@ -1,4 +1,4 @@
-function Entrar() {
+function Pg() {
 	/* Mostrar senhas */
 	const btn = document.querySelector(".fa-eye");
 	const btnSenhaCadastro = document.querySelector("#verSenha")
@@ -9,11 +9,11 @@ function Entrar() {
 	const inputSenhaCadastro = document.querySelector("#senhaCadastro")
 	const inputConfirmarSenha = document.querySelector("#confirmarSenha")
 	/* Validações */
-	const validNome = false
-	const validData = false
-	const validEmail = false
-	const validSenha = false
-	const validConfirmarSenha = false
+	var validNome = false
+	var validData = false
+	var validEmail = false
+	var validSenha = false
+	var validConfirmarSenha = false
 	/* Outro */
 	const errorEmail = document.querySelector("#errorEmail")
 	
@@ -118,11 +118,11 @@ function Entrar() {
 		function compararSenhaComConfirmar(){
 			inputSenhaCadastro.addEventListener("keyup", ()=> {
 				if(inputConfirmarSenha.value != inputSenhaCadastro.value) {
-					inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 4px crimson")
-					inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 4px crimson")
+					inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+					inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 				} else {
-					inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 4px green")
-					inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 4px green")
+					inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+					inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
 				}
 			})
 		}
@@ -130,11 +130,11 @@ function Entrar() {
 		function compararConfirmarComSenha() {
 			inputConfirmarSenha.addEventListener("keyup", ()=> {
 				if(inputSenhaCadastro.value != inputConfirmarSenha.value) {
-					inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 4px crimson")
-					inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 4px crimson")
+					inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+					inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 				} else {
-					inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 4px green")
-					inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 4px green")
+					inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+					inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
 				}
 			})
 		}
@@ -173,7 +173,7 @@ function Entrar() {
 	}
 	
 	function cadastrar() {
-		if(validNome || validData || validEmail || validSenha || validConfirmarSenha){
+		if(validNome && validData && validEmail && validSenha && validConfirmarSenha){
 	
 		} else {
 			alert("Escreve nos lugarzinho aí namoral?!")
@@ -202,6 +202,6 @@ function Entrar() {
 }	
 
 window.addEventListener('load', () => {
-	const entrar = Entrar()
-	entrar.iniciar()
+	const pg = Pg()
+	pg.iniciar()
 })

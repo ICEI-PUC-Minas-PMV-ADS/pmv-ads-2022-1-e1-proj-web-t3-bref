@@ -57,51 +57,52 @@
                 <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
                 <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
             </div>
-            <main class="o-main">
+        <main id="o-main">
+            <!-- <div id="o-main"> -->
                 <div id="items">
                     <h1 id="bigBref" class=page-title>BREF</h1>
                 </div>
 
-            <form action="">
-                
-                <div class="form-group">
-                    <h2 id="recuperar-senha">Recuperar senha</h2><br>
-                    <label for="email" >
-                    <input type="email"
-                        placeholder="Informe seu email"
-                        onblur="validarEmail()" 
-                        onfocus="redefinirMsg()" id ="email">
-                    <span id="error-email"></span>
-            </div>
+                <form action="">
+                    
+                    <div class="form-group">
+                        <h2 id="recuperar-senha">Recuperar senha</h2><br>
+                        <label for="email">
+                        <input type="email"
+                            placeholder="Informe seu email"
+                            onblur="validarEmail()" 
+                            onfocus="redefinirMsg()" id ="email">
+                    </div>
 
-            <form action="" method="post" class="contact_form span6 offset3 m-top m-bottom">
-            <div class="form-group">
-                <button id="btnEmail">Enviar</button><br>
-             </form>
-            </div> 
-           <div class="account-form-wrapper visible-when-content-ready row-fluid"> 
-                <p id="mensagem-email"> Enviaremos um e-mail para redefinição de senha </p>
-                <a href="./entrar.html">Não possui uma conta?</a>
-
-                <div class="oculta"><h3 id="redefinir-senha"> Redefinir Senha</h3>
-
-                    <label for="senha">
-                    <input type="senha"
-                        placeholder="Nova Senha"
-                        placeholder="Confirmação de senha"
-                        onblur="validarSenha()"
-                        onfocus="redefinirMsg()" id="nova-senha"></label>
-
+                <form action="" method="post" class="contact_form span6 offset3 m-top m-bottom">
+                <!-- <div class="form-group"> -->
+                    <input type="button" id="btnEmail" class="botoes" value="Enviar"></input><br>
+                </form>
+            <!-- </div> -->  
+           <!--  class="account-form-wrapper visible-when-content-ready row-fluid" -->
+                <div> 
+                    <div class="oculta">
+                        <h3 id="redefinir-senha">Redefinir Senha</h3>
+                        <label for="senha">
+                        <input type="senha"
+                            placeholder="Nova Senha"
+                            placeholder="Confirmação de senha"
+                            onblur="validarSenha()"
+                            onfocus="redefinirMsg()" id="nova-senha"></label>
+                    </div>
+                    <div>
+                        <p id="mensagem-email">Enviaremos um e-mail para redefinição de senha </p>
+                        <a id="possuiConta" href="./entrar.html">Não possui uma conta?</a>
+                    </div>
                 </div>
-                
-            </div>
+            </div>    
         </main>
 
             <!-- FOOTER -->
             <div class="row" id="footer">
                 <div class="col-md-12">
                 <ul>
-                    <li><a id="logo-bref" href="../html/index.html">BREF</a></li>
+                    <!-- <li><a id="logo-bref" href="../html/index.html">BREF</a></li> -->
                     <li>
                     <ul class="share">
                         <a href="#"><li id="facebook-icon"></li></a>
@@ -110,7 +111,10 @@
                     </ul>
                     </li>
                     <li id="footer-links">
+
                         <a href="./sobre-nos.html">Sobre nós</a><br>
+                        <span class="footer-ponto">&#9679;</span>
+                        <a href="./entrar.html">Entrar/Cadastrar</a>
                         <span class="footer-ponto">&#9679;</span>
                         <a href="./fale-conosco.html">Fale conosco</a><br>
                 

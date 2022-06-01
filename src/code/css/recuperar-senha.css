@@ -9,7 +9,6 @@ div.container-fluid {
     padding: 0;
 }
 
-
 /* CSS Conteúdo principal */
 .container-main {
     height: 100%;
@@ -36,7 +35,7 @@ header {
     font-size: 1em;
     background-color: #FFC300;
     border: outset;
-    color: black;
+    color: #483A20;
     font-weight: bold;
     justify-content: flex-end;
 }
@@ -91,39 +90,25 @@ header {
     font-size: 6em;
     font-family: 'Oswald', sans-serif;
     margin: 0;
-    align-content: center;
 }
 
-.o-main {
-    text-align: center;
+#o-main {
+    background-color: #FFFFF4;  
     color: #483A20;
-    font-family: Lato, sans-serif;
-    min-width: fit-content;
-    height: 100%;
-    margin-bottom: 3rem;
-}
-
-input, input::placeholder {
-    text-indent: 0.1rem;
-    outline: none;
-    margin: 5px;
-    font-size: 1em;
-    color: #483a20;
-    background-color: #FFFFF4;
-    transform: scale(1.03);
-    
-}  
-  
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+} 
+ 
 input {
-    padding:10px;
-    width: 250%;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 4px;
-    font-size: 1em;
-    transform: scale(1.03);
-    margin-bottom: 10px;
-    padding-left: 35%;
+    width: 325px;
+	margin: 5px;
+	padding: 6px;
+	border-radius: 4px;
+	text-indent: 0.1rem;
+	border-width: 1px;
+	outline: 0;
+	background-color: #FFFFF4;
+	border-style: solid;
 }
   
 input:invalid {
@@ -138,21 +123,35 @@ input:focus {
 input:focus:invalid {
     box-shadow:none;
 }
-  
-span {
-    color: crimson;
-    margin:-125px;
-    padding-left: 150px;
+
+.botoes {
+	background: #483A20;
+	transition: 1.5s all;
+}
+
+.botoes:hover {
+	background: rgb(110, 79, 22);
+	transform: scale(1.01);
+}
+
+#btnEmail {
+    border-radius: 4px;
+    border: 0px;
+    width: 262px;
+    padding: 6px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s all;
 }
 
 .form-group {
     display: block;
 }
+
 .oculta {
     text-align: center;
-    display: block;
+    display: none;
 }
-
 
 .button {
     cursor: pointer;
@@ -172,6 +171,17 @@ span {
     transform: scale(1.01);
     font-size: 1em;
 }
+
+#possuiConta {
+    color: darkred;
+    height: 5px;
+    text-decoration: none;
+}
+
+#possuiConta:hover{
+    text-decoration: underline;
+}
+
 /*.form-group {
     margin:7px auto;
 }
