@@ -118,6 +118,11 @@ span {
 	color: darkred;
 	text-decoration: none;
 }
+
+#esqueceu-senha:hover {
+	text-decoration: underline;
+}
+
 #termos-condicoes {
 	font-size: 12px;
 }
@@ -164,7 +169,6 @@ aside {
 	margin-top: 55px;
 	margin-bottom: 15px;
 }
-
 
 .botoes:hover {
 	background: rgb(110, 79, 22);
