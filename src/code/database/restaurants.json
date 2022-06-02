@@ -7,6 +7,10 @@
             "type": "Fast-food",
             "capacity": 60,
             "waitingTimeMinutes": 15,
+            "address": {
+                "city":"Contagem",
+                "state": "MG"
+            },
             "paymentMethods": [
                 "Cartão de Crédito",
                 "Cartão de Débito",
@@ -93,6 +97,10 @@
                 "Dinheiro"
             ],
             "image": "place7.jpg",
+            "address": {
+                "city":"Belo Horizonte",
+                "state": "MG"
+            },
             "infoRestaurant": {
                 "pratoPrincipal": [
                     {
@@ -171,6 +179,10 @@
                 "Dinheiro"
             ],
             "image": "place5.jpg",
+            "address": {
+                "city":"Rio de Janeiro",
+                "state": "RJ"
+            },
             "infoRestaurant": {
                 "pratoPrincipal": [
                     {
@@ -247,6 +259,10 @@
                 "Dinheiro"
             ],
             "image": "place8.jpg",
+            "address": {
+                "city":"Betim",
+                "state": "MG"
+            },
             "infoRestaurant": {
                 "pratoPrincipal": [
                     {
@@ -325,6 +341,10 @@
                 "Dinheiro"
             ],
             "image": "place9.jpg",
+            "address": {
+                "city":"Contagem",
+                "state": "MG"
+            },
             "infoRestaurant": {
                 "pratoPrincipal": [
                     {
@@ -392,7 +412,7 @@
             "id": 6,
             "name": "Sushi Japa Chan",
             "averagePrice": 4,
-            "type": "Japonese",
+            "type": "Japonês",
             "capacity": 30,
             "waitingTimeMinutes": 5,
             "paymentMethods": [
@@ -402,6 +422,10 @@
                 "Cartão Refeição"
             ],
             "image": "place10.jpg",
+            "address": {
+                "city":"São Paulo",
+                "state": "SP"
+            },
             "infoRestaurant": {
                 "pratoPrincipal": [
                     {

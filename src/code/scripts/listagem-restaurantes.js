@@ -26,7 +26,12 @@ function getSearchFilter() {
 
     const filter = {
         name: params.get("pesq"),
-        capacity: Number.parseFloat(params.get("capacity"))
+        capacity: Number.parseFloat(params.get("capacity")),
+        type: params.get("restaurant-type"),
+        averagePrice: Number.parseFloat(params.get("average-price")),
+        paymentMethod: params.get("payment-methods"),
+        city: params.get("city"),
+        waitingTimeMinutes: Number.parseFloat(params.get("waiting-time"))
     };
 
     return filter;
@@ -80,8 +85,16 @@ function getRestaurantsBasedOnFilter(filter) {
         return restaurantsDatabase;
 
     const filteredRestaurants = restaurantsDatabase.filter(r =>
-        (filter.name == null || r.name.toUpperCase().includes(filter.name.toUpperCase()))    
-        && (Number.isNaN(filter.capacity) || r.capacity <= filter.capacity));
+        (filter.name == null || r.name.toUpperCase().includes(filter.name.toUpperCase()))
+        && (filter.type == null || r.type.toUpperCase() == filter.type.toUpperCase())
+        && (Number.isNaN(filter.averagePrice) || r.averagePrice <= filter.averagePrice)
+        && (Number.isNaN(filter.capacity) || r.capacity <= filter.capacity)
+        && (filter.paymentMethod == null || r.paymentMethods.includes(filter.paymentMethod))
+        && (Number.isNaN(filter.waitingTimeMinutes) || r.waitingTimeMinutes <= filter.waitingTimeMinutes)
+        && (filter.city == null || r.address.city.toUpperCase().includes(filter.city.toUpperCase()))
+    );
+    
+    console.log("Filtrou o que?", filteredRestaurants);
 
     return filteredRestaurants;
 }

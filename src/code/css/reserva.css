@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
+
+
 html,body {
     margin: 0px;
     padding: 0px;
@@ -13,9 +16,6 @@ html,body {
 /*LINK COM OUTRAS PAGINAS*/
 a {
     color: #ffc300;
-    font-size: 2em;
-    font-family: 'Oswald',sans-serif;
-    margin-left: 5px;
     text-decoration: none;
     margin-top: 0;
 }
@@ -71,7 +71,7 @@ input {
 /*MENSAGEM COMPROVANTE*/
 p {
     margin: 3px 0px 3px 0px;  
-    font-size: 2em;
+    font-size: 1em;
     color: #483a20;
     font-family: 'lato', sans-serif;
 }

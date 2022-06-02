@@ -28,6 +28,7 @@ div.container-fluid {
     border-color: transparent;
     padding: 10px;
     align-items: center;
+    margin-bottom: 150px;
 }
 
   .container {
@@ -78,3 +79,11 @@ div.container-fluid {
     color: #483a20;
     font-family: 'lato', sans-serif;
   }
+
+#footer-copyright {
+    font-size: 1em;
+}
+/* footer margin */
+#footer-container {
+    margin-bottom: 15px;
+}
