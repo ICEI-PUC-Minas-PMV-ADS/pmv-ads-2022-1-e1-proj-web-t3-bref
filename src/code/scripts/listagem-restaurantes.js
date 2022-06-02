@@ -26,7 +26,9 @@ function getSearchFilter() {
 
     const filter = {
         name: params.get("pesq"),
-        capacity: Number.parseFloat(params.get("capacity"))
+        capacity: Number.parseFloat(params.get("capacity")),
+        type: params.get("restaurant-type"),
+        averagePrice: Number.parseFloat(params.get("average-price"))
     };
 
     return filter;
@@ -80,8 +82,12 @@ function getRestaurantsBasedOnFilter(filter) {
         return restaurantsDatabase;
 
     const filteredRestaurants = restaurantsDatabase.filter(r =>
-        (filter.name == null || r.name.toUpperCase().includes(filter.name.toUpperCase()))    
+        (filter.name == null || r.name.toUpperCase().includes(filter.name.toUpperCase()))
+        && (filter.type == null || r.type == filter.type)
+        && (Number.isNaN(filter.averagePrice) || r.averagePrice <= filter.averagePrice)
         && (Number.isNaN(filter.capacity) || r.capacity <= filter.capacity));
+
+        console.log("Filtrou o que?", filteredRestaurants);
 
     return filteredRestaurants;
 }

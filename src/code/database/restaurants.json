@@ -392,7 +392,7 @@
             "id": 6,
             "name": "Sushi Japa Chan",
             "averagePrice": 4,
-            "type": "Japonese",
+            "type": "Japonês",
             "capacity": 30,
             "waitingTimeMinutes": 5,
             "paymentMethods": [
