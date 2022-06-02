@@ -15,7 +15,6 @@ main {
 	text-align: center;
 	flex-basis: 50%;
 	flex-grow: 1;
-	
 }
 
 #bref {
@@ -84,23 +83,23 @@ span {
 
 #btnEntrar {
 	margin: 20px 0px 2px 0px;
-	border-radius: 4px;
-	border: 0px;
 	width: 250px;
 	padding: 10px;
+	color: #fff;
+	border: 0px;
+	border-radius: 4px;
 	cursor: pointer;
 	transition: 0.4s all;
-	color: #fff;
 }
 
 #btnCadastrar {
-	border-radius: 4px;
-	border: 0px;
 	width: 250px;
 	padding: 10px;
+	border: 0px;
+	border-radius: 4px;
+	color: #fff;
 	cursor: pointer;
 	transition: 0.4s all;
-	color: #fff;
 }
 
 .botoes {

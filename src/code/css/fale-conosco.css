@@ -40,18 +40,24 @@ body {
 
 #barColor {
     height: 2em;
-    background-color: #FFC300;
     display: flex;
     flex-direction: row;
+    background-color: #FFC300;
 }
 
 .changeFontsButtons {
     font-size: 1em;
-    background-color: #FFC300;
     border: outset;
-    color: black;
     font-weight: bold;
     justify-content: flex-end;
+    color: #483A20  ;
+    background-color: #FFC300;
+    border: none;
+}
+
+.changeFontsButtons:hover {
+    color: #FFFFF4;
+    background-color: #483A20;
 }
 
 .hRight{
@@ -119,13 +125,12 @@ body {
 .inputInfo {
     width: 325px;
 	margin: 5px;
-	padding-right: 10px;
-	border-radius: 4px;
-	text-indent: 0.1rem;
-	border-width: 1px;
 	outline: 0;
-	background-color: #FFFFF4;
+	padding: 0;
 	border-style: solid;
+	border-width: 1px;
+	border-radius: 4px;
+	background-color: #FFFFF4;
 }
 
 #msgInput{
