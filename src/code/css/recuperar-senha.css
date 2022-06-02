@@ -99,7 +99,7 @@ header {
     font-family: 'Lato', sans-serif;
 } 
  
-input {
+input, #novaSenha, #confirmarSenha {
     width: 325px;
 	margin: 5px;
 	padding: 6px;
@@ -110,7 +110,11 @@ input {
 	background-color: #FFFFF4;
 	border-style: solid;
 }
-  
+
+#novaSenha{
+    margin-bottom: 10px;
+}
+
 input:invalid {
     border-color: crimson;
     box-shadow: 0px 0px 3px crimson;
@@ -122,6 +126,10 @@ input:focus {
   
 input:focus:invalid {
     box-shadow:none;
+}
+
+input#btnEmail.botoes{
+    margin: 25px;
 }
 
 .botoes {
@@ -144,13 +152,14 @@ input:focus:invalid {
     transition: 0.4s all;
 }
 
-.form-group {
+
+.recuperarSenha {
     display: block;
 }
 
-.oculta {
-    text-align: center;
-    display: none;
+.redefinicaoSenha {
+
+    display: block;
 }
 
 .button {
@@ -173,7 +182,7 @@ input:focus:invalid {
 }
 
 #possuiConta {
-    color: darkred;
+    color: crimson;
     height: 5px;
     text-decoration: none;
 }

@@ -1,3 +1,111 @@
+var visibilidade = true;
+
+function exibir(){
+    document.getElementById("recuperarSenha").style.display="block";
+}
+
+function ocultar(){
+    document.getElementById("recuperarSenha").style.display="none";
+}
+
+function ocultarExibir(){
+
+    if (visibilidade){
+        document.getElementById("recuperarSenha").style.display="none";
+
+    }else{
+        document.getElementById("redefinicaoSenha").style.dysplay="block";
+    }
+}
+
+function clickEnviar(){
+        document.getElementById('redefinicaoSenha').innerHTML = 
+
+       document.getElementById('btnRedefinicaosenha').addEventListener('mouseup', enviarEmail)
+       console.log('btnRedefinicaosenha') 
+    }
+
+
+ /* function sumir(redefinicaoSenha){
+    document.getElementById(redefinicaoSenha).hidden=true;
+}
+function inicia(){
+    for(var i=recuperarSenha; i=redefinicaoSenha; i++){
+        document.getElementById(redefinicaoSenha).hidden=true;
+    }
+
+    document.getElementById(recuperarSenha).addEventListener("load", rolar);
+    document.getElementById(redefinicaoSenha).addEventListener("load", rolar);
+   
+    
+}
+
+window.addEventListener("load", inicia); */
+
+/* MOSTRAR SENHAS */
+const btn = document.querySelector(".fa-eye");
+const btnSenhaCadastro = document.querySelector("#verSenha")
+const btnConfirm = document.querySelector("#verConfirmarSenha")
+
+/* INPUTS */
+const inputSenha = document.querySelector("#senha")
+const inputConfirmarSenha = document.querySelector("#confirmarSenha")
+
+/* VALIDAÇÕES */
+var validSenha = false
+var validConfirmarSenha = false
+
+function iniciar(){
+    mostrarSenhaEntrar()
+    mostrarSenhaCadastro()
+    mostrarConfirmarSenhaCadastro()
+
+    return {
+        iniciar
+}
+}
+
+
+
+
+function CompararSenhas() {
+
+function compararSenhaComConfirmar(){
+    inputSenhaCadastro.addEventListener("keyup", ()=> {
+        if(inputConfirmarSenha.value != inputSenhaCadastro.value) {
+            inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+            inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+        } else {
+            inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+            inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+        }
+    })
+}
+
+function compararConfirmarComSenha() {
+    inputConfirmarSenha.addEventListener("keyup", ()=> {
+        if(inputSenhaCadastro.value != inputConfirmarSenha.value) {
+            inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+            inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+        } else {
+            inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+            inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+        }
+    })
+}
+function iniciar(){
+    compararSenhaComConfirmar()
+    compararConfirmarComSenha()
+}
+
+return {
+    iniciar
+}
+}
+
+
+/* PLACEHOLDER VERMELHO E COM BORDA QUANDO ERRADO */
+
 function validarEmail(){
     var email = document.querySelector('#email');
     var error = document.querySelector('#error-email');
@@ -13,11 +121,15 @@ function validarEmail(){
      }
  }
 
+ /* MENSAGEM DE EMAIL ENVIADO */
+
  function enviarEmail(){
      document.getElementById('mensagem-email').innerHTML = "E-mail enviado!"
     }
     document.getElementById('btnEmail').addEventListener('mouseup', enviarEmail)
     console.log('btnEmail') 
+   
+
 
  /* AUMENTAR E DIMINUIR FONTE */
  var maxClicksAddMoreSize = 8;
