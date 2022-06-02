@@ -18,15 +18,25 @@
 
     <!-- Header exibido no topo da página. Possui elementos posicionados à direita e esquerda da tela. -->
     <header class="header">
-        <div>
+        <div class="logo">
             <div class="bref-title">
                 <a href="index.html">BREF</a>
             </div>
         </div>
 
         <!-- Grupo de elementos que estão posicionados à direita do header. -->
-        <div class="header-right">
-
+    
+        <div class="nav-items">
+            <ul>
+                <li>
+                    <a class="nav-link" href="./fale-conosco.html">Fale Conosco</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./entrar.html">Entrar/Cadastrar</a>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="header-right">
             <div class="header-item font-size-button-group">
                 <button class="font-size-button increase">A+</button>
                 <button class="font-size-button decrease">A-</button>
@@ -35,8 +45,10 @@
             <div class="header-item">
                 <a href="entrar.html">Entrar/Cadastrar</a>
             </div>
-        </div>
+        </div> -->
     </header>
+
+
     <!-- Barra amarela que atravessa toda a página. Logo abaixo do header. -->
     <div class="bar-color"></div>
 
@@ -57,7 +69,7 @@
                 </div>
 
                 <label for="average-price">Média de preços:</label>
-                <input class="mb-1" type="range" id="average-price" name="average-price" min="0">
+                <input class="mb-1" type="range" id="average-price" name="average-price" min="1" max="5">
 
                 <label for="capacity">Lotação:</label>
                 <input class="mb-1" type="range" id="capacity" name="capacity" min="0" max="100">
@@ -65,24 +77,24 @@
                 <label for="waiting-time">Tempo de Espera:</label>
                 <input class="mb-1" type="range" id="waiting-time" name="waiting-time" min="0">
 
-                <select class="mb-1" name="restaurant-type">
+                <select class="mb-1" name="restaurant-type"> 
                     <option value="-1" selected>Tipo de Restaurante</option>
-                    <option value="1">Japonês</option>
-                    <option value="2">Italiano</option>
-                    <option value="3">Brasileiro</option>
-                    <option value="4">Indiano</option>
-                    <option value="5">Fast-food</option>
-                    <option value="5">Australiano</option>
+                    <option value="Japonês">Japonês</option>
+                    <option value="Italiano">Italiano</option>
+                    <option value="Brasileiro">Brasileiro</option>
+                    <option value="Indiano">Indiano</option>
+                    <option value="Fast-food">Fast-food</option>
+                    <option value="Australiano">Australiano</option>
                 </select>
 
 
                 <select class="mb-1" name="payment-methods">
                     <option value="-1" selected>Tipo de Pagamento</option>
-                    <option value="1">Cartão de Crédito</option>
-                    <option value="2">Cartão de Débito</option>
-                    <option value="3">PIX</option>
-                    <option value="4">Cartão Refeição</option>
-                    <option value="5">Dinheiro</option>
+                    <option value="Cartão de Crédito">Cartão de Crédito</option>
+                    <option value="Cartão de Débito">Cartão de Débito</option>
+                    <option value="PIX">PIX</option>
+                    <option value="Cartão Refeição">Cartão Refeição</option>
+                    <option value="Dinheiro">Dinheiro</option>
                 </select>
 
                 <label for="city">Cidade</label>

@@ -80,6 +80,7 @@
     align-items: center;
     flex-direction: row;
     padding-top: 15px;
+    justify-content: center;
 }
 
 .footer-ponto {

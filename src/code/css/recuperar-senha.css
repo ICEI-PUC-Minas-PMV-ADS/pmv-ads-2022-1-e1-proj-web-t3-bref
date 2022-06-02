@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
-
 /* Ajustes Bootstrap */
 * {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
@@ -13,9 +11,13 @@ div.container-fluid {
 .container-main {
     height: 100%;
 }
+#corpao {
+    height: 100vh;
+}
 
 body {
     background: #FFFFF4;
+    height: 100vh;
 }
 
 header {
@@ -33,11 +35,17 @@ header {
 
 .changeFontsButtons {
     font-size: 1em;
-    background-color: #FFC300;
     border: outset;
-    color: #483A20;
     font-weight: bold;
     justify-content: flex-end;
+    color: #483A20  ;
+    background-color: #FFC300;
+    border: none;
+}
+
+.changeFontsButtons:hover {
+    color: #FFFFF4;
+    background-color: #483A20;
 }
 
 #barColor {
@@ -97,6 +105,7 @@ header {
     color: #483A20;
     text-align: center;
     font-family: 'Lato', sans-serif;
+<<<<<<< HEAD
 } 
  
 input, #novaSenha, #confirmarSenha {
@@ -109,6 +118,25 @@ input, #novaSenha, #confirmarSenha {
 	outline: 0;
 	background-color: #FFFFF4;
 	border-style: solid;
+=======
+    height: 76vh;
+}
+
+.content{
+    height: 1000px;
+}
+
+input {
+    width: 20em;
+    margin: 5px;
+    padding: 6px;
+    border-radius: 4px;
+    text-indent: 0.1rem;
+    border-width: 1px;
+    outline: 0;
+    background-color: #FFFFF4;
+    border-style: solid;
+>>>>>>> d00abe9a4d0f59371537dd470d89bb34d88530a8
 }
 
 #novaSenha{
@@ -219,7 +247,7 @@ input:focus:invalid {
 #footer-copyright {
     justify-content: center;
     padding-left: 1rem;
-}
+}*/
 
 
 

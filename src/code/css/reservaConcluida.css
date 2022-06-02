@@ -1,79 +1,89 @@
-html,body {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
+
+/* Ajustes Bootstrap */
+* {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
-  header {
-    background-color: #483a20;
-    height: 52px;
-  }
-  a {
-    color: #ffc300;
-    font-size: 35px;
-    font-family: 'Oswald',sans-serif;
-    margin-left: 0;
-  }
+
+div.container-fluid {
+    padding: 0;
+}
+
+.breff {
+    color: #FFC300;
+    font-size: 5em;
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#link .btn {
+    background-color: #483A20;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1em;
+    border-color: transparent;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
   .container {
-    background: #FFFFF4;
+    background: white;
     font-family: 'Lato', sans-serif;
     text-align: center;
-  }
-  h1 {
-    text-align: left;
-    font-family: 'Oswald', sans-serif;
-    color: #ffc300;
-    font-size: 35px;
-    margin: 0;
-    margin-left: 3%;
-  }
-  h2{
-    text-align: center;
-    margin: 0;
-    font-family: 'Oswald', sans-serif;
-    font-size: 90px;
-    color: #ffc300;
-  }
+  } 
+
   img {
     width: 12.5%;
     margin: 0;
     margin-top: -1%;
   }
 
-  h3 {
-    text-align: center;
-    margin: 0;
-    color: #483a20;
-    font-family: 'lato', sans-serif;
-    font-size: 34px;
-    margin-top:10px;
-  }
+/* Zoom area */
 
- button {
-    font-size: 25px;
-    padding: 2px;
-    color: #FFFFF4;
-    font-family: 'lato', sans-serif;
-    background: #483a20;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: .8px all;
-    width: 210px;
-    margin: 25px 0px 25px 0px;
-  }
+#barColor {
+    height: 2em;
+    background-color: #FFC300;
+    display: flex;
+    flex-direction: row;
+}
+
+#logo-bref .btnHeader {
+    background-color: transparent;
+    color: #FFC300;
+    width: 100%;
+    font-size: 1em;
+    border-color: transparent;
+    align-items: center;
+    margin: 0;
+}
+
+.changeFontsButtons {
+    font-size: 1em;
+    background-color: #FFC300;
+    border: outset;
+    color: black;
+    font-weight: bold;
+    justify-content: flex-end;
+}
+
+/* end zoom area */
+
   p {
     margin: 9px 0px 9px 0px;  
-    font-size: 21px;
+    font-size: 2em;
     color: #483a20;
     font-family: 'lato', sans-serif;
   }
-  #footer {
-    margin-top: 60px;
-    background: #ffc300;
-    height: 40px;
-  }
-  #barColor {
-    background: #ffc300;
-    height: 20px;
-    margin-bottom: 00px;
-    margin-top: 0pX;
-  }
+
+#footer-copyright {
+    font-size: 1em;
+}
+/* footer margin */
+#footer-container {
+    margin-bottom: 15px;
+}
