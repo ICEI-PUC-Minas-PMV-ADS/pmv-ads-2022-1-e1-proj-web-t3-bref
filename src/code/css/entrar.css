@@ -132,7 +132,6 @@ aside {
 	background-image: url("https://cdn.discordapp.com/attachments/965947265036455957/965947378102321202/unknown.png");
 	width: 50vw;
 	height: 100vh;
-
 }
 
 #retangulo {
@@ -172,7 +171,7 @@ aside {
 
 .botoes:hover {
 	background: rgb(110, 79, 22);
-	transform: scale(1.01);
+	transform: scale(1.01);	
 }
 
 button {
