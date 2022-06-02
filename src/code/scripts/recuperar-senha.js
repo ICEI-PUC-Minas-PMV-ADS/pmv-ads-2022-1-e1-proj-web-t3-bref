@@ -7,8 +7,6 @@
     document.getElementById('mensagem-email').style.display = "none";
 
     alert("E-mail enviado!")
-
-
 }
 
     /* TESTE 
@@ -17,7 +15,7 @@
 
     
 
- /* TESTE 1 ATUALIZAÇÃO DE CONTEUDO
+ /* TESTE 1 ATUALIZAÇÃO DE CONTEUDO */
  function sumir(redefinicaoSenha){
     document.getElementById(redefinicaoSenha).hidden=true;
 }
@@ -32,7 +30,7 @@ function inicia(){
     
 }
 
-window.addEventListener("load", inicia); */
+window.addEventListener("load", inicia);
 
 
 
@@ -110,18 +108,11 @@ function validarEmail(){
  }
 
  function redefinirMsg(){
-     var error = document.querySelector('#error-email')
-     if(error.innerHTML == ""){error.innerHTML == ""
-     }
- }
-
-
-
-
- 
-
-
- /* AUMENTAR E DIMINUIR FONTE */
+    var error = document.querySelector('#error-email')
+    if(error.innerHTML == ""){error.innerHTML == ""
+    }
+}
+/* AUMENTAR E DIMINUIR FONTE */
  var maxClicksAddMoreSize = 8;
  var maxClicksSubtractMoreSize = -2;
 
