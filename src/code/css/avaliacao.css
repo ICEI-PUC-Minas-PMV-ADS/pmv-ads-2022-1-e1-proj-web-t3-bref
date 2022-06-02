@@ -15,7 +15,6 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-
 .container-main {
     width: 100vw;
 }
@@ -38,23 +37,39 @@ body {
     padding: 10px;
 }
 
+/* Zoom area */
+
 #barColor {
-    height: 30px;
+    height: 2em;
     background-color: #FFC300;
+    display: flex;
+    flex-direction: row;
 }
 
-.hRight{
-    margin-left: 20px;
+.changeFontsButtons {
+    font-size: 1em;
+    background-color: #FFC300;
+    border: outset;
+    color: black;
+    font-weight: bold;
+    justify-content: flex-end;
 }
 
-#hLeft{
+/* end zoom area */
+
+.hRight {
+    margin-left: 1rem;
+    font-size: 1.4em;
+}
+
+#hLeft {
     flex: 50%;
     align-self: start;
 }
 
 #brefTitle {
     color: #FFC300;
-    font-size: 36px;
+    font-size: 3em;
     font-family: 'Oswald', sans-serif;
     padding: 0;
     margin-right: 0;
@@ -63,9 +78,14 @@ body {
     margin-left: 25px;
 }
 
-#formulary{
-    font-size: 25px;
+#formulary {
+    font-size: 3em;
     font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 25px;
     align-content: center;
     flex: 50%;
 }
@@ -74,12 +94,12 @@ body {
     align-content: center;
 }
 
-#title{
+#title {
     color: black;
-    font-weight:bolder;
+    font-weight: bolder;
     align-content: center;
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 1em;
+    margin-bottom: 0.8em;
     margin-left: 0px;
     text-align: center;
 }
@@ -88,12 +108,13 @@ body {
     flex: 40%;
 }
 
-#main{
+#main {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
     padding: 10px;
+    margin: 2rem 0;
 }
 
 .containerInfos{
@@ -102,17 +123,19 @@ body {
 }
 
 .titleInfo {
-    font-size: 18px;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
     font-weight: bold;
-    margin-bottom: 0px;
+    margin-left: 5px;
 }
 
 .inputInfo {
     padding: 8px;
-    font-size: 22px;
+    font-size: 0.6em;
     border-radius: 5px;
     border-color: gray;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     width: 100%;
 }
 
@@ -144,7 +167,8 @@ body {
     background-color: #483A20;
     color: white;
     border-radius: 10px;
-    width: 104%;
+    width: 100%;
+    font-size: 0.6em;
     border-color: transparent;
     padding: 10px;
     align-items: center;
