@@ -1,32 +1,24 @@
-var visibilidade = true;
+ /* MENSAGEM DE EMAIL ENVIADO */
 
-function exibir(){
-    document.getElementById("recuperarSenha").style.display="block";
+ function enviarEmail(){
+
+    document.getElementById('recuperarSenha').style.display = "none";
+    document.getElementById('redefinicaoSenha').style.display = "block";
+    document.getElementById('mensagem-email').style.display = "none";
+
+    alert("E-mail enviado!")
+
+
 }
 
-function ocultar(){
-    document.getElementById("recuperarSenha").style.display="none";
-}
+    /* TESTE 
+    document.getElementById('mensagem-email').innerHTML= "E-mail enviado!" 
+    document.getElementById('mensagem-email').style.color = "forestgreen"; */
 
-function ocultarExibir(){
+    
 
-    if (visibilidade){
-        document.getElementById("recuperarSenha").style.display="none";
-
-    }else{
-        document.getElementById("redefinicaoSenha").style.dysplay="block";
-    }
-}
-
-function clickEnviar(){
-        document.getElementById('redefinicaoSenha').innerHTML = 
-
-       document.getElementById('btnRedefinicaosenha').addEventListener('mouseup', enviarEmail)
-       console.log('btnRedefinicaosenha') 
-    }
-
-
- /* function sumir(redefinicaoSenha){
+ /* TESTE 1 ATUALIZAÇÃO DE CONTEUDO
+ function sumir(redefinicaoSenha){
     document.getElementById(redefinicaoSenha).hidden=true;
 }
 function inicia(){
@@ -41,6 +33,8 @@ function inicia(){
 }
 
 window.addEventListener("load", inicia); */
+
+
 
 /* MOSTRAR SENHAS */
 const btn = document.querySelector(".fa-eye");
@@ -121,14 +115,10 @@ function validarEmail(){
      }
  }
 
- /* MENSAGEM DE EMAIL ENVIADO */
 
- function enviarEmail(){
-     document.getElementById('mensagem-email').innerHTML = "E-mail enviado!"
-    }
-    document.getElementById('btnEmail').addEventListener('mouseup', enviarEmail)
-    console.log('btnEmail') 
-   
+
+
+ 
 
 
  /* AUMENTAR E DIMINUIR FONTE */

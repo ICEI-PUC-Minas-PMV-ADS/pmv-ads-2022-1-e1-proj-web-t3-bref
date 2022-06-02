@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
@@ -65,15 +66,15 @@
 
                 <form action="">
                     
-                    <div class="recuperarSenha">
+                    <div id="recuperarSenha">
                         <h2 id="recuperar-senha">Recuperar senha</h2><br>
                         <label for="email"></label>
                         <input type="email"
                             placeholder="Informe seu email"
                             onblur="validarEmail()" 
-                            onfocus="redefinirMsg()" id ="email"></input><br>
+                            onfocus="redefinirMsg()" id ="email"><br>
 
-                        <input type="button" id="btnEmail" class="botoes" value="Enviar"></input>
+                        <input type="button" id="btnEmailEnviado" class="botoes" value="Enviar">
                     </div>
 
                 <form action="" method="post" class="contact_form span6 offset3 m-top m-bottom">
@@ -81,7 +82,7 @@
                     
                     <div> 
 
-                        <div class="redefinicaoSenha">
+                        <div id="redefinicaoSenha">
                             <!-- <div hidden="redefinicaoSenha">--> 
                             <h2 id="redefinir-senha">Redefinir Senha</h2> 
                             <label for="senha"></label>
@@ -93,7 +94,7 @@
                                 placeholder="Confirme a senha"><br
                                 onblur="validarSenha()"
                                 onfocus="redefinirMsg()" id="nova-senha">
-                                <input type="button" id="btnEmail" class="botoes" value="Enviar"></input><br>
+                                <input type="button" id="btnConfirmarNovaSenha" class="botoes" value="Enviar"></input><br>
                             </div>
     
                             
@@ -112,7 +113,7 @@
                             onfocus="redefinirMsg()" id="nova-senha"></label>
                     </div> -->
                     <div>
-                        <p id="mensagem-email">Enviaremos um e-mail para redefinição de senha </p>
+                        <p id="mensagem-email">Enviaremos um e-mail para redefinição de senha</p>
                         <a id="possuiConta" href="./entrar.html">Não possui uma conta?</a>
                     </div>
                 </div>

@@ -128,7 +128,7 @@ input:focus:invalid {
     box-shadow:none;
 }
 
-input#btnEmail.botoes{
+#btnEmail.botoes {
     margin: 25px;
 }
 
@@ -142,9 +142,11 @@ input#btnEmail.botoes{
 	transform: scale(1.01);
 }
 
-#btnEmail {
+#btnEmailEnviado, #btnConfirmarNovaSenha {
     border-radius: 4px;
     border: 0px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     width: 262px;
     padding: 6px;
     cursor: pointer;
@@ -153,13 +155,13 @@ input#btnEmail.botoes{
 }
 
 
-.recuperarSenha {
+#recuperarSenha {
     display: block;
 }
 
-.redefinicaoSenha {
+#redefinicaoSenha {
 
-    display: block;
+    display: none;
 }
 
 .button {
