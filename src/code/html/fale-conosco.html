@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/fale-conosco.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
     
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../bootstrap-css/bootstrap.min.css">
@@ -47,8 +50,6 @@
                 </div>
             </header> -->
 
-
-
             <div id="barColor">
                 <button class="changeFontsButtons" onclick="changeSizeAllItems(false);">Font -</button>
                 <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
@@ -62,21 +63,23 @@
                             <p id="title">Fale conosco</p>
                             <div class="containerInfos">
                                 <p class="titleInfo">Nome completo</p>
-                                <input class="inputInfo" placeholder="Nome completo">
+                                <input class="inputInfo" type="text" placeholder="João das Neves">
                             </div>
                             <div class="containerInfos">
                                 <p class="titleInfo">Email</p>
-                                <input class="inputInfo" placeholder="Email">
+                                <input class="inputInfo" placeholder="Lucas.cns@hotmail.com">
                             </div>
                             <div class="containerInfos">
                                 <p class="titleInfo">Telefone</p>
-                                <input class="inputInfo" placeholder="(XX) X XXXX-XXXX">
+                                <input class="inputInfo" type="number" placeholder="(XX) 9-XXXX-XXXX">
                             </div>
                             <div class="containerInfos">
                                 <p class="titleInfo">Mensagem</p>
-                                <textarea rows="10" id="msgInput" class="inputInfo"></textarea>
+                                <textarea rows="10" id="msgInput" type="text" class="inputInfo"></textarea>
                             </div>
+
                             <Button id="btnEnviar" class="btn">Enviar</Button>
+
                         </div>
                     </div>
                 </div>
