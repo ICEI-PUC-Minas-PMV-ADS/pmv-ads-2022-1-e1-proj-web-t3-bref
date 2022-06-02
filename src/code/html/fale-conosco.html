@@ -135,6 +135,13 @@
                 defaultSizeWindow = currentDefaultWindowSize;
         }
 
+        function getCurrentWindowSizeValue() {
+            let myWindowSize = window.getComputedStyle(document.body).fontSize;
+            let currentDefaultWindowSize = parseInt(myWindowSize.replace('px', ''));
+
+            return currentDefaultWindowSize;
+        }
+
         function changeSizeAllItems(isAddMoreSize) {
             let currentWindowSize = getCurrentWindowSizeValue();
             if (isAddMoreSize && isValidAddMoreSize()) {
@@ -146,13 +153,6 @@
                 document.body.style.fontSize = (currentWindowSize - 3) + 'px';
             }
             actionAboutShowableItems(namesItemToHidden, countClicksChangeSizeItems, countClicksToHiddenItems);
-        }
-
-        function getCurrentWindowSizeValue() {
-            let myWindowSize = window.getComputedStyle(document.body).fontSize;
-            let currentDefaultWindowSize = parseInt(myWindowSize.replace('px', ''));
-
-            return currentDefaultWindowSize;
         }
 
         function isValidAddMoreSize() {
