@@ -1,18 +1,50 @@
+let restaurantsDatabase;
+
 // Função que recebe como parâmetro uma página qualquer e faz o redirecionamento.
 function openPage(page) {
     window.location = page;
 }
 
-window.onload = function () {
-    loadRestaurants();
+window.onload = async function () {
+    console.log("Chamou a função window.onload");
+    restaurantsDatabase = await getRestaurantsFromDatabase();
+    const filter = getSearchFilter();
+    loadRestaurants(filter);
 }
 
-function loadRestaurants() {
-    console.log("Chamou a função loadRestaurants");
+async function getRestaurantsFromDatabase() {
+    console.log("Chamou a função getRestaurantsFromDatabase");
+    const response = await fetch("../database/restaurants.json");
+    const restaurantsDatabaseJson = await response.json();
+    console.log(restaurantsDatabaseJson);
+    return restaurantsDatabaseJson.restaurants;
+}
+
+function getSearchFilter() {
+    console.log("Chamou a função getSearchFilter")
+    const params = new URLSearchParams(window.location.search);
+
+    const filter = {
+        name: params.get("pesq"),
+        capacity: Number.parseFloat(params.get("capacity"))
+    };
+
+    return filter;
+}
+
+function loadRestaurants(filter) {
+    console.log("Chamou a função loadRestaurants", filter);
     let allCardsHtml = "";
 
-    for (let index = 0; index < restaurants.length; index++) {
-        const restaurant = restaurants[index];
+    let filteredRestaurants = getRestaurantsBasedOnFilter(filter);
+
+    if (filteredRestaurants.length === 0) {
+        allCardsHtml = getNotFoundRestaurantsCardHtml();
+        filteredRestaurants = getAllRestaurants();
+    }
+
+    for (let index = 0; index < filteredRestaurants.length; index++) {
+        const restaurant = filteredRestaurants[index];
         const cardHtml = restaurantCardHtml(restaurant);
 
         allCardsHtml = allCardsHtml + cardHtml;
@@ -20,6 +52,38 @@ function loadRestaurants() {
 
     let restaurantListElement = document.getElementById('restaurant-list');
     restaurantListElement.innerHTML = allCardsHtml;
+}
+
+function getAllRestaurants() {
+    return restaurantsDatabase;
+}
+
+function getNotFoundRestaurantsCardHtml() {
+    const cardHtml =
+        `
+    <div class="card">
+    <div class="card-info-group">
+
+        <span class="card-title">Poxa, não encontramos os restaurantes, mas aqui está uma lista que você
+            pode gostar.</span>
+    </div>
+    </div>
+    `;
+
+    return cardHtml;
+}
+
+function getRestaurantsBasedOnFilter(filter) {
+    console.log("Chamou a função getRestaurantsBasedOnFilter", filter);
+
+    if (filter == undefined || filter == null)
+        return restaurantsDatabase;
+
+    const filteredRestaurants = restaurantsDatabase.filter(r =>
+        (filter.name == null || r.name.toUpperCase().includes(filter.name.toUpperCase()))    
+        && (Number.isNaN(filter.capacity) || r.capacity <= filter.capacity));
+
+    return filteredRestaurants;
 }
 
 function restaurantCardHtml(restaurant) {
@@ -67,7 +131,7 @@ function restaurantCardHtml(restaurant) {
 
 function formatPrice(averagePrice) {
     console.log("Chamou a função formatPrice com o seguinte parametro", averagePrice);
-    
+
     let formatedPrice = "";
     let repetitions = 1;
 
@@ -78,60 +142,3 @@ function formatPrice(averagePrice) {
 
     return formatedPrice;
 }
-
-const restaurants = [
-    {
-        name: "MC Donalds",
-        averagePrice: 2,
-        type: "Fast-food",
-        capacity: 60,
-        waitingTimeMinutes: 15,
-        paymentMethods: ["Cartão de Crédito", "Cartão de Débito", "PIX", "Cartão Refeição", "Dinheiro"],
-        image: "place6.jpg"
-    },
-    {
-        name: "Burger King",
-        averagePrice: 2,
-        type: "Fast-food",
-        capacity: 90,
-        waitingTimeMinutes: 40,
-        paymentMethods: ["Cartão de Crédito", "Cartão de Débito", "PIX", "Cartão Refeição", "Dinheiro"],
-        image: "place7.jpg"
-    },
-    {
-        name: "Madero",
-        averagePrice: 5,
-        type: "Australiano",
-        capacity: 30,
-        waitingTimeMinutes: 60,
-        paymentMethods: ["Cartão de Crédito", "Cartão de Débito", "PIX", "Cartão Refeição", "Dinheiro"],
-        image: "place5.jpg"
-    },
-    {
-        name: "Fujiyama",
-        averagePrice: 1,
-        type: "Pastelaria",
-        capacity: 20,
-        waitingTimeMinutes: 15,
-        paymentMethods: ["Cartão de Crédito", "Cartão de Débito", "Dinheiro"],
-        image: "place8.jpg"
-    },
-    {
-        name: "Spoleto",
-        averagePrice: 2,
-        type: "Brasileiro",
-        capacity: 10,
-        waitingTimeMinutes: 20,
-        paymentMethods: ["Cartão de Crédito", "Cartão de Débito", "PIX", "Cartão Refeição", "Dinheiro"],
-        image: "place9.jpg"
-    },
-    {
-        name: "Sushi Japa Chan",
-        averagePrice: 4,
-        type: "Japonese",
-        capacity: 30,
-        waitingTimeMinutes: 5,
-        paymentMethods: ["Cartão de Crédito", "Cartão de Débito", "PIX", "Cartão Refeição"],
-        image: "place10.jpg"
-    }
-]

@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/recuperar-senha.css">
+    <script defer src="../scripts/recuperar-senha.js"></script>
+
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap-css/bootstrap.min.css">
+    <!-- Footer e Header -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header-bref.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -13,102 +22,110 @@
 
 
 <body onload="startWindow()">
-    <div class="container">
-        <header id="header">
-            <div id="hLeft">
-                <p href="index.html" id="brefTitle">BREF</p>
-            </div>
-            <div id="hRight">
+    <div class="container-fluid">
+        <!-- NAV --> 
+        <div class="container-main">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" id="logo-bref" href="../html/index.html">BREF</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+               <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./fale-conosco.html">Fale Conosco</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="./entrar.html">Entrar/Cadastrar</a>
+                    </li> -->
+                  </ul>
+                </div>
+            </nav>
+            <!-- <header id="header">
+                <div id="hLeft">
+                    <p href="index.html" id="brefTitle">BREF</p>
+                </div>
+                <div id="hRight">
 
-            </div>
-        </header>
-        <div id="barColor">
-            <button class="changeFontsButtons" onclick="changeSizeAllItems(false);">Font -</button>
-            <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
-            <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
-        </div>
-        <main class="o-main">
-            <div id="items">
-                <h1 id="bigBreff" class=page-title>BREF</h1>
-                <img src="../imgs/IMG_6238 (1).png"
-                     class="bref-logo" id="spoons"><br>
-            </div>
+                </div>
+            </header> -->
 
-            <h2 id="recuperar senha">Recuperar senha</h2>
-
-            <div>
-                <input class="input" placeholder="Informe seu e-mail"><br>
-                <button class="button" id="botao-enviar-codigo">Enviar código</button><br>
-                <input class="input" placeholder="Informe seu código"><br>
-                <button class="button" id="botao-verificar-codigo">Verificar código</button><br>
+            <!-- Conteúdo principal -->
+            <div id="barColor">
+                <button class="changeFontsButtons" onclick="changeSizeAllItems(false);">Font -</button>
+                <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
+                <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
             </div>
+        <main id="o-main">
+            <!-- <div id="o-main"> -->
+                <div id="items">
+                    <h1 id="bigBref" class=page-title>BREF</h1>
+                </div>
+
+                <form action="">
+                    
+                    <div class="form-group">
+                        <h2 id="recuperar-senha">Recuperar senha</h2><br>
+                        <label for="email">
+                        <input type="email"
+                            placeholder="Informe seu email"
+                            onblur="validarEmail()" 
+                            onfocus="redefinirMsg()" id ="email">
+                    </div>
+
+                <form action="" method="post" class="contact_form span6 offset3 m-top m-bottom">
+                <!-- <div class="form-group"> -->
+                    <input type="button" id="btnEmail" class="botoes" value="Enviar"></input><br>
+                </form>
+            <!-- </div> -->  
+           <!--  class="account-form-wrapper visible-when-content-ready row-fluid" -->
+                <div> 
+                    <div class="oculta">
+                        <h3 id="redefinir-senha">Redefinir Senha</h3>
+                        <label for="senha">
+                        <input type="senha"
+                            placeholder="Nova Senha"
+                            placeholder="Confirmação de senha"
+                            onblur="validarSenha()"
+                            onfocus="redefinirMsg()" id="nova-senha"></label>
+                    </div>
+                    <div>
+                        <p id="mensagem-email">Enviaremos um e-mail para redefinição de senha </p>
+                        <a id="possuiConta" href="./entrar.html">Não possui uma conta?</a>
+                    </div>
+                </div>
+            </div>    
         </main>
+
+            <!-- FOOTER -->
+            <div class="row" id="footer">
+                <div class="col-md-12">
+                <ul>
+                    <!-- <li><a id="logo-bref" href="../html/index.html">BREF</a></li> -->
+                    <li>
+                    <ul class="share">
+                        <a href="#"><li id="facebook-icon"></li></a>
+                        <a href="#"><li id="twitter-icon"></li></a>
+                        <a href="#"><li id="instagram-icon"></li></a>
+                    </ul>
+                    </li>
+                    <li id="footer-links">
+
+                        <a href="./sobre-nos.html">Sobre nós</a><br>
+                        <span class="footer-ponto">&#9679;</span>
+                        <a href="./entrar.html">Entrar/Cadastrar</a>
+                        <span class="footer-ponto">&#9679;</span>
+                        <a href="./fale-conosco.html">Fale conosco</a><br>
+                
+                    </li>
+                    <li>
+                    <p id="footer-copyright">© 2022 Bref Company LTDA</p>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <script type="text/javascript">
 
-        var maxClicksAddMoreSize = 8;
-        var maxClicksSubtractMoreSize = -2;
-
-        var countClicksToHiddenItems = 3;
-        var defaultSizeWindow = 0;
-
-        var countClicksChangeSizeItems = 0;
-        var namesItemToHidden = ['spoons', 'bigBreff'];
-
-        function startWindow() {
-            let currentDefaultWindowSize = getCurrentWindowSizeValue();
-            if (defaultSizeWindow == 0)
-                defaultSizeWindow = currentDefaultWindowSize;
-        }
-
-        function changeSizeAllItems(isAddMoreSize) {
-            let currentWindowSize = getCurrentWindowSizeValue();
-            if (isAddMoreSize && isValidAddMoreSize()) {
-                countClicksChangeSizeItems++;
-                document.body.style.fontSize = (currentWindowSize + 3) + 'px';
-            }
-            if (!isAddMoreSize && isValidSubtractMoreSize()) {
-                countClicksChangeSizeItems--;
-                document.body.style.fontSize = (currentWindowSize - 3) + 'px';
-            }
-            actionAboutShowableItems(namesItemToHidden, countClicksChangeSizeItems, countClicksToHiddenItems);
-        }
-
-        function getCurrentWindowSizeValue() {
-            let myWindowSize = window.getComputedStyle(document.body).fontSize;
-            let currentDefaultWindowSize = parseInt(myWindowSize.replace('px', ''));
-
-            return currentDefaultWindowSize;
-        }
-
-        function isValidAddMoreSize() {
-            return countClicksChangeSizeItems < maxClicksAddMoreSize;
-        }
-
-        function isValidSubtractMoreSize() {
-            return countClicksChangeSizeItems > maxClicksSubtractMoreSize;
-        }
-
-        function resetDocumentSizes() {
-            document.body.style.fontSize = defaultSizeWindow + 'px';
-            countClicksChangeSizeItems = 0;
-            showHiddenItems(namesItemToHidden, 'block');
-        }
-
-        function actionAboutShowableItems(namesItemToHidden, currentCount, maxClicksToHiddenItems) {
-            let show = 'block';
-            let notShow = 'none';
-            let action = currentCount >= maxClicksToHiddenItems ? notShow : show;
-            showHiddenItems(namesItemToHidden, action);
-        }
-
-        function showHiddenItems(namesItemToHidden, action) {
-            for (x = 0; namesItemToHidden.length > x; x++) {
-                let myBigBreff = document.getElementById(namesItemToHidden[x]);
-                myBigBreff.style.display = action;
-            }
-        }
-
-    </script>
 </body>
