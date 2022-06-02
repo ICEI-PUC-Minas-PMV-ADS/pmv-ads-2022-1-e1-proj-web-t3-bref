@@ -27,7 +27,7 @@ function validarEmail(){
  var defaultSizeWindow = 0;
 
  var countClicksChangeSizeItems = 0;
- var namesItemToHidden = ['bigBref'];
+ var namesItemToHidden = ['null'];
 
  function startWindow() {
      let currentDefaultWindowSize = getCurrentWindowSizeValue();

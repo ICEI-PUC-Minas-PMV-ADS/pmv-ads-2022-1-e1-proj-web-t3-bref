@@ -16,6 +16,7 @@ div.container-fluid {
 
 body {
     background: #FFFFF4;
+    height: 100vh;
 }
 
 header {
@@ -104,7 +105,7 @@ header {
 }
 
 input {
-    width: 325px;
+    width: 20em;
     margin: 5px;
     padding: 6px;
     border-radius: 4px;
