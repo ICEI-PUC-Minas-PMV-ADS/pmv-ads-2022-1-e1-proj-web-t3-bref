@@ -78,3 +78,9 @@ div.container-fluid {
     color: #483a20;
     font-family: 'lato', sans-serif;
   }
+
+
+/* footer margin */
+#footer-container{
+  margin-bottom: 15px;
+}
