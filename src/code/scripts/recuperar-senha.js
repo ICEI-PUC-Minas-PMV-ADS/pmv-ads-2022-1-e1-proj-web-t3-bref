@@ -1,6 +1,6 @@
  /* MENSAGEM DE EMAIL ENVIADO */
 
- function enviarEmail(){
+function enviarEmail(){
 
     document.getElementById('recuperarSenha').style.display = "none";
     document.getElementById('redefinicaoSenha').style.display = "block";
@@ -8,6 +8,10 @@
 
     alert("E-mail enviado!")
 }
+
+    document.getElementById('btnEmailEnviado').addEventListener('mouseup', enviarEmail);
+
+
 
     /* TESTE 
     document.getElementById('mensagem-email').innerHTML= "E-mail enviado!" 
@@ -29,10 +33,7 @@ function inicia(){
    
     
 }
-
 window.addEventListener("load", inicia);
-
-
 
 /* MOSTRAR SENHAS */
 const btn = document.querySelector(".fa-eye");
@@ -56,9 +57,6 @@ function iniciar(){
         iniciar
 }
 }
-
-
-
 
 function CompararSenhas() {
 
