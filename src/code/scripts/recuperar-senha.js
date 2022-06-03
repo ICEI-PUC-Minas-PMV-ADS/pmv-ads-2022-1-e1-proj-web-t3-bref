@@ -1,15 +1,17 @@
  /* MENSAGEM DE EMAIL ENVIADO */
 
- function enviarEmail(){
+function enviarEmail(){
 
     document.getElementById('recuperarSenha').style.display = "none";
     document.getElementById('redefinicaoSenha').style.display = "block";
     document.getElementById('mensagem-email').style.display = "none";
 
     alert("E-mail enviado!")
-
-
 }
+
+    document.getElementById('btnEmailEnviado').addEventListener('mouseup', enviarEmail);
+
+
 
     /* TESTE 
     document.getElementById('mensagem-email').innerHTML= "E-mail enviado!" 
@@ -17,7 +19,7 @@
 
     
 
- /* TESTE 1 ATUALIZAÇÃO DE CONTEUDO
+ /* TESTE 1 ATUALIZAÇÃO DE CONTEUDO */
  function sumir(redefinicaoSenha){
     document.getElementById(redefinicaoSenha).hidden=true;
 }
@@ -31,10 +33,7 @@ function inicia(){
    
     
 }
-
-window.addEventListener("load", inicia); */
-
-
+window.addEventListener("load", inicia);
 
 /* MOSTRAR SENHAS */
 const btn = document.querySelector(".fa-eye");
@@ -58,9 +57,6 @@ function iniciar(){
         iniciar
 }
 }
-
-
-
 
 function CompararSenhas() {
 
@@ -110,18 +106,11 @@ function validarEmail(){
  }
 
  function redefinirMsg(){
-     var error = document.querySelector('#error-email')
-     if(error.innerHTML == ""){error.innerHTML == ""
-     }
- }
-
-
-
-
- 
-
-
- /* AUMENTAR E DIMINUIR FONTE */
+    var error = document.querySelector('#error-email')
+    if(error.innerHTML == ""){error.innerHTML == ""
+    }
+}
+/* AUMENTAR E DIMINUIR FONTE */
  var maxClicksAddMoreSize = 8;
  var maxClicksSubtractMoreSize = -2;
 

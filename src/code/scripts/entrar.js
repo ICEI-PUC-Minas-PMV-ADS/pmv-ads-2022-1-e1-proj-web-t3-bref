@@ -1,13 +1,13 @@
 function Pg() {
 	/* Mostrar senhas */
-	const btn = document.querySelector(".fa-eye");
-	const btnSenhaCadastro = document.querySelector("#verSenha")
-	const btnConfirm = document.querySelector("#verConfirmarSenha")
+	const Btn = document.querySelector(".fa-eye")
+	const BtnConfirm = document.querySelector("#verConfirmarSenha")
+	const BtnSenhaCadastro = document.querySelector("#verSenha")
 	/* Inputs */
-	const inputSenha = document.querySelector("#senha")
-	const inputEmailCadastro = document.querySelector("#emailCadastro")
-	const inputSenhaCadastro = document.querySelector("#senhaCadastro")
-	const inputConfirmarSenha = document.querySelector("#confirmarSenha")
+	const InputSenha = document.querySelector("#senha")
+	const InputEmailCadastro = document.querySelector("#emailCadastro")
+	const InputSenhaCadastro = document.querySelector("#senhaCadastro")
+	const InputConfirmarSenha = document.querySelector("#confirmarSenha")
 	/* Validações */
 	var validNome = false
 	var validData = false
@@ -68,36 +68,36 @@ function Pg() {
 
 		function mostrarSenhaEntrar() {
 			
-				btn.addEventListener("click", ()=>{
+				Btn.addEventListener("click", ()=>{
 					
-					if(inputSenha.getAttribute("type") == "password"){
-							inputSenha.setAttribute("type" , "type")
+					if(InputSenha.getAttribute("type") == "password"){
+							InputSenha.setAttribute("type" , "type")
 						} else {
-							inputSenha.setAttribute("type", "password")
+							InputSenha.setAttribute("type", "password")
 						}
 				}) 
 		}
 
 		function mostrarSenhaCadastro() {
 			
-			btnSenhaCadastro.addEventListener("click", ()=>{
+			BtnSenhaCadastro.addEventListener("click", ()=>{
 
-				if(inputSenhaCadastro.getAttribute("type") == "password"){
-						inputSenhaCadastro.setAttribute("type" , "type")
+				if(InputSenhaCadastro.getAttribute("type") == "password"){
+						InputSenhaCadastro.setAttribute("type" , "type")
 				} else {
-						inputSenhaCadastro.setAttribute("type", "password")
+						InputSenhaCadastro.setAttribute("type", "password")
 				}
 			})
 		}
 
 		function mostrarConfirmarSenhaCadastro() {
 
-				btnConfirm.addEventListener("click", ()=>{
+				BtnConfirm.addEventListener("click", ()=>{
 
-					if(inputConfirmarSenha.getAttribute("type") == "password"){
-							inputConfirmarSenha.setAttribute("type" , "type")
+					if(InputConfirmarSenha.getAttribute("type") == "password"){
+							InputConfirmarSenha.setAttribute("type" , "type")
 					} else {
-							inputConfirmarSenha.setAttribute("type", "password")
+							InputConfirmarSenha.setAttribute("type", "password")
 					}
 				})
 		}
@@ -116,25 +116,25 @@ function Pg() {
 	function CompararSenhas() {
 
 		function compararSenhaComConfirmar(){
-			inputSenhaCadastro.addEventListener("keyup", ()=> {
-				if(inputConfirmarSenha.value != inputSenhaCadastro.value) {
-					inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
-					inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+			InputSenhaCadastro.addEventListener("keyup", ()=> {
+				if(InputConfirmarSenha.value != InputSenhaCadastro.value) {
+					InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 				} else {
-					inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
-					inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+					InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
 				}
 			})
 		}
 
 		function compararConfirmarComSenha() {
-			inputConfirmarSenha.addEventListener("keyup", ()=> {
-				if(inputSenhaCadastro.value != inputConfirmarSenha.value) {
-					inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
-					inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+			InputConfirmarSenha.addEventListener("keyup", ()=> {
+				if(InputSenhaCadastro.value != InputConfirmarSenha.value) {
+					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+					InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 				} else {
-					inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
-					inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+					InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
 				}
 			})
 		}
@@ -151,7 +151,7 @@ function Pg() {
 	function ValidacaoInputs() {
 		
 		function validarEmail() {
-			if(!inputEmailCadastro.checkValidity()){
+			if(!InputEmailCadastro.checkValidity()){
 				errorEmail.innerHTML = "Email inválido";
 			}
 		}

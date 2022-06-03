@@ -105,20 +105,6 @@ header {
     color: #483A20;
     text-align: center;
     font-family: 'Lato', sans-serif;
-<<<<<<< HEAD
-} 
- 
-input, #novaSenha, #confirmarSenha {
-    width: 325px;
-	margin: 5px;
-	padding: 6px;
-	border-radius: 4px;
-	text-indent: 0.1rem;
-	border-width: 1px;
-	outline: 0;
-	background-color: #FFFFF4;
-	border-style: solid;
-=======
     height: 76vh;
 }
 
@@ -136,7 +122,6 @@ input {
     outline: 0;
     background-color: #FFFFF4;
     border-style: solid;
->>>>>>> d00abe9a4d0f59371537dd470d89bb34d88530a8
 }
 
 #novaSenha{
@@ -182,13 +167,11 @@ input:focus:invalid {
     transition: 0.4s all;
 }
 
-
 #recuperarSenha {
     display: block;
 }
 
 #redefinicaoSenha {
-
     display: none;
 }
 
