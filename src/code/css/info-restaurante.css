@@ -49,6 +49,17 @@ body {
 }
 
 /* text retangule layout */
+#restname {
+    font-size: 20px;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    background-color: #F4B11E;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
 #subtitle1 {
     font-size: 20px;
     display: grid;

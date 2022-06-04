@@ -3,10 +3,12 @@
         {
             "id": 1,
             "name": "MC Donalds",
-            "averagePrice": 2,
+            "averagePrice": 20,
             "type": "Fast-food",
             "capacity": 60,
             "waitingTimeMinutes": 15,
+            "telephone":"11 9999-9999",
+            "whatsapp":"11 8888-8888",
             "address": {
                 "city":"Contagem",
                 "state": "MG"
@@ -85,10 +87,12 @@
         {
             "id": 2,
             "name": "Burger King",
-            "averagePrice": 2,
+            "averagePrice": 24,
             "type": "Fast-food",
             "capacity": 90,
             "waitingTimeMinutes": 40,
+            "telephone":"11 7777-9999",
+            "whatsapp":"11 8888-7777",
             "paymentMethods": [
                 "Cartão de Crédito",
                 "Cartão de Débito",
@@ -167,10 +171,12 @@
         {
             "id": 3,
             "name": "Madero",
-            "averagePrice": 5,
+            "averagePrice": 52,
             "type": "Australiano",
             "capacity": 30,
             "waitingTimeMinutes": 60,
+            "telephone":"11 6666-9999",
+            "whatsapp":"11 8888-2222",
             "paymentMethods": [
                 "Cartão de Crédito",
                 "Cartão de Débito",
@@ -249,10 +255,12 @@
         {
             "id": 4,
             "name": "Fujiyama",
-            "averagePrice": 1,
+            "averagePrice": 110,
             "type": "Pastelaria",
             "capacity": 20,
             "waitingTimeMinutes": 15,
+            "telephone":"11 1111-9999",
+            "whatsapp":"11 8888-3388",
             "paymentMethods": [
                 "Cartão de Crédito",
                 "Cartão de Débito",
@@ -329,10 +337,12 @@
         {
             "id": 5,
             "name": "Spoleto",
-            "averagePrice": 2,
+            "averagePrice": 22,
             "type": "Brasileiro",
             "capacity": 10,
             "waitingTimeMinutes": 20,
+            "telephone":"11 2222-9999",
+            "whatsapp":"11 8888-0000",
             "paymentMethods": [
                 "Cartão de Crédito",
                 "Cartão de Débito",
@@ -411,10 +421,12 @@
         {
             "id": 6,
             "name": "Sushi Japa Chan",
-            "averagePrice": 4,
+            "averagePrice": 42,
             "type": "Japonês",
             "capacity": 30,
             "waitingTimeMinutes": 5,
+            "telephone":"11 9999-2222",
+            "whatsapp":"11 2222-8888",
             "paymentMethods": [
                 "Cartão de Crédito",
                 "Cartão de Débito",
