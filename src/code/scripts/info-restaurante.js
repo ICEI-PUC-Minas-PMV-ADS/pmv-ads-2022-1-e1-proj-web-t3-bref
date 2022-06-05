@@ -28,13 +28,62 @@ function start() {
     document.getElementById("rest-img").src=`../imgs/${imgRest}`;
 }
 
+function main_plate() {
+    for (let index=0; index < 3; index++) {
+        let plate = consoleStorage[0]['infoRestaurant']['pratoPrincipal'][index]['nomePrato'];
+        let preco = consoleStorage[0]['infoRestaurant']['pratoPrincipal'][index]['price'];
+        let timePrep = consoleStorage[0]['infoRestaurant']['pratoPrincipal'][index]['timePrep'];
+        let classification = consoleStorage[0]['infoRestaurant']['pratoPrincipal'][index]['classfication'];
+
+        console.log(index);
+
+        document.getElementById(`namePlate${index+1}`).innerHTML = plate;
+        document.getElementById(`preco${index+1}`).innerHTML = `Preço: R$ ${preco}`;
+        document.getElementById(`tempo${index+1}`).innerHTML = `Tempo de Preparo: ${timePrep} minutos`;
+        document.getElementById(`classi${index+1}`).innerHTML = `Classificação: ${classification} Estrelas`;
+    }
+}
+
+function drinks() {
+    for (let index=0; index < 3; index++) {
+        let plate = consoleStorage[0]['infoRestaurant']['bebidas'][index]['nomePrato'];
+        let preco = consoleStorage[0]['infoRestaurant']['bebidas'][index]['price'];
+        let timePrep = consoleStorage[0]['infoRestaurant']['bebidas'][index]['timePrep'];
+        let classification = consoleStorage[0]['infoRestaurant']['bebidas'][index]['classfication'];
+
+        console.log(index);
+
+        document.getElementById(`namePlate${index+1}`).innerHTML = plate;
+        document.getElementById(`preco${index+1}`).innerHTML = `Preço: R$ ${preco}`;
+        document.getElementById(`tempo${index+1}`).innerHTML = `Tempo de Preparo: ${timePrep} minutos`;
+        document.getElementById(`classi${index+1}`).innerHTML = `Classificação: ${classification} Estrelas`;
+    }
+}
+
+function dessert() {
+    for (let index=0; index < 3; index++) {
+        let plate = consoleStorage[0]['infoRestaurant']['sobremesa'][index]['nomePrato'];
+        let preco = consoleStorage[0]['infoRestaurant']['sobremesa'][index]['price'];
+        let timePrep = consoleStorage[0]['infoRestaurant']['sobremesa'][index]['timePrep'];
+        let classification = consoleStorage[0]['infoRestaurant']['sobremesa'][index]['classfication'];
+
+        document.getElementById(`namePlate${index+1}`).innerHTML = plate;
+        document.getElementById(`preco${index+1}`).innerHTML = `Preço: R$ ${preco}`;
+        document.getElementById(`tempo${index+1}`).innerHTML = `Tempo de Preparo: ${timePrep} minutos`;
+        document.getElementById(`classi${index+1}`).innerHTML = `Classificação: ${classification} Estrelas`;
+    }
+}
+
+
 // https://dev.to/ramonak/javascript-how-to-access-the-return-value-of-a-promise-object-1bck
 const readDB = fetch('../database/restaurants.json')
     .then((response) => response.json())
     .then((database => {
         consoleStorage.push(database.restaurants[id-1]);
     
-    start(); // DOM
+    // API DOM to update the page
+    start(); 
+    main_plate()
 }));
 
 // start sequence

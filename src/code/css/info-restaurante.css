@@ -48,9 +48,15 @@ body {
     height: 200px;
 }
 
+#middle_menu {
+    background-color: #483A20;
+    border: 0px;
+    color: white;
+}
+
 /* text retangule layout */
 #restname {
-    font-size: 20px;
+    font-size: 23px;
     display: grid;
     align-content: center;
     text-align: center;
