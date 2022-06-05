@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
-    
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../bootstrap-css/bootstrap.min.css">
     <!-- Footer e Header -->
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/header-bref.css">
-    
+
     <title>Fale conosco - Bref</title>
 </head>
 <body onload="startWindow()">
@@ -26,100 +26,86 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" id="logo-bref" href="../html/index.html">BREF</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./fale-conosco.html">Fale Conosco</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./entrar.html">Entrar/Cadastrar</a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./fale-conosco.html">Fale Conosco</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./entrar.html">Entrar/Cadastrar</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
-            <!-- <header id="header">
-                <div id="hLeft">
-                    <p id="brefTitle">BREF</p>
-                </div>
-                <div id="hRight">
-                    <div class="hRight">Sobre Nós</div>
-                    <div class="hRight">Entrar ou cadastrar</div>
-                </div>
-            </header> -->
 
             <div id="barColor">
                 <button class="changeFontsButtons" onclick="changeSizeAllItems(false);">Font -</button>
                 <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
                 <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
             </div>
+
+            <p id="title" class="titlePage">Fale conosco</p>
+
             <div id="main">
-                <div class="separator"></div>
-                <div id="formulary">
-                    <div id="separatorForm">
-                        <div>
-                            <p id="title">Fale conosco</p>
-                            <div class="containerInfos">
-                                <p class="titleInfo">Nome completo</p>
-                                <input class="inputInfo" type="text" placeholder="Seu nome">
-                            </div>
-                            <div class="containerInfos">
-                                <p class="titleInfo">Email</p>
-                                <input class="inputInfo" placeholder="Seu email">
-                            </div>
-                            <div class="containerInfos">
-                                <p class="titleInfo">Telefone</p>
-                                <input class="inputInfo" placeholder="(XX) X-XXXX-XXXX">
-                            </div>
-                            <div class="containerInfos">
-                                <p class="titleInfo">Mensagem</p>
-                                <textarea rows="10" id="msgInput" type="text" class="inputInfo"></textarea>
-                            </div>
-
-                            <a href="../html/index.html" id="btnEnviar" class="btn">Enviar</a>
-
-                        </div>
+                <div id="sideLeft">
+                    <div class="containerInput">
+                        <p class="titleInfo">Nome completo</p>
+                        <input class="inputInfo" type="text" placeholder="Seu nome">
+                    </div>
+                    <div class="containerInput">
+                        <p class="titleInfo">Email</p>
+                        <input class="inputInfo" placeholder="Seu email">
+                    </div>
+                    <div class="containerInput">
+                        <p class="titleInfo">Telefone</p>
+                        <input class="inputInfo" placeholder="(XX) X-XXXX-XXXX">
+                    </div>
+                    <div class="containerInput">
+                        <p class="titleInfo">Mensagem</p>
+                        <textarea rows="10" id="msgInput" type="text" class="inputInfo"></textarea>
+                    </div>
+                    <div id="buttonFlex">
+                        <a href="../html/index.html" id="btnEnviar" class="btn">Enviar</a>
                     </div>
                 </div>
-                <div id="brefSeparator">
-                    <p class="breffRight" id="breffBig">BREF</p>
+                <div id="sideRigth">
+                    <p class="breffLogoStyle">BREF</p>
                 </div>
-                <div class="separator"></div>
             </div>
 
             <!-- FOOTER -->
             <div class="row" id="footer">
                 <div class="col-md-12">
-                <ul>
-                    <li><a id="logo-bref" href="../html/index.html">BREF</a></li>
-                    <li>
-                    <ul class="share">
-                        <a href="#"><li id="facebook-icon"></li></a>
-                        <a href="#"><li id="twitter-icon"></li></a>
-                        <a href="#"><li id="instagram-icon"></li></a>
+                    <ul>
+                        <li><a id="logo-bref" href="../html/index.html">BREF</a></li>
+                        <li>
+                            <ul class="share">
+                                <a href="#">
+                                <li id="facebook-icon"></li></a>
+                                <a href="#">
+                                <li id="twitter-icon"></li></a>
+                                <a href="#">
+                                <li id="instagram-icon"></li></a>
+                            </ul>
+                        </li>
+                        <li id="footer-links">
+                            <a href="./sobre-nos.html">Sobre nós</a>
+                            <span class="footer-ponto">&#9679;</span>
+                            <a href="./fale-conosco.html">Fale conosco</a>
+                            <span class="footer-ponto">&#9679;</span>
+                            <a href="./entrar.html">Entrar/Cadastrar</a>
+                        </li>
+                        <li>
+                            <p id="footer-copyright">© 2022 Bref Company LTDA</p>
+                        </li>
                     </ul>
-                    </li>
-                    <li id="footer-links">
-                        <a href="./sobre-nos.html">Sobre nós</a>
-                        <span class="footer-ponto">&#9679;</span>
-                        <a href="./fale-conosco.html">Fale conosco</a>
-                        <span class="footer-ponto">&#9679;</span>
-                        <a href="./entrar.html">Entrar/Cadastrar</a>
-                    </li>
-                    <li>
-                    <p id="footer-copyright">© 2022 Bref Company LTDA</p>
-                    </li>
-                </ul>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
 
     <script type="text/javascript">
 
@@ -165,7 +151,7 @@
         function isValidSubtractMoreSize() {
             return countClicksChangeSizeItems > maxClicksSubtractMoreSize;
         }
-        
+
         function resetDocumentSizes() {
             document.body.style.fontSize = defaultSizeWindow + 'px';
             countClicksChangeSizeItems = 0;
@@ -174,9 +160,9 @@
 
         function actionAboutShowableItems(namesItemToHidden, currentCount, maxClicksToHiddenItems) {
             let show = 'visible';
-            let notShow = 'hidden'; 
+            let notShow = 'hidden';
             let action = currentCount >= maxClicksToHiddenItems ? notShow : show;
-            showHiddenItems(namesItemToHidden, action);        
+            showHiddenItems(namesItemToHidden, action);
         }
 
         function showHiddenItems(namesItemToHidden, action) {
