@@ -134,6 +134,7 @@ function sendMessage() {
 
     inputMsg.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
 
+    alert("Mensagem enviada, obrigado por nos ajudar a melhorar cada dia mais!");
     window.location.href = "../html/index.html";
 }
 
