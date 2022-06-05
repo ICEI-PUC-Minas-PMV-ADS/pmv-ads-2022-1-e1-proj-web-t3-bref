@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
-
+    <script type="text/javascript" src="../scripts/fale-conosco.js" defer></script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../bootstrap-css/bootstrap.min.css">
     <!-- Footer e Header -->
@@ -53,22 +53,22 @@
                 <div id="sideLeft">
                     <div class="containerInput">
                         <p class="titleInfo">Nome completo</p>
-                        <input class="inputInfo" type="text" placeholder="Seu nome">
+                        <input class="inputInfo" id="inputName" type="text" placeholder="Seu nome">
                     </div>
                     <div class="containerInput">
                         <p class="titleInfo">Email</p>
-                        <input class="inputInfo" placeholder="Seu email">
+                        <input class="inputInfo" id="inputEmail" placeholder="Seu email">
                     </div>
                     <div class="containerInput">
                         <p class="titleInfo">Telefone</p>
-                        <input class="inputInfo" placeholder="(XX) X-XXXX-XXXX">
+                        <input class="inputInfo" type="text" onkeypress="maskPhone()" maxlength="16" id="inputTelefone" placeholder="(XX) X XXXX-XXXX">
                     </div>
                     <div class="containerInput">
                         <p class="titleInfo">Mensagem</p>
                         <textarea rows="10" id="msgInput" type="text" class="inputInfo"></textarea>
                     </div>
                     <div id="buttonFlex">
-                        <a href="../html/index.html" id="btnEnviar" class="btn">Enviar</a>
+                        <a id="btnEnviar" onclick="sendMessage()" class="btn">Enviar</a>
                     </div>
                 </div>
                 <div id="sideRigth">
@@ -106,72 +106,5 @@
             </div>
         </div>
     </div>
-
-    <script type="text/javascript">
-
-        var maxClicksAddMoreSize = 6;
-        var maxClicksSubtractMoreSize = -2;
-
-        var countClicksToHiddenItems = 3;
-        var defaultSizeWindow = 0;
-
-        var countClicksChangeSizeItems = 0;
-        var namesItemToHidden = ['breffBig'];
-
-        function startWindow() {
-            let currentDefaultWindowSize = getCurrentWindowSizeValue();
-            if (defaultSizeWindow == 0)
-                defaultSizeWindow = currentDefaultWindowSize;
-        }
-
-        function getCurrentWindowSizeValue() {
-            let myWindowSize = window.getComputedStyle(document.body).fontSize;
-            let currentDefaultWindowSize = parseInt(myWindowSize.replace('px', ''));
-
-            return currentDefaultWindowSize;
-        }
-
-        function changeSizeAllItems(isAddMoreSize) {
-            let currentWindowSize = getCurrentWindowSizeValue();
-            if (isAddMoreSize && isValidAddMoreSize()) {
-                countClicksChangeSizeItems++;
-                document.body.style.fontSize = (currentWindowSize + 3) + 'px';
-            }
-            if (!isAddMoreSize && isValidSubtractMoreSize()) {
-                countClicksChangeSizeItems--;
-                document.body.style.fontSize = (currentWindowSize - 3) + 'px';
-            }
-            actionAboutShowableItems(namesItemToHidden, countClicksChangeSizeItems, countClicksToHiddenItems);
-        }
-
-        function isValidAddMoreSize() {
-            return countClicksChangeSizeItems < maxClicksAddMoreSize;
-        }
-
-        function isValidSubtractMoreSize() {
-            return countClicksChangeSizeItems > maxClicksSubtractMoreSize;
-        }
-
-        function resetDocumentSizes() {
-            document.body.style.fontSize = defaultSizeWindow + 'px';
-            countClicksChangeSizeItems = 0;
-            showHiddenItems(namesItemToHidden, 'visible');
-        }
-
-        function actionAboutShowableItems(namesItemToHidden, currentCount, maxClicksToHiddenItems) {
-            let show = 'visible';
-            let notShow = 'hidden';
-            let action = currentCount >= maxClicksToHiddenItems ? notShow : show;
-            showHiddenItems(namesItemToHidden, action);
-        }
-
-        function showHiddenItems(namesItemToHidden, action) {
-            for (x = 0; namesItemToHidden.length > x; x++) {
-                let myBigBreff = document.getElementById(namesItemToHidden[x]);
-                myBigBreff.style.visibility = action;
-            }
-        }
-
-    </script>
 </body>
 </html>
