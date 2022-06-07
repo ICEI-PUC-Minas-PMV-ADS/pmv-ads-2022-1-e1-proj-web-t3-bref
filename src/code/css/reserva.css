@@ -100,10 +100,12 @@ hr {
 .error {
     color: #FFFFF4;
     background: red;
-    width: 330px;       
-    margin-left: 38%;
+    width: 20em;       
+    position: relative;
+    left: 24.7em;
+    border-radius: 2px;
     display: none;
-}
+}   
 
 
 div.container-fluid {

@@ -3,16 +3,6 @@ function validateFields(){
     toggleButtonsDisable();
 }
 
-<<<<<<< HEAD
-=======
-function isEmailValid(){
-const email = document.getElementById("email").value;
-if (!email) {
-    return false;
-}
-return validateEmail(email);
-}
->>>>>>> 43b65b70577d725b48dd6320744bd769fa481a3b
 
 function toggleEmailErrors(){
     const email = document.getElementById('email').value;
@@ -21,22 +11,11 @@ function toggleEmailErrors(){
     } else {
         document.getElementById('email-required-error').style.display = "none";
     }
-<<<<<<< HEAD
     if (validateEmail(email) || (!email)){
-=======
-    if (validateEmail(email)){
->>>>>>> 43b65b70577d725b48dd6320744bd769fa481a3b
         document.getElementById('email-invalid-error').style.display = "none";
     } else{
         document.getElementById('email-invalid-error').style.display = "block";
     }
-<<<<<<< HEAD
-} 
-
-
-function validateEmail(email){
-    return /\S+@\S+\.\S+/.test(email);
-=======
     
 } 
 
@@ -113,5 +92,4 @@ function showHiddenItems(namesItemToHidden, action) {
         let myBigBreff = document.getElementById(namesItemToHidden[x]);
         myBigBreff.style.visibility = action;
     }
->>>>>>> 43b65b70577d725b48dd6320744bd769fa481a3b
 }
