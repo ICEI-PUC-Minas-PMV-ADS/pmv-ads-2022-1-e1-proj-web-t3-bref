@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="reserva.css">
-  <script src="reserva.js" ></script>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">''
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reserva.css">
+    <script src="../scripts/reserva.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap-css/bootstrap.min.css">
+    <!-- Footer e Header -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header-bref.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap"rel="stylesheet">
   <title>Reserva</title>
@@ -39,5 +45,99 @@
         </main>
       <footer id="footer"></footer>
     </div>
-  </body>
+
+    <!-- FOOTER -->
+    <div class="row" id="footer">
+        <div class="col-md-12">
+        <ul>
+            <li><a id="logo-bref" href="../html/index.html">BREF</a></li>
+            <li>
+            <ul class="share">
+                <a href="#"><li id="facebook-icon"></li></a>
+                <a href="#"><li id="twitter-icon"></li></a>
+                <a href="#"><li id="instagram-icon"></li></a>
+            </ul>
+            </li>
+            <li id="footer-links">
+                <a href="./sobre-nos.html">Sobre nós</a>
+                <span class="footer-ponto">&#9679;</span>
+                <a href="./fale-conosco.html">Fale conosco</a>
+                <span class="footer-ponto">&#9679;</span>
+                <a href="./entrar.html">Entrar/Cadastrar</a>
+            </li>
+            <li>
+            <p id="footer-copyright">© 2022 Bref Company LTDA</p>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        var maxClicksAddMoreSize = 6;
+        var maxClicksSubtractMoreSize = -2;
+
+        var countClicksToHiddenItems = 3;
+        var defaultSizeWindow = 0;
+
+        var countClicksChangeSizeItems = 0;
+        var namesItemToHidden = ['null'];
+
+        function startWindow() {
+            let currentDefaultWindowSize = getCurrentWindowSizeValue();
+            if (defaultSizeWindow == 0)
+                defaultSizeWindow = currentDefaultWindowSize;
+        }
+
+        function getCurrentWindowSizeValue() {
+            let myWindowSize = window.getComputedStyle(document.body).fontSize;
+            let currentDefaultWindowSize = parseInt(myWindowSize.replace('px', ''));
+
+            return currentDefaultWindowSize;
+        }
+
+        function changeSizeAllItems(isAddMoreSize) {
+            let currentWindowSize = getCurrentWindowSizeValue();
+            if (isAddMoreSize && isValidAddMoreSize()) {
+                countClicksChangeSizeItems++;
+                document.body.style.fontSize = (currentWindowSize + 3) + 'px';
+            }
+            if (!isAddMoreSize && isValidSubtractMoreSize()) {
+                countClicksChangeSizeItems--;
+                document.body.style.fontSize = (currentWindowSize - 3) + 'px';
+            }
+            actionAboutShowableItems(namesItemToHidden, countClicksChangeSizeItems, countClicksToHiddenItems);
+        }
+
+        function isValidAddMoreSize() {
+            return countClicksChangeSizeItems < maxClicksAddMoreSize;
+        }
+
+        function isValidSubtractMoreSize() {
+            return countClicksChangeSizeItems > maxClicksSubtractMoreSize;
+        }
+
+        function resetDocumentSizes() {
+            document.body.style.fontSize = defaultSizeWindow + 'px';
+            countClicksChangeSizeItems = 0;
+            showHiddenItems(namesItemToHidden, 'visible');
+        }
+
+        function actionAboutShowableItems(namesItemToHidden, currentCount, maxClicksToHiddenItems) {
+            let show = 'visible';
+            let notShow = 'hidden';
+            let action = currentCount >= maxClicksToHiddenItems ? notShow : show;
+            showHiddenItems(namesItemToHidden, action);
+        }
+
+        function showHiddenItems(namesItemToHidden, action) {
+            for (x = 0; namesItemToHidden.length > x; x++) {
+                let myBigBreff = document.getElementById(namesItemToHidden[x]);
+                myBigBreff.style.visibility = action;
+            }
+        }
+
+    </script>
+
+</body>
 </html>
