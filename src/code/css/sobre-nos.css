@@ -16,7 +16,7 @@ div.container-fluid {
 
 
 /* Logo BREF */
-nav.navbar.navbar-expand-lg.navbar-light.bg-light > a.navbar-brand {
+#logo-bref {
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
     font-size: 35px;
     font-stretch: condensed;
@@ -174,13 +174,5 @@ div.container-fluid > div.row > div.row > div.card-deck > div.card > div.card-bo
 }
 
 #texto-missao{
-    margin: auto;
-}
-
-
-/* Rodape */
-#footer{
-    background-color: #483A20;
-    height: 300px;
     margin: auto;
 }

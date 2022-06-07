@@ -1,112 +1,238 @@
 body {
-    background: #FFFFF4;
-    color: #483A20;
-    font-family: 'Lato', sans-serif;
+	background: #FFFFF4;
+	color: #483A20;
+	font-family: 'Lato', sans-serif;
 }
 .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-}
-  
-main {
-    flex-direction: column;
-    text-align: center;
-    flex-basis: 50%;
-    flex-grow: 1;
-    
-}
-  
-#bref {
-    font-family: 'Oswald', sans-serif;
-    font-size: 150px;
-    margin: 0px;
-    color: #FFC300;
+	display: grid;
+	grid-template-columns: repeat (2, 1fr);
+	grid-template-areas: "main aside";
+	height: 100%;
+	width: 100%;
+	justify-items: center;
+	align-items: center;
 }
 
-.entrar {
-    font-size: 30px;
+#conteudoMain {
+	grid-area: main;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50vw;
+}
+
+#tituloAbas {
+	text-align: center;
+}
+
+#bref {
+	font-family: 'Oswald', sans-serif;
+	font-size: 10em;
+	margin: 0px;
+	text-decoration: none;
+	color: #FFC300;
+}
+
+#entrar {
+	font-size: 15px;
+}
+
+.fa-eye {
+	cursor: pointer;
+	color: #483A20;
+}
+
+#primeiroOlho {
+	position: relative;
+	left: 21.8em;
+  bottom: 2.3em;
+}
+
+#verSenha {
+	position: relative;
+	left: 20.4em;
+  bottom: 6.3em;
+}
+
+#verConfirmarSenha {
+	position: relative;
+	left: 20.3em;
+  bottom: 3.3em;
 }
 
 input {
-    width: 325px;
-    margin: 3px;
-    padding:10px;
-    border-radius: 4px;
-    text-indent: 0.1rem;
-    border-width: 1px;
-    outline: 0;
-    background-color: #FFFFF4;
-    border-style: solid;
+	width: 25em;
+	margin: 0.4em 0;
+	padding:10px;
+	border-radius: 4px;
+	text-indent: 0.1rem;
+	border-width: 1px;
+	outline: 0;
+	background-color: #FFFFF4;
+	border-style: solid;
 }
 
-#botoes {
-    margin: 5px 0px 2px 0px;
-    border-radius: 4px;
-    border: 0px;
-    width: 250px;
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.8s all;
-    color: #fff;
-    background: #483A20;
+input:invalid {
+	border-color:crimson;
+	box-shadow: 0 0 4px crimson;
 }
 
-#esqueci-senha {
-    margin-top: 50px;
-    color: darkred;
-    text-decoration: none;
+input:focus {
+	outline: none;
 }
+
+input:focus:invalid {
+	box-shadow: none;
+}
+
+#cadastrar {
+	display: flex;
+	flex-direction: column;
+}
+
+#btnEntrar {
+	margin: 0px 0px 2px 0px;
+	width: 20em;
+	padding: 10px;
+	color: #fff;
+	border: 0px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.4s all;
+}
+
+#btnCadastrar {
+	width: 19em;
+	padding: 10px;
+	border: 0px;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.4s all;
+}
+
+.botoes {
+	background: #483A20;
+	transition: 1.5s all;
+}
+
+#footerEntrar {
+	text-align: center;
+}
+
+#footerCadastrar {
+	text-align: center;
+	position: relative;
+	bottom: 24px;
+}
+
+#esqueceu-senha {
+	height: 5px;
+	color: darkred;
+	text-decoration: none;
+}
+
+#esqueceu-senha:hover {
+	text-decoration: underline;
+}
+
 #termos-condicoes {
-    font-size: 10px;
+	font-size: 12px;
 }
 
 aside {
-    background-repeat: no-repeat;
-    background-image: url("https://cdn.discordapp.com/attachments/965947265036455957/965947378102321202/unknown.png");
-    width: 50vw;
-    height: 49vw;
-
+	grid-area: aside;
+	background-repeat: no-repeat;
+	background-image: url("https://cdn.discordapp.com/attachments/965947265036455957/965947378102321202/unknown.png");
+	width: 50vw;
+	height: 100vh;
 }
 
 #retangulo {
-    display: block;
-    position:absolute;
-    background: #FFC300;
-    width: 96%;
-    height: 80px;
-    bottom: 7%;
-    right: 0;
-    transition: 2s all;
+	display: block;
+	position:absolute;
+	background: #FFC300;
+	width: 96%;
+	height: 80px;
+	bottom: 7%;
+	right: 0;
+	transition: 2s all;
 }
 
 #retangulinho {
-    display: block;
-    position:absolute;
-    background: #FFC300;
-    width: 1.4%;
-    height: 80px;
-    bottom: 7%;
-    left: 1%;
-    transition: 2s all;
+	display: block;
+	position:absolute;
+	background: #FFC300;
+	width: 1.4%;
+	height: 80px;
+	bottom: 7%;
+	left: 1%;
+	transition: 2s all;
 }
 
 #retangulao {
-    background: #FFC300;
-    width: 100%;
-    height: 100%;
-    opacity: 0.1;
+	background: #FFC300;
+	width: 100%;
+	height: 100%;
+	opacity: 0.1;
 }
 
-#botoes:hover {
-    background: rgb(110, 79, 22);
-    transform: scale(1.01);
+.links-abas > button {
+	font-size: 22px;
+	margin-top: 55px;
+	margin-bottom: 15px;
+}
+
+.botoes:hover {
+	background: rgb(110, 79, 22);
+	transform: scale(1.01);	
+}
+
+button {
+	color: #483A20;
+	border: none;
+	outline: none;
+	background: none;
+	position: relative;
+	transition: 0.8s all;
+
+}
+
+button::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+	height: 2px;
+	width: 0%;
+	background: #FFC300;
+	transition: .2s;
+}
+
+button:hover {
+	transform: scale(1.05);
+}
+
+button:hover::after,
+button.active::after {
+	width: 100%;
+}
+
+.conteudo-abas>section {
+	animation: up 1s;
+}
+
+@keyframes up {
+	from {
+			opacity: 0;
+			transform: translateY(15px);
+	}
+	to {
+			opacity: 1;
+	}
 }
 
 
-  
-  
-  
-  
-  
+
+
+

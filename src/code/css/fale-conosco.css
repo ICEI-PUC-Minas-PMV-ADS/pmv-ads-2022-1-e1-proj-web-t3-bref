@@ -1,13 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
-
-body {
-    background-color: white;
-    font-family: 'Lato', sans-serif;
+/* Ajustes Bootstrap */
+* {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
+div.container-fluid {
+    padding: 0;
+}
 
-.container {
+/* CSS Corpo */
+body {
+    background-color: #FFFFF4;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.container-main {
     width: 100%;
+    color: #483A20;
+    background-color: #FFFFF4;
 }
 
 /* application grid system */
@@ -25,16 +35,34 @@ body {
     display: flex;
     align-self: center;
     justify-content: flex-end;
-    padding: 10px;
+    padding: 1rem;
 }
 
 #barColor {
-    height: 30px;
+    height: 2em;
+    display: flex;
+    flex-direction: row;
     background-color: #FFC300;
 }
 
+.changeFontsButtons {
+    font-size: 1em;
+    border: outset;
+    font-weight: bold;
+    justify-content: flex-end;
+    color: #483A20  ;
+    background-color: #FFC300;
+    border: none;
+}
+
+.changeFontsButtons:hover {
+    color: #FFFFF4;
+    background-color: #483A20;
+}
+
 .hRight{
-    margin-left: 20px;
+    margin-left: 1rem;
+    font-size: 1.4em;
 }
 
 #hLeft{
@@ -44,7 +72,7 @@ body {
 
 #brefTitle {
     color: #FFC300;
-    font-size: 36px;
+    font-size: 3em;
     font-family: 'Oswald', sans-serif;
     padding: 0;
     margin-right: 0;
@@ -54,21 +82,18 @@ body {
 }
 
 #formulary{
-    font-size: 36px;
+    font-size: 1.7em;
     font-family: 'Lato', sans-serif;
-    padding: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-left: 25px;
     align-content: center;
     flex: 50%;
 }
 
 #title{
-    color: black;
+    color: #483A20;
     font-weight:bolder;
-    align-content: center;
+    align-content: start;
+    font-size: 1em;
+    margin-bottom: 0.8em;
 }
 
 .separator{
@@ -81,6 +106,7 @@ body {
     align-items: center;
     width: 100%;
     padding: 10px;
+    margin: 2rem 0;
 }
 
 .containerInfos{
@@ -89,7 +115,7 @@ body {
 }
 
 .titleInfo {
-    font-size: 28px;
+    font-size: 0.8em;
     padding: 0;
     margin: 0;
     font-weight: bold;
@@ -97,27 +123,29 @@ body {
 }
 
 .inputInfo {
+    width: 20em;
+	margin: 5px;
+	outline: 0;
     padding: 8px;
-    font-size: 22px;
-    border-radius: 5px;
-    border-color: gray;
-    margin-bottom: 25px;
-    width: 100%;
+	font-size: 0.5em;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 4px;
+	background-color: #FFFFF4;
 }
 
 #msgInput{
     height: 200px;
-    width: 100%;
+    width: 30em;
+    background-color: #FFFFF4;
 }
 
 .breffRight {
     color: #FFC300;
-    font-size: 70px;
-    font-family: 'Oswald', sans-serif;
     padding: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin: 0px 0px 0px -70px;
+    font-size: 10em;
+    font-family: 'Oswald', sans-serif;
 }
 
 #separatorForm {
@@ -131,12 +159,21 @@ body {
     align-content: center;
 }
 
-.btn {
-    background-color: #483A20;
-    color: white;
-    border-radius: 10px;
-    width: 100%;
-    border-color: transparent;
-    padding: 10px;
-    align-items: center;
+.btn#btnEnviar {
+    position: relative;
+    left: 5em;
+	border-radius: 4px;
+	border: none;
+	width: 15em;
+    font-size: 0.6em;
+	padding: 5px;
+	cursor: pointer;
+    transition: 0.4s all;   
+    color: #fff;
+    background: #483A20;
+}
+
+.btn#btnEnviar:hover {
+    background: rgb(110, 79, 22);
+	transform: scale(1.01);
 }

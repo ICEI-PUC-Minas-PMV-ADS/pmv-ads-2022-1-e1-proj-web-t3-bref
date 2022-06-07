@@ -23,43 +23,20 @@ div.container-fluid {
     background-color: #483A20;
     color: white;
     border-radius: 10px;
-    width: 20%;
+    width: 100%;
     font-size: 1em;
     border-color: transparent;
     padding: 10px;
     align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 150px;
 }
-  header {
-    background-color: #483a20;
-    height: 52px;
-  }
-  a {
-    color: #ffc300;
-    font-size: 35px;
-    font-family: 'Oswald',sans-serif;
-    margin-left: 0;
-  }
+
   .container {
-    background: #FFFFF4;
+    background: white;
     font-family: 'Lato', sans-serif;
     text-align: center;
-  }
-  h1 {
-    text-align: left;
-    font-family: 'Oswald', sans-serif;
-    color: #ffc300;
-    font-size: 35px;
-    margin: 0;
-    margin-left: 3%;
-  }
-  h2{
-    text-align: center;
-    margin: 0;
-    font-family: 'Oswald', sans-serif;
-    font-size: 90px;
-    color: #ffc300;
-  }
+  } 
+
   img {
     width: 9%;
     margin-bottom: 3%;
@@ -79,43 +56,35 @@ div.container-fluid {
     background-color: transparent;
     color: #FFC300;
     width: 100%;
-    font-size:36px;
+    font-size: 1em;
     border-color: transparent;
     align-items: center;
     margin: 0;
-    color: #483a20;
-    font-family: 'lato', sans-serif;
-    font-size: 34px;
-    margin-top:10px;
-  }
+}
 
- button {
-    font-size: 25px;
-    padding: 2px;
-    color: #FFFFF4;
-    font-family: 'lato', sans-serif;
-    background: #483a20;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: .8px all;
-    width: 210px;
-    margin: 25px 0px 25px 0px;
-  }
+.changeFontsButtons {
+    font-size: 1em;
+    background-color: #FFC300;
+    border: outset;
+    color: black;
+    font-weight: bold;
+    justify-content: flex-end;
+}
+
+/* end zoom area */
+
   p {
     margin: 9px 0px 9px 0px;  
-    font-size: 26px;
+    font-size: 2em;
     color: #483a20;
     font-family: 'lato', sans-serif;
     font-weight: bold
   }
-  #footer {
-    margin-top: 60px;
-    background: #ffc300;
-    height: 40px;
-  }
-  #barColor {
-    background: #ffc300;
-    height: 20px;
-    margin-bottom: 00px;
-    margin-top: 0pX;
-  }
+
+#footer-copyright {
+    font-size: 1em;
+}
+/* footer margin */
+#footer-container {
+    margin-bottom: 15px;
+}

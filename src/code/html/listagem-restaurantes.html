@@ -18,15 +18,25 @@
 
     <!-- Header exibido no topo da página. Possui elementos posicionados à direita e esquerda da tela. -->
     <header class="header">
-        <div>
+        <div class="logo">
             <div class="bref-title">
                 <a href="index.html">BREF</a>
             </div>
         </div>
 
         <!-- Grupo de elementos que estão posicionados à direita do header. -->
-        <div class="header-right">
-
+    
+        <div class="nav-items">
+            <ul>
+                <li>
+                    <a class="nav-link" href="./fale-conosco.html">Fale Conosco</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./entrar.html">Entrar/Cadastrar</a>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="header-right">
             <div class="header-item font-size-button-group">
                 <button class="font-size-button increase">A+</button>
                 <button class="font-size-button decrease">A-</button>
@@ -35,8 +45,10 @@
             <div class="header-item">
                 <a href="entrar.html">Entrar/Cadastrar</a>
             </div>
-        </div>
+        </div> -->
     </header>
+
+
     <!-- Barra amarela que atravessa toda a página. Logo abaixo do header. -->
     <div class="bar-color"></div>
 
@@ -46,17 +58,18 @@
         <!-- Barra lateral esquerda que contém os filtros disponíveis na página de listagem. -->
         <div id="filters">
 
-            <!-- Input de pesquisa personalizado com ícone. -->
-            <div class="input-with-icon-wrapper mb-1">
-                <input id="restaurant-search-input" class="input-with-icon" type="search" placeholder="Pesquisar">
-                <label for="restaurant-search-input" class="fa fa-search input-icon"></label>
-            </div>
-
             <!-- Formulário que contém os campos para realização dos filtros da listagem de restaurantes. -->
             <form class="form">
 
+                <!-- Input de pesquisa personalizado com ícone. -->
+                <div class="input-with-icon-wrapper mb-1">
+                    <label for="restaurant-search-input" class="fa fa-search input-icon"></label>
+                    <input type="text" id="restaurant-search-input" name="pesq"
+                        class="input-with-icon" type="search" placeholder="Pesquisar">
+                </div>
+
                 <label for="average-price">Média de preços:</label>
-                <input class="mb-1" type="range" id="average-price" name="average-price" min="0">
+                <input class="mb-1" type="range" id="average-price" name="average-price" min="1" max="5">
 
                 <label for="capacity">Lotação:</label>
                 <input class="mb-1" type="range" id="capacity" name="capacity" min="0" max="100">
@@ -64,24 +77,24 @@
                 <label for="waiting-time">Tempo de Espera:</label>
                 <input class="mb-1" type="range" id="waiting-time" name="waiting-time" min="0">
 
-                <select class="mb-1" name="restaurant-type">
+                <select class="mb-1" name="restaurant-type"> 
                     <option value="-1" selected>Tipo de Restaurante</option>
-                    <option value="1">Japonês</option>
-                    <option value="2">Italiano</option>
-                    <option value="3">Brasileiro</option>
-                    <option value="4">Indiano</option>
-                    <option value="5">Fast-food</option>
-                    <option value="5">Australiano</option>
+                    <option value="Japonês">Japonês</option>
+                    <option value="Italiano">Italiano</option>
+                    <option value="Brasileiro">Brasileiro</option>
+                    <option value="Indiano">Indiano</option>
+                    <option value="Fast-food">Fast-food</option>
+                    <option value="Australiano">Australiano</option>
                 </select>
 
 
                 <select class="mb-1" name="payment-methods">
                     <option value="-1" selected>Tipo de Pagamento</option>
-                    <option value="1">Cartão de Crédito</option>
-                    <option value="2">Cartão de Débito</option>
-                    <option value="3">PIX</option>
-                    <option value="4">Cartão Refeição</option>
-                    <option value="5">Dinheiro</option>
+                    <option value="Cartão de Crédito">Cartão de Crédito</option>
+                    <option value="Cartão de Débito">Cartão de Débito</option>
+                    <option value="PIX">PIX</option>
+                    <option value="Cartão Refeição">Cartão Refeição</option>
+                    <option value="Dinheiro">Dinheiro</option>
                 </select>
 
                 <label for="city">Cidade</label>
@@ -98,194 +111,6 @@
             como parâmetro e realiza o redirecionamento.SSS
           -->
         <div id="restaurant-list">
-
-            <div class="card" onclick="openPage('index.html')">
-
-                <!-- Imagem do local. -->
-                <img class="card-image" src="../imgs/place6.jpg" alt="MC Donalds">
-
-                <!--  Informações principais do restaurante. -->
-                <div class="card-info-group">
-
-                    <span class="card-title">MC Donalds</span>
-
-                    <div class="card-item-group-container">
-
-                        <div class="card-item-group">
-                            <div class="card-item">
-                                <span><strong>Média de preços:</strong> $$</span>
-                            </div>
-                            <div class="card-item">
-                                <span><strong>Tipo:</strong> Fast-food</span>
-                            </div>
-                        </div>
-
-                        <div class="card-item-group">
-                            <div class="card-item">
-                                <span><strong>Lotação:</strong> 60%</span>
-                            </div>
-                            <div class="card-item">
-                                <span><strong>Tempo de Espera:</strong> 15'</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" onclick="openPage('index.html')">
-
-                <img class="card-image" src="../imgs/place7.jpg" alt="Burger King">
-
-                <div class="card-info-group">
-
-                    <span class="card-title">Burger King</span>
-
-                    <div class="card-item-group-container">
-
-                        <div class="card-item-group">
-                            <div class="card-item">
-                                <span><strong>Média de preços:</strong> $$</span>
-                            </div>
-                            <div class="card-item"><span><strong>Tipo:</strong> Fast-food</span>
-                            </div>
-                        </div>
-
-                        <div class="card-item-group">
-                            <div class="card-item">
-                                <span><strong>Lotação:</strong> 90%</span>
-                            </div>
-                            <div class="card-item">
-                                <span><strong>Tempo de Espera:</strong> 40'</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card" onclick="openPage('index.html')">
-
-                <img class="card-image" src="../imgs/place5.jpg" alt="Madero">
-
-                <div class="card-info-group">
-
-                    <span class="card-title">Madero</span>
-
-                    <div class="card-item-group-container">
-
-                        <div class="card-item-group">
-                            <div class="card-item">
-                                <span><strong>Média de preços:</strong> $$$$</span>
-                            </div>
-                            <div class="card-item">
-                                <span><strong>Tipo:</strong> Australiano</span>
-                            </div>
-                        </div>
-
-                        <div class="card-item-group">
-                            <div class="card-item">
-                                <span><strong>Lotação:</strong> 30%</span>
-                            </div>
-                            <div class="card-item">
-                                <span><strong>Tempo de Espera:</strong> 60'</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card" onclick="openPage('index.html')">
-
-                <img class="card-image" src="../imgs/place8.jpg" alt="Fujiyama">
-
-                <div class="card-info-group">
-
-                    <span class="card-title">Fujiyama</span>
-
-                    <div class="card-item-group-container">
-
-                        <div class="card-item-group">
-                            <div class="card-item">
-                                <span><strong>Média de preços:</strong> $</span>
-                            </div>
-                            <div class="card-item">
-                                <span><strong>Tipo:</strong> Pastelaria</span>
-                            </div>
-                        </div>
-
-                        <div class="card-item-group">
-                            <div class="card-item">
-                                <span><strong>Lotação:</strong> 20%</span>
-                            </div>
-                            <div class="card-item">
-                                <span><strong>Tempo de Espera:</strong> 15'</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card" onclick="openPage('index.html')">
-
-                <img class="card-image" src="../imgs/place9.jpg" alt="Spoleto">
-
-                <div class="card-info-group">
-
-                    <span class="card-title">Spoleto</span>
-
-                    <div class="card-item-group-container">
-
-                        <div class="card-item-group">
-                            <div class="card-item">
-                                <span><strong>Média de preços:</strong> $$</span>
-                            </div>
-                            <div class="card-item">
-                                <span><strong>Tipo:</strong> Brasileiro</span>
-                            </div>
-                        </div>
-
-                        <div class="card-item-group">
-                            <div class="card-item">
-                                <span><strong>Lotação:</strong> 10%</span>
-                            </div>
-                            <div class="card-item">
-                                <span><strong>Tempo de Espera:</strong> 20'</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card" onclick="openPage('index.html')">
-
-                <img class="card-image" src="../imgs/place10.jpg" alt="Sushi Japa Chan">
-
-                <div class="card-info-group">
-
-                    <span class="card-title">Sushi Japa Chan</span>
-
-                    <div class="card-item-group-container">
-
-                        <div class="card-item-group">
-                            <div class="card-item">
-                                <span><strong>Média de preços:</strong> $$$$</span>
-                            </div>
-                            <div class="card-item">
-                                <span><strong>Tipo:</strong> Japonesa</span>
-                            </div>
-                        </div>
-
-                        <div class="card-item-group">
-                            <div class="card-item">
-                                <span><strong>Lotação:</strong> 30%</span>
-                            </div>
-                            <div class="card-item">
-                                <span><strong>Tempo de Espera:</strong> 5'</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </main>
     <div class="bar-color"></div>

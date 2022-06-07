@@ -38,13 +38,20 @@ body {
     justify-content: space-between;
     flex-direction: row;
     color: white;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding: .5rem 1rem;
+    align-items: center;
+}
+
+.header .logo{
+    padding-left: 30px;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
 }
 
 .header-right {
     display: flex;
     align-items: center;
+    padding: .5rem 1rem;
 }
 
 .header-right .header-item {
@@ -53,12 +60,12 @@ body {
 
 .header a:link {
     text-decoration: none;
-    color: white;
+    color: #FFC300;
 }
 
 .header a:visited {
     text-decoration: none;
-    color: white;
+    color: #FFC300;
 }
 
 .header a:hover {
@@ -72,13 +79,10 @@ body {
 }
 
 .bref-title {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-stretch: condensed;
     color: #FFC300;
-    font-size: 36px;
-    font-family: 'Oswald', sans-serif;
-    padding: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-top: 0;
 }
 
 .bref-title a:link {
@@ -103,6 +107,29 @@ body {
 .bar-color {
     height: 30px;
     background-color: #FFC300;
+}
+
+.nav-items ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 6.4px 0;
+}
+
+.nav-items ul li{
+    float: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #FFC300;
+}
+
+.nav-items ul li a {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    
 }
 
 /* BARRA DE PESQUISA */

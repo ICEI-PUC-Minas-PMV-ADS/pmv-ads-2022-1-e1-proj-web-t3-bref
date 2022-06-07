@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reserva_concluída.css">
+    <link rel="stylesheet" href="../css/reservaConcluida.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap-css/bootstrap.min.css">
+    <!-- Footer e Header -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header-bref.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap"
           rel="stylesheet">
-    <title>Reserva</title>
+    <title>Reserva Concluída</title>
 </head>
 
-  <body>
-    <header class="header">
-      <h1>BREF</h1> 
-    </header>
-      <div id="barColor"></div>
-      <div class="container"> 
+<body onload="startWindow()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" id="logo-bref" href="../html/index.html"><Button class="btnHeader">BREF</Button></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./fale-conosco.html">Fale Conosco</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./entrar.html">Entrar/Cadastrar</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="barColor">
+        <button class="changeFontsButtons" onclick="changeSizeAllItems(false);">Font -</button>
+        <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
+        <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
+    </div>
+    <div class="container">
         <main>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
           <h2>BREF</h2>
           <img src="IMG_6238 (1).png" alt="Logo Bref">
@@ -26,12 +50,115 @@
             <p class="breff" id="breffBig">BREF</p>
             <img src="../imgs/Concluida.gif" alt="Logo Bref" id="talheres">
 >>>>>>> Stashed changes
+=======
+            <p class="breff" id="breffBig">BREF</p>
+            <img src="../imgs/IMG_6238 (1).png" alt="Logo Bref" id="talheres">
+>>>>>>> 43b65b70577d725b48dd6320744bd769fa481a3b
 
             <h3>Reserva concluída!</h3>
-          <a href="index.html"><button>OK</button></a>
-          <p>O comprovante da reserva foi enviado para o seu e-mail!</p>
+
+            <p>O comprovante da reserva foi enviado para o seu e-mail!</p>
+            <a href="index.html" id="link">
+                <Button class="btn">Entendido</Button>
+            </a>
         </main>
-      <footer id="footer"></footer>
+        <footer id="footer-container"></footer>
     </div>
-  </body>
+
+    <!-- FOOTER -->
+    <div class="container-fluid">
+    <div class="row" id="footer">
+        <div class="col-md-12">
+        <ul>
+            <li><a id="logo-bref" href="../html/index.html">BREF</a></li>
+            <li>
+            <ul class="share">
+                <a href="#"><li id="facebook-icon"></li></a>
+                <a href="#"><li id="twitter-icon"></li></a>
+                <a href="#"><li id="instagram-icon"></li></a>
+            </ul>
+            </li>
+            <li id="footer-links">
+                <a href="./sobre-nos.html">Sobre nós</a>
+                <span class="footer-ponto">&#9679;</span>
+                <a href="./fale-conosco.html">Fale conosco</a>
+                <span class="footer-ponto">&#9679;</span>
+                <a href="./entrar.html">Entrar/Cadastrar</a>
+            </li>
+            <li>
+            <p id="footer-copyright">© 2022 Bref Company LTDA</p>
+            </li>
+        </ul>
+        </div>
+    </div>  
+</div>
+
+    <script type="text/javascript">
+
+        var maxClicksAddMoreSize = 6;
+        var maxClicksSubtractMoreSize = -2;
+
+        var countClicksToHiddenItems = 3;
+        var defaultSizeWindow = 0;
+
+        var countClicksChangeSizeItems = 0;
+        var namesItemToHidden = ['null'];
+
+        function startWindow() {
+            let currentDefaultWindowSize = getCurrentWindowSizeValue();
+            if (defaultSizeWindow == 0)
+                defaultSizeWindow = currentDefaultWindowSize;
+        }
+
+        function getCurrentWindowSizeValue() {
+            let myWindowSize = window.getComputedStyle(document.body).fontSize;
+            let currentDefaultWindowSize = parseInt(myWindowSize.replace('px', ''));
+
+            return currentDefaultWindowSize;
+        }
+
+        function changeSizeAllItems(isAddMoreSize) {
+            let currentWindowSize = getCurrentWindowSizeValue();
+            if (isAddMoreSize && isValidAddMoreSize()) {
+                countClicksChangeSizeItems++;
+                document.body.style.fontSize = (currentWindowSize + 3) + 'px';
+            }
+            if (!isAddMoreSize && isValidSubtractMoreSize()) {
+                countClicksChangeSizeItems--;
+                document.body.style.fontSize = (currentWindowSize - 3) + 'px';
+            }
+            actionAboutShowableItems(namesItemToHidden, countClicksChangeSizeItems, countClicksToHiddenItems);
+        }
+
+        function isValidAddMoreSize() {
+            return countClicksChangeSizeItems < maxClicksAddMoreSize;
+        }
+
+        function isValidSubtractMoreSize() {
+            return countClicksChangeSizeItems > maxClicksSubtractMoreSize;
+        }
+
+        function resetDocumentSizes() {
+            document.body.style.fontSize = defaultSizeWindow + 'px';
+            countClicksChangeSizeItems = 0;
+            showHiddenItems(namesItemToHidden, 'visible');
+        }
+
+        function actionAboutShowableItems(namesItemToHidden, currentCount, maxClicksToHiddenItems) {
+            let show = 'visible';
+            let notShow = 'hidden';
+            let action = currentCount >= maxClicksToHiddenItems ? notShow : show;
+            showHiddenItems(namesItemToHidden, action);
+        }
+
+        function showHiddenItems(namesItemToHidden, action) {
+            for (x = 0; namesItemToHidden.length > x; x++) {
+                let myBigBreff = document.getElementById(namesItemToHidden[x]);
+                myBigBreff.style.visibility = action;
+            }
+        }
+
+    </script>
+
+</body>
 </html>
