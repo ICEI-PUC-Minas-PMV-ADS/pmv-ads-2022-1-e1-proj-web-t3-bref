@@ -145,10 +145,10 @@ aside {
 	background-repeat: no-repeat;
 	background-image: url("https://cdn.discordapp.com/attachments/965947265036455957/965947378102321202/unknown.png");
 	width: 50vw;
-	height: 100vh;
+	height: 100%;
 }
 
-#retangulo {
+/* #retangulo {
 	display: block;
 	position:absolute;
 	background: #FFC300;
@@ -157,9 +157,9 @@ aside {
 	bottom: 7%;
 	right: 0;
 	transition: 2s all;
-}
+} */
 
-#retangulinho {
+/* #retangulinho {
 	display: block;
 	position:absolute;
 	background: #FFC300;
@@ -168,11 +168,11 @@ aside {
 	bottom: 7%;
 	left: 1%;
 	transition: 2s all;
-}
+} */
 
 #retangulao {
 	background: #FFC300;
-	width: 100%;
+	width: 50vw;
 	height: 100%;
 	opacity: 0.1;
 }

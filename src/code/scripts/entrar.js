@@ -124,7 +124,7 @@ function Pg() {
 		function compararSenhaComConfirmar(){
 			InputSenhaCadastro.addEventListener("keyup", ()=> {
 
-				if(InputConfirmarSenha.value != InputSenhaCadastro.value || InputConfirmarSenha.acess.inp.value == null || InputSenhaCadastro.acess.inp.value == null) {
+				if(InputConfirmarSenha.value != InputSenhaCadastro.value) {
 					InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 				} else {
@@ -139,7 +139,7 @@ function Pg() {
 		function compararConfirmarComSenha() {
 			InputConfirmarSenha.addEventListener("keyup", ()=> {
 
-				if(InputSenhaCadastro.value != InputConfirmarSenha.value || InputConfirmarSenha.acess.inp.value == null || InputSenhaCadastro.acess.inp.value == null) {
+				if(InputSenhaCadastro.value != InputConfirmarSenha.value || !InputConfirmarSenha.acess.inp.value == null) {
 					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 					InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 					LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px crimson; color: crimson")
@@ -150,6 +150,15 @@ function Pg() {
 					LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px green; color: green")
 					LabelConfirmarSenha.textContent = "Confirmar a senha"
 				}
+			})
+
+			InputConfirmarSenha.addEventListener("keyup", ()=> {
+				
+				if(InputConfirmarSenha.acess.inp.value == null) {
+					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+					LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px crimson; color: crimson")
+					LabelConfirmarSenha.textContent = "Confirmar a senha* As senhas devem ser iguais."
+				} 
 			})
 		}
 		function iniciar(){
@@ -219,6 +228,17 @@ function Pg() {
 				LabelSenhaCadastro.setAttribute("style" , "text-shadow: 0px 0px 1px green; color: green")
 				InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green" )
 			}
+		})
+
+		/* Validação Confirmar Senha */
+
+		InputConfirmarSenha.addEventListener("keyup", ()=>{
+				
+			if(InputConfirmarSenha.value == null) {
+				InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+				LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px crimson; color: crimson")
+				LabelConfirmarSenha.textContent = "Confirmar a senha* As senhas devem ser iguais."
+			} 
 		})
 
 		function iniciar(){
