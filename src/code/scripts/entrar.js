@@ -124,7 +124,7 @@ function Pg() {
 		function compararSenhaComConfirmar(){
 			InputSenhaCadastro.addEventListener("keyup", ()=> {
 
-				if(InputConfirmarSenha.value != InputSenhaCadastro.value) {
+				if(InputConfirmarSenha.value != InputSenhaCadastro.value || InputConfirmarSenha.acess.inp.value == null || InputSenhaCadastro.acess.inp.value == null) {
 					InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 				} else {
@@ -139,7 +139,7 @@ function Pg() {
 		function compararConfirmarComSenha() {
 			InputConfirmarSenha.addEventListener("keyup", ()=> {
 
-				if(InputSenhaCadastro.value != InputConfirmarSenha.value) {
+				if(InputSenhaCadastro.value != InputConfirmarSenha.value || InputConfirmarSenha.acess.inp.value == null || InputSenhaCadastro.acess.inp.value == null) {
 					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 					InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 					LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px crimson; color: crimson")
