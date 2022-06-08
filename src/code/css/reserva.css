@@ -97,16 +97,19 @@ hr {
 }
 
 /*MENSAGEM ERROS*/
-.error {
-    color: #FFFFF4;
-    background: red;
-    width: 20em;       
-    position: relative;
-    left: 24.7em;
+
+#erro {
+    display: flex;
+    justify-content: center;
+}
+
+#email-required-error, #email-invalid-error {
+    width: 20em;
     border-radius: 2px;
     display: none;
+    background: red;      
+    color: #FFFFF4;
 }   
-
 
 div.container-fluid {
     padding: 0;
