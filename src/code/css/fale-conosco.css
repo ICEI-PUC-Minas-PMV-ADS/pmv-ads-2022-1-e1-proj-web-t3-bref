@@ -47,7 +47,6 @@ body {
 
 .changeFontsButtons {
     font-size: 1em;
-    border: outset;
     font-weight: bold;
     justify-content: flex-end;
     color: #483A20  ;

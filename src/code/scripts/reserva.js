@@ -30,7 +30,6 @@ function validateEmail(email){
 
 
 /* Aumentar e diminuir fonte */
-
 var maxClicksAddMoreSize = 6;
 var maxClicksSubtractMoreSize = -2;
 

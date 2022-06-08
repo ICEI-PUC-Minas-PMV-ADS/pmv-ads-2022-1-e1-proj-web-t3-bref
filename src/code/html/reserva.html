@@ -54,12 +54,14 @@
 
                     <input class="l-inputs" type='text' placeholder="Número de contato"><br>
                     <input class="l-inputs" type="email" name="email" id="email" onchange="validateFields()" placeholder="Email"><br>
-                    <span class="error" id="email-required-error">Email é obrigatório</span>
+                    <div id="erro">
+                        <span class="error" id="email-required-error">Email é obrigatório</span>
+                    </div>
+                    <div id="erro">
+                        <span class="error" id="email-invalid-error">O email inserido é inválido</span>
+                    </div>
                     <input class="l-inputs" type='number' placeholder="Quantidade de cadeiras"><br>
                     <input class="l-inputs" type='datetime-local' placeholder="Data/Hora"><br>
-
-                    <div class="error" id="email-invalid-error">O email inserido é inválido</div>
-
                     <a href="reservaConcluida.html" id="link">
                         <input type="button" class="btnReservar" id="recover-button" value="Reservar">
                     </a>
