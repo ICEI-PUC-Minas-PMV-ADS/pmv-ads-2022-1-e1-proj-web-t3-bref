@@ -9,6 +9,32 @@ body{
 }
 
 
+/* Zoom area */
+
+#barColor {
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFC300;
+}
+
+.changeFontsButtons {
+    font-size: 1em;
+    border: outset;
+    font-weight: bold;
+    justify-content: flex-end;
+    color: #483A20;
+    background-color: #FFC300;
+    border: none;
+}
+
+.changeFontsButtons:hover {
+    color: #FFFFF4;
+    background-color: #483A20;
+}
+
+/* End zoom area */
+
 /* Classe do container */
 div.container-fluid {
     padding: 0;
@@ -18,7 +44,7 @@ div.container-fluid {
 /* Logo BREF */
 #logo-bref {
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
-    font-size: 35px;
+    font-size: 2em;
     font-stretch: condensed;
     color: #FFC300;
     padding-left: 30px;
@@ -90,7 +116,7 @@ div.container-fluid > div.row > div.col-md-12.boas-vindas > div > h1 {
 
 div.container-fluid > div.row > div.col-md-12.boas-vindas > div > p {
     padding-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     color: #FFFFFA;
 }
 
@@ -110,6 +136,7 @@ div.container-fluid > div.row > div.row > div.col-md-12.nossos-valores {
 
 div.container-fluid > div.row > div.row > div.col-md-12.nossos-valores > h2.font-weight-bold {
     color: #483A20;
+    font-size: 3em;
     text-shadow: 0 1px 1px #483A20;
 }
 
@@ -161,9 +188,8 @@ div.container-fluid > div.row > div.row > div.card-deck > div.card > div.card-bo
     height: 400px;
 }
 
-
 /* Bloco Nossa Missao */
-#img-missao{
+#img-missao {
     padding: 0;
     height: 500px;
     background: url('../imgs/img-missao-sobre-nos.jpg') center;

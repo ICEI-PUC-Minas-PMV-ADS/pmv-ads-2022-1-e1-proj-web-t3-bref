@@ -38,9 +38,9 @@ div.container-fluid {
   } 
 
   img {
-    width: 12.5%;
-    margin: 0;
-    margin-top: -1%;
+    width: 9%;
+    margin-bottom: 3%;
+    margin-top: 2%;
   }
 
 /* Zoom area */
@@ -78,6 +78,7 @@ div.container-fluid {
     font-size: 2em;
     color: #483a20;
     font-family: 'lato', sans-serif;
+    font-weight: bold
   }
 
 #footer-copyright {

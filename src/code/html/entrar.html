@@ -18,52 +18,57 @@
 
 	<body>
 		<div class="container">
-			<main>
+			<main id="conteudoMain">
 				<div id="conteudo-entrar">
-					<a href="../html/index.html"  id="bref">BREF</a>
+					<div id="tituloAbas">
+						<a href="../html/index.html"  id="bref">BREF</a>
 
-					<div class="links-abas">
-						<button data-id="entrar" data-open>Entrar</button>
-						<button data-id="cadastrar">Cadastrar</button>
+						<div class="links-abas">
+							<button data-id="entrar" data-open>Entrar</button>
+							<button data-id="cadastrar">Cadastrar</button>
+						</div>
 					</div>
-
 					<div class="conteudo-abas">
 						<section id="entrar">
 							<input id="email" type="email" placeholder="Email"><br>
 							<input id="senha" type="password" placeholder="Senha"><br>
 							<i id="primeiroOlho" class="fa fa-eye" aria-hidden="true"></i>
-							
-							<input type="submit" value="Entrar" id="btnEntrar" class="botoes"/>
-							<p id="termos-condicoes"> Para logar sua conta, é necessário aceitar <br> nossos Termos &
-								Condições.</p>
-							<a href="../html/recuperar-senha.html" id="esqueceu-senha">Esqueceu a senha?</a>
+							<div id="footerEntrar">
+								<input type="submit" value="Entrar" id="btnEntrar" class="botoes"/>
+								<p id="termos-condicoes"> Para logar sua conta, é necessário aceitar <br> nossos Termos &
+									Condições.</p>
+								<a href="../html/recuperar-senha.html" id="esqueceu-senha">Esqueceu a senha?</a>
+						</div>
 						</section>
 
 						<section id="cadastrar">
-
-							<input id="nome" 
-								type="text" 
-								placeholder="Nome completo"><br>
-							<input id="data"
-								type="date"  
-								placeholder="Data de nascimento"><br>
-							<input id="emailCadastro" 
-								type="email"
-								placeholder="Email"
-								onblur="validarEmail()" onfocus="redefinirMsg()">
-							<span id="errorEmail"></span><br>
-							<input id="senhaCadastro" 
+							<label id="labelNome" for="nome">Nome</label><br>
+								<input id="nome" 
+									type="text" 
+									placeholder=" "><br>
+							<label id="labelData" for="nome">Data de nascimento</label><br>
+								<input id="data"
+									type="date"  
+									placeholder=" "><br>
+							<label id="labelEmail" for="nome">Email</label><br>
+								<input id="emailCadastro" 
+									type="email"
+									placeholder=" "
+									onblur="validarEmail()" onfocus="redefinirMsg()"><br>
+							<label id="labelSenhaCadastro" for="nome">Senha</label><br>	
+								<input id="senhaCadastro" 
 								type="password" 
-								placeholder="Senha"><br>
-							<input id="confirmarSenha" 
-								type="password" 
-								placeholder="Confirme a senha"><br>
+								placeholder=" "><br>
+							<label id="labelConfirmarSenha" for="nome">Confirmar a senha</label><br>
+								<input id="confirmarSenha" 
+									type="password" 
+									placeholder=" "><br>
 
 							<i id="verSenha" class="fa fa-eye" aria-hidden="true"></i><br>
 							<i id="verConfirmarSenha" class="fa fa-eye" aria-hidden="true"></i><br>
 
 							<div id="footerCadastrar">
-								<input type="button" value="Cadastrar" id="btnCadastrar" class="botoes"> </input><br>
+								<input type="button" value="Cadastrar" id="btnCadastrar" class="botoes"></input><br>
 								<h3 id="termos-condicoes"> Para cadastrar sua conta, é necessário aceitar <br> nossos Termos
 									& Condições.</h3>
 							</div>

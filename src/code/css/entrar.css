@@ -4,25 +4,33 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 .container {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	display: grid;
+	grid-template-columns: repeat (2, 1fr);
+	grid-template-areas: "main aside";
+	height: 100%;
+	width: 100%;
 	justify-items: center;
+	align-items: center;
 }
 
-main {
-	flex-direction: column;
+#conteudoMain {
+	grid-area: main;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50vw;
+}
+
+#tituloAbas {
 	text-align: center;
-	flex-basis: 50%;
-	flex-grow: 1;
 }
 
 #bref {
 	font-family: 'Oswald', sans-serif;
-	font-size: 150px;
+	font-size: 10em;
 	margin: 0px;
-	color: #FFC300;
 	text-decoration: none;
+	color: #FFC300;
 }
 
 #entrar {
@@ -36,25 +44,25 @@ main {
 
 #primeiroOlho {
 	position: relative;
-	left: 279px;
-  bottom: 61px;
+	left: 21.8em;
+  bottom: 2.3em;
 }
 
 #verSenha {
 	position: relative;
-	left: 154px;
-  bottom: 81px;
+	left: 20.4em;
+  bottom: 6.3em;
 }
 
 #verConfirmarSenha {
 	position: relative;
-	left: 154px;
-  bottom: 53px;
+	left: 20.3em;
+  bottom: 3.3em;
 }
 
 input {
 	width: 25em;
-	margin: 5px;
+	margin: 0.4em 0;
 	padding:10px;
 	border-radius: 4px;
 	text-indent: 0.1rem;
@@ -77,12 +85,13 @@ input:focus:invalid {
 	box-shadow: none;
 }
 
-span {
-	color: crimson;
+#cadastrar {
+	display: flex;
+	flex-direction: column;
 }
 
 #btnEntrar {
-	margin: 20px 0px 2px 0px;
+	margin: 0px 0px 2px 0px;
 	width: 20em;
 	padding: 10px;
 	color: #fff;
@@ -107,7 +116,12 @@ span {
 	transition: 1.5s all;
 }
 
+#footerEntrar {
+	text-align: center;
+}
+
 #footerCadastrar {
+	text-align: center;
 	position: relative;
 	bottom: 24px;
 }
@@ -127,6 +141,7 @@ span {
 }
 
 aside {
+	grid-area: aside;
 	background-repeat: no-repeat;
 	background-image: url("https://cdn.discordapp.com/attachments/965947265036455957/965947378102321202/unknown.png");
 	width: 50vw;
