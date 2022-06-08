@@ -148,7 +148,7 @@ function formatPrice(averagePrice) {
     let formatedPrice = "";
     let repetitions = 1;
 
-    while (repetitions <= averagePrice) {
+    while (repetitions <= (averagePrice/20)) {
         formatedPrice = formatedPrice + "$";
         repetitions++;
     }
