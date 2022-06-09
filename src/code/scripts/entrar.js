@@ -9,6 +9,7 @@ function Pg() {
 	const InputEmailCadastro = document.querySelector("#emailCadastro")
 	const InputSenhaCadastro = document.querySelector("#senhaCadastro")
 	const InputConfirmarSenha = document.querySelector("#confirmarSenha")
+	const InputData = document.querySelector("#data")
 	/* Validações */
 	var validNome = false
 	var validData = false
@@ -122,11 +123,13 @@ function Pg() {
 	function CompararSenhas() {
 
 		function compararSenhaComConfirmar(){
-			InputSenhaCadastro.addEventListener("keyup", ()=> {
+			InputSenhaCadastro.addEventListener("keyup", () => {
 
-				if(InputConfirmarSenha.value != InputSenhaCadastro.value) {
+				if(InputSenhaCadastro.value != InputConfirmarSenha.value) {
 					InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+					LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px crimson; color: crimson")
+					LabelConfirmarSenha.textContent = "Confirmar a senha* Deve ser igual a senha."
 				} else {
 					InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
 					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
@@ -137,30 +140,30 @@ function Pg() {
 		}
 
 		function compararConfirmarComSenha() {
-			InputConfirmarSenha.addEventListener("keyup", ()=> {
+			InputConfirmarSenha.addEventListener("keyup", () => {
 
-				if(InputSenhaCadastro.value != InputConfirmarSenha.value || !InputConfirmarSenha.acess.inp.value == null) {
-					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+				if(InputConfirmarSenha.value != InputSenhaCadastro.value){
 					InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 					LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px crimson; color: crimson")
-					LabelConfirmarSenha.textContent = "Confirmar a senha* As senhas devem ser iguais."
+					LabelConfirmarSenha.textContent = "Confirmar a senha* Deve ser igual a senha."
 				} else {
-					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
 					InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
 					LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px green; color: green")
 					LabelConfirmarSenha.textContent = "Confirmar a senha"
 				}
 			})
-
-			InputConfirmarSenha.addEventListener("keyup", ()=> {
-				
-				if(InputConfirmarSenha.acess.inp.value == null) {
-					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
-					LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px crimson; color: crimson")
-					LabelConfirmarSenha.textContent = "Confirmar a senha* As senhas devem ser iguais."
-				} 
-			})
 		}
+
+		InputConfirmarSenha.addEventListener("keyup", () => {
+			
+			if(InputConfirmarSenha.value.length <= 5){
+				InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+				LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px crimson; color: crimson")
+				LabelConfirmarSenha.textContent = "Confirmar a senha* lalalala."
+			} 
+		})
 		function iniciar(){
 			compararSenhaComConfirmar()
 			compararConfirmarComSenha()
@@ -203,11 +206,11 @@ function Pg() {
 			if(!InputEmailCadastro.checkValidity()){
 				LabelEmail.textContent = "Email * Este email não é válido"
 				LabelEmail.setAttribute("style" , "text-shadow: 0px 0px 1px crimson; color: crimson")
-				InputEmailCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson" )
+				InputEmailCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 			} else {
 				LabelEmail.textContent = "Email"
 				LabelEmail.setAttribute("style" , "text-shadow: 0px 0px 1px green; color: green")
-				InputEmailCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green" )
+				InputEmailCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
 			}
 
 			if(InputNome.value.length > 30){
@@ -223,7 +226,7 @@ function Pg() {
 				LabelSenhaCadastro.textContent = "Senha * Insira no mínimo 6 dígitos"
 				LabelSenhaCadastro.setAttribute("style" , "text-shadow: 0px 0px 1px crimson; color: crimson")
 				InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson" )
-			} else {
+				} else {
 				LabelSenhaCadastro.textContent = "Senha"
 				LabelSenhaCadastro.setAttribute("style" , "text-shadow: 0px 0px 1px green; color: green")
 				InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green" )
@@ -234,15 +237,46 @@ function Pg() {
 
 		InputConfirmarSenha.addEventListener("keyup", ()=>{
 				
-			if(InputConfirmarSenha.value == null) {
+			if(InputConfirmarSenha.value == null){
 				InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 				LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px crimson; color: crimson")
 				LabelConfirmarSenha.textContent = "Confirmar a senha* As senhas devem ser iguais."
 			} 
 		})
 
+		function validadata(){
+			var data = document.getElementById("data").value; // pega o valor do input
+			data = data.replace(/\//g, "-"); // substitui eventuais barras (ex. IE) "/" por hífen "-"
+			var data_array = data.split("-"); // quebra a data em array
+			
+			// para o IE onde será inserido no formato dd/MM/yyyy
+			if(data_array[0].length != 4){
+				 data = data_array[2]+"-"+data_array[1]+"-"+data_array[0]; // remonto a data no formato yyyy/MM/dd
+			}
+			
+			// comparo as datas e calculo a idade
+			var hoje = new Date();
+			var nasc  = new Date(data);
+			var idade = hoje.getFullYear() - nasc.getFullYear();
+			var m = hoje.getMonth() - nasc.getMonth();
+			if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())) idade--;
+			
+			if(idade < 18){
+				 alert("Pessoas menores de 18 não podem se cadastrar.");
+				 return false;
+			}
+
+			// se for maior que 60 não vai acontecer nada!
+			return false;
+
+		}
+			InputData.addEventListener("change", () =>{
+				validadata();
+			})
+
 		function iniciar(){
 			validarEmail()
+			validData()
 		}
 
 		return {
