@@ -1,19 +1,26 @@
 # Plano de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
+Os requisitos para realização dos testes de software são:
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
+* Navegador da Internet - Chrome, Firefox ou Edge
+* Conectividade de Internet para acesso ao site
 
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
- 
-## Ferramentas de Testes (Opcional)
 
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+Caso de teste | Verificar a função Lupa 
+------------- | -----------------------
+Requisito Associado | RF-011 O site deve permitir que o usuário possa alterar o tamanho da fonte. 
+Objetivo do teste | Verificar se o aumento de fonte está funcionando corretamente
+Passos | <p>1) Para aumentar a fonte, basta clicar no botão escrito "Font+", descrito logo abaixo do cabeçalho da página.<br/>2)Para diminuir a fonte, basta clicar no botão escrito "Font-", descrito logo abaixo do cabeçalho da página.<br/>3)Para retornar ao tamanho padrão da fonte, basta clicar no botão escrito "Reset", descrito logo abaixo do cabeçalho da página.</p>
+Critérios de êxito | * Os textos da página devem aumentar ou reduzir o tamanho, de acordo com o comando.
+
+
+Caso de teste | Verificar a barra de busca
+------------- | -----------------------
+Requisito Associado | RF-007 Deve ser disponibilizado uma barra de busca, para ser encontrado algum restaurante em específico.
+Objetivo do teste | Verificar se a busca retorna o resultado esperado
+Passos | <p>1) Digitar na barra de busca, disponível na index ou na página de listagem dos restaurantes, o nome desejado.<br/>2) O site retorna o resultado na página de listagem de restaurantes.</p>
+Critérios de êxito | * Deve retornar o resultado correto da busca<br/>* Quando não houver restaurantes com o nome especificado, deve retornar uma lista de restaurantes sugeridos. 
+
+
+
+RF-001 O site deve apresentar de forma clara o cardápio e formas de pagamentos dos restaurantes.
