@@ -22,5 +22,30 @@ Passos | <p>1) Digitar na barra de busca, disponível na index ou na página de 
 Critérios de êxito | * Deve retornar o resultado correto da busca<br/>* Quando não houver restaurantes com o nome especificado, deve retornar uma lista de restaurantes sugeridos. 
 
 
+Caso de teste | Teste de formulários da página Fale Conosco
+------------- | -----------------------
+Requisito Associado | RF-012 O site deve ter uma página de contato com os desenvolvedores da solução. 
+Objetivo do teste | Verificar se o formulário está funcional na página para entrar em contato com os desenvolvedores do site.
+Passos | <p>1) Entrar na página de Fale Conosco<br/>2) Preencher todos os campos<br/>3) Clicar no botão enviar.</p>
+Critérios de êxito | * Deve retornar uma mensagem de sucesso ao enviar a mensagem.<br/>* Os campos devem retornar uma mensagem caso haja algum erro. 
 
-RF-001 O site deve apresentar de forma clara o cardápio e formas de pagamentos dos restaurantes.
+Caso de teste | 
+------------- | -----------------------
+Requisito Associado | 
+Objetivo do teste | 
+Passos | 
+Critérios de êxito | 
+
+Caso de teste | 
+------------- | -----------------------
+Requisito Associado | 
+Objetivo do teste | 
+Passos | 
+Critérios de êxito | 
+
+Caso de teste | 
+------------- | -----------------------
+Requisito Associado | 
+Objetivo do teste | 
+Passos | 
+Critérios de êxito | 
