@@ -14,7 +14,7 @@ function Pg() {
 	var validNome = false
 	var validData = false
 	var validEmail = false
-	var validSenha = false
+	var validSenhaCadastro = false
 	var validConfirmarSenha = false
 	/* Labels */
 	const LabelNome	= document.querySelector("#labelNome")
@@ -22,8 +22,9 @@ function Pg() {
 	const LabelEmail	= document.querySelector("#labelEmail")
 	const LabelSenhaCadastro	= document.querySelector("#labelSenhaCadastro")
 	const LabelConfirmarSenha	= document.querySelector("#labelConfirmarSenha")
+	/* Outros */
 	
-	
+
 	function NavegacaoAbas() {
     
     const html = {
@@ -130,11 +131,13 @@ function Pg() {
 					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 					LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px crimson; color: crimson")
 					LabelConfirmarSenha.textContent = "Confirmar a senha* Deve ser igual a senha."
+					validSenhaCadastro = false
 				} else {
 					InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
 					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
 					LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px green; color: green")
 					LabelConfirmarSenha.textContent = "Confirmar a senha"
+					validSenhaCadastro = true
 				}
 			})
 		}
@@ -147,23 +150,26 @@ function Pg() {
 					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 					LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px crimson; color: crimson")
 					LabelConfirmarSenha.textContent = "Confirmar a senha* Deve ser igual a senha."
+					validConfirmarSenha = false
 				} else {
 					InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
 					InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
 					LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px green; color: green")
 					LabelConfirmarSenha.textContent = "Confirmar a senha"
+					validConfirmarSenha = true
 				}
 			})
 		}
 
-		InputConfirmarSenha.addEventListener("keyup", () => {
+		/* InputConfirmarSenha.addEventListener("keyup", () => {
 			
 			if(InputConfirmarSenha.value.length <= 5){
 				InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 				LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px crimson; color: crimson")
 				LabelConfirmarSenha.textContent = "Confirmar a senha* lalalala."
 			} 
-		})
+		}) */
+
 		function iniciar(){
 			compararSenhaComConfirmar()
 			compararConfirmarComSenha()
@@ -188,16 +194,19 @@ function Pg() {
 				LabelNome.textContent = "Nome * Insira seu nome e sobrenome"
 				LabelNome.setAttribute("style" , "text-shadow: 0px 0px 1px crimson; color: crimson")
 				InputNome.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson" )
+				validNome = false
 			} else {
 				LabelNome.textContent = "Nome"
 				LabelNome.setAttribute("style" , "text-shadow: 0px 0px 1px green; color: green")
 				InputNome.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green" )
+				validNome = true
 			}
 
 			if(InputNome.value.length > 30){
 				LabelNome.textContent = "Nome * Apenas o nome e sobrenome"
 				LabelNome.setAttribute("style" , "text-shadow: 0px 0px 1px crimson; color: crimson")
-			}
+				validNome = false
+			} 
 		})
 
 		/* Validação Email */
@@ -207,16 +216,14 @@ function Pg() {
 				LabelEmail.textContent = "Email * Este email não é válido"
 				LabelEmail.setAttribute("style" , "text-shadow: 0px 0px 1px crimson; color: crimson")
 				InputEmailCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+				validEmail = false
 			} else {
 				LabelEmail.textContent = "Email"
 				LabelEmail.setAttribute("style" , "text-shadow: 0px 0px 1px green; color: green")
 				InputEmailCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+				validEmail = true
 			}
 
-			if(InputNome.value.length > 30){
-				LabelNome.textContent = "Nome * Seu nome é muito grande"
-				LabelNome.setAttribute("style" , "color: crimson")
-			}
 		})
 
 		/* Validação Senha */
@@ -225,24 +232,17 @@ function Pg() {
 			if(InputSenhaCadastro.value.length <= 5){
 				LabelSenhaCadastro.textContent = "Senha * Insira no mínimo 6 dígitos"
 				LabelSenhaCadastro.setAttribute("style" , "text-shadow: 0px 0px 1px crimson; color: crimson")
-				InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson" )
-				} else {
+				validSenhaCadastro = false
+			} else {
 				LabelSenhaCadastro.textContent = "Senha"
 				LabelSenhaCadastro.setAttribute("style" , "text-shadow: 0px 0px 1px green; color: green")
 				InputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green" )
+				validSenhaCadastro = true 
+
 			}
 		})
 
 		/* Validação Confirmar Senha */
-
-		InputConfirmarSenha.addEventListener("keyup", ()=>{
-				
-			if(InputConfirmarSenha.value == null){
-				InputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
-				LabelConfirmarSenha.setAttribute("style", "text-shadow: 0px 0px 3px crimson; color: crimson")
-				LabelConfirmarSenha.textContent = "Confirmar a senha* As senhas devem ser iguais."
-			} 
-		})
 
 		function validadata(){
 			var data = document.getElementById("data").value; // pega o valor do input
@@ -263,10 +263,12 @@ function Pg() {
 			
 			if(idade < 18){
 				 alert("Pessoas menores de 18 não podem se cadastrar.");
+				 validData = false
 				 return false;
 			}
 
 			// se for maior que 60 não vai acontecer nada!
+			validData = true
 			return false;
 
 		}
@@ -283,10 +285,10 @@ function Pg() {
 			iniciar
 		}
 	}
-	
+
 	function cadastrar() {
-		if(validNome && validData && validEmail && validSenha && validConfirmarSenha){
-	
+		if(validNome && validData && validEmail && validSenhaCadastro && validConfirmarSenha){
+			alert("Deu bom.")
 		} else {
 			alert("Preencha todos os campos.")
 		}
@@ -306,11 +308,15 @@ function Pg() {
 
 		const validacaoInputs = ValidacaoInputs()
 		validacaoInputs.iniciar();
+
 	}
 	
 	return {
 		iniciar
 	}
+
+	/* Máscaras */
+
 }	
 
 window.addEventListener('load', () => {
