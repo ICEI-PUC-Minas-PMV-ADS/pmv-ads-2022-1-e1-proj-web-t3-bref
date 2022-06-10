@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/avaliacao.css">
 
+    <script type="text/javascript" src="../scripts/avaliacao.js" defer></script>
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../bootstrap-css/bootstrap.min.css">
     <!-- Footer e Header -->
@@ -48,23 +50,23 @@
                 <div id="formulary">
                     <div class="containerInfos">
                         <p class="titleInfo">Nome do restaurante:</p>
-                        <input class="inputInfo" placeholder="">
+                        <input class="inputInfo" id="inputNomeRestaurante" placeholder="">
                     </div>
                     <div class="containerInfos">
                         <p class="titleInfo">Código do atendimento:</p>
-                        <input class="inputInfo" placeholder="">
+                        <input class="inputInfo" id="inputCodigoAtendimento" placeholder="">
                     </div>
                     <div class="containerInfos">
                         <p class="titleInfo">A comida atendeu suas expectativas?</p>
-                        <textarea class="inputInfo"></textarea>
+                        <textarea class="inputInfo" id="inputOpiniaoComida"></textarea>
                     </div>
                     <div class="containerInfos">
                         <p class="titleInfo">O que achou do atendimento?</p>
-                        <textarea class="inputInfo"></textarea>
+                        <textarea class="inputInfo" id="inputOpiniaoAtendimento"></textarea>
                     </div>
                     <div class="containerInfos">
                         <p class="titleInfo">Como foi sua experiência?</p>
-                        <textarea class="inputInfo"></textarea>
+                        <textarea class="inputInfo" id="inputExperiencia"></textarea>
                     </div>
 
                     <div class="containerInfos" id="starArea">
@@ -79,7 +81,7 @@
                     </div>
 
                     <div class="containerInfos">
-                        <a id="btnEnviar" onclick="sendMessage()" class="btn">Enviar</a>
+                        <a id="btnEnviar" onclick="sendAvaliacao()" class="btn">Enviar</a>
                     </div>
                 </div> 
             </div>
@@ -114,73 +116,6 @@
             </div>
         </div>
     </div>
-
-    <script type="text/javascript">
-
-        var maxClicksAddMoreSize = 6;
-        var maxClicksSubtractMoreSize = -2;
-
-        var countClicksToHiddenItems = 3;
-        var defaultSizeWindow = 0;
-
-        var countClicksChangeSizeItems = 0;
-        var namesItemToHidden = ['breffBig'];
-
-        function startWindow() {
-            let currentDefaultWindowSize = getCurrentWindowSizeValue();
-            if (defaultSizeWindow == 0)
-                defaultSizeWindow = currentDefaultWindowSize;
-        }
-
-        function getCurrentWindowSizeValue() {
-            let myWindowSize = window.getComputedStyle(document.body).fontSize;
-            let currentDefaultWindowSize = parseInt(myWindowSize.replace('px', ''));
-
-            return currentDefaultWindowSize;
-        }
-
-        function changeSizeAllItems(isAddMoreSize) {
-            let currentWindowSize = getCurrentWindowSizeValue();
-            if (isAddMoreSize && isValidAddMoreSize()) {
-                countClicksChangeSizeItems++;
-                document.body.style.fontSize = (currentWindowSize + 3) + 'px';
-            }
-            if (!isAddMoreSize && isValidSubtractMoreSize()) {
-                countClicksChangeSizeItems--;
-                document.body.style.fontSize = (currentWindowSize - 3) + 'px';
-            }
-            actionAboutShowableItems(namesItemToHidden, countClicksChangeSizeItems, countClicksToHiddenItems);
-        }
-
-        function isValidAddMoreSize() {
-            return countClicksChangeSizeItems < maxClicksAddMoreSize;
-        }
-
-        function isValidSubtractMoreSize() {
-            return countClicksChangeSizeItems > maxClicksSubtractMoreSize;
-        }
-
-        function resetDocumentSizes() {
-            document.body.style.fontSize = defaultSizeWindow + 'px';
-            countClicksChangeSizeItems = 0;
-            showHiddenItems(namesItemToHidden, 'visible');
-        }
-
-        function actionAboutShowableItems(namesItemToHidden, currentCount, maxClicksToHiddenItems) {
-            let show = 'visible';
-            let notShow = 'hidden';
-            let action = currentCount >= maxClicksToHiddenItems ? notShow : show;
-            showHiddenItems(namesItemToHidden, action);
-        }
-
-        function showHiddenItems(namesItemToHidden, action) {
-            for (x = 0; namesItemToHidden.length > x; x++) {
-                let myBigBreff = document.getElementById(namesItemToHidden[x]);
-                myBigBreff.style.visibility = action;
-            }
-        }
-
-    </script>
 
 </body>
 </html>
