@@ -17,7 +17,7 @@ body {
     background-color: white;
     font-family: 'Lato', sans-serif;
     color: #483A20;
-    font-size: 16px;
+    font-size: 1em;
     min-width: fit-content;
 }
 
@@ -106,7 +106,7 @@ body {
 
 .bref-title {
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
-    font-size: 35px;
+    font-size: 2.188em;
     font-stretch: condensed;
     color: #FFC300;
 }
@@ -275,7 +275,7 @@ input[type="range"]::-webkit-slider-thumb {
     width: 100%;
     display: flex;
     justify-content: center;
-    font-size: 26px;
+    font-size: 1.625em;
 }
 
 .card-item-group-container {
@@ -302,7 +302,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .card-item {
     display: flex;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #483A20;
     display: flex;
     flex-direction: column;
@@ -313,8 +313,6 @@ input[type="range"]::-webkit-slider-thumb {
     border: solid 2px gray;
     white-space: nowrap;
 }
-
-
 
 /* Footer */
 #footer{
