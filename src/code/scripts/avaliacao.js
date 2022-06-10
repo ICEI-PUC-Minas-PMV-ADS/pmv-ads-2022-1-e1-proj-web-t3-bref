@@ -1,3 +1,85 @@
+
+/* input validate area */
+
+const inputNomeRestaurante = document.querySelector('#inputNomeRestaurante');
+const inputCodigoAtendimento = document.querySelector('#inputCodigoAtendimento');
+const inputOpiniaoComida = document.querySelector('#inputOpiniaoComida');
+const inputOpiniaoAtendimento = document.querySelector('#inputOpiniaoAtendimento');
+const inputExperiencia = document.querySelector('#inputExperiencia');
+
+function sendAvaliacao() {
+
+    if (!validateNomeRestaurante()) {
+        alert("Nome de restaurante inválido.");
+        inputNomeRestaurante.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
+        return;
+    }
+
+    inputNomeRestaurante.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
+
+    if (!validateCodigoAtendimento()) {
+        alert("Codigo atendimento inválido.");
+        inputCodigoAtendimento.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
+        return;
+    }
+
+    inputCodigoAtendimento.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
+
+    if (!validateOpiniaoComida()) {
+        alert("Opinião inválida.");
+        inputOpiniaoComida.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
+        return;
+    }
+
+    inputOpiniaoComida.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
+
+    if (!validateOpiniaoAtendimento()) {
+        alert("Opiniã de atendimento inválida.");
+        inputOpiniaoAtendimento.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
+        return;
+    }
+
+    inputOpiniaoAtendimento.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
+
+    if (!validateExperiencia()) {
+        alert("Experiência inválida.");
+        inputExperiencia.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
+        return;
+    }
+
+    inputExperiencia.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
+
+    alert("Avaliação enviada, obrigado por nos ajudar a melhorar cada dia mais!");
+    window.location.href = "../html/index.html";
+}
+
+function validateNomeRestaurante() {
+    let input = inputNomeRestaurante.value;
+    return input.length > 5;
+}
+
+function validateCodigoAtendimento() {
+    let input = inputCodigoAtendimento.value;
+    return input.length == 8;
+}
+
+function validateOpiniaoComida() {
+    let input = inputOpiniaoComida.value;
+    return input.length > 5;
+}
+
+function validateOpiniaoAtendimento() {
+    let input = inputOpiniaoAtendimento.value;
+    return input.length > 5;
+}
+
+function validateExperiencia() {
+    let input = inputExperiencia.value;
+    return input.length > 5;
+}
+
+/* zoom area */
+
 var maxClicksAddMoreSize = 6;
 var maxClicksSubtractMoreSize = -2;
 
