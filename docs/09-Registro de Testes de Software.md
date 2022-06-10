@@ -3,10 +3,24 @@
 ## Verificar a função Lupa 
 
 >Original e Reset:<br/>
-><img src="./img/imagens_testes/original-reset.jpeg">
-
+><img src="./img/imagens_testes/original-reset.jpeg" height="70%" width="70%">
+>
 >Font+:<br/>
-><img src="./img/imagens_testes/font+.jpeg">
-
+><img src="./img/imagens_testes/font+.jpeg" height="70%" width="70%">
+>
 >Font-:<br/>
-><img src="./img/imagens_testes/font-.jpeg">
+><img src="./img/imagens_testes/font-.jpeg" height="70%" width="70%">
+
+## Verificar a barra de busca 
+
+>Barra de busca Sucesso:<br/>
+><img src="./img/imagens_testes/busca-madero.jpeg" height="70%" width="70%">
+>
+> Retorno Sucesso:<br/>
+><img src="./img/imagens_testes/retorno-madero.jpeg" height="70%" width="70%">
+
+>Barra de busca Nome aleatório:<br/>
+><img src="./img/imagens_testes/busca-random.jpeg" height="70%" width="70%">
+>
+>Retorno Nome aleatório:<br/>
+><img src="./img/imagens_testes/retorno-random.jpeg" height="70%" width="70%">
