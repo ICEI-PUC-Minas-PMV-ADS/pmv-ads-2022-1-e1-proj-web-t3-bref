@@ -2,25 +2,25 @@
 
 ## CT-01 - Verificar a função Lupa 
 
->Original e Reset:<br/>
+>### Original e Reset:<br/>
 ><img src="./img/imagens_testes/original-reset.jpeg" height="70%" width="70%">
 >
->Font+:<br/>
+>### Font+:<br/>
 ><img src="./img/imagens_testes/font+.jpeg" height="70%" width="70%">
 >
->Font-:<br/>
+>### Font-:<br/>
 ><img src="./img/imagens_testes/font-.jpeg" height="70%" width="70%">
 
 ## CT-02 - Verificar a barra de busca 
 
->Barra de busca Sucesso:<br/>
+>### Barra de busca Sucesso:<br/>
 ><img src="./img/imagens_testes/busca-madero.jpeg" height="70%" width="70%">
 >
-> Retorno Sucesso:<br/>
+>### Retorno Sucesso:<br/>
 ><img src="./img/imagens_testes/retorno-madero.jpeg" height="70%" width="70%">
 
->Barra de busca Nome aleatório:<br/>
+>### Barra de busca Nome aleatório:<br/>
 ><img src="./img/imagens_testes/busca-random.jpeg" height="70%" width="70%">
 >
->Retorno Nome aleatório:<br/>
+>### Retorno Nome aleatório:<br/>
 ><img src="./img/imagens_testes/retorno-random.jpeg" height="70%" width="70%">
