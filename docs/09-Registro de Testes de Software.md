@@ -1,6 +1,6 @@
 # Registro de Testes de Software
 
-## Verificar a função Lupa 
+## CT-01 - Verificar a função Lupa 
 
 >Original e Reset:<br/>
 ><img src="./img/imagens_testes/original-reset.jpeg" height="70%" width="70%">
@@ -11,7 +11,7 @@
 >Font-:<br/>
 ><img src="./img/imagens_testes/font-.jpeg" height="70%" width="70%">
 
-## Verificar a barra de busca 
+## CT-02 - Verificar a barra de busca 
 
 >Barra de busca Sucesso:<br/>
 ><img src="./img/imagens_testes/busca-madero.jpeg" height="70%" width="70%">
