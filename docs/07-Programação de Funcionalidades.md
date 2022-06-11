@@ -30,7 +30,7 @@ O site possui uma página destinada apenas ao contato com os responsáveis pelo 
 
 O site possui uma página em que o usuário poderá cadastrar e entrar em sua conta para ter acesso a todo o conteúdo.
 
-![Cadastrar](img/cadastro.png)
+![Cadastrar](img/cadastrar-default.png)
 
 #### Requisito atendido
 
