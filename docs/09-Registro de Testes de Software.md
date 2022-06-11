@@ -3,7 +3,7 @@
 ## CT-01 - Verificar a função Lupa 
 
 >### Original e Reset:
-><img src="./img/imagens_testes/original-reset.jpeg" height="70%" width="70%">
+><img src="./img/imagens_testes/original-reset.jpegendereco-restaurante.jpg" height="70%" width="70%">
 >
 >### Font+:
 ><img src="./img/imagens_testes/font+.jpeg" height="70%" width="70%">
@@ -122,3 +122,6 @@
 >### API do WhatsApp que deve ser redirecionada
 ><img src="./img/imagens_testes/contato-restaurante-sucesso.png" height="70%" width="70%">
 
+## CT-10 - Endereço do Restaurante
+>### A informação sobre o restaurante pode ser vista na parte superior direita. Acima dos botões de reserva, avaliação e contato.
+><img src="./img/imagens_testes/endereco-restaurante.jpg" height="70%" width="70%">
