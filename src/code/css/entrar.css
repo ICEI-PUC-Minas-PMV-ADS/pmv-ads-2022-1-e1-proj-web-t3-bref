@@ -7,8 +7,8 @@ body {
 	display: grid;
 	grid-template-columns: repeat (2, 1fr);
 	grid-template-areas: "main aside";
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
 	justify-items: center;
 	align-items: center;
 }
@@ -35,6 +35,13 @@ body {
 
 #entrar {
 	font-size: 15px;
+}
+
+#msgEntrar {
+	text-align: center;
+	display: none;
+	font-size: 1.2em;
+	margin-bottom: 1em;
 }
 
 .fa-eye {
@@ -85,9 +92,17 @@ input:focus:invalid {
 	box-shadow: none;
 }
 
+
 #cadastrar {
 	display: flex;
 	flex-direction: column;
+}
+
+#msgCadastro {
+	text-align: center;
+	display: none;
+	font-size: 1.2em;
+	margin-bottom: 1em;
 }
 
 #btnEntrar {
@@ -145,10 +160,10 @@ aside {
 	background-repeat: no-repeat;
 	background-image: url("https://cdn.discordapp.com/attachments/965947265036455957/965947378102321202/unknown.png");
 	width: 50vw;
-	height: 100vh;
+	height: 100%;
 }
 
-#retangulo {
+/* #retangulo {
 	display: block;
 	position:absolute;
 	background: #FFC300;
@@ -157,9 +172,9 @@ aside {
 	bottom: 7%;
 	right: 0;
 	transition: 2s all;
-}
+} */
 
-#retangulinho {
+/* #retangulinho {
 	display: block;
 	position:absolute;
 	background: #FFC300;
@@ -168,11 +183,11 @@ aside {
 	bottom: 7%;
 	left: 1%;
 	transition: 2s all;
-}
+} */
 
 #retangulao {
 	background: #FFC300;
-	width: 100%;
+	width: 50vw;
 	height: 100%;
 	opacity: 0.1;
 }
