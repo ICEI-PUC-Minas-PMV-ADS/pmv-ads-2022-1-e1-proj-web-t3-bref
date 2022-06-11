@@ -30,11 +30,12 @@ O site possui uma página destinada apenas ao contato com os responsáveis pelo 
 
 O site possui uma página em que o usuário poderá cadastrar e entrar em sua conta para ter acesso a todo o conteúdo.
 
-![Cadastrar](img/cadastrar-default.png)
+![Entrar](img/entrar-default.PNG)
+![Cadastrar](img/cadastro-default.PNG)
 
 #### Requisito atendido
 
-**RF-13** O site deve ter uma página de contato com os desenvolvedores da solução.
+**RF-13** O site deve ter uma página para entrar em uma conta ou cadastrar.
 
 * entrar.html
 * reset.css
