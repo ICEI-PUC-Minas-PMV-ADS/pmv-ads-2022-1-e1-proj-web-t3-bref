@@ -30,6 +30,9 @@ function start() {
     document.getElementById("whatsapp").innerHTML = `Whatsapp: ${whatsapp}`;
     document.getElementById("address").innerHTML = `Endereço: ${address}`;
     document.getElementById("rest-img").src=`../imgs/${imgRest}`;
+
+    // avaliacao url
+    document.getElementById("avaliacaoURL").setAttribute('href',`\avaliacao.html?name='${name}'`)
 }
 
 function main_plate() {
