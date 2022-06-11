@@ -76,7 +76,6 @@ Caso de teste | CT-10 - Endereço do Restaurante
 ------------- | -----------------------
 Requisito Associado | RF-002 O site deve apresentar, para cada restaurante, o seu endereço.
 Objetivo do teste | Verificar a página info-restaurante está carregando o endereço correspondente ao id referenciado da página listagem-restaurantes.
-Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./html/info-restaurante.html?id=3<br/>
-<br>2) A informação correspondente ao id do restaurante será carregada na parte superior direita da página.</br>
+Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./html/info-restaurante.html?id=3<br/>2) A informação correspondente ao id do restaurante será carregada na parte superior direita da página.
 Critérios de êxito | * Uma vez carregada, a página deve mostrar o endereço correto do restaurante.
 
