@@ -5,7 +5,9 @@
 var consoleStorage = [];
 
 // getting the id from URL
-var id = parseInt(document.location.toString().replace("http://127.0.0.1:5501/src/code/html/info-restaurante.html?id=",''))
+var url = document.location.toString();
+
+var id = parseInt(url.substring(url.length - 4).replace(/[^0-9]/g, ''));
 
 // DOM function
 function start() {
