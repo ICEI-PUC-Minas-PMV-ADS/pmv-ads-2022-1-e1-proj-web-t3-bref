@@ -36,16 +36,16 @@ Objetivo do teste | Verificar se as informações do restaurante são informadas
 Passos | <p>1) Entrar na página info-restaurante.html com o parâmetro id do restaurante. Ex.: ./html/info-restaurante.html?id=1</p>
 Critérios de êxito | * A página deve mostrar o conteúdo de acordo com os registros no arquivo JSON.
 
-Caso de teste | CT-05 - 
+Caso de teste | CT-05 - Cadastro e login de usuário
 ------------- | -----------------------
-Requisito Associado | 
-Objetivo do teste | 
-Passos | 
-Critérios de êxito | 
+Requisito Associado | RF-013 O site deve ter uma página para entrar em uma conta ou cadastrar. <br/>RF-014 O site deve ter uma página para redefinição de senha.
+Objetivo do teste | Verificar se os formulários das páginas de entrar e cadastrar estão funcionando corretamente.
+Passos | 1) Para entrar, basta entrar na página de Entrar/Cadastrar, na aba entrar, e preencher todos os campos. Nenhum campo pode ser nulo. <br/>2) Para cadastrar, basta entrar na página de Entrar/Cadastrar, na aba Cadastrar, e preencher todos os campos. Nenhum campo pode ser nulo.<br/><br/>Para redefinição da Senha: <br/>1) Na página de entrar/cadastrar, na aba entrar, o usuário deve clicar no link de redefinição: "Esqueceu a senha?"<br/>2) Após ser redirecionado para a página de redefinição, deve-se passar um email válido.<br/>3) Após validação, o usuário digita a nova senha e os campos devem ser iguais.
+Critérios de êxito | * Deve retornar sucesso em caso de entrada e cadastros feitos corretamente conforme os requisitos dos campos.<br>* Deve retornar uma mensagem de erro caso algum campo esteja nulo ou fora dos requisitos. 
 
-Caso de teste | CT-06 - 
+Caso de teste | CT-06 - Testar busca por localidade
 ------------- | -----------------------
-Requisito Associado | 
-Objetivo do teste | 
-Passos | 
-Critérios de êxito | 
+Requisito Associado | RF-005 O site deve oferecer uma forma de pesquisa para localidades dos restaurantes.
+Objetivo do teste | Atestar que a busca por localidade esteja retornando com sucesso os restaurantes do local buscado.
+Passos | 1) Ao estar na página de listagem de restaurantes, preencher o campo "Cidade", na aba de filtros.<br/>2) Clicar em filtrar para atualizar a lista. Uma cidade de exemplo para pesquisa: Rio de Janeiro.
+Critérios de êxito | * Deve retornar os restaurantes da cidade procurada.<br>* Caso não ache restaurantes com o filtro indicado, deve retornar uma mensagem e uma lista de restaurantes recomendados.
