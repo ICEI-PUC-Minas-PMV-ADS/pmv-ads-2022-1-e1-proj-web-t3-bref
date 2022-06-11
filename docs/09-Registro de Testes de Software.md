@@ -47,11 +47,69 @@
 >### Retorno das informações dos restaurantes
 ><img src="./img/imagens_testes/info-restaurante.png" height="70%" width="70%">
 
+## CT-05 - Cadastro e login de usuário
 
-## CT-06 - Testar busca por localidade
+>### Entrar - Default
+><img src="./img/imagens_testes/entrar-default.png" height="70%" width="70%">
 
->### Busca de cidade com sucesso
+>### Entrar - Sucesso
+><img src="./img/imagens_testes/entrar-sucesso.jpeg" height="70%" width="70%">
+
+>### Entrar - Erro em email ou senha incorreta
+><img src="./img/imagens_testes/entrar-erro-senha.jpeg" height="70%" width="70%">
+
+>### Cadastrar - Default
+><img src="./img/imagens_testes/cadastro-default.png" height="70%" width="70%">
+
+>### Cadastrar - Cadastrando...
+><img src="./img/imagens_testes/cadastro-bem-sucedido.png" height="70%" width="70%">
+
+>### Cadastrar - Sucesso
+><img src="./img/imagens_testes/cadastro-concluido.png" height="70%" width="70%">
+
+>### Cadastrar - Erro faltando campos a serem preenchidos
+><img src="./img/imagens_testes/cadastro-mal-sucedido.png" height="70%" width="70%">
+
+>### Recuperar senha - email invalido
+><img src="./img/imagens_testes/recuperar-senha-email-invalido.png" height="70%" width="70%">
+
+>### Recuperar senha - sucesso
+><img src="./img/imagens_testes/recuperar-senha-email-enviado.png" height="70%" width="70%">
+
+>### Redefinir senha - senha invalida
+><img src="./img/imagens_testes/redefinir-senha-invalido.png" height="70%" width="70%">
+
+>### Redefinir senha - sucesso
+><img src="./img/imagens_testes/redefinir-senha-sucesso.png" height="70%" width="70%">
+
+## CT-06 - Testar filtros de busca
+
+>### Fitro Barra de busca
+><img src="./img/imagens_testes/retorno-madero.jpeg" height="70%" width="70%">
+
+>### Filtro Média de preço
+><img src="./img/imagens_testes/filtro-media-preco.jpeg" height="70%" width="70%">
+
+>### Filtro Lotação
+><img src="./img/imagens_testes/filtro-lotacao.jpeg" height="70%" width="70%">
+
+>### Filtro Tempo de espera
+><img src="./img/imagens_testes/filtro-tempo-espera.jpeg" height="70%" width="70%">
+
+>### Filtro Tipo de restaurante
+><img src="./img/imagens_testes/filtro-tipo-restaurante.jpeg" height="70%" width="70%">
+
+>### Filtro Tipo de Pagamento
+><img src="./img/imagens_testes/filtro-tipo-pagamento.jpeg" height="70%" width="70%">
+
+>### Filtro Cidade
 ><img src="./img/imagens_testes/cidade-sucesso.jpeg" height="70%" width="70%">
 
->### Busca de cidade em falha
+>### Filtros que não encontram restaurante
 ><img src="./img/imagens_testes/cidade-falha.jpeg" height="70%" width="70%">
+
+## CT-07 - Visualizar o tempo de espera
+
+>### Página listagem de restaurantes com restaurantes de exemplo
+><img src="./img/imagens_testes/todos-restaurantes.jpeg" height="70%" width="70%">
+
