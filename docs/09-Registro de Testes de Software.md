@@ -113,3 +113,12 @@
 >### Página listagem de restaurantes com restaurantes de exemplo
 ><img src="./img/imagens_testes/todos-restaurantes.jpeg" height="70%" width="70%">
 
+
+## CT-09 - Contato com o restaurante
+
+>### Botão de contato na página de informações do restaurante
+><img src="./img/imagens_testes/contato-restaurante-info.jpeg" height="70%" width="70%">
+
+>### API do WhatsApp que deve ser redirecionada
+><img src="./img/imagens_testes/contato-restaurante-sucesso.png" height="70%" width="70%">
+

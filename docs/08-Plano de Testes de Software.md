@@ -61,5 +61,14 @@ Caso de teste | CT-08 - Teste para a página de reserva
 ------------- | -----------------------
 Requisito Associado | RF-004 O site deve oferecer ao usuário entrar na fila online ou fazer uma reserva quando o restaurante disponibilizar esse serviço.
 Objetivo do teste | Verificar se a página de informações dos restaurantes redireciona o usuário à página de reserva
-Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./html/info-restaurante.html?id=1<br/>2) Clicar em reserva<br>3) Fazer login no site<br>4) Preencher os campos de acordo com os requisitos de cada campo<br>5) Clicar em reservar.
+Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./html/info-restaurante.html?id=3<br/>2) Clicar em reserva<br>3) Fazer login no site<br>4) Preencher os campos de acordo com os requisitos de cada campo<br>5) Clicar em reservar.
 Critérios de êxito | * Ao final dos passos, o usuário deve estar na página de Reserva Concluída.
+
+
+Caso de teste | CT-09 - Contato com o restaurante
+------------- | -----------------------
+Requisito Associado | RF-009 O site deve permitir que o cliente tenha meios de contato direto com os restaurantes escolhidos.
+Objetivo do teste | Verificar se o botão de contato redireciona para o contato do restaurante via WhatsApp.
+Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./html/info-restaurante.html?id=3<br/>2) Clicar em contato<br>3) Ser redirecionado à API do whatsapp com o número do restaurante
+Critérios de êxito | * Ao final dos passos, o usuário deve ser redirecionado à API do whatsapp para contado com o restaurante.
+
