@@ -26,44 +26,37 @@ body {
 
 #bref {
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
-    font-size: 35px;
+    font-size: 5vh;
     font-stretch: condensed;
     margin-left: 40px;
     color: #FFC300;
+    align-items: center;
 }
 
 #head {
     background-color: #483A20;
-    height: 55px;
+    height: 8vh;
 }
 
 #yellow {
     background-color: #FFC300;
-    height: 30px;
-    margin-bottom: 0px;
+    height: 4.5vh;
 }
 
 #restaurant {
     background-color: aliceblue;
-    height: 200px;
-}
-
-#middle_menu {
-    background-color: #483A20;
-    border: 0px;
-    color: white;
+    height: 28vh;
 }
 
 /* text retangule layout */
 #restname {
-    font-size: 23px;
+    font-size: 25px;
     display: grid;
     align-content: center;
     text-align: center;
     background-color: #F4B11E;
     color: white;
     border-radius: 5px;
-    margin-top: 10px;
 }
 
 #subtitle1 {
@@ -78,13 +71,13 @@ body {
 }
 
 #subtitle2 {
-    font-size: 18px;
+    font-size: 2.5vh;
     align-content: center;
     text-align: center;
     background-color: #f4b01ea4;
     color: white;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 1vh;
 }
 
 #subtitle2 b {
@@ -117,19 +110,27 @@ body {
 }
 
 #rest-img {
-    width: 191px;
-    height: 177px;
+    display: inline-block;
+    width: 14vw;
+    height: 25vh;
+    min-width: 185px;
+    min-height: 160px;
     border-radius: 8px;
-    margin-top: 11px;
 }
 
 #menuType {
-    font-size: 25px;
+    font-size: 3vh;
     background-color: #483A20;
-    height: 40px;
+    height: 5vh;
     color: white;
     text-align: center;
     align-content: center;
+}
+
+#middle_menu {
+    background-color: #483A20;
+    border: 0px;
+    color: white;
 }
 
 #menu {
@@ -147,8 +148,8 @@ body {
 }
 
 #menuline2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
     margin-left: 20px;
     margin-right: 10px;
     background-color: #f4b01e53;

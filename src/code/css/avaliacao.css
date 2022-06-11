@@ -14,38 +14,13 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-.container-main {
-    width: 100vw;
-    color:#483A20;
-    background-color: #FFFFF4;
-
-}
-
-/* application grid system */
-#header {
-    width: 100%;
-    background-color: #483A20;
-    display: flex;
-    justify-content: space-between;
-    flex-direction:row;
-    color: white;
-}
-
-#hRight{
-    flex: 50%;
-    display: flex;
-    align-self: center;
-    justify-content: flex-end;
-    padding: 10px;
-}
-
 /* Zoom area */
 
 #barColor {
     height: 2em;
-    background-color: #FFC300;
     display: flex;
     flex-direction: row;
+    background-color: #FFC300;
 }
 
 .changeFontsButtons {
@@ -53,7 +28,7 @@ body {
     border: outset;
     font-weight: bold;
     justify-content: flex-end;
-    color: #483A20  ;
+    color: #483A20;
     background-color: #FFC300;
     border: none;
 }
@@ -63,135 +38,101 @@ body {
     background-color: #483A20;
 }
 
-/* end zoom area */
+/* End zoom area */
 
-.hRight {
-    margin-left: 1rem;
-    font-size: 1.4em;
-}
 
-#hLeft {
-    flex: 50%;
-    align-self: start;
-}
-
-#brefTitle {
-    color: #FFC300;
-    font-size: 3em;
-    font-family: 'Oswald', sans-serif;
-    padding: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-left: 25px;
-}
-
-#formulary {
-    font-size: 2em;
-    font-family: 'Lato', sans-serif;
-    padding: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-left: 25px;
-    align-content: center;
-    flex: 50%;
-}
-
-#middle {
-    align-content: center;
-}
+/* Title flex direction */
 
 #title {
-    color: #483A20;
-    font-weight: bolder;
-    align-content: center;
-    font-size: 1em;
-    margin-bottom: 0.8em;
-    margin-left: 0px;
-    text-align: center;
-}
-
-.separator{
-    flex: 40%;
-}
-
-#main {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-items: center;
-    width: 100%;
-    padding: 10px;
+    justify-content: center;
+    font-size: 2em;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.containerInfos{
-    align-content: center;
-    padding: 0;
+/* end title flex direction */
+
+
+/* Content flex direction */
+
+#content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+#formulary{
+    width: 40%;
+}
+
+/* end flex direction */
+/* Block label/input */
+.containerInfos {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .titleInfo {
-    font-size: 0.8em;
-    padding: 0;
-    margin: 0;
+    margin-bottom: 5px;
+    font-size: 1.2em;
     font-weight: bold;
-    margin-left: 5px;
-}
-
-input, textarea {
-    border-radius: 4px;   
-    background-color: #FFFFF4;
 }
 
 .inputInfo {
-    outline: 0;
-    padding: 8px;
-    margin-bottom: 15px;
-    height: 1em;
-}
-
-#msgInput{
-    padding: 8px;
-    height: 100px;
     width: 100%;
 }
 
-#separatorForm {
-    display: flex;
-    flex-direction: row;
-}
+/* end block label/input */
 
-#StarSelect {
-    margin-left: 100px;
-    margin-bottom: 20px;
-}
+/* Button Style */
 
-.nota {
-    display: inline-block;
-    margin-right: 10px;
-    text-align: center;
-    height: 40px;
-    vertical-align: middle;
-    margin-top: -20px;
-}
-
-.btn#enviar {
-	border-radius: 4px;
-	border: none;
-	width: 15em;
+#btnEnviar {
+    border-radius: 4px;
+    border: none;
     font-size: 0.6em;
-	padding: 5px;
-	cursor: pointer;
-    transition: 0.4s all;   
+    padding: 5px;
+    width: 100%;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.4s all;
     color: #fff;
     background: #483A20;
-    margin-bottom: 15px;
 }
 
-.btn.btn#enviar:hover {
-    background: rgb(110, 79, 22);
-	transform: scale(1.01);
+#buttonFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
+.btn#btnEnviar:hover {
+    background: rgb(110, 79, 22);
+    transform: scale(1.01);
+}
+
+/* End Button Style */
+
+/* Media Querys */
+
+@media(max-width: 540px) {
+
+    #formulary {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1284px) {
+
+    #formulary {
+        width: 80%;
+    }
+}
+
+/* End Media querys */
 
 /* Colocando as estrelas */
 /* fonte: https://stackoverflow.com/questions/22569961/star-rating-radio-buttons-css */
@@ -204,7 +145,7 @@ input, textarea {
     position: relative;
     background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
     background-size: contain;
-  }
+}
   .star-rating i {
     opacity: 0;
     position: absolute;

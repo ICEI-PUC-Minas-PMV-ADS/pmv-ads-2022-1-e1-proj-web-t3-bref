@@ -9,7 +9,9 @@ window.onload = async function () {
     console.log("Chamou a função window.onload");
     restaurantsDatabase = await getRestaurantsFromDatabase();
     const filter = getSearchFilter();
+    fillFilter(filter);
     loadRestaurants(filter);
+    startWindow();
 }
 
 async function getRestaurantsFromDatabase() {
@@ -35,6 +37,36 @@ function getSearchFilter() {
     };
 
     return filter;
+}
+
+function fillFilter(filter) {
+    const restaurantSearchInput = document.getElementById("restaurant-search-input");
+    if (filter.name !== null && filter.name !== "")
+        restaurantSearchInput.value = filter.name;
+
+    const averagePriceInput = document.getElementById("average-price");
+    if (Number.isNaN(filter.averagePrice) == false)
+        averagePriceInput.value = filter.averagePrice;
+
+    const capacityInput = document.getElementById("capacity");
+    if (Number.isNaN(filter.capacity) == false)
+        capacityInput.value = filter.capacity;
+
+    const waitingTimeInput = document.getElementById("waiting-time");
+    if (Number.isNaN(filter.waitingTimeMinutes) == false)
+        waitingTimeInput.value = filter.waitingTimeMinutes;
+
+    const restaurantTypeInput = document.getElementById("restaurant-type");
+    if (filter.type !== null && filter.type !== "")
+        restaurantTypeInput.value = filter.type;
+
+    const paymentMethodsInput = document.getElementById("payment-methods");
+    if (filter.paymentMethod !== null && filter.paymentMethod !== "")
+        paymentMethodsInput.value = filter.paymentMethod;
+
+    const cityInput = document.getElementById("city");
+    if (filter.city !== null && filter.city !== "")
+        cityInput.value = filter.city;
 }
 
 function loadRestaurants(filter) {
@@ -85,18 +117,24 @@ function getRestaurantsBasedOnFilter(filter) {
         return restaurantsDatabase;
 
     const filteredRestaurants = restaurantsDatabase.filter(r =>
-        (filter.name == null || r.name.toUpperCase().includes(filter.name.toUpperCase()))
-        && (filter.type == null || r.type.toUpperCase() == filter.type.toUpperCase())
+        (filter.name === null || filter.name === "" || normalizeText(r.name).includes(normalizeText(filter.name)))
+        && (filter.type === null || filter.type === "" || r.type.toUpperCase() == filter.type.toUpperCase())
         && (Number.isNaN(filter.averagePrice) || r.averagePrice <= filter.averagePrice)
         && (Number.isNaN(filter.capacity) || r.capacity <= filter.capacity)
-        && (filter.paymentMethod == null || r.paymentMethods.includes(filter.paymentMethod))
+        && (filter.paymentMethod === null || filter.paymentMethod === "" || r.paymentMethods.includes(filter.paymentMethod))
         && (Number.isNaN(filter.waitingTimeMinutes) || r.waitingTimeMinutes <= filter.waitingTimeMinutes)
-        && (filter.city == null || r.address.city.toUpperCase().includes(filter.city.toUpperCase()))
+        && (filter.city === null || filter.city === "" || normalizeText(r.address.city).includes(normalizeText(filter.city)))
     );
-    
+
     console.log("Filtrou o que?", filteredRestaurants);
 
     return filteredRestaurants;
+}
+
+function normalizeText(text) {
+    const textWithoutAccents = text.normalize("NFD").replace(/\p{Diacritic}/gu, "");
+    const normalizedText = textWithoutAccents.toUpperCase();
+    return normalizedText;
 }
 
 function restaurantCardHtml(restaurant) {
@@ -105,7 +143,8 @@ function restaurantCardHtml(restaurant) {
     const formatedPrice = formatPrice(restaurant.averagePrice)
 
     const cardHtml =
-        `<div class="card" onclick="openPage('index.html')">
+
+        `<div class="card" onclick="openPage('info-restaurant.html')">
 
         <!-- Imagem do local. -->
         <img class="card-image" src="../imgs/${restaurant.image}" alt="${restaurant.name}">
@@ -147,11 +186,93 @@ function formatPrice(averagePrice) {
 
     let formatedPrice = "";
     let repetitions = 1;
+    const priceRange = getPriceRange(averagePrice);
 
-    while (repetitions <= averagePrice) {
+    while (repetitions <= priceRange) {
         formatedPrice = formatedPrice + "$";
         repetitions++;
     }
 
     return formatedPrice;
+}
+
+function getPriceRange(averagePrice) {
+    if (averagePrice <= 20)
+        return 1;
+
+    if (averagePrice <= 40)
+        return 2;
+
+    if (averagePrice <= 60)
+        return 3;
+
+    if (averagePrice <= 80)
+        return 4;
+
+    return 5;
+}
+
+/* Zoom area scrit */
+
+var maxClicksAddMoreSize = 6;
+var maxClicksSubtractMoreSize = -2;
+
+var countClicksToHiddenItems = 3;
+var defaultSizeWindow = 0;
+
+var countClicksChangeSizeItems = 0;
+var namesItemToHidden = ['breffBig'];
+
+function startWindow() {
+    let currentDefaultWindowSize = getCurrentWindowSizeValue();
+    if (defaultSizeWindow == 0)
+        defaultSizeWindow = currentDefaultWindowSize;
+}
+
+function getCurrentWindowSizeValue() {
+    let myWindowSize = window.getComputedStyle(document.body).fontSize;
+    let currentDefaultWindowSize = parseInt(myWindowSize.replace('px', ''));
+
+    return currentDefaultWindowSize;
+}
+
+function changeSizeAllItems(isAddMoreSize) {
+    let currentWindowSize = getCurrentWindowSizeValue();
+    if (isAddMoreSize && isValidAddMoreSize()) {
+        countClicksChangeSizeItems++;
+        document.body.style.fontSize = (currentWindowSize + 3) + 'px';
+    }
+    if (!isAddMoreSize && isValidSubtractMoreSize()) {
+        countClicksChangeSizeItems--;
+        document.body.style.fontSize = (currentWindowSize - 3) + 'px';
+    }
+    actionAboutShowableItems(namesItemToHidden, countClicksChangeSizeItems, countClicksToHiddenItems);
+}
+
+function isValidAddMoreSize() {
+    return countClicksChangeSizeItems < maxClicksAddMoreSize;
+}
+
+function isValidSubtractMoreSize() {
+    return countClicksChangeSizeItems > maxClicksSubtractMoreSize;
+}
+
+function resetDocumentSizes() {
+    document.body.style.fontSize = defaultSizeWindow + 'px';
+    countClicksChangeSizeItems = 0;
+    showHiddenItems(namesItemToHidden, 'visible');
+}
+
+function actionAboutShowableItems(namesItemToHidden, currentCount, maxClicksToHiddenItems) {
+    let show = 'visible';
+    let notShow = 'hidden';
+    let action = currentCount >= maxClicksToHiddenItems ? notShow : show;
+    showHiddenItems(namesItemToHidden, action);
+}
+
+function showHiddenItems(namesItemToHidden, action) {
+    for (x = 0; namesItemToHidden.length > x; x++) {
+        let myBigBreff = document.getElementById(namesItemToHidden[x]);
+        myBigBreff.style.visibility = action;
+    }
 }

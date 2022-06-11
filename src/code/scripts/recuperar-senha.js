@@ -1,100 +1,92 @@
- /* MENSAGEM DE EMAIL ENVIADO */
-
-function enviarEmail(){
-
-    document.getElementById('recuperarSenha').style.display = "none";
-    document.getElementById('redefinicaoSenha').style.display = "block";
-    document.getElementById('mensagem-email').style.display = "none";
-
-    alert("E-mail enviado!")
-}
-
-    document.getElementById('btnEmailEnviado').addEventListener('mouseup', enviarEmail);
-
-
-
-    /* TESTE 
-    document.getElementById('mensagem-email').innerHTML= "E-mail enviado!" 
-    document.getElementById('mensagem-email').style.color = "forestgreen"; */
-
-    
-
- /* TESTE 1 ATUALIZAÇÃO DE CONTEUDO */
- function sumir(redefinicaoSenha){
+ /* ATUALIZAÇÃO DE CONTEUDO */
+ function sumir(){
     document.getElementById(redefinicaoSenha).hidden=true;
+    document.getElementById(olhos).hidden=true;
+
 }
 function inicia(){
     for(var i=recuperarSenha; i=redefinicaoSenha; i++){
         document.getElementById(redefinicaoSenha).hidden=true;
+        document.getElementById(olhos).hidden=true;
     }
 
     document.getElementById(recuperarSenha).addEventListener("load", rolar);
     document.getElementById(redefinicaoSenha).addEventListener("load", rolar);
-   
+    document.getElementById(olhos).addEventListener("load", rolar);   
     
 }
-window.addEventListener("load", inicia);
 
-/* MOSTRAR SENHAS */
-const btn = document.querySelector(".fa-eye");
-const btnSenhaCadastro = document.querySelector("#verSenha")
-const btnConfirm = document.querySelector("#verConfirmarSenha")
 
-/* INPUTS */
-const inputSenha = document.querySelector("#senha")
-const inputConfirmarSenha = document.querySelector("#confirmarSenha")
+/* function MostrarSenhas() { */
+    
+    /* Mostrar senhas */
+    const BtnVerSenha = document.querySelector("#verConfirmarSenha")
+    const BtnVerConfirmarSenha = document.querySelector("#verSenha")
+    const InputNovaSenha = document.querySelector("#NovaSenha")
+    const InputconfirmarNovaSenha = document.querySelector("#confirmarNovaSenha")
 
-/* VALIDAÇÕES */
-var validSenha = false
-var validConfirmarSenha = false
+    BtnVerConfirmarSenha.addEventListener("mouseover", ()=>{
+        
+        if(InputNovaSenha.getAttribute("type") == "password"){
+            InputNovaSenha.setAttribute("type" , "type")
+            } else {
+                InputNovaSenha.setAttribute("type", "password")
+        }
+    })     
+        
+    BtnVerSenha.addEventListener("mouseover", ()=>{
 
-function iniciar(){
-    mostrarSenhaEntrar()
-    mostrarSenhaCadastro()
-    mostrarConfirmarSenhaCadastro()
-
-    return {
-        iniciar
-}
-}
-
-function CompararSenhas() {
-
-function compararSenhaComConfirmar(){
-    inputSenhaCadastro.addEventListener("keyup", ()=> {
-        if(inputConfirmarSenha.value != inputSenhaCadastro.value) {
-            inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
-            inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
-        } else {
-            inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
-            inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+        if(InputconfirmarNovaSenha.getAttribute("type") == "password"){
+            InputconfirmarNovaSenha.setAttribute("type" , "type")
+            } else {
+                InputconfirmarNovaSenha.setAttribute("type", "password")
         }
     })
-}
+    
+/*function CompararSenhas() {
 
-function compararConfirmarComSenha() {
-    inputConfirmarSenha.addEventListener("keyup", ()=> {
-        if(inputSenhaCadastro.value != inputConfirmarSenha.value) {
-            inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
-            inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
-        } else {
-            inputConfirmarSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
-            inputSenhaCadastro.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
-        }
-    })
-}
-function iniciar(){
-    compararSenhaComConfirmar()
-    compararConfirmarComSenha()
-}
+		function compararSenhaComConfirmar(){
+			InputNovaSenha.addEventListener("keyup", ()=> {
 
-return {
-    iniciar
-}
-}
+				if(InputconfirmarNovaSenha.value != InputNovaSenha.value) {
+					InputNovaSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+					InputconfirmarNovaSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+				} else {
+					InputNovaSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+					InputconfirmarNovaSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+					InputconfirmarNovaSenha.setAttribute("style", "text-shadow: 0px 0px 3px green; color: green")
+					InputconfirmarNovaSenha.textContent = "Confirmar a senha"
+				}
+			})
+		}
 
+		function compararConfirmarComSenha() {
+			InputconfirmarNovaSenha.addEventListener("keyup", ()=> {
 
-/* PLACEHOLDER VERMELHO E COM BORDA QUANDO ERRADO */
+				if(InputNovaSenha.value != InputconfirmarNovaSenha.value) {
+					InputconfirmarNovaSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+					InputNovaSenha.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+					InputconfirmarNovaSenha.setAttribute("style", "text-shadow: 0px 0px 3px crimson; color: crimson")
+					InputconfirmarNovaSenha.textContent = "Confirmar a senha* As senhas devem ser iguais."
+				} else {
+					InputconfirmarNovaSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+					InputNovaSenha.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+					InputconfirmarNovaSenha.setAttribute("style", "text-shadow: 0px 0px 3px green; color: green")
+					InputconfirmarNovaSenha.textContent = "Confirmar a senha"
+				}
+			})
+		}
+		function iniciar(){
+			compararSenhaComConfirmar()
+			compararConfirmarComSenha()
+		}
+
+		return {
+			iniciar
+		}
+	} */
+
+/* PLACEHOLDER VERMELHO E COM BORDA QUANDO EMAIL ESTÁ ERRADO */
 
 function validarEmail(){
     var email = document.querySelector('#email');
@@ -110,6 +102,43 @@ function validarEmail(){
     if(error.innerHTML == ""){error.innerHTML == ""
     }
 }
+
+
+/* MENSAGEM DE EMAIL ENVIADO */
+
+function enviarEmail(){
+
+    document.getElementById('recuperarSenha').style.display = "none";
+    document.getElementById('redefinicaoSenha').style.display = "block";
+    document.getElementById('mensagem-email').style.display = "none";
+    document.getElementById('olhos').style.display = "block";
+
+    alert("Preencha com seu e-mail cadastrado!")
+    confirm("E-mail enviado!")
+}
+    document.getElementById('btnEmailEnviado').addEventListener('mouseup', enviarEmail);
+
+    window.addEventListener("load", inicia);
+
+
+
+
+    let NovaSenha = document.getElementById('NovaSenha');
+    let confirmarNovaSenha = document.getElementById('confirmarNovaSenha');
+    
+    function validarSenha() {
+      if (NovaSenha.value != confirmarNovaSenha.value) {
+        confirmarNovaSenha.setCustomValidity("Senhas diferentes!");
+        confirmarNovaSenha.reportValidity();
+        return false;
+      } else {
+        confirmarNovaSenha.setCustomValidity("")
+        confirm("Senha redefinida com sucesso!");
+        return true;
+      }
+    }
+
+
 /* AUMENTAR E DIMINUIR FONTE */
  var maxClicksAddMoreSize = 8;
  var maxClicksSubtractMoreSize = -2;

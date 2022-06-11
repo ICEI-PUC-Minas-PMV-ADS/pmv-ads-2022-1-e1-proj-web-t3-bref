@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/avaliacao.css">
 
+    <script type="text/javascript" src="../scripts/avaliacao.js" defer></script>
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../bootstrap-css/bootstrap.min.css">
     <!-- Footer e Header -->
@@ -36,61 +38,52 @@
             </div>
         </nav>
         <div class="container-main">
-
-            <!-- <header id="header">
-                <div id="hLeft">
-                    <p id="brefTitle">BREFF</p>
-                </div>
-                <div id="hRight" >
-                    <div class="hRight">Pesquisa</div>
-                </div>
-            </header> -->
             <div id="barColor">
                 <button class="changeFontsButtons" onclick="changeSizeAllItems(false);">Font -</button>
                 <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
                 <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
             </div>
-            <div id="main">
-                <div class="separator"></div>
+
+            <p id="title"><b>Avaliação</b></p>
+
+            <div id="content">
                 <div id="formulary">
-                    <div id="separatorForm">
-                        <div id="middle">
-                            <p id="title"><b>Avaliação</b></p>
-                            <div class="containerInfos">
-                                <p class="titleInfo">Nome do restaurante:</p>
-                                <input class="inputInfo" placeholder="">
-                            </div>
-                            <div class="containerInfos">
-                                <p class="titleInfo">Código do atendimento:</p>
-                                <input class="inputInfo" placeholder="">
-                            </div>
-                            <div class="titleInfo">
-                                A comida atendeu suas expectativas?
-                                <textarea rows="3" id="msgInput" class="inputInfo"></textarea>
-                            </div>
-                            <div class="titleInfo">
-                                O que achou do atendimento?
-                                <textarea rows="3" id="msgInput" class="inputInfo"></textarea>
-                            </div>
-                            <div class="titleInfo">
-                                Como foi sua experiência?
-                                <textarea rows="3" id="msgInput" class="inputInfo"></textarea>
-                            </div>
-                            <div class="titleInfo" id="StarSelect">
-                                <div class="nota">Nota</div>
-                                <div class="star-rating star-5">
-                                    <input type="radio" name="rating" value="1"><i></i>
-                                    <input type="radio" name="rating" value="2"><i></i>
-                                    <input type="radio" name="rating" value="3"><i></i>
-                                    <input type="radio" name="rating" value="4"><i></i>
-                                    <input type="radio" name="rating" value="5"><i></i>
-                                </div>
-                            </div>
-                            <Button class="btn" id="enviar">Enviar</Button>
+                    <div class="containerInfos">
+                        <p class="titleInfo">Nome do restaurante:</p>
+                        <input class="inputInfo" id="inputNomeRestaurante" placeholder="">
+                    </div>
+                    <div class="containerInfos">
+                        <p class="titleInfo">Código do atendimento:</p>
+                        <input class="inputInfo" type="number" maxlength="8" id="inputCodigoAtendimento" placeholder="">
+                    </div>
+                    <div class="containerInfos">
+                        <p class="titleInfo">A comida atendeu suas expectativas?</p>
+                        <textarea class="inputInfo" id="inputOpiniaoComida"></textarea>
+                    </div>
+                    <div class="containerInfos">
+                        <p class="titleInfo">O que achou do atendimento?</p>
+                        <textarea class="inputInfo" id="inputOpiniaoAtendimento"></textarea>
+                    </div>
+                    <div class="containerInfos">
+                        <p class="titleInfo">Como foi sua experiência?</p>
+                        <textarea class="inputInfo" id="inputExperiencia"></textarea>
+                    </div>
+
+                    <div class="containerInfos" id="starArea">
+                        <p class="titleInfo">Nota</p>
+                        <div class="star-rating star-5">
+                            <input type="radio" name="rating" value="1"><i></i>
+                            <input type="radio" name="rating" value="2"><i></i>
+                            <input type="radio" name="rating" value="3"><i></i>
+                            <input type="radio" name="rating" value="4"><i></i>
+                            <input type="radio" name="rating" value="5"><i></i>
                         </div>
                     </div>
-                </div>
-                <div class="separator"></div>
+
+                    <div class="containerInfos">
+                        <a id="btnEnviar" onclick="sendAvaliacao()" class="btn">Enviar</a>
+                    </div>
+                </div> 
             </div>
         </div>
 
@@ -123,73 +116,6 @@
             </div>
         </div>
     </div>
-
-    <script type="text/javascript">
-
-        var maxClicksAddMoreSize = 6;
-        var maxClicksSubtractMoreSize = -2;
-
-        var countClicksToHiddenItems = 3;
-        var defaultSizeWindow = 0;
-
-        var countClicksChangeSizeItems = 0;
-        var namesItemToHidden = ['breffBig'];
-
-        function startWindow() {
-            let currentDefaultWindowSize = getCurrentWindowSizeValue();
-            if (defaultSizeWindow == 0)
-                defaultSizeWindow = currentDefaultWindowSize;
-        }
-
-        function getCurrentWindowSizeValue() {
-            let myWindowSize = window.getComputedStyle(document.body).fontSize;
-            let currentDefaultWindowSize = parseInt(myWindowSize.replace('px', ''));
-
-            return currentDefaultWindowSize;
-        }
-
-        function changeSizeAllItems(isAddMoreSize) {
-            let currentWindowSize = getCurrentWindowSizeValue();
-            if (isAddMoreSize && isValidAddMoreSize()) {
-                countClicksChangeSizeItems++;
-                document.body.style.fontSize = (currentWindowSize + 3) + 'px';
-            }
-            if (!isAddMoreSize && isValidSubtractMoreSize()) {
-                countClicksChangeSizeItems--;
-                document.body.style.fontSize = (currentWindowSize - 3) + 'px';
-            }
-            actionAboutShowableItems(namesItemToHidden, countClicksChangeSizeItems, countClicksToHiddenItems);
-        }
-
-        function isValidAddMoreSize() {
-            return countClicksChangeSizeItems < maxClicksAddMoreSize;
-        }
-
-        function isValidSubtractMoreSize() {
-            return countClicksChangeSizeItems > maxClicksSubtractMoreSize;
-        }
-
-        function resetDocumentSizes() {
-            document.body.style.fontSize = defaultSizeWindow + 'px';
-            countClicksChangeSizeItems = 0;
-            showHiddenItems(namesItemToHidden, 'visible');
-        }
-
-        function actionAboutShowableItems(namesItemToHidden, currentCount, maxClicksToHiddenItems) {
-            let show = 'visible';
-            let notShow = 'hidden';
-            let action = currentCount >= maxClicksToHiddenItems ? notShow : show;
-            showHiddenItems(namesItemToHidden, action);
-        }
-
-        function showHiddenItems(namesItemToHidden, action) {
-            for (x = 0; namesItemToHidden.length > x; x++) {
-                let myBigBreff = document.getElementById(namesItemToHidden[x]);
-                myBigBreff.style.visibility = action;
-            }
-        }
-
-    </script>
 
 </body>
 </html>

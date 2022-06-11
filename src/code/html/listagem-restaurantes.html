@@ -50,7 +50,11 @@
 
 
     <!-- Barra amarela que atravessa toda a página. Logo abaixo do header. -->
-    <div class="bar-color"></div>
+    <div id="barColor">
+        <button class="changeFontsButtons" onclick="changeSizeAllItems(false);">Font -</button>
+        <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
+        <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
+    </div>
 
     <!-- Elemento semântico main que contém o conteúdo principal da página. O elemento main é um elemento do HTML5. -->
     <main id="main">
@@ -69,16 +73,16 @@
                 </div>
 
                 <label for="average-price">Média de preços:</label>
-                <input class="mb-1" type="range" id="average-price" name="average-price" min="1" max="5">
+                <input class="mb-1" type="range" id="average-price" name="average-price" min="1" max="500" value="500">
 
                 <label for="capacity">Lotação:</label>
-                <input class="mb-1" type="range" id="capacity" name="capacity" min="0" max="100">
+                <input class="mb-1" type="range" id="capacity" name="capacity" min="0" max="100" value="100">
 
                 <label for="waiting-time">Tempo de Espera:</label>
-                <input class="mb-1" type="range" id="waiting-time" name="waiting-time" min="0">
+                <input class="mb-1" type="range" id="waiting-time" name="waiting-time" min="0" max="180" value="180">
 
-                <select class="mb-1" name="restaurant-type"> 
-                    <option value="-1" selected>Tipo de Restaurante</option>
+                <select class="mb-1" name="restaurant-type" id="restaurant-type"> 
+                    <option value="" selected>Tipo de Restaurante</option>
                     <option value="Japonês">Japonês</option>
                     <option value="Italiano">Italiano</option>
                     <option value="Brasileiro">Brasileiro</option>
@@ -86,10 +90,10 @@
                     <option value="Fast-food">Fast-food</option>
                     <option value="Australiano">Australiano</option>
                 </select>
+                
 
-
-                <select class="mb-1" name="payment-methods">
-                    <option value="-1" selected>Tipo de Pagamento</option>
+                <select class="mb-1" name="payment-methods" id="payment-methods">
+                    <option value="" selected>Tipo de Pagamento</option>
                     <option value="Cartão de Crédito">Cartão de Crédito</option>
                     <option value="Cartão de Débito">Cartão de Débito</option>
                     <option value="PIX">PIX</option>
@@ -114,6 +118,32 @@
         </div>
     </main>
     <div class="bar-color"></div>
+    
+    <!-- Footer -->
+    <div id="footer">
+        <div class="col-md-12">
+            <ul>
+                <li><a class="bref-title" id="logo-bref" href="../html/index.html">BREF</a></li>
+                <li>
+                <ul class="share">
+                    <a href="#"><li id="facebook-icon"></li></a>
+                    <a href="#"><li id="twitter-icon"></li></a>
+                    <a href="#"><li id="instagram-icon"></li></a>
+                </ul>
+                </li>
+                <li id="footer-links">
+                    <a href="./sobre-nos.html">Sobre nós</a>
+                    <span class="footer-ponto">&#9679;</span>
+                    <a href="./fale-conosco.html">Fale conosco</a>
+                    <span class="footer-ponto">&#9679;</span>
+                    <a href="./entrar.html">Entrar/Cadastrar</a>
+                </li>
+                <li>
+                <p id="footer-copyright">© 2022 Bref Company LTDA</p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>

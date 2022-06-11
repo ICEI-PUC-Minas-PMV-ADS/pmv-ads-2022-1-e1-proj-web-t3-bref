@@ -255,7 +255,7 @@
         {
             "id": 4,
             "name": "Fujiyama",
-            "averagePrice": 110,
+            "averagePrice": 15,
             "type": "Pastelaria",
             "capacity": 20,
             "waitingTimeMinutes": 15,
