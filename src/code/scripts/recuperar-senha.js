@@ -20,6 +20,7 @@ function mostrarPosRedefinicao() {
     formPosRedefinicao.style.display = 'block';
     formPassword.style.display = "none";
     formEmail.style.display = "none";
+    window.location.href = "./entrar.html"
 }
 
 /* PLACEHOLDER VERMELHO E COM BORDA QUANDO EMAIL ESTÁ ERRADO */
