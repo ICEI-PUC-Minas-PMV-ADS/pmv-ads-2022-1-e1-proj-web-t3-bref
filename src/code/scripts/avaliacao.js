@@ -10,7 +10,7 @@ const inputExperiencia = document.querySelector('#inputExperiencia');
 function sendAvaliacao() {
 
     if (!validateNomeRestaurante()) {
-        alert("Nome de restaurante inválido.");
+        alert("Nome de restaurante inv\u00e1lido, minimo 5 caracteres.");
         inputNomeRestaurante.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
         return;
     }
@@ -18,7 +18,7 @@ function sendAvaliacao() {
     inputNomeRestaurante.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
 
     if (!validateCodigoAtendimento()) {
-        alert("Codigo atendimento inválido.");
+        alert("Codigo atendimento inv\u00e1lido, deve conter 8 caracteres.");
         inputCodigoAtendimento.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
         return;
     }
@@ -26,7 +26,7 @@ function sendAvaliacao() {
     inputCodigoAtendimento.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
 
     if (!validateOpiniaoComida()) {
-        alert("Opinião inválida.");
+        alert("Opini\u00e3o inv\u00e1lida, minimo 5 caracteres.");
         inputOpiniaoComida.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
         return;
     }
@@ -34,7 +34,7 @@ function sendAvaliacao() {
     inputOpiniaoComida.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
 
     if (!validateOpiniaoAtendimento()) {
-        alert("Opiniã de atendimento inválida.");
+        alert("Opini\u00e1o sobre o atendimento inv\u00e1lida, minimo 5 caracteres.");
         inputOpiniaoAtendimento.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
         return;
     }
@@ -42,20 +42,20 @@ function sendAvaliacao() {
     inputOpiniaoAtendimento.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
 
     if (!validateExperiencia()) {
-        alert("Experiência inválida.");
+        alert("Experi\u00eancia inv\u00c1lida, minimo 5 caracteres.");
         inputExperiencia.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
         return;
     }
 
     inputExperiencia.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
 
-    alert("Avaliação enviada, obrigado por nos ajudar a melhorar cada dia mais!");
+    alert("Avalia\u00e7\u00e1o enviada, obrigado por nos ajudar a melhorar cada dia mais!");
     window.location.href = "../html/index.html";
 }
 
 function validateNomeRestaurante() {
     let input = inputNomeRestaurante.value;
-    return input.length > 5;
+    return input.length >= 5;
 }
 
 function validateCodigoAtendimento() {
@@ -65,17 +65,17 @@ function validateCodigoAtendimento() {
 
 function validateOpiniaoComida() {
     let input = inputOpiniaoComida.value;
-    return input.length > 5;
+    return input.length >= 5;
 }
 
 function validateOpiniaoAtendimento() {
     let input = inputOpiniaoAtendimento.value;
-    return input.length > 5;
+    return input.length >= 5;
 }
 
 function validateExperiencia() {
     let input = inputExperiencia.value;
-    return input.length > 5;
+    return input.length >= 5;
 }
 
 /* zoom area */
