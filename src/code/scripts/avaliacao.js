@@ -142,3 +142,12 @@ function showHiddenItems(namesItemToHidden, action) {
         myBigBreff.style.visibility = action;
     }
 }
+
+// Getting the name input by url and parsin it with default name form
+window.onload = function() {
+    // getting the id from URL
+    var url = document.location.toString();
+    var name = url.substring(url.lastIndexOf('name=%27') + 8, url.lastIndexOf('%27')).replace('%20',' ');
+
+    document.getElementById("inputNomeRestaurante").setAttribute('placeholder',name);
+}
