@@ -311,7 +311,7 @@ function Pg() {
 				InputEmail.setAttribute ("style", "box-shadow: 0px 0px 3px green; border-color: green")
 				InputSenha.setAttribute ("style", "box-shadow: 0px 0px 3px green; border-color: green")
 				msgEntrar.setAttribute ("style", "display: block; text-shadow: 0px 0px 1px green; color: green")
-				msgEntrar.textContent = "Login efetuado com sucesso, redirecioando..."
+				msgEntrar.textContent = "Login efetuado com sucesso, redirecionando..."
 				
 				setTimeout(()=>{
 					window.location.href = "../html/reserva.html"
