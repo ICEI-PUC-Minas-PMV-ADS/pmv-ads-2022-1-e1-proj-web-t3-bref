@@ -90,6 +90,18 @@ input:focus:invalid {
 	flex-direction: column;
 }
 
+#msgCadastro {
+	text-align: center;
+}
+
+#msgAcerto {
+	display: none;
+}
+
+#msgFalha {
+	display: none;
+}
+
 #btnEntrar {
 	margin: 0px 0px 2px 0px;
 	width: 20em;

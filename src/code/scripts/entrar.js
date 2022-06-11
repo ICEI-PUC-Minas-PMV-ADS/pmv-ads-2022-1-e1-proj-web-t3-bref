@@ -22,7 +22,9 @@ function Pg() {
 	const LabelEmail	= document.querySelector("#labelEmail")
 	const LabelSenhaCadastro	= document.querySelector("#labelSenhaCadastro")
 	const LabelConfirmarSenha	= document.querySelector("#labelConfirmarSenha")
-	/* Outros */
+	/* Mensagens */
+	const msgAcerto = document.querySelector("#msgAcerto")
+	const msgFalha = document.querySelector("#msgFalha")
 	
 
 	function NavegacaoAbas() {
@@ -190,7 +192,7 @@ function Pg() {
 		/* Validação Nome */
 		InputNome.addEventListener("keyup", ()=>{
 
-			if(InputNome.value.length <= 5){
+			if(InputNome.value.length <= 7){
 				LabelNome.textContent = "Nome * Insira seu nome e sobrenome"
 				LabelNome.setAttribute("style" , "text-shadow: 0px 0px 1px crimson; color: crimson")
 				InputNome.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson" )
@@ -288,9 +290,29 @@ function Pg() {
 
 	function cadastrar() {
 		if(validNome && validData && validEmail && validSenhaCadastro && validConfirmarSenha){
-			alert("Deu bom.")
+			let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]")
+
+			listaUser.push(
+				{
+					nome: nome.value,
+					data: data.value,
+					email: email.value,
+					senha: senha.value
+				}
+			)
+
+			localStorage.setItem("listaUser", JSON.stringify(listaUser))
+			
+			msgAcerto.setAttribute("style" , "display: block; text-shadow: 0px 0px 1px green; color: green")
+			msgFalha.setAttribute("style" , "display: none; text-shadow: 0px 0px 1px crimson; color: crimson")
+				
+				setTimeout(()=>{
+					window.location.href = "http://127.0.0.1:5501/src/code/html/entrar.html"
+				}, 3000)
+
 		} else {
-			alert("Preencha todos os campos.")
+			msgFalha.setAttribute("style" , "display: block; text-shadow: 0px 0px 1px crimson; color: crimson")
+			msgAcerto.setAttribute("style" , "display: none; text-shadow: 0px 0px 1px green; color: green")
 		}
 	}
 	document.getElementById("btnCadastrar").addEventListener("click", cadastrar);
