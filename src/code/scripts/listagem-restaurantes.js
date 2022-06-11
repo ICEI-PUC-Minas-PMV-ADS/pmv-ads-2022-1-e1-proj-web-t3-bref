@@ -144,7 +144,7 @@ function restaurantCardHtml(restaurant) {
 
     const cardHtml =
 
-        `<div class="card" onclick="openPage('info-restaurant.html')">
+        `<div class="card" onclick="openPage('info-restaurante.html?id=${restaurant.id}')">
 
         <!-- Imagem do local. -->
         <img class="card-image" src="../imgs/${restaurant.image}" alt="${restaurant.name}">
