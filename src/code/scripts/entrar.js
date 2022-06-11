@@ -314,7 +314,7 @@ function Pg() {
 				msgEntrar.textContent = "Login efetuado com sucesso, redirecioando..."
 				
 				setTimeout(()=>{
-					window.location.href = "http://127.0.0.1:5501/src/code/html/index.html"
+					window.location.href = "../html/reserva.html"
 				}, 5000)
 
 			}else {
@@ -346,7 +346,7 @@ function Pg() {
 			msgCadastro.setAttribute("style" , "display: block; text-shadow: 0px 0px 1px green; color: green")
 				
 				setTimeout(()=>{
-					window.location.href = "http://127.0.0.1:5501/src/code/html/entrar.html"
+					window.location.href = "../html/entrar.html"
 				}, 5000)
 
 		} else {
