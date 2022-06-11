@@ -37,6 +37,13 @@ body {
 	font-size: 15px;
 }
 
+#msgEntrar {
+	text-align: center;
+	display: none;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+
 .fa-eye {
 	cursor: pointer;
 	color: #483A20;
@@ -85,6 +92,7 @@ input:focus:invalid {
 	box-shadow: none;
 }
 
+
 #cadastrar {
 	display: flex;
 	flex-direction: column;
@@ -92,14 +100,9 @@ input:focus:invalid {
 
 #msgCadastro {
 	text-align: center;
-}
-
-#msgAcerto {
 	display: none;
-}
-
-#msgFalha {
-	display: none;
+	font-size: 1.2em;
+	margin-bottom: 1em;
 }
 
 #btnEntrar {

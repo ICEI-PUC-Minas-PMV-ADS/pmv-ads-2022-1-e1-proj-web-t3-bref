@@ -1,21 +1,27 @@
 function Pg() {
 	/* Mostrar senhas */
-	const Btn = document.querySelector(".fa-eye")
+	const Btn = document.querySelector("#primeiroOlho")
 	const BtnConfirm = document.querySelector("#verConfirmarSenha")
 	const BtnSenhaCadastro = document.querySelector("#verSenha")
 	/* Inputs */
-	const InputNome = document.querySelector("#nome")
 	const InputSenha = document.querySelector("#senha")
+	const InputEmail = document.querySelector("#email")
+	const InputNome = document.querySelector("#nomeCadastro")
+	const InputData = document.querySelector("#dataCadastro")
 	const InputEmailCadastro = document.querySelector("#emailCadastro")
 	const InputSenhaCadastro = document.querySelector("#senhaCadastro")
-	const InputConfirmarSenha = document.querySelector("#confirmarSenha")
-	const InputData = document.querySelector("#data")
+	const InputConfirmarSenha = document.querySelector("#confirmarSenhaCadastro")
 	/* Validações */
 	var validNome = false
 	var validData = false
 	var validEmail = false
 	var validSenhaCadastro = false
 	var validConfirmarSenha = false
+	var contaValid = {
+		nome: '',
+		email: '',
+		senha: '',
+	}
 	/* Labels */
 	const LabelNome	= document.querySelector("#labelNome")
 	const LabelData	= document.querySelector("#labelData")
@@ -23,8 +29,8 @@ function Pg() {
 	const LabelSenhaCadastro	= document.querySelector("#labelSenhaCadastro")
 	const LabelConfirmarSenha	= document.querySelector("#labelConfirmarSenha")
 	/* Mensagens */
-	const msgAcerto = document.querySelector("#msgAcerto")
-	const msgFalha = document.querySelector("#msgFalha")
+	const msgEntrar = document.querySelector("#msgEntrar")		
+	const msgCadastro = document.querySelector("#msgCadastro")
 	
 
 	function NavegacaoAbas() {
@@ -195,7 +201,7 @@ function Pg() {
 			if(InputNome.value.length <= 7){
 				LabelNome.textContent = "Nome * Insira seu nome e sobrenome"
 				LabelNome.setAttribute("style" , "text-shadow: 0px 0px 1px crimson; color: crimson")
-				InputNome.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson" )
+				InputNome.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 				validNome = false
 			} else {
 				LabelNome.textContent = "Nome"
@@ -246,8 +252,8 @@ function Pg() {
 
 		/* Validação Confirmar Senha */
 
-		function validadata(){
-			var data = document.getElementById("data").value; // pega o valor do input
+		function validaData(){
+			var data = document.getElementById("dataCadastro").value; // pega o valor do input
 			data = data.replace(/\//g, "-"); // substitui eventuais barras (ex. IE) "/" por hífen "-"
 			var data_array = data.split("-"); // quebra a data em array
 			
@@ -280,7 +286,7 @@ function Pg() {
 
 		function iniciar(){
 			validarEmail()
-			validData()
+			validaData()
 		}
 
 		return {
@@ -288,31 +294,64 @@ function Pg() {
 		}
 	}
 
+	function entrar() {
+		
+		listaUser = JSON.parse(localStorage.getItem("listaUser"))
+		listaUser.forEach ((item) => {
+			if(email.value == item.emailCad && senha.value == item.senhaCad){
+				contaValid = {
+					nome: item.nomeCad,
+					email: item.emailCad,
+					senha: item.senhaCad,
+				}
+
+			}
+		})
+			if (email.value == contaValid.email && senha.value == contaValid.senha){
+				InputEmail.setAttribute ("style", "box-shadow: 0px 0px 3px green; border-color: green")
+				InputSenha.setAttribute ("style", "box-shadow: 0px 0px 3px green; border-color: green")
+				msgEntrar.setAttribute ("style", "display: block; text-shadow: 0px 0px 1px green; color: green")
+				msgEntrar.textContent = "Login efetuado com sucesso, redirecioando..."
+				
+				setTimeout(()=>{
+					window.location.href = "http://127.0.0.1:5501/src/code/html/index.html"
+				}, 5000)
+
+			}else {
+				InputEmail.setAttribute ("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+				InputSenha.setAttribute ("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+				msgEntrar.setAttribute ("style", "display: block; text-shadow: 0px 0px 1px crimson; color: crimson")
+				msgEntrar.textContent = "Email ou senha incorretos."
+				InputEmail.focus()
+			}
+		}
+		document.getElementById("btnEntrar").addEventListener("click", entrar);
+
 	function cadastrar() {
 		if(validNome && validData && validEmail && validSenhaCadastro && validConfirmarSenha){
 			let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]")
 
 			listaUser.push(
 				{
-					nome: nome.value,
-					data: data.value,
-					email: email.value,
-					senha: senha.value
+					nomeCad: nomeCadastro.value,
+					dataCad: dataCadastro.value,
+					emailCad: emailCadastro.value,
+					senhaCad: senhaCadastro.value
 				}
 			)
 
 			localStorage.setItem("listaUser", JSON.stringify(listaUser))
 			
-			msgAcerto.setAttribute("style" , "display: block; text-shadow: 0px 0px 1px green; color: green")
-			msgFalha.setAttribute("style" , "display: none; text-shadow: 0px 0px 1px crimson; color: crimson")
+			msgCadastro.textContent = "Cadastrando conta, aguarde..."
+			msgCadastro.setAttribute("style" , "display: block; text-shadow: 0px 0px 1px green; color: green")
 				
 				setTimeout(()=>{
 					window.location.href = "http://127.0.0.1:5501/src/code/html/entrar.html"
-				}, 3000)
+				}, 5000)
 
 		} else {
-			msgFalha.setAttribute("style" , "display: block; text-shadow: 0px 0px 1px crimson; color: crimson")
-			msgAcerto.setAttribute("style" , "display: none; text-shadow: 0px 0px 1px green; color: green")
+			msgCadastro.textContent = "Preencha todos os campos para cadastrar"
+			msgCadastro.setAttribute("style" , "display: block; text-shadow: 0px 0px 1px crimson; color: crimson")
 		}
 	}
 	document.getElementById("btnCadastrar").addEventListener("click", cadastrar);
