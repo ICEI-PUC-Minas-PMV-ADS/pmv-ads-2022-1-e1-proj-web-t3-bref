@@ -72,3 +72,11 @@ Objetivo do teste | Verificar se o botão de contato redireciona para o contato 
 Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./html/info-restaurante.html?id=3<br/>2) Clicar em contato<br>3) Ser redirecionado à API do whatsapp com o número do restaurante
 Critérios de êxito | * Ao final dos passos, o usuário deve ser redirecionado à API do whatsapp para contado com o restaurante.
 
+Caso de teste | CT-10 - Endereço do Restaurante
+------------- | -----------------------
+Requisito Associado | RF-002 O site deve apresentar, para cada restaurante, o seu endereço.
+Objetivo do teste | Verificar a página info-restaurante está carregando o endereço correspondente ao id referenciado da página listagem-restaurantes.
+Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./html/info-restaurante.html?id=3<br/>
+<br>2) A informação correspondente ao id do restaurante será carregada na parte superior direita da página.</br>
+Critérios de êxito | * Uma vez carregada, a página deve mostrar o endereço correto do restaurante.
+
