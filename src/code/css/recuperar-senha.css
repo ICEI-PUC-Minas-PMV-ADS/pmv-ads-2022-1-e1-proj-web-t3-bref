@@ -131,10 +131,6 @@ input {
     border-style: solid;
 }
 
-#olhos{
-    display: none;
-    background: #FFFFF4;
-}
 .fa-eye {
 	cursor: pointer;
 	color: #483A20;
@@ -194,14 +190,6 @@ input:focus:invalid {
     cursor: pointer;
     color: #fff;
     transition: 0.4s all;
-}
-
-#recuperarSenha {
-    display: block;
-}
-
-#redefinicaoSenha {
-    display: none;
 }
 
 
