@@ -10,7 +10,7 @@ Caso de teste | CT-01 - Verificar a função Lupa
 ------------- | -----------------------
 Requisito Associado | RF-011 O site deve permitir que o usuário possa alterar o tamanho da fonte. 
 Objetivo do teste | Verificar se o aumento de fonte está funcionando corretamente
-Passos | <p>1) Para aumentar a fonte, basta clicar no botão escrito "Font+", descrito logo abaixo do cabeçalho da página.<br/>2)Para diminuir a fonte, basta clicar no botão escrito "Font-", descrito logo abaixo do cabeçalho da página.<br/>3)Para retornar ao tamanho padrão da fonte, basta clicar no botão escrito "Reset", descrito logo abaixo do cabeçalho da página.</p>
+Passos | <p>1) Para aumentar a fonte, basta clicar no botão escrito "Font+", descrito logo abaixo do cabeçalho da página.<br/>2) Para diminuir a fonte, basta clicar no botão escrito "Font-", descrito logo abaixo do cabeçalho da página.<br/>3) Para retornar ao tamanho padrão da fonte, basta clicar no botão escrito "Reset", descrito logo abaixo do cabeçalho da página.</p>
 Critérios de êxito | * Os textos da página devem aumentar ou reduzir o tamanho, de acordo com o comando.
 
 
@@ -29,12 +29,12 @@ Objetivo do teste | Verificar se o formulário está funcional na página para e
 Passos | <p>1) Entrar na página de Fale Conosco<br/>2) Preencher todos os campos<br/>3) Clicar no botão enviar.</p>
 Critérios de êxito | * Deve retornar uma mensagem de sucesso ao enviar a mensagem.<br/>* Os campos devem retornar uma mensagem caso haja algum erro. 
 
-Caso de teste | CT-04 - 
+Caso de teste | CT-04 - Visualização das informações do restaurante
 ------------- | -----------------------
-Requisito Associado | 
-Objetivo do teste | 
-Passos | 
-Critérios de êxito | 
+Requisito Associado | RF-001 O site deve apresentar de forma clara o cardápio e formas de pagamentos dos restaurantes. 
+Objetivo do teste | Verificar se as informações do restaurante são informadas na página info-restaurante.html
+Passos | <p>1) Entrar na página info-restaurante.html com o parâmetro id do restaurante. Ex.: ./html/info-restaurante.html?id=1</p>
+Critérios de êxito | * A página deve mostrar o conteúdo de acordo com os registros no arquivo JSON.
 
 Caso de teste | CT-05 - 
 ------------- | -----------------------

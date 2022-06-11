@@ -24,3 +24,12 @@
 >
 >Retorno Nome aleatório:<br/>
 ><img src="./img/imagens_testes/retorno-random.jpeg" height="70%" width="70%">
+
+
+## CT-03
+
+
+## CT-04 - Visualização das informações do restaurante
+
+>
+
