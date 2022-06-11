@@ -106,28 +106,28 @@ function maskPhone() {
 
 function sendMessage() {
     if (!validateName()) {
-        alert("Nome inválido.");
+        alert("Nome inv\u00e1lido, minimo 5 caracteres.");
         inputName.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
         return;
     }
     inputName.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
 
     if (!validateEmail()) {
-        alert("Email inválido.");
+        alert("Email inv\u00e1lido, deve conter um @ e .com.");
         inputEmail.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
         return;
     }
     inputEmail.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
 
     if (!validatePhone()) {
-        alert("Telefone inválido.");
+        alert("Telefone inv\u00e1lido, n\u00e3o condiz com o padr\u00e3o.");
         inputPhone.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
         return;
     }
     inputPhone.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
 
     if (!validateMessage()) {
-        alert("Mensagem inválida.");
+        alert("Mensagem inv\u00e1lida, minimo 20 caracterers.");
         inputMsg.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
         return;
     }
