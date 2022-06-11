@@ -149,5 +149,5 @@ window.onload = function() {
     var url = document.location.toString();
     var name = url.substring(url.lastIndexOf('name=%27') + 8, url.lastIndexOf('%27')).replace('%20',' ');
 
-    document.getElementById("inputNomeRestaurante").setAttribute('placeholder',name);
+    document.getElementById("inputNomeRestaurante").value=name;
 }
