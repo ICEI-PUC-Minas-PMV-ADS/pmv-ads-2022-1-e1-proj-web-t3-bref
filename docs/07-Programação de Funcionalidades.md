@@ -156,7 +156,7 @@ A funcionalidade tem por objetivo retornar todas as informações do restaurante
 
 Na página de listagem de restaurantes, aparecerá nos cards o tempo de espera de cada restaurante. 
 
-<img src="img/imagens_secao_7/todos-restaurantes.PNG" width="70%" height="70%">
+<img src="img/imagens_secao_7/todos-restaurantes.png" width="70%" height="70%">
 
 #### *Requisito atendido*
 
@@ -175,7 +175,7 @@ Na página de listagem de restaurantes, aparecerá nos cards o tempo de espera d
 * Abra a pasta descompactada
 * Abra o arquvivo ./src/code/html/listagem-restaurantes.html
 
-## F07 - Reservar Restaurante
+## F08 - Reservar Restaurante
 
 A ferramenta permite que o usuário reserve um horário no restaurante selecionado.
 
@@ -200,7 +200,7 @@ A ferramenta permite que o usuário reserve um horário no restaurante seleciona
 * Abra a pasta descompactada
 * Abra o arquvivo ./src/code/html/reserva.html
 
-## F07 - Contato com o restaurante
+## F09 - Contato com o restaurante
 
 A ferramenta permite que o usuário seja redirecionado a uma API do WhatsApp para que ele possa entrar em contato com o restaurante selecionado
 
@@ -226,7 +226,7 @@ A ferramenta permite que o usuário seja redirecionado a uma API do WhatsApp par
 * Abra o arquvivo html com um parâmetro id. Ex.: ./src/code/html/info-restaurante.html?id=1
 * Clique no botão "Contato"
 
-## F07 - Avaliação do restaurante
+## F10 - Avaliação do restaurante
 
 A ferramenta permite que o usuário possa avaliar o restaurante selecionado, fazendo comentários e dando estrelas.
 
