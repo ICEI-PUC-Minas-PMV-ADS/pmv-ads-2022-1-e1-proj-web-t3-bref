@@ -100,7 +100,7 @@
 ><img src="./img/imagens_testes/filtro-tipo-restaurante.jpeg" height="70%" width="70%">
 
 >### Filtro Tipo de Pagamento
-><img src="./img/imagens_testes/filtro-tipo-pagamento.jpeg" height="70%" width="70%">
+><img src="./img/imagens_testes/filtro-tipo-pagamento.png" height="70%" width="70%">
 
 >### Filtro Cidade
 ><img src="./img/imagens_testes/cidade-sucesso.jpeg" height="70%" width="70%">
