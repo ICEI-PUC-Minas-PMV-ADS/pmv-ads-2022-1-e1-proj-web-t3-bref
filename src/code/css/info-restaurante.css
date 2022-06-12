@@ -98,6 +98,10 @@ body {
     margin-left: 10px;
 }
 
+#column1 {
+    padding-right: 50px;
+}
+
 #buttom1 {
     display: grid;
     align-content: center;
@@ -168,3 +172,101 @@ body {
     margin-top: 7px;
     margin-left: -80px;
 }
+
+#sep02 {
+    display: none;
+}
+
+@media screen and (max-width: 755px) {
+    * {
+        font-size: 15px;
+    }
+
+    #head {
+        height: 40px;
+    }
+
+    #yellow {
+        height: 20px;
+    }
+
+    #bref {
+        font-size: 25px;
+    }
+
+    div.container-fluid {
+        display: contents;
+        padding: 0;
+    }
+
+    #rest-img {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    #restname {
+        margin-top: -55px;
+    }
+
+    #subtitle2 {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    #column1 {
+        padding-right: 15px;
+    }
+
+    #buttom1 {
+        margin-left: 10%;
+        width: 80%;
+        height: 23px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+
+    }
+
+    #menuType {
+        display: inline;
+    }
+
+    #menuType div {
+        display: inline;
+    }
+
+    #item-img {
+        display: none;
+        height: 0px;
+        width: 0px;
+    }
+
+    #menu {
+        display: inline;
+    }
+
+    #menuline1 {
+        background-color: white;
+        margin-left: 20px;
+        margin-right: 10px;
+        border-radius: 5px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+    
+    #menuline2 {
+        margin-top: 1px;
+        margin-bottom: 1px;
+        background-color: white;
+        margin-left: 20px;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+
+    #subtitle1, #subtitle3 {
+        height: 25px;
+        margin-top: 1px;
+    }
+}    

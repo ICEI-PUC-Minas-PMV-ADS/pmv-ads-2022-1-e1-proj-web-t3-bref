@@ -39,11 +39,9 @@
         </div>
       </div>
 
-      <!-- separator -->
-      <div class="row" style="height: 20px;" id="sep01"></div>
 
       <!-- first content part: restaurant info -->
-      <div class="row" id="restaurant">
+      <div class="row" id="restaurant" style="align-content: space-evenly;">
         <div class="col-md-1" style="width: 5vw;"></div>
         <div class="col-md-2">
           <img id="rest-img" src="../imgs/place6.jpg">
@@ -63,7 +61,7 @@
               <div class="row" id="subtitle2"><b id="telephone"><!-- Telefone --></b></div>
               <div class="row" id="subtitle2"><b id="whatsapp"><!-- Whatsapp --></b></div>
               <div class="row" id="subtitle2"><b id="address"><!-- Adress --></b></div>
-              <div class="row" id="buttons_aside">
+              <div class="row">
                 <div class="col-md-4">
                   <div class="me-1" id="buttom1">
                     <b>
@@ -90,93 +88,88 @@
           </div>
         </div>
       </div>
-
-      <!-- separator -->
-      <div class="row" style="height: 20px;" id="sep02"></div>
-
-
-      <!-- middle bar with types -->
-      <div class="row" id="menuType">
-        <div class="col-md-4"><input id='middle_menu' type="button" value="Prato Principal" onclick="main_plate();"></div>
-        <div class="col-md-4"><input id='middle_menu' type="button" value="Bebidas" onclick="drinks();"></div>
-        <div class="col-md-4"><input id='middle_menu' type="button" value="Sobremesas" onclick="dessert();"></div>
-      </div>
-
-      <!-- menu content -->
-      <div class="row" id="menu">
-        <div class="col-md-12">
-          <div class="row" id="menuline1">
-            <div class="col-md-1"></div>
-            <div class="col-md-1">
-              <img id="item-img" src="../imgs/place1.jpg">
-            </div>
-
-            <div class="col-md-9">
-              <div class="row" id="subtitle1">
-                <b id="namePlate1">NOME DO PRATO</b>
-              </div>
-              <div class="row">
-                <div class="col-md-5">
-                  <div class="row" id="subtitle3"><b id="preco1">Preço: R$ 99,99</b></div>
-                  <div class="row" id="subtitle3"><b id="tempo1">Tempo de Preparo: 20 min</b></div>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-6">
-                  <div class="row" id="subtitle3"><b id="classi1">Classificação: 5 Estrelas</b></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row" id="menuline2">
-            <div class="col-md-1"></div>
-            <div class="col-md-1">
-              <img id="item-img" src="../imgs/place2.jpg">
-            </div>
-
-            <div class="col-md-9">
-              <div class="row" id="subtitle1">
-                <b id="namePlate2">NOME DO PRATO</b>
-              </div>
-              <div class="row">
-                <div class="col-md-5">
-                  <div class="row" id="subtitle3"><b id="preco2">Preço: R$ 99,99</b></div>
-                  <div class="row" id="subtitle3"><b id="tempo2">Tempo de Preparo: 20 min</b></div>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-6">
-                  <div class="row" id="subtitle3"><b id="classi2">Classificação: 5 Estrelas</b></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row" id="menuline1">
-            <div class="col-md-1"></div>
-            <div class="col-md-1">
-              <img id="item-img" src="../imgs/place3.jpg">
-            </div>
-
-            <div class="col-md-9">
-              <div class="row" id="subtitle1">
-                <b id="namePlate3">NOME DO PRATO</b>
-              </div>
-              <div class="row">
-                <div class="col-md-5">
-                  <div class="row" id="subtitle3"><b id="preco3">Preço: R$ 99,99</b></div>
-                  <div class="row" id="subtitle3"><b id="tempo3">Tempo de Preparo: 20 min</b></div>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-6">
-                  <div class="row" id="subtitle3"><b id="classi3">Classificação: 5 Estrelas</b></div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-
-    <!-- Footer -->
-
     </div>
+
+    <!-- middle bar with types -->
+    <div class="row" id="menuType">
+      <div class="col-md-4"><input id='middle_menu' type="button" value="Prato Principal" onclick="main_plate();"></div>
+      <div class="col-md-4"><input id='middle_menu' type="button" value="Bebidas" onclick="drinks();"></div>
+      <div class="col-md-4"><input id='middle_menu' type="button" value="Sobremesas" onclick="dessert();"></div>
+    </div>
+
+    <!-- menu content -->
+    <div class="row" id="menu">
+      <div class="col-md-12">
+        <div class="row" id="menuline1">
+          <div class="col-md-1"></div>
+          <div class="col-md-1">
+            <img id="item-img" src="../imgs/place1.jpg">
+          </div>
+
+          <div class="col-md-9">
+            <div class="row" id="subtitle1">
+              <b id="namePlate1">NOME DO PRATO</b>
+            </div>
+            <div class="row">
+              <div class="col-md-5">
+                <div class="row" id="subtitle3"><b id="preco1">Preço: R$ 99,99</b></div>
+                <div class="row" id="subtitle3"><b id="tempo1">Tempo de Preparo: 20 min</b></div>
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-6">
+                <div class="row" id="subtitle3"><b id="classi1">Classificação: 5 Estrelas</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="menuline2">
+          <div class="col-md-1"></div>
+          <div class="col-md-1">
+            <img id="item-img" src="../imgs/place2.jpg">
+          </div>
+
+          <div class="col-md-9">
+            <div class="row" id="subtitle1">
+              <b id="namePlate2">NOME DO PRATO</b>
+            </div>
+            <div class="row">
+              <div class="col-md-5">
+                <div class="row" id="subtitle3"><b id="preco2">Preço: R$ 99,99</b></div>
+                <div class="row" id="subtitle3"><b id="tempo2">Tempo de Preparo: 20 min</b></div>
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-6">
+                <div class="row" id="subtitle3"><b id="classi2">Classificação: 5 Estrelas</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="menuline1">
+          <div class="col-md-1"></div>
+          <div class="col-md-1">
+            <img id="item-img" src="../imgs/place3.jpg">
+          </div>
+
+          <div class="col-md-9">
+            <div class="row" id="subtitle1">
+              <b id="namePlate3">NOME DO PRATO</b>
+            </div>
+            <div class="row">
+              <div class="col-md-5">
+                <div class="row" id="subtitle3"><b id="preco3">Preço: R$ 99,99</b></div>
+                <div class="row" id="subtitle3"><b id="tempo3">Tempo de Preparo: 20 min</b></div>
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-6">
+                <div class="row" id="subtitle3"><b id="classi3">Classificação: 5 Estrelas</b></div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+
   </body>
 </html>
