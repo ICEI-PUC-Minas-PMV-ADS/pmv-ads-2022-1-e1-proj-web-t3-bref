@@ -24,8 +24,8 @@ Critérios de êxito | * Deve retornar o resultado correto da busca<br/>* Quando
 
 Caso de teste | CT-03 - Teste de formulários da página Fale Conosco
 ------------- | -----------------------
-Requisito Associado | RF-012 O site deve ter uma página de contato com os desenvolvedores da solução. 
-Objetivo do teste | Verificar se o formulário está funcional na página para entrar em contato com os desenvolvedores do site.
+Requisito Associado | RF-012 O site deve ter uma página de contato com a empresa BREF.
+Objetivo do teste | Verificar se o formulário está funcional na página para entrar em contato com os responsáveis do site.
 Passos | <p>1) Entrar na página de Fale Conosco<br/>2) Preencher todos os campos<br/>3) Clicar no botão enviar.</p>
 Critérios de êxito | * Deve retornar uma mensagem de sucesso ao enviar a mensagem.<br/>* Os campos devem retornar uma mensagem caso haja algum erro. 
 
@@ -78,4 +78,12 @@ Requisito Associado | RF-002 O site deve apresentar, para cada restaurante, o se
 Objetivo do teste | Verificar a página info-restaurante está carregando o endereço correspondente ao id referenciado da página listagem-restaurantes.
 Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./html/info-restaurante.html?id=3<br/>2) A informação correspondente ao id do restaurante será carregada na parte superior direita da página.
 Critérios de êxito | * Uma vez carregada, a página deve mostrar o endereço correto do restaurante.
+
+
+Caso de teste | CT-11 - Avaliação do restaurante
+------------- | -----------------------
+Requisito Associado | RF-010 O site deve permitir que usuários possam dar avaliações sobre os restaurantes.
+Objetivo do teste | Atestar que a página de avaliações esteja com os campos funcionando corretamente.
+Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./html/info-restaurante.html?id=3<br/>2) Clicar no botão "Avaliação"<br>3) Preencher todos os campos<br>4) Cliar em enviar.
+Critérios de êxito | * Deve retornar uma mensagem de sucesso caso a avaliação tenha sido enviada. <br>* Deve retornar uma mensagem de erro para os campos que não atenderem os requisitos.
 
