@@ -12,6 +12,8 @@ window.onload = async function () {
     fillFilter(filter);
     loadRestaurants(filter);
     startWindow();
+    configureInputs();
+    setOutputValues();
 }
 
 async function getRestaurantsFromDatabase() {
@@ -199,17 +201,49 @@ function formatPrice(averagePrice) {
 function getPriceRange(averagePrice) {
     if (averagePrice <= 20)
         return 1;
-
-    if (averagePrice <= 40)
+    else if (averagePrice <= 40)
         return 2;
-
-    if (averagePrice <= 60)
+    else if (averagePrice <= 60)
         return 3;
-
-    if (averagePrice <= 80)
+    else if (averagePrice <= 80)
         return 4;
+    else
+        return 5;
+}
 
-    return 5;
+function configureInputs() {
+    const averagePriceInput = document.getElementById("average-price");
+    averagePriceInput.oninput = setAveragePriceOutput;
+
+    const capacityInput = document.getElementById("capacity");
+    capacityInput.oninput = setCapacityOutput;
+
+    const waitingTimeInput = document.getElementById("waiting-time");
+    waitingTimeInput.oninput = setWaitingTimeOutput;
+}
+
+function setOutputValues() {
+    setAveragePriceOutput();
+    setCapacityOutput();
+    setWaitingTimeOutput();
+}
+
+function setAveragePriceOutput() {
+    const averagePriceInput = document.getElementById("average-price");
+    const averagePriceOutput = document.getElementById("average-price-output");
+    averagePriceOutput.value = averagePriceInput.value;
+}
+
+function setCapacityOutput() {
+    const capacityInput = document.getElementById("capacity");
+    const capacityOutput = document.getElementById("capacity-output");
+    capacityOutput.value = capacityInput.value;
+}
+
+function setWaitingTimeOutput() {
+    const waitingTimeInput = document.getElementById("waiting-time");
+    const waitingTimeOutput = document.getElementById("waiting-time-output");
+    waitingTimeOutput.value = waitingTimeInput.value;
 }
 
 /* Zoom area script */

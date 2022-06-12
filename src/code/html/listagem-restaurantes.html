@@ -25,7 +25,7 @@
         </div>
 
         <!-- Grupo de elementos que estão posicionados à direita do header. -->
-    
+
         <div class="nav-items">
             <ul>
                 <li>
@@ -55,20 +55,31 @@
             <!-- Formulário que contém os campos para realização dos filtros da listagem de restaurantes. -->
             <form class="form">
 
-                <!-- Input de pesquisa personalizado com ícone. -->                
+                <!-- Input de pesquisa personalizado com ícone. -->
                 <label for="restaurant-search-input">Nome do Restaurante:</label>
                 <input class="mb-1" type="search" id="restaurant-search-input" name="pesq">
 
-                <label for="average-price">Média de Preços:</label>
-                <input class="mb-1" type="range" id="average-price" name="average-price" min="1" max="500" value="500">
+                <label for="average-price">Média de Preços (R$):</label>
+                <div class="input-with-output-container">
+                    <input class="mb-1" type="range" id="average-price" name="average-price" min="1" max="500"
+                        value="500">
+                    <output name="average-price-output" id="average-price-output"></output>
+                </div>
 
-                <label for="capacity">Lotação:</label>
-                <input class="mb-1" type="range" id="capacity" name="capacity" min="0" max="100" value="100">
+                <label for="capacity">Lotação (%):</label>
+                <div class="input-with-output-container">
+                    <input class="mb-1" type="range" id="capacity" name="capacity" min="0" max="100" value="100">
+                    <output name="capacity-output" id="capacity-output"></output>
+                </div>
 
-                <label for="waiting-time">Tempo de Espera:</label>
-                <input class="mb-1" type="range" id="waiting-time" name="waiting-time" min="0" max="180" value="180">
+                <label for="waiting-time">Tempo de Espera (min):</label>
+                <div class="input-with-output-container">
+                    <input class="mb-1" type="range" id="waiting-time" name="waiting-time" min="0" max="180"
+                        value="180">
+                    <output name="waiting-time-output" id="waiting-time-output"></output>
+                </div>
 
-                <select class="mb-1" name="restaurant-type" id="restaurant-type"> 
+                <select class="mb-1" name="restaurant-type" id="restaurant-type">
                     <option value="" selected>Tipo de Restaurante</option>
                     <option value="Japonês">Japonês</option>
                     <option value="Italiano">Italiano</option>
@@ -77,7 +88,7 @@
                     <option value="Fast-food">Fast-food</option>
                     <option value="Australiano">Australiano</option>
                 </select>
-                
+
 
                 <select class="mb-1" name="payment-methods" id="payment-methods">
                     <option value="" selected>Tipo de Pagamento</option>
@@ -105,18 +116,24 @@
         </div>
     </main>
     <div class="bar-color"></div>
-    
+
     <!-- Footer -->
     <div id="footer">
         <div class="col-md-12">
             <ul>
                 <li><a class="bref-title" id="logo-bref" href="../html/index.html">BREF</a></li>
                 <li>
-                <ul class="share">
-                    <a href="#"><li id="facebook-icon"></li></a>
-                    <a href="#"><li id="twitter-icon"></li></a>
-                    <a href="#"><li id="instagram-icon"></li></a>
-                </ul>
+                    <ul class="share">
+                        <a href="#">
+                            <li id="facebook-icon"></li>
+                        </a>
+                        <a href="#">
+                            <li id="twitter-icon"></li>
+                        </a>
+                        <a href="#">
+                            <li id="instagram-icon"></li>
+                        </a>
+                    </ul>
                 </li>
                 <li id="footer-links">
                     <a href="./sobre-nos.html">Sobre nós</a>
@@ -126,7 +143,7 @@
                     <a href="./entrar.html">Entrar/Cadastrar</a>
                 </li>
                 <li>
-                <p id="footer-copyright">© 2022 Bref Company LTDA</p>
+                    <p id="footer-copyright">© 2022 Bref Company LTDA</p>
                 </li>
             </ul>
         </div>
