@@ -44,6 +44,11 @@ body {
 	margin-bottom: 1em;
 }
 
+.errorInput {
+	box-shadow: 0px 0px 3px crimson !important; 
+	border-color: crimson !important;
+}
+
 .fa-eye {
 	cursor: pointer;
 	color: #483A20;
@@ -105,6 +110,12 @@ input:focus:invalid {
 	margin-bottom: 1em;
 }
 
+#testebotao {
+	display: flex;
+	justify-content: center;
+	
+}
+
 #btnEntrar {
 	margin: 0px 0px 2px 0px;
 	width: 20em;
@@ -114,6 +125,8 @@ input:focus:invalid {
 	border-radius: 4px;
 	cursor: pointer;
 	transition: 0.4s all;
+	display: none;
+	animation: up 1s;
 }
 
 #btnCadastrar {

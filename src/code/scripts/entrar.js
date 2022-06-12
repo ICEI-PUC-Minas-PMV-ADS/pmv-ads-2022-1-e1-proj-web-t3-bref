@@ -3,6 +3,8 @@ function Pg() {
 	const Btn = document.querySelector("#primeiroOlho")
 	const BtnConfirm = document.querySelector("#verConfirmarSenha")
 	const BtnSenhaCadastro = document.querySelector("#verSenha")
+	const BtnEntrar = document.querySelector("#btnEntrar")
+	/* const btnEntrar =  */
 	/* Inputs */
 	const InputSenha = document.querySelector("#senha")
 	const InputEmail = document.querySelector("#email")
@@ -17,11 +19,7 @@ function Pg() {
 	var validEmail = false
 	var validSenhaCadastro = false
 	var validConfirmarSenha = false
-	var contaValid = {
-		nome: '',
-		email: '',
-		senha: '',
-	}
+	
 	/* Labels */
 	const LabelNome	= document.querySelector("#labelNome")
 	const LabelData	= document.querySelector("#labelData")
@@ -188,6 +186,25 @@ function Pg() {
 		}
 	}
 
+	function desativaBtnEntrar() {
+		InputEmail.addEventListener("keyup", ()=> {
+			
+			if(InputEmail.value.length >= 1){
+				BtnEntrar.setAttribute("style", "display: block")
+			} else {
+				BtnEntrar.setAttribute("style", "display: none")
+			}
+		})
+		
+		function iniciar(){
+			desativaBtnEntrar()
+	}
+
+	return {
+			iniciar
+	}
+	}
+
 	function ValidacaoInputs() {
 		
 		function validarEmail() {
@@ -295,38 +312,49 @@ function Pg() {
 	}
 
 	function entrar() {
-		
+		desativaBtnEntrar();
+		let listaUser = []
+
+		let contaValid = {
+			nome: '',
+			email: '',
+			senha: ''
+		}
+
+		let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
+		localStorage.setItem("token", token)
+
 		listaUser = JSON.parse(localStorage.getItem("listaUser"))
+		
 		listaUser.forEach ((item) => {
 			if(email.value == item.emailCad && senha.value == item.senhaCad){
 				contaValid = {
 					nome: item.nomeCad,
 					email: item.emailCad,
-					senha: item.senhaCad,
+					senha: item.senhaCad
 				}
-
 			}
 		})
-			if (email.value == contaValid.email && senha.value == contaValid.senha){
-				InputEmail.setAttribute ("style", "box-shadow: 0px 0px 3px green; border-color: green")
-				InputSenha.setAttribute ("style", "box-shadow: 0px 0px 3px green; border-color: green")
-				msgEntrar.setAttribute ("style", "display: block; text-shadow: 0px 0px 1px green; color: green")
-				msgEntrar.textContent = "Login efetuado com sucesso, redirecionando..."
-				
-				setTimeout(()=>{
-					window.location.href = "../html/reserva.html"
-				}, 5000)
 
-			}else {
+		if (email.value == contaValid.email && senha.value == contaValid.senha){
+			InputEmail.setAttribute ("style", "box-shadow: 0px 0px 3px green; border-color: green")
+			InputSenha.setAttribute ("style", "box-shadow: 0px 0px 3px green; border-color: green")
+			msgEntrar.setAttribute ("style", "display: block; text-shadow: 0px 0px 1px green; color: green")
+			msgEntrar.textContent = "Login efetuado com sucesso, redirecionando..."
+			
+			/* setTimeout(()=>{
+				window.location.href = "../html/reserva.html"
+			}, 5000) */
+
+		} else {
 				InputEmail.setAttribute ("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 				InputSenha.setAttribute ("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 				msgEntrar.setAttribute ("style", "display: block; text-shadow: 0px 0px 1px crimson; color: crimson")
 				msgEntrar.textContent = "Email ou senha incorretos."
 				InputEmail.focus()
-			}
 		}
+	}
 		document.getElementById("btnEntrar").addEventListener("click", entrar);
-
 	function cadastrar() {
 		if(validNome && validData && validEmail && validSenhaCadastro && validConfirmarSenha){
 			let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]")
@@ -345,9 +373,9 @@ function Pg() {
 			msgCadastro.textContent = "Cadastrando conta, aguarde..."
 			msgCadastro.setAttribute("style" , "display: block; text-shadow: 0px 0px 1px green; color: green")
 				
-				setTimeout(()=>{
+				/* setTimeout(()=>{
 					window.location.href = "../html/entrar.html"
-				}, 5000)
+				}, 5000) */
 
 		} else {
 			msgCadastro.textContent = "Preencha todos os campos para cadastrar"
@@ -369,6 +397,9 @@ function Pg() {
 
 		const validacaoInputs = ValidacaoInputs()
 		validacaoInputs.iniciar();
+		
+		const desativabtn = desativaBtnEntrar()
+		desativabtn.iniciar();
 
 	}
 	
