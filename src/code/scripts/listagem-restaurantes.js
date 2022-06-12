@@ -7,11 +7,23 @@ function openPage(page) {
 
 window.onload = async function () {
     console.log("Chamou a função window.onload");
+    resetFilter();
     restaurantsDatabase = await getRestaurantsFromDatabase();
     const filter = getSearchFilter();
     fillFilter(filter);
     loadRestaurants(filter);
     startWindow();
+    configureInputs();
+    setOutputValues();
+    configureButtonClicks();
+}
+
+function configureButtonClicks() {
+    const resetFilterButton = document.getElementById("reset-filter");
+    resetFilterButton.onclick = function (event) {
+        event.preventDefault();
+        resetFilter();
+    };
 }
 
 async function getRestaurantsFromDatabase() {
@@ -199,20 +211,85 @@ function formatPrice(averagePrice) {
 function getPriceRange(averagePrice) {
     if (averagePrice <= 20)
         return 1;
-
-    if (averagePrice <= 40)
+    else if (averagePrice <= 40)
         return 2;
-
-    if (averagePrice <= 60)
+    else if (averagePrice <= 60)
         return 3;
-
-    if (averagePrice <= 80)
+    else if (averagePrice <= 80)
         return 4;
-
-    return 5;
+    else
+        return 5;
 }
 
-/* Zoom area scrit */
+function configureInputs() {
+    const averagePriceInput = document.getElementById("average-price");
+    averagePriceInput.oninput = setAveragePriceOutput;
+
+    const capacityInput = document.getElementById("capacity");
+    capacityInput.oninput = setCapacityOutput;
+
+    const waitingTimeInput = document.getElementById("waiting-time");
+    waitingTimeInput.oninput = setWaitingTimeOutput;
+}
+
+function setOutputValues() {
+    console.log("Chamou a função setOutputValues");
+    setAveragePriceOutput();
+    setCapacityOutput();
+    setWaitingTimeOutput();
+}
+
+function setAveragePriceOutput() {
+    const averagePriceInput = document.getElementById("average-price");
+    const averagePriceOutput = document.getElementById("average-price-output");
+    averagePriceOutput.value = averagePriceInput.value;
+}
+
+function setCapacityOutput() {
+    const capacityInput = document.getElementById("capacity");
+    const capacityOutput = document.getElementById("capacity-output");
+    capacityOutput.value = capacityInput.value;
+}
+
+function setWaitingTimeOutput() {
+    const waitingTimeInput = document.getElementById("waiting-time");
+    const waitingTimeOutput = document.getElementById("waiting-time-output");
+    waitingTimeOutput.value = waitingTimeInput.value;
+}
+
+
+function resetFilter() {
+    const restaurantSearchInput = document.getElementById("restaurant-search-input");
+    restaurantSearchInput.value = "";
+
+    const averagePriceInput = document.getElementById("average-price");
+    averagePriceInput.min = 1;
+    averagePriceInput.max = 100;
+    averagePriceInput.value = 100;
+
+    const capacityInput = document.getElementById("capacity");
+    capacityInput.min = 0;
+    capacityInput.max = 100;
+    capacityInput.value = 100;
+
+    const waitingTimeInput = document.getElementById("waiting-time");
+    waitingTimeInput.min = 0;
+    waitingTimeInput.max = 75;
+    waitingTimeInput.value = 75;
+
+    const restaurantTypeInput = document.getElementById("restaurant-type");
+    restaurantTypeInput.value = "";
+
+    const paymentMethodsInput = document.getElementById("payment-methods");
+    paymentMethodsInput.value = "";
+
+    const cityInput = document.getElementById("city");
+    cityInput.value = "";
+
+    setOutputValues();
+}
+
+/* Zoom area script */
 
 var maxClicksAddMoreSize = 6;
 var maxClicksSubtractMoreSize = -2;
@@ -224,28 +301,58 @@ var countClicksChangeSizeItems = 0;
 var namesItemToHidden = ['breffBig'];
 
 function startWindow() {
+    console.log("Chamou a função startWindow ");
+
+    setDefaultSizeWindow();
+
     let currentDefaultWindowSize = getCurrentWindowSizeValue();
-    if (defaultSizeWindow == 0)
-        defaultSizeWindow = currentDefaultWindowSize;
+    document.body.style.fontSize = currentDefaultWindowSize + 'px';
+    console.log("Na função startWindow o valor de defaultSizeWindow é:", defaultSizeWindow);
+}
+
+function setDefaultSizeWindow() {
+    console.log("Chamou a função setDefaultSizeWindow")
+    if (defaultSizeWindow == 0) {
+        let myWindowSize = window.getComputedStyle(document.body).fontSize;
+        defaultSizeWindow = parseInt(myWindowSize.replace('px', ''));
+        console.log("Na função startWindow o valor atribuido a defaultSizeWindow foi:", defaultSizeWindow);
+    }
 }
 
 function getCurrentWindowSizeValue() {
-    let myWindowSize = window.getComputedStyle(document.body).fontSize;
-    let currentDefaultWindowSize = parseInt(myWindowSize.replace('px', ''));
+    console.log("Chamou a função getCurrentWindowSizeValue");
 
-    return currentDefaultWindowSize;
+    let fontSizeFromLocalStorage = localStorage.getItem("userFontSize");
+
+    console.log("valor de fonte retornado do localStorage foi:", fontSizeFromLocalStorage);
+
+    if (fontSizeFromLocalStorage !== null) {
+        return Number.parseInt(fontSizeFromLocalStorage);
+    }
+    else {
+        let myWindowSize = window.getComputedStyle(document.body).fontSize;
+        let currentDefaultWindowSize = parseInt(myWindowSize.replace('px', ''));
+        return currentDefaultWindowSize;
+    }
 }
 
 function changeSizeAllItems(isAddMoreSize) {
     let currentWindowSize = getCurrentWindowSizeValue();
+
     if (isAddMoreSize && isValidAddMoreSize()) {
         countClicksChangeSizeItems++;
-        document.body.style.fontSize = (currentWindowSize + 3) + 'px';
+        const newFontSize = (currentWindowSize + 3);
+        document.body.style.fontSize = newFontSize + 'px';
+        setUserFontSize(newFontSize);
     }
+
     if (!isAddMoreSize && isValidSubtractMoreSize()) {
         countClicksChangeSizeItems--;
-        document.body.style.fontSize = (currentWindowSize - 3) + 'px';
+        const newFontSize = (currentWindowSize - 3);
+        document.body.style.fontSize = newFontSize + 'px';
+        setUserFontSize(newFontSize);
     }
+
     actionAboutShowableItems(namesItemToHidden, countClicksChangeSizeItems, countClicksToHiddenItems);
 }
 
@@ -259,6 +366,7 @@ function isValidSubtractMoreSize() {
 
 function resetDocumentSizes() {
     document.body.style.fontSize = defaultSizeWindow + 'px';
+    setUserFontSize(defaultSizeWindow);
     countClicksChangeSizeItems = 0;
     showHiddenItems(namesItemToHidden, 'visible');
 }
@@ -273,6 +381,13 @@ function actionAboutShowableItems(namesItemToHidden, currentCount, maxClicksToHi
 function showHiddenItems(namesItemToHidden, action) {
     for (x = 0; namesItemToHidden.length > x; x++) {
         let myBigBreff = document.getElementById(namesItemToHidden[x]);
-        myBigBreff.style.visibility = action;
+
+        if (myBigBreff !== null)
+            myBigBreff.style.visibility = action;
     }
+}
+
+function setUserFontSize(fontSize) {
+    localStorage.setItem("userFontSize", fontSize);
+    console.log("Salvou userFontSize no localStorage com valor:", fontSize);
 }
