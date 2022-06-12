@@ -1,4 +1,4 @@
- /* ATUALIZAÇÃO DE CONTEUDO */
+/* ATUALIZAÇÃO DE CONTEUDO */
 
 const formEmail = document.getElementById("formEmail");
 const formPassword = document.getElementById("formPassword");
@@ -49,7 +49,7 @@ function validateEmail() {
     }
     return false;
 }
-    
+
 function sendPassword() {
 
     if (!validatePassword()) {
@@ -86,7 +86,7 @@ var countClicksToHiddenItems = 3;
 var defaultSizeWindow = 0;
 
 var countClicksChangeSizeItems = 0;
-var namesItemToHidden = ['breffBig'];
+var namesItemToHidden = ['null'];
 
 function startWindow() {
     console.log("Chamou a função startWindow ");
@@ -96,6 +96,8 @@ function startWindow() {
     let currentDefaultWindowSize = getCurrentWindowSizeValue();
     document.body.style.fontSize = currentDefaultWindowSize + 'px';
     console.log("Na função startWindow o valor de defaultSizeWindow é:", defaultSizeWindow);
+
+    mostrarFormEmail();
 }
 
 function setDefaultSizeWindow() {
@@ -156,12 +158,12 @@ function resetDocumentSizes() {
     document.body.style.fontSize = defaultSizeWindow + 'px';
     setUserFontSize(defaultSizeWindow);
     countClicksChangeSizeItems = 0;
-    showHiddenItems(namesItemToHidden, 'visible');
+    showHiddenItems(namesItemToHidden, 'block');
 }
 
 function actionAboutShowableItems(namesItemToHidden, currentCount, maxClicksToHiddenItems) {
-    let show = 'visible';
-    let notShow = 'hidden';
+    let show = 'block';
+    let notShow = 'none';
     let action = currentCount >= maxClicksToHiddenItems ? notShow : show;
     showHiddenItems(namesItemToHidden, action);
 }
@@ -171,7 +173,7 @@ function showHiddenItems(namesItemToHidden, action) {
         let myBigBreff = document.getElementById(namesItemToHidden[x]);
 
         if (myBigBreff !== null)
-            myBigBreff.style.visibility = action;
+            myBigBreff.style.display = action;
     }
 }
 
