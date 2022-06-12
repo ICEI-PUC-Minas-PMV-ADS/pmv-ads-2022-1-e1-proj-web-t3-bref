@@ -61,21 +61,19 @@
 
                 <label for="average-price">Média de Preços (R$):</label>
                 <div class="input-with-output-container">
-                    <input class="mb-1" type="range" id="average-price" name="average-price" min="1" max="500"
-                        value="500">
+                    <input class="mb-1" type="range" id="average-price" name="average-price">
                     <output name="average-price-output" id="average-price-output"></output>
                 </div>
 
                 <label for="capacity">Lotação (%):</label>
                 <div class="input-with-output-container">
-                    <input class="mb-1" type="range" id="capacity" name="capacity" min="0" max="100" value="100">
+                    <input class="mb-1" type="range" id="capacity" name="capacity">
                     <output name="capacity-output" id="capacity-output"></output>
                 </div>
 
                 <label for="waiting-time">Tempo de Espera (min):</label>
                 <div class="input-with-output-container">
-                    <input class="mb-1" type="range" id="waiting-time" name="waiting-time" min="0" max="180"
-                        value="180">
+                    <input class="mb-1" type="range" id="waiting-time" name="waiting-time">
                     <output name="waiting-time-output" id="waiting-time-output"></output>
                 </div>
 
@@ -103,7 +101,8 @@
                 <input class="mb-1" type="search" id="city" name="city">
 
 
-                <input type="submit" value="Filtrar">
+                <input class="mb-1" type="submit"  value="Filtrar">
+                <button id="reset-filter">Limpar</button>
             </form>
         </div>
 

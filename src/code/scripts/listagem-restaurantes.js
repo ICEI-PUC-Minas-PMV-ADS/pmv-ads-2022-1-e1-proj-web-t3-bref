@@ -7,6 +7,7 @@ function openPage(page) {
 
 window.onload = async function () {
     console.log("Chamou a função window.onload");
+    resetFilter();
     restaurantsDatabase = await getRestaurantsFromDatabase();
     const filter = getSearchFilter();
     fillFilter(filter);
@@ -14,6 +15,15 @@ window.onload = async function () {
     startWindow();
     configureInputs();
     setOutputValues();
+    configureButtonClicks();
+}
+
+function configureButtonClicks() {
+    const resetFilterButton = document.getElementById("reset-filter");
+    resetFilterButton.onclick = function (event) {
+        event.preventDefault();
+        resetFilter();
+    };
 }
 
 async function getRestaurantsFromDatabase() {
@@ -223,6 +233,7 @@ function configureInputs() {
 }
 
 function setOutputValues() {
+    console.log("Chamou a função setOutputValues");
     setAveragePriceOutput();
     setCapacityOutput();
     setWaitingTimeOutput();
@@ -244,6 +255,38 @@ function setWaitingTimeOutput() {
     const waitingTimeInput = document.getElementById("waiting-time");
     const waitingTimeOutput = document.getElementById("waiting-time-output");
     waitingTimeOutput.value = waitingTimeInput.value;
+}
+
+
+function resetFilter() {
+    const restaurantSearchInput = document.getElementById("restaurant-search-input");
+    restaurantSearchInput.value = "";
+
+    const averagePriceInput = document.getElementById("average-price");
+    averagePriceInput.min = 1;
+    averagePriceInput.max = 100;
+    averagePriceInput.value = 100;
+
+    const capacityInput = document.getElementById("capacity");
+    capacityInput.min = 0;
+    capacityInput.max = 100;
+    capacityInput.value = 100;
+
+    const waitingTimeInput = document.getElementById("waiting-time");
+    waitingTimeInput.min = 0;
+    waitingTimeInput.max = 75;
+    waitingTimeInput.value = 75;
+
+    const restaurantTypeInput = document.getElementById("restaurant-type");
+    restaurantTypeInput.value = "";
+
+    const paymentMethodsInput = document.getElementById("payment-methods");
+    paymentMethodsInput.value = "";
+
+    const cityInput = document.getElementById("city");
+    cityInput.value = "";
+
+    setOutputValues();
 }
 
 /* Zoom area script */
