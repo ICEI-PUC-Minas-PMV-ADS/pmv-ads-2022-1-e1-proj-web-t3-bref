@@ -30,7 +30,9 @@ Pode-se considerar como objetivos específicos:
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+* Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+* Descompacte o arquivo em uma pasta específica;
+* Abra a pasta descompactada
 
 # Documentação
 

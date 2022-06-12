@@ -24,8 +24,8 @@ Critérios de êxito | * Deve retornar o resultado correto da busca<br/>* Quando
 
 Caso de teste | CT-03 - Teste de formulários da página Fale Conosco
 ------------- | -----------------------
-Requisito Associado | RF-012 O site deve ter uma página de contato com os desenvolvedores da solução. 
-Objetivo do teste | Verificar se o formulário está funcional na página para entrar em contato com os desenvolvedores do site.
+Requisito Associado | RF-012 O site deve ter uma página de contato com a empresa BREF.
+Objetivo do teste | Verificar se o formulário está funcional na página para entrar em contato com os responsáveis do site.
 Passos | <p>1) Entrar na página de Fale Conosco<br/>2) Preencher todos os campos<br/>3) Clicar no botão enviar.</p>
 Critérios de êxito | * Deve retornar uma mensagem de sucesso ao enviar a mensagem.<br/>* Os campos devem retornar uma mensagem caso haja algum erro. 
 
