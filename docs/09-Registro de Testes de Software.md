@@ -117,7 +117,7 @@
 ## CT-09 - Contato com o restaurante
 
 >### Botão de contato na página de informações do restaurante
-><img src="./img/imagens_testes/contato-restaurante-info.jpeg" height="70%" width="70%">
+><img src="./img/imagens_testes/endereco-restaurante.jpg" height="70%" width="70%">
 
 >### API do WhatsApp que deve ser redirecionada
 ><img src="./img/imagens_testes/contato-restaurante-sucesso.PNG" height="70%" width="70%">
@@ -125,3 +125,26 @@
 ## CT-10 - Endereço do Restaurante
 >### A informação sobre o restaurante pode ser vista na parte superior direita. Acima dos botões de reserva, avaliação e contato.
 ><img src="./img/imagens_testes/endereco-restaurante.jpg" height="70%" width="70%">
+
+## CT-11 - Avaliação do restaurante
+
+>### Botão de avaliação na página de informações do restaurante
+><img src="./img/imagens_testes/avaliacao-info.jpeg" height="70%" width="70%">
+
+>### Página de avaliação
+><img src="./img/imagens_testes/avaliacao.jpeg" height="70%" width="70%">
+
+>### Erro Código de Atendimento
+><img src="./img/imagens_testes/avaliacao-erro-codigo.PNG" height="70%" width="70%">
+
+>### Erro Opinião Inválida
+><img src="./img/imagens_testes/avaliacao-erro-opiniao.PNG" height="70%" width="70%">
+
+>### Erro opinião sobre atendimento inválida
+><img src="./img/imagens_testes/avaliacao-erro-atendimento.PNG" height="70%" width="70%">
+
+>### Erro Opinião de experiência inválida
+><img src="./img/imagens_testes/avaliacao-erro-experiencia.PNG" height="70%" width="70%">
+
+>### Sucesso
+><img src="./img/imagens_testes/avaliacao-sucesso.PNG" height="70%" width="70%">

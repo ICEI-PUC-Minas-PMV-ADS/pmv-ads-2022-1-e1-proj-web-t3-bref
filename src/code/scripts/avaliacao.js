@@ -35,7 +35,7 @@ function sendAvaliacao() {
     inputCodigoAtendimento.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
 
     if (!validateOpiniaoComida()) {
-        alert("Opini\u00e3o inv\u00e1lida, minimo 5 caracteres.");
+        alert("Opini\u00e3o inv\u00e1lida, minimo 3 caracteres.");
         inputOpiniaoComida.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
         return;
     }
@@ -43,7 +43,7 @@ function sendAvaliacao() {
     inputOpiniaoComida.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
 
     if (!validateOpiniaoAtendimento()) {
-        alert("Opini\u00e1o sobre o atendimento inv\u00e1lida, minimo 5 caracteres.");
+        alert("Opini\u00e1o sobre o atendimento inv\u00e1lida, minimo 3 caracteres.");
         inputOpiniaoAtendimento.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
         return;
     }
@@ -51,7 +51,7 @@ function sendAvaliacao() {
     inputOpiniaoAtendimento.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
 
     if (!validateExperiencia()) {
-        alert("Experi\u00eancia inv\u00c1lida, minimo 5 caracteres.");
+        alert("Experi\u00eancia inv\u00c1lida, minimo 3 caracteres.");
         inputExperiencia.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
         return;
     }
@@ -74,17 +74,17 @@ function validateCodigoAtendimento() {
 
 function validateOpiniaoComida() {
     let input = inputOpiniaoComida.value;
-    return input.length >= 5;
+    return input.length >= 3;
 }
 
 function validateOpiniaoAtendimento() {
     let input = inputOpiniaoAtendimento.value;
-    return input.length >= 5;
+    return input.length >= 3;
 }
 
 function validateExperiencia() {
     let input = inputExperiencia.value;
-    return input.length >= 5;
+    return input.length >= 3;
 }
 
 /* Zoom area script */
