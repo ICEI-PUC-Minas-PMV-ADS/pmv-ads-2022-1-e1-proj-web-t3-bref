@@ -111,7 +111,7 @@
 ## CT-07 - Visualizar o tempo de espera
 
 >### Página listagem de restaurantes com restaurantes de exemplo
-><img src="./img/imagens_testes/todos-restaurantes.jpeg" height="70%" width="70%">
+><img src="./img/imagens_testes/todos-restaurantes.png" height="70%" width="70%">
 
 
 ## CT-09 - Contato com o restaurante
