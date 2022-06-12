@@ -158,27 +158,6 @@ body {
     
 }
 
-/* BARRA DE PESQUISA */
-.input-with-icon-wrapper {
-    /* Foi usado para que o ícone do input de pesquisa pudesse ser posicionado da maneira correta. */
-    position: relative;
-    width: max-content;
-}
-
-.input-with-icon {
-    padding-right: 20px;
-}
-
-.input-icon {
-    /* Usa position absolute para que o ícone fique por cima do input de pesquisa, 
-    para dar a impressão que o ícone é do elemento input. */
-    position: absolute;
-    left: calc(100% - 20px); /* Posiciona o ícone da lupa ao canto esquerdo do input. */
-    /* Mantém o ícone centralizado, independentemente da altura do input */
-    top: calc(50% - 0.5em);
-    color: #483A20;
-}
-
 /* ESTILOS DOS BOTÕES PARA AUMENTAR E DIMINUIR FONTE */
 .font-size-button-group {
     display: flex;

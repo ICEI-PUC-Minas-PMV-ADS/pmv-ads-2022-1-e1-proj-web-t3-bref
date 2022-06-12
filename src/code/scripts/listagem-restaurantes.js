@@ -212,7 +212,7 @@ function getPriceRange(averagePrice) {
     return 5;
 }
 
-/* Zoom area scrit */
+/* Zoom area script */
 
 var maxClicksAddMoreSize = 6;
 var maxClicksSubtractMoreSize = -2;
@@ -224,28 +224,58 @@ var countClicksChangeSizeItems = 0;
 var namesItemToHidden = ['breffBig'];
 
 function startWindow() {
+    console.log("Chamou a função startWindow ");
+
+    setDefaultSizeWindow();
+
     let currentDefaultWindowSize = getCurrentWindowSizeValue();
-    if (defaultSizeWindow == 0)
-        defaultSizeWindow = currentDefaultWindowSize;
+    document.body.style.fontSize = currentDefaultWindowSize + 'px';
+    console.log("Na função startWindow o valor de defaultSizeWindow é:", defaultSizeWindow);
+}
+
+function setDefaultSizeWindow() {
+    console.log("Chamou a função setDefaultSizeWindow")
+    if (defaultSizeWindow == 0) {
+        let myWindowSize = window.getComputedStyle(document.body).fontSize;
+        defaultSizeWindow = parseInt(myWindowSize.replace('px', ''));
+        console.log("Na função startWindow o valor atribuido a defaultSizeWindow foi:", defaultSizeWindow);
+    }
 }
 
 function getCurrentWindowSizeValue() {
-    let myWindowSize = window.getComputedStyle(document.body).fontSize;
-    let currentDefaultWindowSize = parseInt(myWindowSize.replace('px', ''));
+    console.log("Chamou a função getCurrentWindowSizeValue");
 
-    return currentDefaultWindowSize;
+    let fontSizeFromLocalStorage = localStorage.getItem("userFontSize");
+
+    console.log("valor de fonte retornado do localStorage foi:", fontSizeFromLocalStorage);
+
+    if (fontSizeFromLocalStorage !== null) {
+        return Number.parseInt(fontSizeFromLocalStorage);
+    }
+    else {
+        let myWindowSize = window.getComputedStyle(document.body).fontSize;
+        let currentDefaultWindowSize = parseInt(myWindowSize.replace('px', ''));
+        return currentDefaultWindowSize;
+    }
 }
 
 function changeSizeAllItems(isAddMoreSize) {
     let currentWindowSize = getCurrentWindowSizeValue();
+
     if (isAddMoreSize && isValidAddMoreSize()) {
         countClicksChangeSizeItems++;
-        document.body.style.fontSize = (currentWindowSize + 3) + 'px';
+        const newFontSize = (currentWindowSize + 3);
+        document.body.style.fontSize = newFontSize + 'px';
+        setUserFontSize(newFontSize);
     }
+
     if (!isAddMoreSize && isValidSubtractMoreSize()) {
         countClicksChangeSizeItems--;
-        document.body.style.fontSize = (currentWindowSize - 3) + 'px';
+        const newFontSize = (currentWindowSize - 3);
+        document.body.style.fontSize = newFontSize + 'px';
+        setUserFontSize(newFontSize);
     }
+
     actionAboutShowableItems(namesItemToHidden, countClicksChangeSizeItems, countClicksToHiddenItems);
 }
 
@@ -259,6 +289,7 @@ function isValidSubtractMoreSize() {
 
 function resetDocumentSizes() {
     document.body.style.fontSize = defaultSizeWindow + 'px';
+    setUserFontSize(defaultSizeWindow);
     countClicksChangeSizeItems = 0;
     showHiddenItems(namesItemToHidden, 'visible');
 }
@@ -273,6 +304,13 @@ function actionAboutShowableItems(namesItemToHidden, currentCount, maxClicksToHi
 function showHiddenItems(namesItemToHidden, action) {
     for (x = 0; namesItemToHidden.length > x; x++) {
         let myBigBreff = document.getElementById(namesItemToHidden[x]);
-        myBigBreff.style.visibility = action;
+
+        if (myBigBreff !== null)
+            myBigBreff.style.visibility = action;
     }
+}
+
+function setUserFontSize(fontSize) {
+    localStorage.setItem("userFontSize", fontSize);
+    console.log("Salvou userFontSize no localStorage com valor:", fontSize);
 }
