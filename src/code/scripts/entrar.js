@@ -186,25 +186,6 @@ function Pg() {
 		}
 	}
 
-	function desativaBtnEntrar() {
-		InputEmail.addEventListener("keyup", ()=> {
-			
-			if(InputEmail.value.length >= 1){
-				BtnEntrar.setAttribute("style", "display: block")
-			} else {
-				BtnEntrar.setAttribute("style", "display: none")
-			}
-		})
-		
-		function iniciar(){
-			desativaBtnEntrar()
-	}
-
-	return {
-			iniciar
-	}
-	}
-
 	function ValidacaoInputs() {
 		
 		function validarEmail() {
@@ -311,6 +292,25 @@ function Pg() {
 		}
 	}
 
+	function desativaBtnEntrar() {
+		InputEmail.addEventListener("keyup", ()=> {
+			
+			if(InputEmail.value.length >= 1){
+				BtnEntrar.setAttribute("style", "display: block")
+			} else {
+				BtnEntrar.setAttribute("style", "display: none")
+			}
+		})
+		
+		function iniciar(){
+			desativaBtnEntrar()
+	}
+
+	return {
+			iniciar
+	}
+	}
+
 	function entrar() {
 		desativaBtnEntrar();
 		let listaUser = []
@@ -342,9 +342,9 @@ function Pg() {
 			msgEntrar.setAttribute ("style", "display: block; text-shadow: 0px 0px 1px green; color: green")
 			msgEntrar.textContent = "Login efetuado com sucesso, redirecionando..."
 			
-			/* setTimeout(()=>{
+			setTimeout(()=>{
 				window.location.href = "../html/reserva.html"
-			}, 5000) */
+			}, 5000)
 
 		} else {
 				InputEmail.setAttribute ("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
@@ -354,7 +354,14 @@ function Pg() {
 				InputEmail.focus()
 		}
 	}
-		document.getElementById("btnEntrar").addEventListener("click", entrar);
+	document.getElementById("btnEntrar").addEventListener("click", entrar);
+
+	function sair() {
+		localStorage.removeItem('token')
+		window.location.href = "../html/index.html"
+	}
+
+
 	function cadastrar() {
 		if(validNome && validData && validEmail && validSenhaCadastro && validConfirmarSenha){
 			let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]")
@@ -410,6 +417,7 @@ function Pg() {
 	/* Máscaras */
 
 }	
+
 
 window.addEventListener('load', () => {
 	const pg = Pg()
