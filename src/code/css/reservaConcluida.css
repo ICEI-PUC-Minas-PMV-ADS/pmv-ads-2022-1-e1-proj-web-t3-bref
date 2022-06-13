@@ -83,10 +83,13 @@ div.container-fluid {
     margin: 9px 0px 9px 0px;  
     font-size: 1.3em;
     color: #483a20;
-    font-family: 'lato', sans-serif;
     font-weight: bold
   }
 
+  #reservaConc{
+    color: #483a20;
+    font-weight: bold;
+  }
 #footer-copyright {
     font-size: 1em;
 }
