@@ -1,3 +1,10 @@
+/* SABER SE ESTÁ LOGADO OU NÃO */
+if(localStorage.getItem("token") == null){
+	alert("Para acessar esta página, você precisa entrar em uma conta.")
+	window.location.href = "../html/entrar.html"
+	document.getElementById("abaCadastrar").click();
+}
+
 function validateFields(){
     toggleEmailErrors();
     toggleContato();
