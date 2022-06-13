@@ -113,6 +113,34 @@
 >### Página listagem de restaurantes com restaurantes de exemplo
 ><img src="./img/imagens_testes/todos-restaurantes.png" height="70%" width="70%">
 
+## CT-08 - Reserva de mesas
+
+>### Página criar reservas - Default
+><img src="./img/imagens_testes/reservaDefault.png" height="70%" width="70%">
+
+>### Criar reserva - Sucesso
+><img src="./img/imagens_testes/sucess.PNG" height="70%" width="70%">
+
+>### Criar reserva - Reserva Concluida
+><img src="./img/imagens_testes/concluida.PNG" height="70%" width="70%">
+
+>### Criar reserva - Email invalido
+><img src="./img/imagens_testes/erroEMAIL.jpeg" height="70%" width="70%">
+
+>### Criar reserva - Email é obrigatório
+><img src="./img/imagens_testes/emailObrigatorio.PNG" height="70%" width="70%">
+
+>### Criar reserva - Numero de contato é obrigatório
+><img src="./img/imagens_testes/telObrigatorio.jpeg" height="70%" width="70%">
+
+>>### Criar reserva - Numero de contato inválido
+><img src="./img/imagens_testes/erroTelefone.jpeg" height="70%" width="70%">
+
+>### Criar reserva - Informe o numero de cadeiras a serem reservadas
+><img src="./img/imagens_testes/erroCadeiras.PNG" height="70%" width="70%">
+
+>### Criar reserva - Preencha os campo corretamente
+><img src="./img/imagens_testes/erroVazio.PNG" height="70%" width="70%">
 
 ## CT-09 - Contato com o restaurante
 
