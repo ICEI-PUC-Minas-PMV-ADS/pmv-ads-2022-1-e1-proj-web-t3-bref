@@ -121,25 +121,25 @@
 >### Criar reserva - Sucesso
 ><img src="./img/imagens_testes/sucess.png" height="70%" width="70%">
 
->### Criar reserva - Reserva Concluida
+>### Criar reserva - Reserva Concluída
 ><img src="./img/imagens_testes/concluida.png" height="70%" width="70%">
 
->### Criar reserva - Email invalido
+>### Criar reserva - Email inválido
 ><img src="./img/imagens_testes/erroEMAIL.png" height="70%" width="70%">
 
->### Criar reserva - Email é obrigatório
+>### Criar reserva - O email é obrigatório
 ><img src="./img/imagens_testes/emailObrigatorio.png" height="70%" width="70%">
 
->### Criar reserva - Numero de contato é obrigatório
+>### Criar reserva - Número de contato é obrigatório
 ><img src="./img/imagens_testes/telObrigatorio.png" height="70%" width="70%">
 
->>### Criar reserva - Numero de contato inválido
+>>### Criar reserva - Número de contato inválido
 ><img src="./img/imagens_testes/erroTelefone.png" height="70%" width="70%">
 
->### Criar reserva - Informe o numero de cadeiras a serem reservadas
+>### Criar reserva - Informe o número de cadeiras a serem reservadas
 ><img src="./img/imagens_testes/erroCadeiras.png" height="70%" width="70%">
 
->### Criar reserva - Preencha os campo corretamente
+>### Criar reserva - Preencha os dados corretamente
 ><img src="./img/imagens_testes/erroVazio.png" height="70%" width="70%">
 
 ## CT-09 - Contato com o restaurante
