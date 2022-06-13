@@ -23,7 +23,7 @@ div.container-fluid {
     background-color: #483A20;
     color: white;
     border-radius: 10px;
-    width: 100%;
+    width: 30%;
     font-size: 1em;
     border-color: transparent;
     padding: 10px;
@@ -75,12 +75,15 @@ div.container-fluid {
 
   p {
     margin: 9px 0px 9px 0px;  
-    font-size: 2em;
+    font-size: 1.5em;
     color: #483a20;
-    font-family: 'lato', sans-serif;
     font-weight: bold
   }
 
+  h3{
+    color: #483a20;
+    font-weight: bold
+  }
 #footer-copyright {
     font-size: 1em;
 }

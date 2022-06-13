@@ -1,6 +1,8 @@
 function validateFields(){
     toggleEmailErrors();
-    toggleButtonsDisable();
+    toggleContato();
+    toggleCadeira();
+    toggleData();
 }
 
 
@@ -19,15 +21,74 @@ function toggleEmailErrors(){
     
 } 
 
+function toggleContato(){
+    const contato = document.getElementById('contato').value;
+    if (!contato){
+        document.getElementById('contato-required-error').style.display = "block";
+    } else {
+        document.getElementById('contato-required-error').style.display = "none";
+    }
+    if (validateContato(contato)  || (!contato)){
+        document.getElementById('contato-invalid-error').style.display = "none";
+    } else{
+        document.getElementById('contato-invalid-error').style.display = "block";
+    }
+    
+}
+function toggleCadeira(){
+    const cadeira = document.getElementById('cadeira').value;
+    if (!cadeira){
+        document.getElementById('cadeira-required-error').style.display = "block";
+    } else {    
+        document.getElementById('cadeira-required-error').style.display = "none";
+    }
+    if (validateCadeira(cadeira)  || (!cadeira)){
+        document.getElementById('cadeira-invalid-error').style.display = "none";
+    } else{
+        document.getElementById('cadeira-invalid-error').style.display = "block";
+    }
+    
+}
+function toggleData(){
+    const data = document.getElementById('data').value;
+    if (!data){
+        document.getElementById('data-required-error').style.display = "block";
+    } else {
+        document.getElementById('data-required-error').style.display = "none";
+    }
+    if (validateCadeira(data)  || (!data)){
+        document.getElementById('data-invalid-error').style.display = "none";
+    } else{
+        document.getElementById('data-invalid-error').style.display = "block";
+    }
+    
+}
+
+
 function toggleButtonsDisable(){
-    const emailValid = isEmailValid();
-    document.getElementById('recover-button').disabled =!emailValid;
+    const email = document.getElementById('email').value;
+    if (validateEmail(email)){
+        alert('Reserva em andamento...');
+    } else {
+        alert('Preencha os dados corretamente')
+    }
+    /* const emailValid = validateEmail();
+    document.getElementById('recover-button').disabled =!emailValid; */
 }
 
 function validateEmail(email){
     return /\S+@\S+\.\S+/.test(email);
 }
 
+function validatedata(data){
+    return (data)>0;
+}
+function validateCadeira(cadeira){
+    return (cadeira)>0;
+}
+function validateContato(contato){
+    return /\d\d\d\1{7,8}/.test(contato);
+}
 
 /* Aumentar e diminuir fonte */
 
