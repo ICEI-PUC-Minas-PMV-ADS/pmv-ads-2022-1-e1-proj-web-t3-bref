@@ -380,9 +380,9 @@ function Pg() {
 			msgCadastro.textContent = "Cadastrando conta, aguarde..."
 			msgCadastro.setAttribute("style" , "display: block; text-shadow: 0px 0px 1px green; color: green")
 				
-				/* setTimeout(()=>{
+				setTimeout(()=>{
 					window.location.href = "../html/entrar.html"
-				}, 5000) */
+				}, 5000)
 
 		} else {
 			msgCadastro.textContent = "Preencha todos os campos para cadastrar"
