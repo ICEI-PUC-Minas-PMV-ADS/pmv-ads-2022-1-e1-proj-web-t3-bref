@@ -5,12 +5,23 @@ if(localStorage.getItem("token") == null){
 	document.getElementById("abaCadastrar").click();
 }
 
-function validateFields(){
-    toggleEmailErrors();
-    toggleContato();
-    toggleCadeira();
-    toggleData();
-}
+
+    function validateFieldsEmail(){
+        toggleEmailErrors();
+    }
+    function validateFieldsContato(){
+        toggleContato();
+    }
+    function validateFieldsCadeira(){
+        toggleCadeira();
+    }
+    function validateFieldsData(){
+        toggleData();
+    }
+   /*  window.location.href = "../html/reservaConcluida.html" */
+
+
+document.getElementById("btnReservar").addEventListener("click", validateFieldsCadeira, validateFieldsContato, validateFieldsData, validateFieldsEmail)
 
 
 function toggleEmailErrors(){
@@ -74,7 +85,7 @@ function toggleData(){
 
 function toggleButtonsDisable(){
     const email = document.getElementById('email').value;
-    if (validateEmail(email)){
+    if (validateEmail(email) && validateCadeira(data) && validateContato(contato) && validateCadeira(data)){
         alert('Reserva em andamento...');
     } else {
         alert('Preencha os dados corretamente')
@@ -96,6 +107,9 @@ function validateCadeira(cadeira){
 function validateContato(contato){
     return /\d\d\d\1{7,8}/.test(contato);
 }
+
+
+
 
 /* Zoom area script */
 
