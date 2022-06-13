@@ -5,7 +5,9 @@
 var consoleStorage = [];
 
 // getting the id from URL
-var id = parseInt(document.location.toString().replace("http://127.0.0.1:5501/src/code/html/info-restaurante.html?id=",''))
+var url = document.location.toString();
+
+var id = parseInt(url.substring(url.length - 4).replace(/[^0-9]/g, ''));
 
 // DOM function
 function start() {
@@ -17,15 +19,20 @@ function start() {
     let tele = consoleStorage[0]['telephone'];
     let whatsapp = consoleStorage[0]['whatsapp'];
     let imgRest = consoleStorage[0]['image'];
+    let address = consoleStorage[0]['address']['city'] + ', ' + consoleStorage[0]['address']['state'] + ', ' + consoleStorage[0]['address']['street'] + ', nº ' + consoleStorage[0]['address']['number'];
 
     document.getElementById("restname").innerHTML = name;
     document.getElementById("type").innerHTML = `Tipo: ${type}`;
-    document.getElementById("avgPrice").innerHTML = `Média de Preço: ${avgPrice}`;
-    document.getElementById("capacity").innerHTML = `Capacidade: ${capacity}`;
-    document.getElementById("waitTime").innerHTML = `Tempo de Espera: ${waitTime}`;
+    document.getElementById("avgPrice").innerHTML = `Média de Preço: R$ ${avgPrice}`;
+    document.getElementById("capacity").innerHTML = `Capacidade: ${capacity} pessoas`;
+    document.getElementById("waitTime").innerHTML = `Tempo de Espera: ${waitTime} minutos`;
     document.getElementById("telephone").innerHTML = `Telefone: ${tele}`;
     document.getElementById("whatsapp").innerHTML = `Whatsapp: ${whatsapp}`;
+    document.getElementById("address").innerHTML = `Endereço: ${address}`;
     document.getElementById("rest-img").src=`../imgs/${imgRest}`;
+
+    // avaliacao url
+    document.getElementById("avaliacaoURL").setAttribute('href',`\avaliacao.html?name='${name}'`)
 }
 
 function main_plate() {
@@ -35,7 +42,7 @@ function main_plate() {
         let timePrep = consoleStorage[0]['infoRestaurant']['pratoPrincipal'][index]['timePrep'];
         let classification = consoleStorage[0]['infoRestaurant']['pratoPrincipal'][index]['classfication'];
 
-        console.log(index);
+//        console.log(index);
 
         document.getElementById(`namePlate${index+1}`).innerHTML = plate;
         document.getElementById(`preco${index+1}`).innerHTML = `Preço: R$ ${preco}`;
@@ -51,7 +58,7 @@ function drinks() {
         let timePrep = consoleStorage[0]['infoRestaurant']['bebidas'][index]['timePrep'];
         let classification = consoleStorage[0]['infoRestaurant']['bebidas'][index]['classfication'];
 
-        console.log(index);
+//        console.log(index);
 
         document.getElementById(`namePlate${index+1}`).innerHTML = plate;
         document.getElementById(`preco${index+1}`).innerHTML = `Preço: R$ ${preco}`;

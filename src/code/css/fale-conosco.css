@@ -11,32 +11,15 @@ div.container-fluid {
 body {
     background-color: #FFFFF4;
     font-family: 'Lato', sans-serif;
-    
 }
 
-.container-main {
-    width: 100%;
-    color: #483A20;
-    background-color: #FFFFF4;
-}
-
-/* application grid system */
-#header {
-    width: 100%;
-    background-color: #483A20;
+#title {
     display: flex;
-    justify-content: space-between;
-    flex-direction:row;
-    color: white;
+    flex-direction: row;
+    justify-content: center;
 }
 
-#hRight{
-    flex: 50%;
-    display: flex;
-    align-self: center;
-    justify-content: flex-end;
-    padding: 1rem;
-}
+/* Zoom area */
 
 #barColor {
     height: 2em;
@@ -47,133 +30,152 @@ body {
 
 .changeFontsButtons {
     font-size: 1em;
-    border: outset;
     font-weight: bold;
     justify-content: flex-end;
-    color: #483A20  ;
+    color: #483A20;
     background-color: #FFC300;
     border: none;
 }
 
-.changeFontsButtons:hover {
-    color: #FFFFF4;
-    background-color: #483A20;
-}
+    .changeFontsButtons:hover {
+        color: #FFFFF4;
+        background-color: #483A20;
+    }
 
-.hRight{
-    margin-left: 1rem;
-    font-size: 1.4em;
-}
+/* End zoom area */
 
-#hLeft{
-    flex: 50%;
-    align-self: start;
-}
+/* Flex direction control */
 
-#brefTitle {
-    color: #FFC300;
-    font-size: 3em;
-    font-family: 'Oswald', sans-serif;
-    padding: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-left: 25px;
-}
-
-#formulary{
-    font-size: 1.7em;
-    font-family: 'Lato', sans-serif;
-    align-content: center;
-    flex: 50%;
-}
-
-#title{
-    color: #483A20;
-    font-weight:bolder;
-    align-content: start;
-    font-size: 1em;
-    margin-bottom: 0.8em;
-}
-
-.separator{
-    flex: 15%;
-}
-
-#main{
+#main {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-    margin: 2rem 0;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 15px;
 }
 
-.containerInfos{
-    align-content: center;
-    padding: 0;
+#sideLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+#sideRigth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* End flex direction control */
+
+/* Spacing of components */
 
 .titleInfo {
-    font-size: 0.8em;
-    padding: 0;
-    margin: 0;
-    font-weight: bold;
-    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+
+.containerInput {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* End spacing of components */
+
+/* Title's style */
+
+.titleInfo {
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.titlePage {
+    font-weight: bolder;
+    font-size: 2em;
+    margin-top: 15px;
+}
+
+/* End title's style */
+
+/* Input style */
 
 .inputInfo {
     width: 20em;
-	margin: 5px;
-	outline: 0;
-    padding: 8px;
-	font-size: 0.5em;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 4px;
-	background-color: #FFFFF4;
 }
 
-#msgInput{
-    height: 200px;
-    width: 30em;
-    background-color: #FFFFF4;
-}
+/* End input style */
 
-.breffRight {
-    color: #FFC300;
-    padding: 0;
-    margin: 0px 0px 0px -70px;
-    font-size: 10em;
-    font-family: 'Oswald', sans-serif;
-}
-
-#separatorForm {
+/* BREFF Logo style */
+.breffLogoStyle {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    color: #FFC300;
+    padding: 0;
+    margin: 0px;
+    font-size: 5em;
+    font-weight: bolder;
 }
 
-#brefSeparator {
-    flex: 20%;
-    align-self: center;
-    align-content: center;
+/* End BREFF Logo style */
+
+/* Unique style's */
+
+#msgInput {
+    justify-content: center;
 }
 
-.btn#btnEnviar {
-    position: relative;
-    left: 5em;
-	border-radius: 4px;
-	border: none;
-	width: 15em;
+/* End Unique style's */
+
+/* Button Style */
+
+#btnEnviar {
+    border-radius: 4px;
+    border: none;
     font-size: 0.6em;
-	padding: 5px;
-	cursor: pointer;
-    transition: 0.4s all;   
+    padding: 5px;
+    width: 10em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.4s all;
     color: #fff;
     background: #483A20;
+    margin: 10px;
+}
+
+#buttonFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .btn#btnEnviar:hover {
     background: rgb(110, 79, 22);
-	transform: scale(1.01);
+    transform: scale(1.01);
 }
+
+/* End Button Style */
+
+/* Media Querys */
+
+@media(max-width: 540px) {
+
+    .breffLogoStyle {
+        font-size: 3em;
+    }
+
+    #main {
+        flex-direction: column-reverse;
+    }
+
+    #msgInput {
+        width: 100%;
+    }
+
+    .inputInfo {
+        width: 100%;
+    }
+}
+
+/* End Media querys */
+

@@ -22,7 +22,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
-    
+    <!-- fa-eye -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 
@@ -47,102 +49,83 @@
                   </ul>
                 </div>
             </nav>
-            <!-- <header id="header">
-                <div id="hLeft">
-                    <p href="index.html" id="brefTitle">BREF</p>
-                </div>
-                <div id="hRight">
+          
 
-                </div>
-            </header> -->
-
-            <!-- Conteúdo principal -->
+        <!-- Conteúdo principal -->
             <div id="barColor">
                 <button class="changeFontsButtons" onclick="changeSizeAllItems(false);">Font -</button>
                 <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
                 <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
             </div>
-        <main id="o-main">
-            <!-- <div id="o-main"> -->
+
+            <main id="o-main">
                 <div id="items">
                     <h1 id="bigBref" class=page-title>BREF</h1>
                 </div>
 
-                <form action="">
-                    
-                    <div id="recuperarSenha">
-                        <h2 id="recuperar-senha">Recuperar senha</h2><br>
-                        <label for="email"></label>
-                        <input type="email"
-                            placeholder="Informe seu email"
-                            onblur="validarEmail()" 
-                            onfocus="redefinirMsg()" id ="email"><br>
 
-                        <input type="button" id="btnEmailEnviado" class="botoes" value="Enviar">
-                    </div>
+                <div id="formEmail">
+                    <h2 id="recuperar-senha">Recuperar senha</h2><br>
+                    <label for="email"></label>
+                    <input type="email"
+                            id="inputEmail"
+                        placeholder="Informe seu email"><br>
 
-                <form action="" method="post" class="contact_form span6 offset3 m-top m-bottom">
-                <!-- <div class="form-group"> -->
-                
-                    <div> 
-
-                        <div id="redefinicaoSenha">
-                            <!-- <div hidden="redefinicaoSenha">--> 
-                            <h2 id="redefinir-senha">Redefinir Senha</h2> 
-                            <label for="senha"></label>
-                            <input id="novaSenha" 
-                                type="senha"
-                                placeholder="Nova Senha"><br>
-                            <input id="confirmarSenha" 
-                                type="password" 
-                                placeholder="Confirme a senha"><br
-                                onblur="validarSenha()"
-                                onfocus="redefinirMsg()" id="nova-senha">
-                                <input type="button" id="btnConfirmarNovaSenha" class="botoes" value="Enviar"></input><br>
-                            </div>
-    
-                            
-                        <div>
-                </form>
-            <!-- </div> -->  
-           <!--  class="account-form-wrapper visible-when-content-ready row-fluid" -->
-               <!-- <div> 
-                    <div class="oculta">
-                        <h3 id="redefinir-senha">Redefinir Senha</h3>
-                        <label for="senha">
-                        <input type="senha"
-                            placeholder="Nova Senha"
-                            placeholder="Confirmação de senha"
-                            onblur="validarSenha()"
-                            onfocus="redefinirMsg()" id="nova-senha"></label>
-                    </div> -->
-                    <div>
-                        <p id="mensagem-email">Enviaremos um e-mail para redefinição de senha</p>
-                        <a id="possuiConta" href="./entrar.html">Não possui uma conta?</a>
-                    </div>
+                    <input type="button" 
+                    id="btnEmailEnviado" 
+                    class="botoes" 
+                    value="Enviar"
+                    onclick="sendEmail();">
                 </div>
-            </div>    
-        </main>
+
+                         
+                <div id="formPassword"> 
+                    <div id="redefinicaoSenha">
+                        <h2 id="redefinir-senha">Redefinir Senha</h2> 
+                        <label for="senha"></label>
+                           
+                        <div id="senhas">  
+                            <input id="firstPassword" 
+                                type="password"
+                                placeholder="Nova senha"><br><br>
+                            <input id="secondPassword"
+                                type="password" 
+                                placeholder="Confirme a senha"><br>
+                        </div>
+                        <input type="submit" 
+                            id="btnConfirmarNovaSenha"
+                            class="botoes"
+                            onclick="sendPassword()" 
+                            value="Enviar">
+                    </div>                                    
+                </div>
+
+                <div id="formPosRedefinicao">
+                    <p id="mensagem-email">Enviaremos um e-mail para redefinição de senha</p>
+                    <a id="possuiConta" href="./entrar.html">Não possui uma conta?</a>
+                </div> 
+            </main>
 
             <!-- FOOTER -->
             <div class="row" id="footer">
                 <div class="col-md-12">
                 <ul>
-                    <!-- <li><a id="logo-bref" href="../html/index.html">BREF</a></li> -->
+                    <li><a id="logo-bref" href="../html/index.html">BREF</a></li> -->
                     <li>
-                    <!-- <ul class="share">
+                    <ul class="share">
                         <a href="#"><li id="facebook-icon"></li></a>
                         <a href="#"><li id="twitter-icon"></li></a>
                         <a href="#"><li id="instagram-icon"></li></a>
-                    </ul> -->
+                    </ul> 
                     </li>
                     <li id="footer-links">
 
                         <a href="./sobre-nos.html">Sobre nós</a><br>
                         <span class="footer-ponto">&#9679;</span>
-                        <a href="./entrar.html">Entrar/Cadastrar</a>
-                        <span class="footer-ponto">&#9679;</span>
                         <a href="./fale-conosco.html">Fale conosco</a><br>
+                        <span class="footer-ponto">&#9679;</span>
+                        <a href="./entrar.html">Entrar/Cadastrar</a><br>
+                        
                 
                     </li>
                     <li>

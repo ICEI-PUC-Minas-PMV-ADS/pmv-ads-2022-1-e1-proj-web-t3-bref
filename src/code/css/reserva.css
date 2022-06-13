@@ -104,8 +104,9 @@ hr {
     left: 24.7em;
     border-radius: 2px;
     display: none;
+    background: red;      
+    color: #FFFFF4;
 }   
-
 
 div.container-fluid {
     padding: 0;

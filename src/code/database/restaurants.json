@@ -11,7 +11,9 @@
             "whatsapp":"11 8888-8888",
             "address": {
                 "city":"Contagem",
-                "state": "MG"
+                "state": "MG",
+                "street": "Rua A",
+                "number": "37"
             },
             "paymentMethods": [
                 "Cartão de Crédito",
@@ -24,19 +26,19 @@
             "infoRestaurant": {
                 "pratoPrincipal": [
                     {
-                        "nomePrato": "Pizza1",
+                        "nomePrato": "Mc Trio",
                         "price": 150,
                         "timePrep": 20,
                         "classfication": 5
                     },
                     {
-                        "nomePrato": "Carbonara1",
+                        "nomePrato": "Chicken Trio",
                         "price": 100,
                         "timePrep": 12,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Batata Frita1",
+                        "nomePrato": "Batata Frita",
                         "price": 50,
                         "timePrep": 5,
                         "classfication": 3
@@ -44,19 +46,19 @@
                 ],
                 "bebidas": [
                     {
-                        "nomePrato": "Coca Cola1",
+                        "nomePrato": "Coca Cola",
                         "price": 15,
                         "timePrep": 0,
                         "classfication": 2
                     },
                     {
-                        "nomePrato": "Sprite1",
+                        "nomePrato": "Sprite",
                         "price": 10,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Fanta Uva1",
+                        "nomePrato": "Fanta Laranja",
                         "price": 5,
                         "timePrep": 0,
                         "classfication": 5
@@ -64,19 +66,19 @@
                 ],
                 "sobremesa": [
                     {
-                        "nomePrato": "Sorvete1",
+                        "nomePrato": "Sorvete Oreo",
                         "price": 50,
                         "timePrep": 0,
                         "classfication": 5
                     },
                     {
-                        "nomePrato": "Bala Doce1",
+                        "nomePrato": "Milkshake",
                         "price": 1,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Quebra Queixo1",
+                        "nomePrato": "Casquina",
                         "price": 5,
                         "timePrep": 0,
                         "classfication": 1
@@ -103,24 +105,26 @@
             "image": "place7.jpg",
             "address": {
                 "city":"Belo Horizonte",
-                "state": "MG"
+                "state": "MG",
+                "street": "Rua D",
+                "number": "199"
             },
             "infoRestaurant": {
                 "pratoPrincipal": [
                     {
-                        "nomePrato": "Pizza2",
+                        "nomePrato": "Trio Picanha",
                         "price": 150,
                         "timePrep": 20,
                         "classfication": 5
                     },
                     {
-                        "nomePrato": "Carbonara2",
+                        "nomePrato": "Imperador",
                         "price": 100,
                         "timePrep": 12,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Batata Frita2",
+                        "nomePrato": "Batata Frita",
                         "price": 50,
                         "timePrep": 5,
                         "classfication": 3
@@ -128,19 +132,19 @@
                 ],
                 "bebidas": [
                     {
-                        "nomePrato": "Coca Cola2",
+                        "nomePrato": "Coca Cola",
                         "price": 15,
                         "timePrep": 0,
                         "classfication": 2
                     },
                     {
-                        "nomePrato": "Sprite2",
+                        "nomePrato": "Sprite",
                         "price": 10,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Fanta Uva2",
+                        "nomePrato": "Fanta Uva",
                         "price": 5,
                         "timePrep": 0,
                         "classfication": 5
@@ -148,19 +152,19 @@
                 ],
                 "sobremesa": [
                     {
-                        "nomePrato": "Sorvete2",
+                        "nomePrato": "Casquinha",
                         "price": 50,
                         "timePrep": 0,
                         "classfication": 5
                     },
                     {
-                        "nomePrato": "Bala Doce2",
+                        "nomePrato": "Milkshake",
                         "price": 1,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Quebra Queixo2",
+                        "nomePrato": "Esquimó",
                         "price": 5,
                         "timePrep": 0,
                         "classfication": 1
@@ -187,24 +191,26 @@
             "image": "place5.jpg",
             "address": {
                 "city":"Rio de Janeiro",
-                "state": "RJ"
+                "state": "RJ",
+                "street": "Rua 12",
+                "number": "372"
             },
             "infoRestaurant": {
                 "pratoPrincipal": [
                     {
-                        "nomePrato": "Pizza3",
+                        "nomePrato": "Pizza Napolitana",
                         "price": 150,
                         "timePrep": 20,
                         "classfication": 5
                     },
                     {
-                        "nomePrato": "Carbonara3",
+                        "nomePrato": "Hamburger Artesanal",
                         "price": 100,
                         "timePrep": 12,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Batata Frita3",
+                        "nomePrato": "Costela Assada",
                         "price": 50,
                         "timePrep": 5,
                         "classfication": 3
@@ -212,40 +218,40 @@
                 ],
                 "bebidas": [
                     {
-                        "nomePrato": "Coca Cola3",
+                        "nomePrato": "Agua Vox",
                         "price": 15,
                         "timePrep": 0,
                         "classfication": 2
                     },
                     {
-                        "nomePrato": "Sprite3",
-                        "price": 10,
+                        "nomePrato": "Vinho Tino",
+                        "price": 1000,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Fanta Uva3",
-                        "price": 5,
+                        "nomePrato": "Vinho Branco",
+                        "price": 578,
                         "timePrep": 0,
                         "classfication": 5
                     }
                 ],
                 "sobremesa": [
                     {
-                        "nomePrato": "Sorvete3",
-                        "price": 50,
+                        "nomePrato": "Gelato",
+                        "price": 25,
                         "timePrep": 0,
                         "classfication": 5
                     },
                     {
-                        "nomePrato": "Bala Doce3",
-                        "price": 1,
+                        "nomePrato": "Doce de Leite",
+                        "price": 99,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Quebra Queixo3",
-                        "price": 5,
+                        "nomePrato": "Petit Gatot",
+                        "price": 52,
                         "timePrep": 0,
                         "classfication": 1
                     }
@@ -255,7 +261,7 @@
         {
             "id": 4,
             "name": "Fujiyama",
-            "averagePrice": 110,
+            "averagePrice": 15,
             "type": "Pastelaria",
             "capacity": 20,
             "waitingTimeMinutes": 15,
@@ -269,44 +275,46 @@
             "image": "place8.jpg",
             "address": {
                 "city":"Betim",
-                "state": "MG"
+                "state": "MG",
+                "street": "Avenida João Barbosa",
+                "number": "372"
             },
             "infoRestaurant": {
                 "pratoPrincipal": [
                     {
-                        "nomePrato": "Pizza4",
-                        "price": 150,
+                        "nomePrato": "Pastel de Frango",
+                        "price": 12,
                         "timePrep": 20,
                         "classfication": 5
                     },
                     {
-                        "nomePrato": "Carbonara4",
-                        "price": 100,
+                        "nomePrato": "Pastel de Carne",
+                        "price": 15,
                         "timePrep": 12,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Batata Frita4",
-                        "price": 50,
+                        "nomePrato": "Pastel de Queijo",
+                        "price": 10,
                         "timePrep": 5,
                         "classfication": 3
                     }
                 ],
                 "bebidas": [
                     {
-                        "nomePrato": "Coca Cola4",
+                        "nomePrato": "Coca Cola",
                         "price": 15,
                         "timePrep": 0,
                         "classfication": 2
                     },
                     {
-                        "nomePrato": "Sprite4",
+                        "nomePrato": "Sprite",
                         "price": 10,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Fanta Uva4",
+                        "nomePrato": "Fanta Uva",
                         "price": 5,
                         "timePrep": 0,
                         "classfication": 5
@@ -314,19 +322,19 @@
                 ],
                 "sobremesa": [
                     {
-                        "nomePrato": "Sorvete4",
-                        "price": 50,
+                        "nomePrato": "Pastel Doce de Banana",
+                        "price": 20,
                         "timePrep": 0,
                         "classfication": 5
                     },
                     {
-                        "nomePrato": "Bala Doce4",
+                        "nomePrato": "Pastel Doce de Queijo com Goiabada",
                         "price": 1,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Quebra Queixo4",
+                        "nomePrato": "Sorvete",
                         "price": 5,
                         "timePrep": 0,
                         "classfication": 1
@@ -353,24 +361,26 @@
             "image": "place9.jpg",
             "address": {
                 "city":"Contagem",
-                "state": "MG"
+                "state": "MG",
+                "street": "Rua Teodomario",
+                "number": "272"
             },
             "infoRestaurant": {
                 "pratoPrincipal": [
                     {
-                        "nomePrato": "Pizza5",
-                        "price": 150,
+                        "nomePrato": "Combo Pequeno (3 ingredientes)",
+                        "price": 15,
                         "timePrep": 20,
                         "classfication": 5
                     },
                     {
-                        "nomePrato": "Carbonara5",
+                        "nomePrato": "Combo Médio (5 ingredientes)",
                         "price": 100,
                         "timePrep": 12,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Batata Frita5",
+                        "nomePrato": "Combo Grande (7 ingredientes)",
                         "price": 50,
                         "timePrep": 5,
                         "classfication": 3
@@ -378,19 +388,19 @@
                 ],
                 "bebidas": [
                     {
-                        "nomePrato": "Coca Cola5",
+                        "nomePrato": "Coca Cola",
                         "price": 15,
                         "timePrep": 0,
                         "classfication": 2
                     },
                     {
-                        "nomePrato": "Sprite5",
+                        "nomePrato": "Sprite",
                         "price": 10,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Fanta Uva5",
+                        "nomePrato": "Pepsi",
                         "price": 5,
                         "timePrep": 0,
                         "classfication": 5
@@ -398,19 +408,19 @@
                 ],
                 "sobremesa": [
                     {
-                        "nomePrato": "Sorvete5",
+                        "nomePrato": "Sorvete",
                         "price": 50,
                         "timePrep": 0,
                         "classfication": 5
                     },
                     {
-                        "nomePrato": "Bala Doce5",
+                        "nomePrato": "Bala Doce",
                         "price": 1,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Quebra Queixo5",
+                        "nomePrato": "Quebra Queixo",
                         "price": 5,
                         "timePrep": 0,
                         "classfication": 1
@@ -436,24 +446,26 @@
             "image": "place10.jpg",
             "address": {
                 "city":"São Paulo",
-                "state": "SP"
+                "state": "SP",
+                "street": "Travessa Luiz Couto",
+                "number": "145"
             },
             "infoRestaurant": {
                 "pratoPrincipal": [
                     {
-                        "nomePrato": "Pizza6",
+                        "nomePrato": "Uramaki",
                         "price": 150,
                         "timePrep": 20,
                         "classfication": 5
                     },
                     {
-                        "nomePrato": "Carbonara6",
+                        "nomePrato": "Sashimi (5 peças)",
                         "price": 100,
                         "timePrep": 12,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Batata Frita6",
+                        "nomePrato": "Temaki",
                         "price": 50,
                         "timePrep": 5,
                         "classfication": 3
@@ -461,19 +473,19 @@
                 ],
                 "bebidas": [
                     {
-                        "nomePrato": "Coca Cola6",
+                        "nomePrato": "Coca Cola",
                         "price": 15,
                         "timePrep": 0,
                         "classfication": 2
                     },
                     {
-                        "nomePrato": "Sprite6",
+                        "nomePrato": "Pepsi",
                         "price": 10,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Fanta Uva6",
+                        "nomePrato": "Fanta Uva",
                         "price": 5,
                         "timePrep": 0,
                         "classfication": 5
@@ -481,19 +493,19 @@
                 ],
                 "sobremesa": [
                     {
-                        "nomePrato": "Sorvete6",
+                        "nomePrato": "Sorvete",
                         "price": 50,
                         "timePrep": 0,
                         "classfication": 5
                     },
                     {
-                        "nomePrato": "Bala Doce6",
+                        "nomePrato": "Torta Belga",
                         "price": 1,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Quebra Queixo6",
+                        "nomePrato": "Doce Japonês",
                         "price": 5,
                         "timePrep": 0,
                         "classfication": 1

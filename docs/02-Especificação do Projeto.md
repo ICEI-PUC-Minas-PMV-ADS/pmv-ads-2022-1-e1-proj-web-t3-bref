@@ -37,14 +37,16 @@ Registramos as histórias das personas encontradas para o projeto e analisamos s
 
 | EU COMO... `PERSONA` | QUERO/PRECISO ... `FUNCIONALIDADE` | PARA ... `MOTIVO/VALOR`                |
 | -------------------- | ---------------------------------- | -------------------------------------- |
-| **Maria Helen**| Quero ver o percentual de ocupação do restaurante. | Não gosto de lugares cheios.|
-| **Maria Helen** | Quero ver o cardápio do restaurante.| Gosto de já chegar com o pedido em mente.|
-| **Maria Helen** | Ter uma forma de comunicar com o restaurante sem precisar ligar ou ir até ele. |Economizar tempo de espera em uma ligação e sanar dúvidas antes de chegar no local.|
-| **Fabrício Ferreira**| Poder dar nota ao atendimento, refeição e espera. |Poder escolher baseado em opiniões.|
+|**Maria Helen**| Quero ver o percentual de ocupação do restaurante. | Não gosto de lugares cheios.|
+|**Maria Helen**| Quero ver o cardápio do restaurante.| Gosto de já chegar com o pedido em mente.|
+|**Maria Helen**| Ter uma forma de comunicar com o restaurante sem precisar ligar ou ir até ele. |Economizar tempo de espera em uma ligação e sanar dúvidas antes de chegar no local.|
+|**Fabrício Ferreira**| Poder dar nota ao atendimento, refeição e espera. |Poder escolher baseado em opiniões.|
 |**Fabrício Ferreira**|Ter informações do restaurante, como endereço, número, ponto de referência.  |Não perder tempo procurando o restaurante.|
 |**Fabrício Ferreira**|Fazer reservas online.  | Não é sempre que posso entrar em contato para reservar pelo celular.|
-| **Vitor Andrade**| Desejo que na página do aplicativo tenha o contato social dos desenvolvedores.|Para poder comunica-los sobre um possível erro crítico no sistema.|
+|**Vitor Andrade**| Desejo que na página do aplicativo tenha o contato social dos desenvolvedores.|Para poder comunica-los sobre um possível erro crítico no sistema.|
 |**Tereza Santos**|Desejo que eu possa alterar o tamanho da fonte no site.   |Para poder ler sem forçar as vistas ou ter que usar óculos.|
+|**Vitor Andrade**| Desejo poder cadastrar e logar uma conta.|Para ter acesso a todo o conteúdo do site.|
+|**Vitor Andrade**| Desejo que tenha uma página onde eu possa redefinir a minha senha.|Para caso a esqueça.|
 
 
 ## Requisitos
@@ -67,6 +69,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | **RF-010** | O site deve permitir que usuários possam dar avaliações sobre os restaurantes. | MÉDIA  |
 | **RF-011** | O site deve permitir que o usuário possa alterar o tamanho da fonte.  | ALTA       |
 | **RF-012** |O site deve ter uma página de contato com a empresa BREF.  |ALTA|
+| **RF-013** |O site deve ter uma página para entrar em uma conta ou cadastrar.  |ALTA|
+| **RF-014** |O site deve ter uma página para redefinição de senha.  |ALTA|
 
 ### Requisitos não Funcionais
 
