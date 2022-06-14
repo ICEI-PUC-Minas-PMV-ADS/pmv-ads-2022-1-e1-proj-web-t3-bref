@@ -5,109 +5,46 @@ if(localStorage.getItem("token") == null){
 	document.getElementById("abaCadastrar").click();
 }
 
+function validEmail(field) {
+    usuario = field.value.substring(0, field.value.indexOf("@"));
+    dominio = field.value.substring(field.value.indexOf("@")+1, field.value.length);
 
-    function validateFieldsEmail(){
-        toggleEmailErrors();
+    if ((usuario.length >=1) && 
+    (dominio.length >=3) && 
+    (usuario.search("@")==-1) && 
+    (dominio.search("@")==-1) && 
+    (usuario.search(" ")==-1) && 
+    (dominio.search(" ")==-1) && 
+    (dominio.search(".")!=-1) && 
+    (dominio.indexOf(".") >=1) && 
+    (dominio.lastIndexOf(".") < dominio.length - 1)) {
+        document.getElementById("email").innerHTML="<font color='green'>E-mail válido </font>";
     }
-    function validateFieldsContato(){
-        toggleContato();
+    else{
+        document.getElementById("email").innerHTML="<font color='red'>O email inserido é inválido. </font>";
     }
-    function validateFieldsCadeira(){
-        toggleCadeira();
-    }
-    function validateFieldsData(){
-        toggleData();
-    }
-   /*  window.location.href = "../html/reservaConcluida.html" */
+}
 
+function functionOne(){
+    alert ("Vai dar certo?")
+}
 
-document.getElementById("btnReservar").addEventListener("click", validateFieldsCadeira, validateFieldsContato, validateFieldsData, validateFieldsEmail)
-
-
-function toggleEmailErrors(){
-    const email = document.getElementById('email').value;
-    if (!email){
-        document.getElementById('email-required-error').style.display = "block";
+function telefone_validation() {
+    if (!(telefone.length >= 10 && telefone.length <= 11)) {
+        document.getElementById("telefone").innerHTML="<font color='green'>O contato é válido </font>";
     } else {
-        document.getElementById('email-required-error').style.display = "none";
+        document.getElementById("telefone").innerHTML="<font color='red'>O contato é inválido </font>";
     }
-    if (validateEmail(email) || (!email)){
-        document.getElementById('email-invalid-error').style.display = "none";
-    } else{
-        document.getElementById('email-invalid-error').style.display = "block";
-    }
-    
-} 
 
-function toggleContato(){
-    const contato = document.getElementById('contato').value;
-    if (!contato){
-        document.getElementById('contato-required-error').style.display = "block";
-    } else {
-        document.getElementById('contato-required-error').style.display = "none";
-    }
-    if (validateContato(contato)  || (!contato)){
-        document.getElementById('contato-invalid-error').style.display = "none";
-    } else{
-        document.getElementById('contato-invalid-error').style.display = "block";
-    }
-    
-}
-function toggleCadeira(){
-    const cadeira = document.getElementById('cadeira').value;
-    if (!cadeira){
-        document.getElementById('cadeira-required-error').style.display = "block";
-    } else {    
-        document.getElementById('cadeira-required-error').style.display = "none";
-    }
-    if (validateCadeira(cadeira)  || (!cadeira)){
-        document.getElementById('cadeira-invalid-error').style.display = "none";
-    } else{
-        document.getElementById('cadeira-invalid-error').style.display = "block";
-    }
-    
-}
-function toggleData(){
-    const data = document.getElementById('data').value;
-    if (!data){
-        document.getElementById('data-required-error').style.display = "block";
-    } else {
-        document.getElementById('data-required-error').style.display = "none";
-    }
-    if (validateCadeira(data)  || (!data)){
-        document.getElementById('data-invalid-error').style.display = "none";
-    } else{
-        document.getElementById('data-invalid-error').style.display = "block";
-    }
-    
-}
+    function validCad() {
+        if (!cadeira.length > 0) {
+            document.getElementById("cadeira").innerHTML="<font color='green'>Ok</font>";
+        }  else {
+            document.getElementById("cadeira").innerHTML="<font color='red'>Ok </font>";
+        }
 
-
-function toggleButtonsDisable(){
-    const email = document.getElementById('email').value;
-    if (validateEmail(email) && validateCadeira(data) && validateContato(contato) && validateCadeira(data)){
-        alert('Reserva em andamento...');
-    } else {
-        alert('Preencha os dados corretamente')
     }
-    /* const emailValid = validateEmail();
-    document.getElementById('recover-button').disabled =!emailValid; */
 }
-
-function validateEmail(email){
-    return /\S+@\S+\.\S+/.test(email);
-}
-
-function validatedata(data){
-    return (data)>0;
-}
-function validateCadeira(cadeira){
-    return (cadeira)>0;
-}
-function validateContato(contato){
-    return /\d\d\d\1{7,8}/.test(contato);
-}
-
 
 
 

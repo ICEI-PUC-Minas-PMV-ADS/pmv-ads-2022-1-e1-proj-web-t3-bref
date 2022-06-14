@@ -14,12 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
-    <title>Criar Reserva</title>
+    <title>Criar reserva</title>
 </head>
   
 
 <body onload="startWindow()">
-    <div id="conteudoBody">
+    <idbr id="conteudoBody">
         <!-- NAV -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" id="logo-bref" href="../html/index.html">BREF</a>
@@ -43,36 +43,36 @@
             <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
             <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
         </div>
+            
+                <div id="brefTwo">BREF</div>
+                <div id="titlePágina">Criar reserva</div>
+                <br class="totalInputs">
+                <form name="f1"><table><tr><td>E-mail:
+                    <input type="text" name="email" onblur="validEmail(email)"></td><td><div id="email"></div></td></tr>
+                    </table>
+                    <table><tr><td>Número de contato:
+                        <input type="tel" name="telefone" onblur="telefone_validation(telefone)"></td><td><div id="telefone"></div></td></tr>
+                        </table>
+                    </form>
+                    <table><tr><td>Quantas cadeiras?
+                        <input type="number" name="cadeira" onblur="validCad(cadeira)"></td><td><div id="cadeira"></div></td></tr>
+                        </table>
+                    </form>
+                    <table><tr><td>Data:
+                        <input type="datetime-local" name="data" onblur="validData(data)"></td><td><div id="data"></div></td></tr>
+                        </table>
 
+                <hr></hr>
 
-        <div class="container">
-            <main>
-                    <h2 class="breff">BREF</h2>
-                    <!-- <img src="../imgs/IMG_6238 (1).png" alt="Logo Bref" /> -->
-                    <h3 class="reserva">Reserva</h3>
+                <div id="msg" >As informações das reservas serão enviadas por email!</div>
 
-                    <input class="l-inputs" type="tel" name="contato" id="contato" onchange="validateFieldsContato()" placeholder="Número de Contato" pattern="[0-9] {3}-[0-9]{2}-[0-9]{3}"><br>
-                    <span class="error" id="contato-required-error" >Número de contato é obrigatório</span>
-                    <div class="error" id="contato-invalid-error">O contato inserido é inválido</div>
-
-                    <input class="l-inputs" type="email" name="email" id="email" onchange="validateFieldsEmail()" placeholder="Email"><br>
-                    <span class="error" id="email-required-error" >Email é obrigatório</span>
-                    <div class="error" id="email-invalid-error">O email inserido é inválido</div>
-                    
-                    <input class="l-inputs" type="number" name="cadeira" id="cadeira" onchange="validateFieldsCadeira()" placeholder="Quantidade de cadeiras"><br>
-                    <span class="error" id="cadeira-required-error" >Informe o número de cadeiras</span>
-
-                    <input class="l-inputs" type="datetime-local" name="data" id="data" onchange="validateFieldsData()" placeholder="Data/Hora"><br>
-                    <span class="error" id="data-required-error" >Informe a data da reserva</span>
-
-
-                        <div 
-                         id="btnReservar" onclick="toggleButtonsDisable()"> <input class="botão-input" type="submit" value="Reservar"></div>
-                    <hr>
-                    <p id="msgComprovante">O comprovante das reservas será enviado para o seu e-mail</p>
+                <div id="btnReserva">
+                <input type="button" onclick="functionOne()" value="Reservar">
                 </div>
-            </main>
-        </div>
+
+        
+
+        
 
         <!-- FOOTER -->
         <div class="row" id="footer">
