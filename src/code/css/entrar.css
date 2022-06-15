@@ -54,13 +54,13 @@ body {
 	color: #483A20;
 }
 
-#primeiroOlho {
+#verSenha {
 	position: relative;
 	left: 21.8em;
   bottom: 2.3em;
 }
 
-#verSenha {
+#verSenhaCadastro {
 	position: relative;
 	left: 20.4em;
   bottom: 6.3em;
@@ -70,6 +70,10 @@ body {
 	position: relative;
 	left: 20.3em;
   bottom: 3.3em;
+}
+
+label {
+	text-decoration: solid;
 }
 
 input {
@@ -126,7 +130,6 @@ input:focus:invalid {
 	cursor: pointer;
 	transition: 0.4s all;
 	display: none;
-	animation: up 1s;
 }
 
 #btnCadastrar {
@@ -250,6 +253,8 @@ button.active::after {
 	animation: up 1s;
 }
 
+/* Animações */
+
 @keyframes up {
 	from {
 			opacity: 0;
@@ -260,7 +265,66 @@ button.active::after {
 	}
 }
 
+@keyframes down {
+	from {
+			opacity: 1;
+			transform: translateY(-15px);
+	}
+	to {
+			opacity: 0;
+	}
+}
 
+/* Responsividade */
 
+@media screen and (max-width: 769px){
+	.container {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
 
+	aside {
+		display: none;
+	}
 
+	input {
+		height: 1.5em;
+	}
+
+	#abaEntrar,
+	#abaCadastrar {
+		margin-top: 0.1em;
+	}
+	
+	#verSenhaCadastro {
+		bottom: 7em;
+	}
+
+	#verConfirmarSenha {
+		left: 20.4em;
+    bottom: 3.57em;
+	}
+
+	#labelNome,
+	#labelData,
+	#labelEmail,
+	#labelSenhaCadastro,
+	#labelConfirmarSenha{
+		font-size: 1.2em;
+	}
+
+	#btnEntrar,
+	#btnCadastrar {
+		font-size: 1em;
+		height: 2.5em;
+	}
+
+	#termos-condicoes {
+		font-size: .9em;
+	}
+
+	#esqueceu-senha {
+		font-size: .9em;
+	}
+}

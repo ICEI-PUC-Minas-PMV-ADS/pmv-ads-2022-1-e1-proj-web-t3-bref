@@ -1,8 +1,8 @@
 function Pg() {
 	/* Mostrar senhas */
-	const Btn = document.querySelector("#primeiroOlho")
+	const Btn = document.querySelector("#verSenha")
 	const BtnConfirm = document.querySelector("#verConfirmarSenha")
-	const BtnSenhaCadastro = document.querySelector("#verSenha")
+	const BtnSenhaCadastro = document.querySelector("#verSenhaCadastro")
 	const BtnEntrar = document.querySelector("#btnEntrar")
 	/* const btnEntrar =  */
 	/* Inputs */
@@ -296,7 +296,7 @@ function Pg() {
 		InputEmail.addEventListener("keyup", ()=> {
 			
 			if(InputEmail.value.length >= 1){
-				BtnEntrar.setAttribute("style", "display: block")
+				BtnEntrar.setAttribute("style", "display: block; animation: up 1s")
 			} else {
 				BtnEntrar.setAttribute("style", "display: none")
 			}
