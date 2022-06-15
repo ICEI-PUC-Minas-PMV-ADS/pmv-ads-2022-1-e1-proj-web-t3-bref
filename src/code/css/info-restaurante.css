@@ -178,6 +178,7 @@ body {
 }
 
 @media screen and (max-width: 755px) {
+
     * {
         font-size: 15px;
     }
@@ -229,8 +230,12 @@ body {
 
     }
 
+    #sep02 {
+        display: block;
+    }
+
     #menuType {
-        display: inline;
+        display: block;
     }
 
     #menuType div {
