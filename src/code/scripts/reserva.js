@@ -62,7 +62,7 @@ function validarData (){
     var data = formReserva.data.value;
 
     if(!data == "") {
-        document.getElementById("data").innerHTML="<font color='green'>Certinho mané</font>";
+        document.getElementById("data").innerHTML="<font color='green'>Data válida</font>";
     }
     else{
         document.getElementById("data").innerHTML="<font color='red'>Qual a data da reserva?</font>";
