@@ -49,11 +49,11 @@ function validarTel (){
 function validarCad (){
     var cadeira = formReserva.cadeira.value;
 
-    if(!cadeira == "") {
-        document.getElementById("cadeira").innerHTML="<font color='green'>Certinho mané</font>";
+    if(cadeira >=1){
+        document.getElementById("cadeira").innerHTML="<font color='green'>Esta quantidade será reservada.</font>";
     }
     else{
-        document.getElementById("cadeira").innerHTML="<font color='red'>Quantas cadeiras deseja reserva?</font>";
+        document.getElementById("cadeira").innerHTML="<font color='red'>Quantas cadeiras deseja reservar?</font>";
     }
 
 }
