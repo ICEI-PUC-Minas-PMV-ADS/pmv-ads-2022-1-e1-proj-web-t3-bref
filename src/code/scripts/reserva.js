@@ -18,31 +18,54 @@ function validEmail(field) {
     (dominio.search(".")!=-1) && 
     (dominio.indexOf(".") >=1) && 
     (dominio.lastIndexOf(".") < dominio.length - 1)) {
-        document.getElementById("email").innerHTML="<font color='green'>E-mail válido </font>";
+        document.getElementById("email").innerHTML="<font color='green'>E-mail válido</font>";
     }
     else{
-        document.getElementById("email").innerHTML="<font color='red'>O email inserido é inválido. </font>";
+        document.getElementById("email").innerHTML="<font color='red'>Revise o email inserido.</font>";
     }
 }
 
 function functionOne(){
-    alert ("Vai dar certo?")
+
+    if (validEmail && validarTel && validarCad && validarData){
+        alert("Reservando...")
+        window.location.href = "../html/reservaConcluida.html"
+    } else{
+        alert("Revise os dados...")
+    }
 }
 
-function telefone_validation() {
-    if (!(telefone.length >= 10 && telefone.length <= 11)) {
-        document.getElementById("telefone").innerHTML="<font color='green'>O contato é válido </font>";
-    } else {
-        document.getElementById("telefone").innerHTML="<font color='red'>O contato é inválido </font>";
+function validarTel (){
+    var telefone = formReserva.telefone.value;
+    
+    if(!telefone == "") {
+        document.getElementById("telefone").innerHTML="<font color='green'>Contato inserido</font>";
+    }
+    else{
+        document.getElementById("telefone").innerHTML="<font color='red'>Revise o contato inserido.</font>";
+    }
+}
+
+function validarCad (){
+    var cadeira = formReserva.cadeira.value;
+
+    if(cadeira >=1){
+        document.getElementById("cadeira").innerHTML="<font color='green'>Esta quantidade será reservada.</font>";
+    }
+    else{
+        document.getElementById("cadeira").innerHTML="<font color='red'>Quantas cadeiras deseja reservar?</font>";
     }
 
-    function validCad() {
-        if (!cadeira.length > 0) {
-            document.getElementById("cadeira").innerHTML="<font color='green'>Ok</font>";
-        }  else {
-            document.getElementById("cadeira").innerHTML="<font color='red'>Ok </font>";
-        }
+}
 
+function validarData (){
+    var data = formReserva.data.value;
+
+    if(!data == "") {
+        document.getElementById("data").innerHTML="<font color='green'>Certinho mané</font>";
+    }
+    else{
+        document.getElementById("data").innerHTML="<font color='red'>Qual a data da reserva?</font>";
     }
 }
 
