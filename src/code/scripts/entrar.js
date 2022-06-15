@@ -1,10 +1,9 @@
 function Pg() {
-	/* Mostrar senhas */
+	/* Botões */
 	const Btn = document.querySelector("#verSenha")
 	const BtnConfirm = document.querySelector("#verConfirmarSenha")
 	const BtnSenhaCadastro = document.querySelector("#verSenhaCadastro")
 	const BtnEntrar = document.querySelector("#btnEntrar")
-	/* const btnEntrar =  */
 	/* Inputs */
 	const InputSenha = document.querySelector("#senha")
 	const InputEmail = document.querySelector("#email")
@@ -19,7 +18,6 @@ function Pg() {
 	var validEmail = false
 	var validSenhaCadastro = false
 	var validConfirmarSenha = false
-	
 	/* Labels */
 	const LabelNome	= document.querySelector("#labelNome")
 	const LabelData	= document.querySelector("#labelData")
@@ -29,7 +27,8 @@ function Pg() {
 	/* Mensagens */
 	const msgEntrar = document.querySelector("#msgEntrar")		
 	const msgCadastro = document.querySelector("#msgCadastro")
-	
+	/* Abas */
+	const main = document.querySelector("#conteudoMain")
 
 	function NavegacaoAbas() {
     
@@ -58,11 +57,14 @@ function Pg() {
 
         const target = event.currentTarget
         mostrarAbaAtual(target.dataset.id)
+				
     }
 
     function observarMudancas(){
         html.links.forEach(tab => {
             tab.addEventListener('click', selecionarAba)
+						
+
         })
     }
 
