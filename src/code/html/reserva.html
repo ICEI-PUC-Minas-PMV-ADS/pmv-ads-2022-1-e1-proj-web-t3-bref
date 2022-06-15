@@ -19,7 +19,6 @@
   
 
 <body onload="startWindow()">
-    <idbr id="conteudoBody">
         <!-- NAV -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" id="logo-bref" href="../html/index.html">BREF</a>
@@ -43,62 +42,46 @@
             <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
             <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
         </div>
-            
+            <div id="container">
                 <div id="brefTwo">BREF</div>
-                <div id="titlePágina">Criar reserva</div>
-                <br class="totalInputs">
-                <form name="f1"><table><tr><td>E-mail:
-                    <input type="text" name="email" onblur="validEmail(email)"></td><td><div id="email"></div></td></tr>
-                    </table>
-                    <table><tr><td>Número de contato:
-                        <input type="tel" name="telefone" onblur="telefone_validation(telefone)"></td><td><div id="telefone"></div></td></tr>
-                        </table>
+                <div id="titlePagina">Criar reserva</div>
+                <div class="totalInputs">
+                    <form name="formReserva">
+                        <input id="inputSt" type="email" name="email" onblur="validEmail(email)" placeholder="Email"><div id="email"></div>
+                        <input id="inputSt" type="tel" name="telefone" onblur="validarTel()" placeholder="Número de contato:"><div id="telefone"></div>
+                        <input id="inputSt" type="number" name="cadeira" onblur="validarCad()" placeholder="Quantas cadeiras?"><div id="cadeira"></div>           
+                        <input id="inputSt" type="datetime-local" name="data" onblur="validarData()" placeholder="Qual o dia da reserva?:"><div id="data"></div>
                     </form>
-                    <table><tr><td>Quantas cadeiras?
-                        <input type="number" name="cadeira" onblur="validCad(cadeira)"></td><td><div id="cadeira"></div></td></tr>
-                        </table>
-                    </form>
-                    <table><tr><td>Data:
-                        <input type="datetime-local" name="data" onblur="validData(data)"></td><td><div id="data"></div></td></tr>
-                        </table>
-
-                <hr></hr>
-
-                <div id="msg" >As informações das reservas serão enviadas por email!</div>
-
-                <div id="btnReserva">
-                <input type="button" onclick="functionOne()" value="Reservar">
                 </div>
-
-        
-
-        
-
-        <!-- FOOTER -->
-        <div class="row" id="footer">
-            <div class="col-md-12">
-            <ul>
-                <li><a id="logo-bref" href="../html/index.html">BREF</a></li>
-                <li>
-                <ul class="share">
+                    
+                    <div id="msg" >As informações das reservas serão enviadas por email!</div>
+                    
+                        <input id="btnReserva" type="button" onclick="functionOne()" value="Reservar" >
+                        <!-- FOOTER -->
+                <div class="row" id="footer">
+                            <div class="col-md-12">
+                    <ul>
+                    <li><a id="logo-bref" href="../html/index.html">BREF</a></li>
+                    <li>
+                    <ul class="share">
                     <a href="#"><li id="facebook-icon"></li></a>
                     <a href="#"><li id="twitter-icon"></li></a>
                     <a href="#"><li id="instagram-icon"></li></a>
-                </ul>
-                </li>
-                <li id="footer-links">
-                    <a href="./sobre-nos.html">Sobre nós</a>
-                    <span class="footer-ponto">&#9679;</span>
-                    <a href="./fale-conosco.html">Fale conosco</a>
-                    <span class="footer-ponto">&#9679;</span>
-                    <a href="./entrar.html">Entrar/Cadastrar</a>
-                </li>
-                <li>
-                <p id="footer-copyright">© 2022 Bref Company LTDA</p>
-                </li>
-            </ul>
-            </div>
-        </div>
-    </div>
+                    </ul>
+                    </li>
+                        <li id="footer-links">
+                        <a href="./sobre-nos.html">Sobre nós</a>
+                        <span class="footer-ponto">&#9679;</span>
+                        <a href="./fale-conosco.html">Fale conosco</a>
+                        <span class="footer-ponto">&#9679;</span>
+                        <a href="./entrar.html">Entrar/Cadastrar</a>
+                        </li>
+                        <li>
+                        <p id="footer-copyright">© 2022 Bref Company LTDA</p>
+                    </div>
+                        </li>
+                    </ul>
+                    </div>
+            </div> 
 </body>
 </html>
