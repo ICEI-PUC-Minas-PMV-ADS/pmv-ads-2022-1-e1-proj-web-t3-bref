@@ -277,7 +277,10 @@ button.active::after {
 
 /* Responsividade */
 
-@media screen and (max-width: 769px){
+@media 
+	screen and (max-width: 769px),
+	screen and (max-width: 481px),
+	screen and (max-width: 320px){
 	.container {
 		display: flex;
 		justify-content: center;
@@ -290,6 +293,10 @@ button.active::after {
 
 	input {
 		height: 1.5em;
+	}
+
+	#bref {
+		font-size: 7em;
 	}
 
 	#abaEntrar,
