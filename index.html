@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap-css/bootstrap.min.css">
+    <!-- Footer e Header -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header-bref.css">
+
+    <title>Bref - Economize seu Tempo</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- NAV --> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" id="logo-bref" href="../html/index.html">BREF</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./fale-conosco.html">Fale Conosco</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./entrar.html">Entrar/Cadastrar</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <!-- <div class="row" id="header">
+            <div class="col-md-3"><a id='sobre' href=".\sobre-nos.html" target="_self"> Sobre Nós </a></div>
+            <div class="col-md-3"><a id='fale' href=".\fale-conosco.html" target="_self"> Fale Conosco </a></div>
+            <div class="col-md-3"><a id='entrar' href=".\entrar.html" target="_self"> Entrar/Cadastrar </a></div>
+            <div class="col-md-3"><form action=".\listagem-restaurantes.html" method="get" id="pesq">
+                Pesquisa
+                <input type="text" name="pesq" id="pesq_bar">
+            </form></div>
+        </div> -->
+        
+        <div class="row" id="barra-apresentacao">
+            <div class="col-md-12">
+                <ul>
+                    <li>
+                        <p id="name">BREF</p>
+                    </li>
+                    <li>
+                        <div class="linha-vertical"></div>
+                    </li>
+                    <li>
+                        <p><h3>Aqui você encontra as melhores ofertas!</h3>Faça sua busca e veja as informações dos seus restaurantes favoritos</p>
+                    </li>
+                </ul>
+                <form action=".\listagem-restaurantes.html" method="get" id="pesq">
+                    <input type="text" name="pesq" id="pesq_bar">
+                </form>
+            </div>
+        </div>
+        
+        <div class="row" id="cards-demo-text">
+            <div class="col-md-12">
+                <h3 class="font-weight-bold">Conheça alguns restaurantes maravilhosos em destaque</h3>
+            </div>
+        </div>
+        <div class="row" id="cards-demo"> 
+            <div class="col-md-4">
+                <img class="place-img" src="../imgs/place5.jpg" alt="Place 01">
+                <b> <h2>Madero</h2></b>
+                <p>
+                    <b> Gastronomia:</b> Australiana <br>
+                    <b> Capacidade:</b> 30 <br>
+                    A marca é reconhecida por produzir e servir cheeseburgers gourmet, o carro-chefe da marca, além de carnes, massas, saladas e sobremesas – com rigoroso controle de qualidade, em um ambiente acolhedor e com uma sofisticação leve e despretensiosa.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img class="place-img" src="../imgs/place9.jpg" alt="Place 02">
+                <b> <h2>Spoleto</h2></b>
+                <p>
+                    <b> Gastronomia:</b> Brasileiro <br>
+                    <b> Capacidade:</b> 10 <br>
+                    O Spoleto é uma rede de restaurantes brasileira de fast casual inspirada na culinária italiana. O nome é uma homenagem à cidade de Spoleto, localizada na região de Úmbria na Itália e remete a ideia de descontração.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img class="place-img" src="../imgs/place10.jpg" alt="Place 03">
+                <b> <h2>Sushi Japa Chan</h2></b>
+                <p>
+                    <b> Gastronomia:</b> Japonês <br>
+                    <b> Capacidade:</b> 30 <br>
+                    O Sushi Japa Chan possui um mix de produtos aprimorado em anos de mercado e conta com as mais variadas opções dentro da culinária oriental. 
+                </p>
+            </div>
+        </div>
+
+        
+        <!-- <div class="container-main">
+            <header>
+                <a id='sobre' href=".\sobre-nos.html" target="_self"> Sobre Nós </a>
+
+                <a id='fale' href=".\fale-conosco.html" target="_self"> Fale Conosco </a>
+                
+                <a id='entrar' href=".\entrar.html" target="_self"> Entrar/Cadastrar </a>
+                
+                <form action=".\listagem-restaurantes.html" method="get" id="pesq">
+                    Pesquisa
+                    <input type="text" name="pesq" id="pesq_bar">
+                </form>
+            </header> 
+
+            <div id="bref">
+                <p id="name">BREF</p>
+                <p><b>Economize seu Tempo</b></p>
+            </div> 
+            <div id="places">
+                <div id="place1">
+                    <img class="place-img" src="../imgs/place1.jpg" alt="Place 01">
+                    <b> <h2>Restaurante 01</h2></b>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse saepe cupiditate quam autem eaque optio a porro id eos, reprehenderit voluptates rerum, ratione nemo eligendi harum atque consequatur quas facere. Aliquam, vero. Magni voluptatum quia quos praesentium, doloribus repudiandae, quas illum commodi error dolore debitis deserunt fugiat. Autem, consequuntur saepe!
+                </div>
+                <div id="place2">
+                    <img class="place-img" src="../imgs/place2.jpg" alt="Place 02">
+                    <b> <h2>Restaurante 02</h2></b>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat labore, exercitationem nisi impedit minus culpa.
+                </div>
+                <div id="place3">
+                    <img class="place-img" src="../imgs/place3.jpg" alt="Place 03">
+                    <b> <h2>Restaurante 03</h2></b>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laudantium asperiores maiores, hic fuga odio quibusdam laboriosam nisi eum dolores? Ducimus asperiores est in? Odio!
+                </div>
+            </div>
+            <footer>
+                <div id="mail">fakemailbref@dominio.com</div>
+                <div id="phone">(XX) 4002-8922</div>
+            </footer>
+        </div> -->
+        
+        <!-- FOOTER -->
+        <div class="row" id="footer">
+            <div class="col-md-12">
+            <ul>
+                <li><a id="logo-bref" href="../html/index.html">BREF</a></li>
+                <li>
+                <ul class="share">
+                    <a href="#"><li id="facebook-icon"></li></a>
+                    <a href="#"><li id="twitter-icon"></li></a>
+                    <a href="#"><li id="instagram-icon"></li></a>
+                </ul>
+                </li>
+                <li id="footer-links">
+                    <a href="./sobre-nos.html">Sobre nós</a>
+                    <span class="footer-ponto">&#9679;</span>
+                    <a href="./fale-conosco.html">Fale conosco</a>
+                    <span class="footer-ponto">&#9679;</span>
+                    <a href="./entrar.html">Entrar/Cadastrar</a>
+                </li>
+                <li>
+                <p id="footer-copyright">© 2022 Bref Company LTDA</p>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
