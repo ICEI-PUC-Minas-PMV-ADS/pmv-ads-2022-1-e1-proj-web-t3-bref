@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/sobre-nos.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script type="text/javascript" src="../scripts/sobre-nos.js" defer></script>
+    <title>Sobre nós</title>
+</head>
+<body onload="startWindow()">
+    <div class="container-fluid">
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" id="logo-bref" href="../html/index.html">BREF</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./fale-conosco.html">Fale Conosco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./entrar.html">Entrar/Cadastrar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- CONTEUDO -->
+
+        <div id="barColor">
+            <button class="changeFontsButtons" onclick="changeSizeAllItems(false);">Font -</button>
+            <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
+            <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
+        </div>
+
+        <!-- Boas-vindas -->
+        <div class="row">
+            <div class="col-md-12 boas-vindas">
+                <div>
+                    <h1 class="font-weight-bold">Simplificar suas escolhas<br>é o nosso maior objetivo!</h1>
+                    <p class="font-weight-bold">
+                        Sabemos quão valioso é seu tempo, por isso prezamos por ele.
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nossos valores -->
+        <div class="row">
+            <div class="row">
+                <div class="col-md-12 nossos-valores">
+                    <h2 class="font-weight-bold">Nossos valores</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-deck">
+                    <div class="card" id="card1">
+                        <div class="espaco-vazio"></div>
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">Simplicidade</h4>
+                            <p class="card-text">A simplicidade é o último grau de sofisticação.</p>
+                        </div>
+
+                    </div>
+                    <div class="card" id="card2">
+                        <div class="espaco-vazio"></div>
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">Praticidade</h4>
+                            <p class="card-text">Resolva os problemas do dia a dia com praticidade e facilidade.</p>
+                        </div>
+                    </div>
+                    <div class="card" id="card3">
+                        <div class="espaco-vazio"></div>
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold">Confiança</h4>
+                            <p class="card-text">Sua confiança em nós nos move.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nossa missão -->
+        <div class="row">
+            <div class="col-md-4" id="img-missao"></div>
+            <div class="col-md-7" id="texto-missao">
+                <h1 class="font-weight-bold"><span style="color: #7c653b;">Informação</span> é o que você precisa <br> para escolher um bom restaurante!</h1>
+                <p class="font-weight-bold">Não basta querer comer. Por isso o Bref está aqui para auxiliar provendo informações do restaurante para você. Além da capacidade de reservar uma mesa sem burocracia!</p>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="row" id="footer">
+            <div class="col-md-12">
+                <ul>
+                    <li><a id="logo-bref" href="../html/index.html">BREF</a></li>
+                    <li>
+                        <ul class="share">
+                            <a href="#">
+                            <li id="facebook-icon"></li></a>
+                            <a href="#">
+                            <li id="twitter-icon"></li></a>
+                            <a href="#">
+                            <li id="instagram-icon"></li></a>
+                        </ul>
+                    </li>
+                    <li id="footer-links">
+                        <a href="./sobre-nos.html">Sobre nós</a>
+                        <span class="footer-ponto">&#9679;</span>
+                        <a href="./fale-conosco.html">Fale conosco</a>
+                        <span class="footer-ponto">&#9679;</span>
+                        <a href="./entrar.html">Entrar/Cadastrar</a>
+                    </li>
+                    <li>
+                        <p id="footer-copyright">© 2022 Bref Company LTDA</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
