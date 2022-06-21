@@ -29,7 +29,7 @@ function start() {
     document.getElementById("telephone").innerHTML = `Telefone: ${tele}`;
     document.getElementById("whatsapp").innerHTML = `Whatsapp: ${whatsapp}`;
     document.getElementById("address").innerHTML = `Endereço: ${address}`;
-    document.getElementById("rest-img").src=`../imgs/${imgRest}`;
+    document.getElementById("rest-img").src=`./src/code/imgs/${imgRest}`;
 
     // avaliacao url
     document.getElementById("avaliacaoURL").setAttribute('href',`\avaliacao.html?name='${name}'`)
@@ -81,9 +81,8 @@ function dessert() {
     }
 }
 
-
 // https://dev.to/ramonak/javascript-how-to-access-the-return-value-of-a-promise-object-1bck
-const readDB = fetch('../database/restaurants.json')
+const readDB = fetch('./src/code/database/restaurants.json')
     .then((response) => response.json())
     .then((database => {
         consoleStorage.push(database.restaurants[id-1]);
@@ -97,4 +96,5 @@ const readDB = fetch('../database/restaurants.json')
 // the restaurant information is acessable to consoleStorage[0]
 window.onload = function() {
     readDB;
+    console.log('teste')
 }
