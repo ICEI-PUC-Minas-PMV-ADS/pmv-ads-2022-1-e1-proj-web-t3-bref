@@ -272,16 +272,16 @@ function Pg() {
 			var nasc  = new Date(data);
 			var idade = hoje.getFullYear() - nasc.getFullYear();
 			var m = hoje.getMonth() - nasc.getMonth();
-			if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())) idade--
+			if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())){
 			validData = true;
+			} idade-- 
 			
 			
 			
-			if(idade < 16){
+			if(idade < 16 || InputData.value == null){
 				alert("Pessoas menores de 16 não podem se cadastrar.");
 				validData = false
-				InputEmailCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
-				 return false;
+				return false;
 			}
 		}
 
