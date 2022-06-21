@@ -1,10 +1,9 @@
 function Pg() {
-	/* Mostrar senhas */
-	const Btn = document.querySelector("#primeiroOlho")
+	/* Botões */
+	const Btn = document.querySelector("#verSenha")
 	const BtnConfirm = document.querySelector("#verConfirmarSenha")
-	const BtnSenhaCadastro = document.querySelector("#verSenha")
+	const BtnSenhaCadastro = document.querySelector("#verSenhaCadastro")
 	const BtnEntrar = document.querySelector("#btnEntrar")
-	/* const btnEntrar =  */
 	/* Inputs */
 	const InputSenha = document.querySelector("#senha")
 	const InputEmail = document.querySelector("#email")
@@ -19,7 +18,6 @@ function Pg() {
 	var validEmail = false
 	var validSenhaCadastro = false
 	var validConfirmarSenha = false
-	
 	/* Labels */
 	const LabelNome	= document.querySelector("#labelNome")
 	const LabelData	= document.querySelector("#labelData")
@@ -29,7 +27,8 @@ function Pg() {
 	/* Mensagens */
 	const msgEntrar = document.querySelector("#msgEntrar")		
 	const msgCadastro = document.querySelector("#msgCadastro")
-	
+	/* Abas */
+	const main = document.querySelector("#conteudoMain")
 
 	function NavegacaoAbas() {
     
@@ -58,11 +57,14 @@ function Pg() {
 
         const target = event.currentTarget
         mostrarAbaAtual(target.dataset.id)
+				
     }
 
     function observarMudancas(){
         html.links.forEach(tab => {
             tab.addEventListener('click', selecionarAba)
+						
+
         })
     }
 
@@ -250,7 +252,12 @@ function Pg() {
 
 		/* Validação Confirmar Senha */
 
+		InputData.addEventListener("keyup", () =>{
+			validaData();
+		})
+
 		function validaData(){
+			
 			var data = document.getElementById("dataCadastro").value; // pega o valor do input
 			data = data.replace(/\//g, "-"); // substitui eventuais barras (ex. IE) "/" por hífen "-"
 			var data_array = data.split("-"); // quebra a data em array
@@ -258,7 +265,7 @@ function Pg() {
 			// para o IE onde será inserido no formato dd/MM/yyyy
 			if(data_array[0].length != 4){
 				 data = data_array[2]+"-"+data_array[1]+"-"+data_array[0]; // remonto a data no formato yyyy/MM/dd
-			}
+				}
 			
 			// comparo as datas e calculo a idade
 			var hoje = new Date();
@@ -267,20 +274,15 @@ function Pg() {
 			var m = hoje.getMonth() - nasc.getMonth();
 			if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())) idade--;
 			
-			if(idade < 18){
-				 alert("Pessoas menores de 18 não podem se cadastrar.");
-				 validData = false
+			
+			
+			if(idade < 16){
+				alert("Pessoas menores de 16 não podem se cadastrar.");
+				validData = false
+				InputEmailCadastro.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 				 return false;
 			}
-
-			// se for maior que 60 não vai acontecer nada!
-			validData = true
-			return false;
-
 		}
-			InputData.addEventListener("change", () =>{
-				validadata();
-			})
 
 		function iniciar(){
 			validarEmail()
@@ -292,11 +294,13 @@ function Pg() {
 		}
 	}
 
+	
+
 	function desativaBtnEntrar() {
 		InputEmail.addEventListener("keyup", ()=> {
 			
 			if(InputEmail.value.length >= 1){
-				BtnEntrar.setAttribute("style", "display: block")
+				BtnEntrar.setAttribute("style", "display: block; animation: up 1s")
 			} else {
 				BtnEntrar.setAttribute("style", "display: none")
 			}
@@ -356,11 +360,11 @@ function Pg() {
 	}
 	document.getElementById("btnEntrar").addEventListener("click", entrar);
 
-	function sair() {
+	/* SAIR DO LOGIN */
+	/* function sair() {
 		localStorage.removeItem('token')
 		window.location.href = "../html/index.html"
-	}
-
+	} */
 
 	function cadastrar() {
 		if(validNome && validData && validEmail && validSenhaCadastro && validConfirmarSenha){
