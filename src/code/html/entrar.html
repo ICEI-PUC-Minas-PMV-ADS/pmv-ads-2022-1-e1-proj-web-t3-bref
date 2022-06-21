@@ -51,27 +51,25 @@
 								<section id="cadastrar">
 									<div id="msgCadastro">
 									</div>
-										<label id="labelNome" for="nome">Nome</label><br>
+										<label id="labelNome" for="nomeCadastro">Nome</label><br>
 										<input id="nomeCadastro" 
-											type="text" 
-											placeholder=" "><br>
-									<label id="labelData" for="nome">Data de nascimento</label><br>
-										<input id="dataCadastro"
-											type="date"  
-											placeholder=" "><br>
-									<label id="labelEmail" for="nome">Email</label><br>
+											type="text"><br>
+
+									<label id="labelData" for="dataCadastro">Data de nascimento</label><br>
+										<input id="dataCadastro" maxlength="10" type="date"><br>
+
+									<label id="labelEmail" for="emailCadastro">Email</label><br>
 										<input id="emailCadastro" 
 											type="email"
-											placeholder=" "
 											onblur="validarEmail()" onfocus="redefinirMsg()"><br>
-									<label id="labelSenhaCadastro" for="nome">Senha</label><br>	
+
+									<label id="labelSenhaCadastro" for="senhaCadastro">Senha</label><br>	
 										<input id="senhaCadastro" 
-										type="password" 
-										placeholder=" "><br>
-									<label id="labelConfirmarSenha" for="nome">Confirmar a senha</label><br>
+										type="password"><br>
+
+									<label id="labelConfirmarSenha" for="confirmarSenhaCadastro">Confirmar a senha</label><br>
 										<input id="confirmarSenhaCadastro" 
-											type="password" 
-											placeholder=" "><br>
+											type="password"><br>
 
 									<i id="verSenhaCadastro" class="fa fa-eye" aria-hidden="true"></i><br>
 									<i id="verConfirmarSenha" class="fa fa-eye" aria-hidden="true"></i><br>
