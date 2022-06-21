@@ -348,7 +348,7 @@ function Pg() {
 			msgEntrar.textContent = "Login efetuado com sucesso, redirecionando..."
 			
 			setTimeout(()=>{
-				window.location.href = "../html/reserva.html"
+				window.location.href = "./reserva.html"
 			}, 5000)
 
 		} else {
