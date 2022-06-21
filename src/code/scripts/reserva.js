@@ -29,7 +29,7 @@ function functionOne(){
 
     if (validEmail && validarTel && validarCad && validarData){
         alert("Reservando...")
-        window.location.href = "../html/reservaConcluida.html"
+        window.location.href = "./reservaConcluida.html"
     } else{
         alert("Revise os dados...")
     }
@@ -62,7 +62,7 @@ function validarData (){
     var data = formReserva.data.value;
 
     if(!data == "") {
-        document.getElementById("data").innerHTML="<font color='green'>Certinho mané</font>";
+        document.getElementById("data").innerHTML="<font color='green'>Data escolhida</font>";
     }
     else{
         document.getElementById("data").innerHTML="<font color='red'>Qual a data da reserva?</font>";
