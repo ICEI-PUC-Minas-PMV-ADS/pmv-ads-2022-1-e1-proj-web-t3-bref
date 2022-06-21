@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/code/css/reset.css">
+    <link rel="stylesheet" href="./src/code/css/recuperar-senha.css">
+    <script defer src="./src/code/scripts/recuperar-senha.js"></script>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./src/code/bootstrap-css/bootstrap.min.css">
+    <!-- Footer e Header -->
+    <link rel="stylesheet" href="./src/code/css/footer.css">
+    <link rel="stylesheet" href="./src/code/css/header-bref.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- fa-eye -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body onload="startWindow()">
+    <div class="container-fluid">
+        <!-- NAV --> 
+        <div class="container-main">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" id="logo-bref" href="./index.html">BREF</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./fale-conosco.html">Fale Conosco</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="./entrar.html">Entrar/Cadastrar</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+          
+
+        <!-- Conteúdo principal -->
+            <div id="barColor">
+                <button class="changeFontsButtons" onclick="changeSizeAllItems(false);">Font -</button>
+                <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
+                <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
+            </div>
+
+            <main id="o-main">
+                <div id="items">
+                    <h1 id="bigBref" class=page-title>BREF</h1>
+                </div>
+
+
+                <div id="formEmail">
+                    <h2 id="recuperar-senha">Recuperar senha</h2><br>
+                    <label for="email"></label>
+                    <input type="email"
+                            id="inputEmail"
+                        placeholder="Informe seu email"><br>
+
+                    <input type="button" 
+                    id="btnEmailEnviado" 
+                    class="botoes" 
+                    value="Enviar"
+                    onclick="sendEmail();">
+                </div>
+
+                         
+                <div id="formPassword"> 
+                    <div id="redefinicaoSenha">
+                        <h2 id="redefinir-senha">Redefinir Senha</h2> 
+                        <label for="senha"></label>
+                           
+                        <div id="senhas">  
+                            <input id="firstPassword" 
+                                type="password"
+                                placeholder="Nova senha"><br><br>
+                            <input id="secondPassword"
+                                type="password" 
+                                placeholder="Confirme a senha"><br>
+                        </div>
+                        <input type="submit" 
+                            id="btnConfirmarNovaSenha"
+                            class="botoes"
+                            onclick="sendPassword()" 
+                            value="Enviar">
+                    </div>                                    
+                </div>
+
+                <div id="formPosRedefinicao">
+                    <p id="mensagem-email">Enviaremos um e-mail para redefinição de senha</p>
+                    <a id="possuiConta" href="./entrar.html">Não possui uma conta?</a>
+                </div> 
+            </main>
+
+            <!-- FOOTER -->
+            <div class="row" id="footer">
+                <div class="col-md-12">
+                <ul>
+                    <li><a id="logo-bref" href="./index.html">BREF</a></li> -->
+                    <li>
+                    <ul class="share">
+                        <a href="#"><li id="facebook-icon"></li></a>
+                        <a href="#"><li id="twitter-icon"></li></a>
+                        <a href="#"><li id="instagram-icon"></li></a>
+                    </ul> 
+                    </li>
+                    <li id="footer-links">
+
+                        <a href="./sobre-nos.html">Sobre nós</a><br>
+                        <span class="footer-ponto">&#9679;</span>
+                        <a href="./fale-conosco.html">Fale conosco</a><br>
+                        <span class="footer-ponto">&#9679;</span>
+                        <a href="./entrar.html">Entrar/Cadastrar</a><br>
+                        
+                
+                    </li>
+                    <li>
+                    <p id="footer-copyright">© 2022 Bref Company LTDA</p>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
