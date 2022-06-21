@@ -267,12 +267,13 @@ function Pg() {
 				 data = data_array[2]+"-"+data_array[1]+"-"+data_array[0]; // remonto a data no formato yyyy/MM/dd
 				}
 			
-			// comparo as datas e calculo a idade
+			// compara as datas e calcula a idade
 			var hoje = new Date();
 			var nasc  = new Date(data);
 			var idade = hoje.getFullYear() - nasc.getFullYear();
 			var m = hoje.getMonth() - nasc.getMonth();
-			if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())) idade--;
+			if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())) idade--
+			validData = true;
 			
 			
 			
