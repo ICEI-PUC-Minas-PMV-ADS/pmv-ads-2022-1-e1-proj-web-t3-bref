@@ -188,6 +188,10 @@ body {
     display: none;
 }
 
+#footer {
+    width: 101%;
+}
+
 @media screen and (max-width: 755px) {
 
     * {
