@@ -26,12 +26,29 @@ function validEmail(field) {
 }
 
 function functionOne(){
+    var email = document.querySelector(".email");
+    var telefone = document.querySelector(".telefone").value;
+    var cadeira = document.querySelector(".cadeira").value;
+    var data = document.querySelector(".data").value;
+    
 
-    if (validEmail && validarTel && validarCad && validarData){
-        alert("Reservando...")
-        window.location.href = "./reservaConcluida.html"
+     if ((usuario.length >=1) && 
+     (dominio.length >=3) && 
+     (usuario.search("@")==-1) && 
+     (dominio.search("@")==-1) && 
+     (usuario.search(" ")==-1) && 
+     (dominio.search(" ")==-1) && 
+     (dominio.search(".")!=-1) && 
+     (dominio.indexOf(".") >=1) && 
+     (dominio.lastIndexOf(".") < dominio.length - 1) && 
+     (email) &&  
+     (telefone) && 
+     (data) &&
+     (cadeira >=1)){
+        alert("Estamos realizando a sua reserva. Aguarde...")
+        window.location.href = "../html/reservaConcluida.html"
     } else{
-        alert("Revise os dados...")
+        alert("Por favor, revise os dados inseridos...");
     }
 }
 
@@ -62,7 +79,7 @@ function validarData (){
     var data = formReserva.data.value;
 
     if(!data == "") {
-        document.getElementById("data").innerHTML="<font color='green'>Data escolhida</font>";
+        document.getElementById("data").innerHTML="<font color='green'>Data válida</font>";
     }
     else{
         document.getElementById("data").innerHTML="<font color='red'>Qual a data da reserva?</font>";
