@@ -68,7 +68,7 @@ body {
 
 /* End zoom area */
 
-.header .logo{
+.header .logo {
     padding-left: 30px;
     padding-top: .3125rem;
     padding-bottom: .3125rem;
@@ -135,7 +135,7 @@ body {
     background-color: #FFC300;
 }
 
-.nav-items ul{
+.nav-items ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -143,7 +143,7 @@ body {
     padding: 6.4px 0;
 }
 
-.nav-items ul li{
+.nav-items ul li {
     float: none;
     display: flex;
     flex-direction: row;
@@ -155,28 +155,7 @@ body {
 .nav-items ul li a {
     padding-right: .5rem;
     padding-left: .5rem;
-    
-}
 
-/* BARRA DE PESQUISA */
-.input-with-icon-wrapper {
-    /* Foi usado para que o ícone do input de pesquisa pudesse ser posicionado da maneira correta. */
-    position: relative;
-    width: max-content;
-}
-
-.input-with-icon {
-    padding-right: 20px;
-}
-
-.input-icon {
-    /* Usa position absolute para que o ícone fique por cima do input de pesquisa, 
-    para dar a impressão que o ícone é do elemento input. */
-    position: absolute;
-    left: calc(100% - 20px); /* Posiciona o ícone da lupa ao canto esquerdo do input. */
-    /* Mantém o ícone centralizado, independentemente da altura do input */
-    top: calc(50% - 0.5em);
-    color: #483A20;
 }
 
 /* ESTILOS DOS BOTÕES PARA AUMENTAR E DIMINUIR FONTE */
@@ -221,6 +200,20 @@ body {
 .form {
     display: flex;
     flex-direction: column;
+}
+
+.input-with-output-container {
+    display: flex;
+}
+
+.input-with-output-container input {
+    flex-grow: 1;
+}
+
+.input-with-output-container output {
+    width: 15px;
+    padding-right: 10px;
+    font-size: 0.8em;
 }
 
 /* ESTILOS PARA ESPAÇAMENTOS */
@@ -315,12 +308,12 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 /* Footer */
-#footer{
+#footer {
     background-color: #483A20;
     padding: 15px;
 }
 
-#footer .col-md-12{
+#footer .col-md-12 {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -342,7 +335,7 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 0;
 }
 
-#footer ul li{
+#footer ul li {
     float: none;
     display: flex;
     flex-direction: column;
@@ -350,23 +343,23 @@ input[type="range"]::-webkit-slider-thumb {
     padding: 1px;
 }
 
-#footer ul li a{
+#footer ul li a {
     text-decoration: none;
     color: #FFC300;
 }
 
-#footer .share{
+#footer .share {
     padding-top: 10px;
 }
 
-#footer .share li{
+#footer .share li {
     float: none;
     display: inline-block;
     width: 34px;
     height: 34px;
 }
 
-#facebook-icon{
+#facebook-icon {
     background: url('../imgs/rodape/facebook.png') center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -374,7 +367,7 @@ input[type="range"]::-webkit-slider-thumb {
     -o-background-size: cover;
 }
 
-#twitter-icon{
+#twitter-icon {
     background: url('../imgs/rodape/twitter.png') center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -382,7 +375,7 @@ input[type="range"]::-webkit-slider-thumb {
     -o-background-size: cover;
 }
 
-#instagram-icon{
+#instagram-icon {
     background: url('../imgs/rodape/instagram.png') center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -406,7 +399,7 @@ input[type="range"]::-webkit-slider-thumb {
     padding: 0 8px;
 }
 
-#footer-copyright{
+#footer-copyright {
     color: #755f36;
     font-weight: bold;
 }

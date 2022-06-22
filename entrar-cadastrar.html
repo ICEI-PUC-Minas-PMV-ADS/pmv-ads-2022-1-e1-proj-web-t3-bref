@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<title>Entrar</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script defer type="text/javascript" src="./src/code/scripts/entrar-cadastrar.js"></script>
+		<link rel="stylesheet" href="./src/code/css/reset.css">
+		<link rel="stylesheet" href="./src/code/css/entrar-cadastrar.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap"
+		rel="stylesheet">
+		<!-- fa-eye -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="background">
+				<div id="retangulasso"></div>
+					<main id="conteudoMain">
+						<div id="conteudo-entrar">
+							<div id="tituloAbas">
+								<a href="/index.html"  id="bref">BREF</a>
+
+								<div class="links-abas">
+									<button id="abaEntrar" data-id="entrar" data-open>Entrar</button>
+									<button id="abaCadastrar" data-id="cadastrar">Cadastrar</button>
+								</div>
+							</div>
+							<div class="conteudo-abas">
+								<section id="entrar">
+									<div id="msgEntrar">
+									</div>
+									<input id="email" type="email" placeholder="Email"><br>
+									<input id="senha" type="password" placeholder="Senha"><br>
+									<i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+									<div id="footerEntrar">
+										<div id="testebotao">
+											<input type="submit" value="Entrar" id="btnEntrar" class="botoes"/>
+										</div>
+											<h3 id="termos-condicoes"> Para logar sua conta, é necessário aceitar <br> nossos Termos &
+											Condições.</h3>
+										<a href="./recuperar-senha.html" id="esqueceu-senha"><h3>Esqueceu a senha?</h3></a>
+									</div>
+								</section>
+								
+								<section id="cadastrar">
+									<div id="msgCadastro">
+									</div>
+										<label id="labelNome" for="nomeCadastro">Nome</label><br>
+										<input id="nomeCadastro" 
+											type="text"><br>
+
+									<label id="labelData" for="dataCadastro">Data de nascimento</label><br>
+										<input id="dataCadastro" maxlength="10" type="date"><br>
+
+									<label id="labelEmail" for="emailCadastro">Email</label><br>
+										<input id="emailCadastro" 
+											type="email"
+											onblur="validarEmail()" onfocus="redefinirMsg()"><br>
+
+									<label id="labelSenhaCadastro" for="senhaCadastro">Senha</label><br>	
+										<input id="senhaCadastro" 
+										type="password"><br>
+
+									<label id="labelConfirmarSenha" for="confirmarSenhaCadastro">Confirmar a senha</label><br>
+										<input id="confirmarSenhaCadastro" 
+											type="password"><br>
+
+									<i id="verSenhaCadastro" class="fa fa-eye" aria-hidden="true"></i><br>
+									<i id="verConfirmarSenha" class="fa fa-eye" aria-hidden="true"></i><br>
+
+									<div id="footerCadastrar">
+										<input type="button" value="Cadastrar" id="btnCadastrar" class="botoes"></input><br>
+										<h3 id="termos-condicoes"> Para cadastrar sua conta, é necessário aceitar <br> nossos Termos
+											& Condições.</h3>
+									</div>
+
+								</section>
+							</div>
+
+						</div>
+
+							<!-- <div id="retangulo">
+							</div>
+							<div id="retangulinho">
+							</div> -->
+
+					</main>	
+			</div>
+				<aside>
+					<div id="retangulao">
+				</aside>
+		</div>
+	</body>
+
+</html>

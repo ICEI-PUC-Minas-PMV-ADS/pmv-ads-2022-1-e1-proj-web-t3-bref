@@ -19,15 +19,20 @@ function start() {
     let tele = consoleStorage[0]['telephone'];
     let whatsapp = consoleStorage[0]['whatsapp'];
     let imgRest = consoleStorage[0]['image'];
+    let address = consoleStorage[0]['address']['city'] + ', ' + consoleStorage[0]['address']['state'] + ', ' + consoleStorage[0]['address']['street'] + ', nº ' + consoleStorage[0]['address']['number'];
 
     document.getElementById("restname").innerHTML = name;
     document.getElementById("type").innerHTML = `Tipo: ${type}`;
-    document.getElementById("avgPrice").innerHTML = `Média de Preço: ${avgPrice}`;
-    document.getElementById("capacity").innerHTML = `Capacidade: ${capacity}`;
-    document.getElementById("waitTime").innerHTML = `Tempo de Espera: ${waitTime}`;
+    document.getElementById("avgPrice").innerHTML = `Média de Preço: R$ ${avgPrice}`;
+    document.getElementById("capacity").innerHTML = `Capacidade: ${capacity} pessoas`;
+    document.getElementById("waitTime").innerHTML = `Tempo de Espera: ${waitTime} minutos`;
     document.getElementById("telephone").innerHTML = `Telefone: ${tele}`;
     document.getElementById("whatsapp").innerHTML = `Whatsapp: ${whatsapp}`;
-    document.getElementById("rest-img").src=`../imgs/${imgRest}`;
+    document.getElementById("address").innerHTML = `Endereço: ${address}`;
+    document.getElementById("rest-img").src=`./src/code/imgs/${imgRest}`;
+
+    // avaliacao url
+    document.getElementById("avaliacaoURL").setAttribute('href',`\avaliacao.html?name='${name}'`)
 }
 
 function main_plate() {
@@ -36,13 +41,15 @@ function main_plate() {
         let preco = consoleStorage[0]['infoRestaurant']['pratoPrincipal'][index]['price'];
         let timePrep = consoleStorage[0]['infoRestaurant']['pratoPrincipal'][index]['timePrep'];
         let classification = consoleStorage[0]['infoRestaurant']['pratoPrincipal'][index]['classfication'];
+        let imagePlate = consoleStorage[0]['infoRestaurant']['pratoPrincipal'][index]['plateImage'];
 
-        console.log(index);
+//        console.log(index);
 
         document.getElementById(`namePlate${index+1}`).innerHTML = plate;
         document.getElementById(`preco${index+1}`).innerHTML = `Preço: R$ ${preco}`;
         document.getElementById(`tempo${index+1}`).innerHTML = `Tempo de Preparo: ${timePrep} minutos`;
         document.getElementById(`classi${index+1}`).innerHTML = `Classificação: ${classification} Estrelas`;
+        document.getElementById(`item-img${index+1}`).src=`./src/code/imgs/${imagePlate}`;
     }
 }
 
@@ -52,13 +59,16 @@ function drinks() {
         let preco = consoleStorage[0]['infoRestaurant']['bebidas'][index]['price'];
         let timePrep = consoleStorage[0]['infoRestaurant']['bebidas'][index]['timePrep'];
         let classification = consoleStorage[0]['infoRestaurant']['bebidas'][index]['classfication'];
+        let imagePlate = consoleStorage[0]['infoRestaurant']['bebidas'][index]['plateImage'];
 
-        console.log(index);
+
+//        console.log(index);
 
         document.getElementById(`namePlate${index+1}`).innerHTML = plate;
         document.getElementById(`preco${index+1}`).innerHTML = `Preço: R$ ${preco}`;
         document.getElementById(`tempo${index+1}`).innerHTML = `Tempo de Preparo: ${timePrep} minutos`;
         document.getElementById(`classi${index+1}`).innerHTML = `Classificação: ${classification} Estrelas`;
+        document.getElementById(`item-img${index+1}`).src=`./src/code/imgs/${imagePlate}`;
     }
 }
 
@@ -68,17 +78,18 @@ function dessert() {
         let preco = consoleStorage[0]['infoRestaurant']['sobremesa'][index]['price'];
         let timePrep = consoleStorage[0]['infoRestaurant']['sobremesa'][index]['timePrep'];
         let classification = consoleStorage[0]['infoRestaurant']['sobremesa'][index]['classfication'];
+        let imagePlate = consoleStorage[0]['infoRestaurant']['sobremesa'][index]['plateImage'];
 
         document.getElementById(`namePlate${index+1}`).innerHTML = plate;
         document.getElementById(`preco${index+1}`).innerHTML = `Preço: R$ ${preco}`;
         document.getElementById(`tempo${index+1}`).innerHTML = `Tempo de Preparo: ${timePrep} minutos`;
         document.getElementById(`classi${index+1}`).innerHTML = `Classificação: ${classification} Estrelas`;
+        document.getElementById(`item-img${index+1}`).src=`./src/code/imgs/${imagePlate}`;
     }
 }
 
-
 // https://dev.to/ramonak/javascript-how-to-access-the-return-value-of-a-promise-object-1bck
-const readDB = fetch('../database/restaurants.json')
+const readDB = fetch('./src/code/database/restaurants.json')
     .then((response) => response.json())
     .then((database => {
         consoleStorage.push(database.restaurants[id-1]);

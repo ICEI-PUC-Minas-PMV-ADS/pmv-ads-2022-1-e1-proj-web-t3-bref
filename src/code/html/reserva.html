@@ -14,12 +14,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
-    <title>Criar Reserva</title>
+    <title>Criar reserva</title>
 </head>
   
 
 <body onload="startWindow()">
-    <div id="conteudoBody">
         <!-- NAV -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" id="logo-bref" href="../html/index.html">BREF</a>
@@ -33,7 +32,7 @@
                         <a class="nav-link" href="./fale-conosco.html">Fale Conosco</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./entrar.html">Entrar/Cadastrar</a>
+                        <a id="entrar/cadastrar" class="nav-link" href="./entrar.html">Entrar/Cadastrar</a>
                     </li>
                 </ul>
             </div>
@@ -43,59 +42,46 @@
             <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
             <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
         </div>
-
-
-        <div class="container">
-            <main>
-                <div id="conteudoMain">
-                    <h2 class="breff">BREF</h2>
-                    <!-- <img src="../imgs/IMG_6238 (1).png" alt="Logo Bref" /> -->
-                    <h3 class="reserva">Reserva</h3>
-
-                    <input class="l-inputs" type='text' placeholder="Número de contato"><br>
-                    <input class="l-inputs" type="email" name="email" id="email" onchange="validateFields()" placeholder="Email"><br>
-                    <div id="erro">
-                        <span class="error" id="email-required-error">Email é obrigatório</span>
-                    </div>
-                    <div id="erro">
-                        <span class="error" id="email-invalid-error">O email inserido é inválido</span>
-                    </div>
-                    <input class="l-inputs" type='number' placeholder="Quantidade de cadeiras"><br>
-                    <input class="l-inputs" type='datetime-local' placeholder="Data/Hora"><br>
-                    <a href="reservaConcluida.html" id="link">
-                        <input type="button" class="btnReservar" id="recover-button" value="Reservar">
-                    </a>
-                    <hr>
-                    <p id="msgComprovante">O comprovante das reservas será enviado para o seu e-mail</p>
+            <div id="container">
+                <div id="brefTwo">BREF</div>
+                <div id="titlePagina">Criar reserva</div>
+                <div class="totalInputs">
+                    <form name="formReserva">
+                        <input class="email" id="inputSt" type="email" name="email" onblur="validEmail(email)" placeholder="Email"><div id="email"></div>
+                        <input class="telefone" id="inputSt" type="tel" name="telefone" onblur="validarTel()" placeholder="Número de contato:"><div id="telefone"></div>
+                        <input class="cadeira" id="inputSt" type="number" name="cadeira" onblur="validarCad()" placeholder="Quantas cadeiras?"><div id="cadeira"></div>           
+                        <input class="data" id="inputSt" type="datetime-local" name="data" onblur="validarData()" placeholder="Qual o dia da reserva?:"><div id="data"></div>
+                    </form>
                 </div>
-            </main>
-        </div>
-
-        <!-- FOOTER -->
-        <div class="row" id="footer">
-            <div class="col-md-12">
-            <ul>
-                <li><a id="logo-bref" href="../html/index.html">BREF</a></li>
-                <li>
-                <ul class="share">
+                    
+                    <div id="msg" >As informações das reservas serão enviadas por email!</div>
+                    
+                        <input id="btnReserva" type="button" onclick="functionOne()" value="Reservar" >
+                        <!-- FOOTER -->
+                <div class="row" id="footer">
+                            <div class="col-md-12">
+                    <ul>
+                    <li><a id="logo-bref" href="../html/index.html">BREF</a></li>
+                    <li>
+                    <ul class="share">
                     <a href="#"><li id="facebook-icon"></li></a>
                     <a href="#"><li id="twitter-icon"></li></a>
                     <a href="#"><li id="instagram-icon"></li></a>
-                </ul>
-                </li>
-                <li id="footer-links">
-                    <a href="./sobre-nos.html">Sobre nós</a>
-                    <span class="footer-ponto">&#9679;</span>
-                    <a href="./fale-conosco.html">Fale conosco</a>
-                    <span class="footer-ponto">&#9679;</span>
-                    <a href="./entrar.html">Entrar/Cadastrar</a>
-                </li>
-                <li>
-                <p id="footer-copyright">© 2022 Bref Company LTDA</p>
-                </li>
-            </ul>
-            </div>
-        </div>
-    </div>
+                    </ul>
+                    </li>
+                        <li id="footer-links">
+                        <a href="./sobre-nos.html">Sobre nós</a>
+                        <span class="footer-ponto">&#9679;</span>
+                        <a href="./fale-conosco.html">Fale conosco</a>
+                        <span class="footer-ponto">&#9679;</span>
+                        <a href="./entrar.html">Entrar/Cadastrar</a>
+                        </li>
+                        <li>
+                        <p id="footer-copyright">© 2022 Bref Company LTDA</p>
+                    </div>
+                        </li>
+                    </ul>
+                    </div>
+            </div> 
 </body>
 </html>

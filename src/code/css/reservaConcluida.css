@@ -5,6 +5,10 @@
     font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 div.container-fluid {
     padding: 0;
 }
@@ -22,25 +26,30 @@ div.container-fluid {
 #link .btn {
     background-color: #483A20;
     color: white;
-    border-radius: 10px;
-    width: 100%;
+    border-radius: 4px;
+    width: 10em;
     font-size: 1em;
     border-color: transparent;
     padding: 10px;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 90px;
 }
 
-  .container {
-    background: white;
+  main {
+    background: #FFFFF4;
     font-family: 'Lato', sans-serif;
     text-align: center;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+
   } 
 
   img {
-    width: 9%;
-    margin-bottom: 3%;
+    width: 6%;
+    margin-bottom: 1%;
     margin-top: 2%;
+
   }
 
 /* Zoom area */
@@ -63,28 +72,42 @@ div.container-fluid {
 }
 
 .changeFontsButtons {
-    font-size: 1em;
-    background-color: #FFC300;
-    border: outset;
-    color: black;
-    font-weight: bold;
-    justify-content: flex-end;
+  font-size: 1em;
+  border: outset;
+  font-weight: bold;
+  justify-content: flex-end;
+  color: #483A20;
+  background-color: #FFC300;
+  border: none;
+}
+
+.changeFontsButtons:hover {
+  color: #FFFFF4;
+  background-color: #483A20;
 }
 
 /* end zoom area */
 
   p {
-    margin: 9px 0px 9px 0px;  
-    font-size: 2em;
+    margin-bottom: 9em; 
+    font-size: 1.3em;
     color: #483a20;
-    font-family: 'lato', sans-serif;
-    font-weight: bold
   }
 
+  #reservaConc{
+    color: #483a20;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
 #footer-copyright {
     font-size: 1em;
 }
 /* footer margin */
 #footer-container {
     margin-bottom: 15px;
+}
+
+#reservaConc{
+  font-weight: bold;
+  color: #483A20;
 }
