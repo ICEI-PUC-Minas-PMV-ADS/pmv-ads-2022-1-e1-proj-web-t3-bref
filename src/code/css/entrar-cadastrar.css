@@ -431,7 +431,13 @@ button.active::after {
 
 /* Teste cel ruim da thaiça */
 @media (max-width: 428px){
-	.fa-eye{
-		left: 14em;
+	#verSenha{
+		left: 17em;
+	}
+
+	#verSenhaCadastro,
+	#verConfirmarSenha {
+		position: relative;
+		left: 17em;
 	}
 }
