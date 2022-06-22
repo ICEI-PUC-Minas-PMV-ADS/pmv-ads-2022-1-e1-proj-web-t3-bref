@@ -210,7 +210,7 @@ function Pg() {
 		}
 
 		/* Validação Nome */
-		InputNome.addEventListener("change", ()=>{
+		InputNome.addEventListener("keyup", ()=>{
 
 			if(InputNome.value.length <= 7){
 				LabelNome.textContent = "Nome * Insira seu nome e sobrenome"
@@ -232,7 +232,7 @@ function Pg() {
 		})
 
 		/* Validação Email */
-		InputEmailCadastro.addEventListener("change", ()=>{
+		InputEmailCadastro.addEventListener("keyup", ()=>{
 
 			if(!InputEmailCadastro.checkValidity()){
 				LabelEmail.textContent = "Email * Este email não é válido"
@@ -249,7 +249,7 @@ function Pg() {
 		})
 
 		/* Validação Senha */
-		InputSenhaCadastro.addEventListener("change", ()=>{
+		InputSenhaCadastro.addEventListener("keyup", ()=>{
 
 			if(InputSenhaCadastro.value.length <= 5){
 				LabelSenhaCadastro.textContent = "Senha * Insira no mínimo 6 dígitos"
@@ -266,7 +266,7 @@ function Pg() {
 
 		/* Validação Confirmar Senha */
 
-		InputData.addEventListener("change", () =>{
+		InputData.addEventListener("keyup", () =>{
 			validaData();
 		})
 
