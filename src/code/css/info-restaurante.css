@@ -122,6 +122,16 @@ body {
     border-radius: 8px;
 }
 
+#item-img1, #item-img2, #item-img3 {
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+    margin-left: -50px;
+} 
+
 #menuType {
     font-size: 3vh;
     background-color: #483A20;
@@ -205,6 +215,12 @@ body {
         width: 0px;
         height: 0px;
     }
+
+    #item-img1, #item-img2, #item-img3 {
+        display: none;
+        height: 0px;
+        width: 0px;
+    } 
 
     #restname {
         margin-top: -55px;
