@@ -59,7 +59,7 @@ function sendAvaliacao() {
     inputExperiencia.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
 
     alert("Avalia\u00e7\u00e1o enviada, obrigado por nos ajudar a melhorar cada dia mais!");
-    window.location.href = "../html/index.html";
+    window.location.href = "index.html";
 }
 
 function validateNomeRestaurante() {
