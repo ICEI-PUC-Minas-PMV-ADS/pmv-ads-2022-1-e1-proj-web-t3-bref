@@ -4,6 +4,7 @@ function Pg() {
 	const BtnConfirm = document.querySelector("#verConfirmarSenha")
 	const BtnSenhaCadastro = document.querySelector("#verSenhaCadastro")
 	const BtnEntrar = document.querySelector("#btnEntrar")
+	
 	/* Inputs */
 	const InputSenha = document.querySelector("#senha")
 	const InputEmail = document.querySelector("#email")
@@ -12,23 +13,36 @@ function Pg() {
 	const InputEmailCadastro = document.querySelector("#emailCadastro")
 	const InputSenhaCadastro = document.querySelector("#senhaCadastro")
 	const InputConfirmarSenha = document.querySelector("#confirmarSenhaCadastro")
+	
 	/* Validações */
 	var validNome = false
 	var validData = false
 	var validEmail = false
 	var validSenhaCadastro = false
 	var validConfirmarSenha = false
+	
 	/* Labels */
 	const LabelNome	= document.querySelector("#labelNome")
 	const LabelData	= document.querySelector("#labelData")
 	const LabelEmail	= document.querySelector("#labelEmail")
 	const LabelSenhaCadastro	= document.querySelector("#labelSenhaCadastro")
 	const LabelConfirmarSenha	= document.querySelector("#labelConfirmarSenha")
+	
 	/* Mensagens */
 	const msgEntrar = document.querySelector("#msgEntrar")		
 	const msgCadastro = document.querySelector("#msgCadastro")
-	/* Abas */
-	const main = document.querySelector("#conteudoMain")
+	
+	/* LocalStorage */
+	let	listaUserP =
+				{
+					"nomeCad": "Lucas Teste",
+					"dataCad": "10-11-1997",
+					"emailCad": "luketas@gmail.com",
+					"senhaCad": "654321"
+				}
+		localStorage.setItem("listaUserP", JSON.stringify(listaUserP))
+		
+			/* console.log(JSON.parse(JSON.stringify(listaUser))) */
 
 	function NavegacaoAbas() {
     
@@ -321,7 +335,6 @@ function Pg() {
 		let listaUser = []
 
 		let contaValid = {
-			nome: '',
 			email: '',
 			senha: ''
 		}
@@ -369,7 +382,8 @@ function Pg() {
 
 	function cadastrar() {
 		if(validNome && validData && validEmail && validSenhaCadastro && validConfirmarSenha){
-			let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]")
+		
+		let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]") 
 
 			listaUser.push(
 				{
@@ -390,7 +404,7 @@ function Pg() {
 				}, 3000)
 
 		} else {
-			msgCadastro.textContent = "Preencha todos os campos para cadastrar"
+			msgCadastro.textContent = "Preencha todos os campos corretamente para cadastrar"
 			msgCadastro.setAttribute("style" , "display: block; text-shadow: 0px 0px 1px crimson; color: crimson")
 		}
 	}
