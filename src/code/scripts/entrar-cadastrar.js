@@ -338,6 +338,14 @@ function Pg() {
 			}
 		})
 
+		if(listaUser.value == null){
+			InputEmail.setAttribute ("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+			InputSenha.setAttribute ("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
+			msgEntrar.setAttribute ("style", "display: block; text-shadow: 0px 0px 1px crimson; color: crimson")
+			msgEntrar.textContent = "Email ou senha incorretos."
+			InputEmail.focus()
+		}
+
 		if (email.value == contaValid.email && senha.value == contaValid.senha){
 			InputEmail.setAttribute ("style", "box-shadow: 0px 0px 3px green; border-color: green")
 			InputSenha.setAttribute ("style", "box-shadow: 0px 0px 3px green; border-color: green")
@@ -390,7 +398,7 @@ function Pg() {
 				}, 3000)
 
 		} else {
-			msgCadastro.textContent = "Preencha todos os campos para cadastrar"
+			msgCadastro.textContent = "Preencha todos os campos corretamente para cadastrar"
 			msgCadastro.setAttribute("style" , "display: block; text-shadow: 0px 0px 1px crimson; color: crimson")
 		}
 	}
