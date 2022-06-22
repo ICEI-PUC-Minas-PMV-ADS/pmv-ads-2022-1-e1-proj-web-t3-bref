@@ -428,16 +428,3 @@ button.active::after {
 		transform: scale(0.7);
 	};
 }
-
-/* Teste cel ruim da thaiça */
-@media (max-width: 428px){
-	#verSenha{
-		left: 17em;
-	}
-
-	#verSenhaCadastro,
-	#verConfirmarSenha {
-		position: relative;
-		left: 17em;
-	}
-}
