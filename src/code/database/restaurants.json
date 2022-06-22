@@ -310,21 +310,21 @@
                 "pratoPrincipal": [
                     {
                         "nomePrato": "Pastel de Frango",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate25.jpg",
                         "price": 12,
                         "timePrep": 20,
                         "classfication": 5
                     },
                     {
                         "nomePrato": "Pastel de Carne",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate26.jpg",
                         "price": 15,
                         "timePrep": 12,
                         "classfication": 4
                     },
                     {
                         "nomePrato": "Pastel de Queijo",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate27.jpg",
                         "price": 10,
                         "timePrep": 5,
                         "classfication": 3
@@ -340,7 +340,7 @@
                     },
                     {
                         "nomePrato": "Sprite",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate28.jpg",
                         "price": 10,
                         "timePrep": 0,
                         "classfication": 4
@@ -356,22 +356,22 @@
                 "sobremesa": [
                     {
                         "nomePrato": "Pastel Doce de Banana",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate29.jpg",
                         "price": 20,
                         "timePrep": 0,
                         "classfication": 5
                     },
                     {
                         "nomePrato": "Pastel Doce de Queijo com Goiabada",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate30.jpg",
                         "price": 1,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
-                        "nomePrato": "Sorvete",
-                        "plateImage": "plate.jpg",
-                        "price": 5,
+                        "nomePrato": "Pastel Sorvete",
+                        "plateImage": "plate31.jpg",
+                        "price": 25,
                         "timePrep": 0,
                         "classfication": 1
                     }
@@ -405,21 +405,21 @@
                 "pratoPrincipal": [
                     {
                         "nomePrato": "Combo Pequeno (3 ingredientes)",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate32.jpg",
                         "price": 15,
                         "timePrep": 20,
                         "classfication": 5
                     },
                     {
                         "nomePrato": "Combo Médio (5 ingredientes)",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate33.jpg",
                         "price": 100,
                         "timePrep": 12,
                         "classfication": 4
                     },
                     {
                         "nomePrato": "Combo Grande (7 ingredientes)",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate34.jpg",
                         "price": 50,
                         "timePrep": 5,
                         "classfication": 3
@@ -435,14 +435,14 @@
                     },
                     {
                         "nomePrato": "Sprite",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate28.jpg",
                         "price": 10,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
                         "nomePrato": "Pepsi",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate35.jpg",
                         "price": 5,
                         "timePrep": 0,
                         "classfication": 5
@@ -451,21 +451,21 @@
                 "sobremesa": [
                     {
                         "nomePrato": "Sorvete",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate36.jpg",
                         "price": 50,
                         "timePrep": 0,
                         "classfication": 5
                     },
                     {
                         "nomePrato": "Bala Doce",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate37.jpg",
                         "price": 1,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
                         "nomePrato": "Quebra Queixo",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate38.jpg",
                         "price": 5,
                         "timePrep": 0,
                         "classfication": 1
@@ -499,21 +499,21 @@
                 "pratoPrincipal": [
                     {
                         "nomePrato": "Uramaki",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate39.jpg",
                         "price": 150,
                         "timePrep": 20,
                         "classfication": 5
                     },
                     {
                         "nomePrato": "Sashimi (5 peças)",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate40.jpg",
                         "price": 100,
                         "timePrep": 12,
                         "classfication": 4
                     },
                     {
                         "nomePrato": "Temaki",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate41.jpg",
                         "price": 50,
                         "timePrep": 5,
                         "classfication": 3
@@ -529,7 +529,7 @@
                     },
                     {
                         "nomePrato": "Pepsi",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate35.jpg",
                         "price": 10,
                         "timePrep": 0,
                         "classfication": 4
@@ -545,21 +545,21 @@
                 "sobremesa": [
                     {
                         "nomePrato": "Sorvete",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate42.jpg",
                         "price": 50,
                         "timePrep": 0,
                         "classfication": 5
                     },
                     {
                         "nomePrato": "Torta Belga",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate43.jpg",
                         "price": 1,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
                         "nomePrato": "Doce Japonês",
-                        "plateImage": "plate.jpg",
+                        "plateImage": "plate44.jpg",
                         "price": 5,
                         "timePrep": 0,
                         "classfication": 1
