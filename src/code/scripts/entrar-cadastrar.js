@@ -326,9 +326,6 @@ function Pg() {
 			senha: ''
 		}
 
-		let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
-		localStorage.setItem("token", token)
-
 		listaUser = JSON.parse(localStorage.getItem("listaUser"))
 		
 		listaUser.forEach ((item) => {
@@ -347,9 +344,12 @@ function Pg() {
 			msgEntrar.setAttribute ("style", "display: block; text-shadow: 0px 0px 1px green; color: green")
 			msgEntrar.textContent = "Login efetuado com sucesso, redirecionando..."
 			
+			let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
+			localStorage.setItem("token", token)
+			
 			setTimeout(()=>{
 				window.location.href = "./reserva.html"
-			}, 5000)
+			}, 3000)
 
 		} else {
 				InputEmail.setAttribute ("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
@@ -387,7 +387,7 @@ function Pg() {
 				
 				setTimeout(()=>{
 					window.location.href = "./entrar-cadastrar.html"
-				}, 5000)
+				}, 3000)
 
 		} else {
 			msgCadastro.textContent = "Preencha todos os campos para cadastrar"
