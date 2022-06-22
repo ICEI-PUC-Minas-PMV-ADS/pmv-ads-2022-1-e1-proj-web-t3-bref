@@ -18,12 +18,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
     <!-- fa-eye -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
 </head>
 
@@ -44,7 +44,7 @@
                         <a class="nav-link" href="./fale-conosco.html">Fale Conosco</a>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="./entrar.html">Entrar/Cadastrar</a>
+                        <a class="nav-link" href="/entrar-cadastrar.html">Entrar/Cadastrar</a>
                     </li>
                   </ul>
                 </div>
@@ -76,6 +76,8 @@
                     class="botoes" 
                     value="Enviar"
                     onclick="sendEmail();">
+                    <p id="mensagem-email">Enviaremos um e-mail para redefinição de senha</p>
+                    <a id="possuiConta" href="entrar-cadastrar.html">Não possui uma conta?</a>
                 </div>
 
                          
@@ -91,6 +93,8 @@
                             <input id="secondPassword"
                                 type="password" 
                                 placeholder="Confirme a senha"><br>
+                <i id="togglePassword" class="far fa-eye" aria-hidden="true"></i><br>
+                <i id="secondtogglePassword" class="far fa-eye" aria-hidden="true"></i><br>
                         </div>
                         <input type="submit" 
                             id="btnConfirmarNovaSenha"
@@ -99,10 +103,11 @@
                             value="Enviar">
                     </div>                                    
                 </div>
-
+                
+                
+                
                 <div id="formPosRedefinicao">
-                    <p id="mensagem-email">Enviaremos um e-mail para redefinição de senha</p>
-                    <a id="possuiConta" href="./entrar.html">Não possui uma conta?</a>
+                    
                 </div> 
             </main>
 
@@ -110,7 +115,7 @@
             <div class="row" id="footer">
                 <div class="col-md-12">
                 <ul>
-                    <li><a id="logo-bref" href="../html/index.html">BREF</a></li> -->
+                    <li><a id="logo-bref" href="../html/index.html">BREF</a></li> 
                     <li>
                     <ul class="share">
                         <a href="#"><li id="facebook-icon"></li></a>
@@ -124,7 +129,7 @@
                         <span class="footer-ponto">&#9679;</span>
                         <a href="./fale-conosco.html">Fale conosco</a><br>
                         <span class="footer-ponto">&#9679;</span>
-                        <a href="./entrar.html">Entrar/Cadastrar</a><br>
+                        <a href="/entrar-cadastrar.html">Entrar/Cadastrar</a><br>
                         
                 
                     </li>
