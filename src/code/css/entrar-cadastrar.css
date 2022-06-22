@@ -428,3 +428,10 @@ button.active::after {
 		transform: scale(0.7);
 	};
 }
+
+/* Teste cel ruim da thaiça */
+@media (max-width: 428px){
+	.fa-eye{
+		left: 14em;
+	}
+}
