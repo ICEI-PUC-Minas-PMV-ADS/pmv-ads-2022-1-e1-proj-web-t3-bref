@@ -41,6 +41,7 @@ function main_plate() {
         let preco = consoleStorage[0]['infoRestaurant']['pratoPrincipal'][index]['price'];
         let timePrep = consoleStorage[0]['infoRestaurant']['pratoPrincipal'][index]['timePrep'];
         let classification = consoleStorage[0]['infoRestaurant']['pratoPrincipal'][index]['classfication'];
+        let imagePlate = consoleStorage[0]['infoRestaurant']['pratoPrincipal'][index]['plateImage'];
 
 //        console.log(index);
 
@@ -48,6 +49,7 @@ function main_plate() {
         document.getElementById(`preco${index+1}`).innerHTML = `Preço: R$ ${preco}`;
         document.getElementById(`tempo${index+1}`).innerHTML = `Tempo de Preparo: ${timePrep} minutos`;
         document.getElementById(`classi${index+1}`).innerHTML = `Classificação: ${classification} Estrelas`;
+        document.getElementById(`item-img${index+1}`).src=`./src/code/imgs/${imagePlate}`;
     }
 }
 
@@ -57,6 +59,8 @@ function drinks() {
         let preco = consoleStorage[0]['infoRestaurant']['bebidas'][index]['price'];
         let timePrep = consoleStorage[0]['infoRestaurant']['bebidas'][index]['timePrep'];
         let classification = consoleStorage[0]['infoRestaurant']['bebidas'][index]['classfication'];
+        let imagePlate = consoleStorage[0]['infoRestaurant']['bebidas'][index]['plateImage'];
+
 
 //        console.log(index);
 
@@ -64,6 +68,7 @@ function drinks() {
         document.getElementById(`preco${index+1}`).innerHTML = `Preço: R$ ${preco}`;
         document.getElementById(`tempo${index+1}`).innerHTML = `Tempo de Preparo: ${timePrep} minutos`;
         document.getElementById(`classi${index+1}`).innerHTML = `Classificação: ${classification} Estrelas`;
+        document.getElementById(`item-img${index+1}`).src=`./src/code/imgs/${imagePlate}`;
     }
 }
 
@@ -73,11 +78,13 @@ function dessert() {
         let preco = consoleStorage[0]['infoRestaurant']['sobremesa'][index]['price'];
         let timePrep = consoleStorage[0]['infoRestaurant']['sobremesa'][index]['timePrep'];
         let classification = consoleStorage[0]['infoRestaurant']['sobremesa'][index]['classfication'];
+        let imagePlate = consoleStorage[0]['infoRestaurant']['sobremesa'][index]['plateImage'];
 
         document.getElementById(`namePlate${index+1}`).innerHTML = plate;
         document.getElementById(`preco${index+1}`).innerHTML = `Preço: R$ ${preco}`;
         document.getElementById(`tempo${index+1}`).innerHTML = `Tempo de Preparo: ${timePrep} minutos`;
         document.getElementById(`classi${index+1}`).innerHTML = `Classificação: ${classification} Estrelas`;
+        document.getElementById(`item-img${index+1}`).src=`./src/code/imgs/${imagePlate}`;
     }
 }
 
@@ -96,5 +103,4 @@ const readDB = fetch('./src/code/database/restaurants.json')
 // the restaurant information is acessable to consoleStorage[0]
 window.onload = function() {
     readDB;
-    console.log('teste')
 }
