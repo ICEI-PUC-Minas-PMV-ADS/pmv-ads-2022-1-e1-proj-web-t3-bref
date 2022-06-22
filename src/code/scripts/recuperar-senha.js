@@ -20,7 +20,7 @@ function mostrarPosRedefinicao() {
     formPosRedefinicao.style.display = 'block';
     formPassword.style.display = "none";
     formEmail.style.display = "none";
-    window.location.href = "./entrar.html"
+    window.location.href = "entrar-cadastrar.html"
 }
 
 /* PLACEHOLDER VERMELHO E COM BORDA QUANDO EMAIL ESTÁ ERRADO */
@@ -28,6 +28,8 @@ function mostrarPosRedefinicao() {
 const inputEmail = document.getElementById('inputEmail');
 const firstPassword = document.getElementById('firstPassword');
 const secondPassword = document.getElementById('secondPassword');
+const BtnConfirm = document.querySelector("#verfirstPassword");
+const BtnNovaSenha = document.querySelector("#versecondPassword");
 
 function sendEmail() {
 
@@ -57,13 +59,43 @@ function sendPassword() {
         firstPassword.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
         secondPassword.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson");
         return;
+      } else {
+        firstPassword.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green");
+        secondPassword.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green");
     }
+      
+    
 
     inputEmail.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: green");
 
     alert("Senha redefinida!");
     mostrarPosRedefinicao();
 }
+
+const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('#firstPassword');
+
+togglePassword.addEventListener('click', function (e) {
+  const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+  password.setAttribute('type', type);
+  this.classList.toggle('fa-eye-slash');
+});
+
+const secondtogglePassword = document.querySelector('#secondtogglePassword');
+const secondpassword = document.querySelector('#secondPassword');
+
+secondtogglePassword.addEventListener('click', function (e) {
+    const type = secondPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+    secondPassword.setAttribute('type', type);
+    this.classList.toggle('fa-eye-slash');
+});
+
+
+
+
+
+
+
 
 function validatePassword() {
     if (firstPassword.value != secondPassword.value) {

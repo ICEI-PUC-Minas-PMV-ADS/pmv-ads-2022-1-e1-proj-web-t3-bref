@@ -121,7 +121,6 @@ header {
 
 input {
     width: 20em;
-    margin: 5px;
     padding: 6px;
     border-radius: 4px;
     text-indent: 0.1rem;
@@ -131,21 +130,20 @@ input {
     border-style: solid;
 }
 
-.fa-eye {
-	cursor: pointer;
+#togglePassword {
+    cursor: pointer;
 	color: #483A20;
+    position: relative;
+    left: 8.5em;
+    bottom: 5.9em;
 }
 
-#verSenha {
+#secondtogglePassword{
+    cursor: pointer;
+	color: #483A20;
     position: relative;
-    left: 55.5em;
-    bottom: 23.4em;
-}
-
-#verConfirmarSenha{
-    position: relative;
-    left: 55.5em;
-    bottom: 21em;
+    left: 8.5em;
+    bottom: 3.5em;
 }
 
 
@@ -157,7 +155,8 @@ input:invalid {
     border-color: crimson;
     box-shadow: 0px 0px 3px crimson;
 }
-  
+
+
 input:focus {
     outline:none;
 }
@@ -180,10 +179,22 @@ input:focus:invalid {
 	transform: scale(1.01);
 }
 
-#btnEmailEnviado, #btnConfirmarNovaSenha {
+#btnEmailEnviado {
     border-radius: 4px;
     border: 0px;
     margin-top: 15px;
+    margin-bottom: 20px;
+    width: 262px;
+    padding: 6px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s all;
+}
+
+#btnConfirmarNovaSenha {
+    border-radius: 4px;
+    border: 0px;
+    margin-top: -45px;
     margin-bottom: 20px;
     width: 262px;
     padding: 6px;
@@ -225,34 +236,7 @@ input:focus:invalid {
 
 #footer-links {
     justify-content: space-between;
-    padding-left: 2rem;
-    padding-right: 5rem;
-    
 }
-
-/* .form-group {
-    margin:7px auto;
-}
-  
-
-
-#footer {
-    height: 2em;
-    background: #FFC300;
-    bottom: 0px;
-}
-
-#footer-links {
-    justify-content: space-between;
-    padding-left: 2rem;
-    padding-right: 5rem;
-    
-}
-
-#footer-copyright {
-    justify-content: center;
-    padding-left: 1rem;
-} */
 
 
 
