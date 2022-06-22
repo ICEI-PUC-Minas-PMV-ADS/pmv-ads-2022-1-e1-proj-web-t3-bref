@@ -111,6 +111,7 @@ header {
     background-color: #FFFFF4;  
     color: #483A20;
     text-align: center;
+    margin-bottom: -95px;
     font-family: 'Lato', sans-serif;
     height: 76vh;
 }
@@ -228,6 +229,19 @@ input:focus:invalid {
     color: crimson;
     height: 5px;
     text-decoration: none;
+}
+
+#NPC {
+    font-weight: bold;
+    font-size: 1.14em;
+    
+}
+
+.bar-color{
+    height: 2em;
+    background-color: #FFC300;
+    display: flex;
+    flex-direction: row;
 }
 
 #possuiConta:hover{
