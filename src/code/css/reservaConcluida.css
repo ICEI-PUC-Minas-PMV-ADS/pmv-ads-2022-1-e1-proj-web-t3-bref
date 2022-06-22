@@ -5,6 +5,10 @@
     font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 div.container-fluid {
     padding: 0;
 }
@@ -23,24 +27,29 @@ div.container-fluid {
     background-color: #483A20;
     color: white;
     border-radius: 4px;
-    width: 20em;
+    width: 10em;
     font-size: 1em;
     border-color: transparent;
     padding: 10px;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 90px;
 }
 
-  .container {
-    background: white;
+  main {
+    background: #FFFFF4;
     font-family: 'Lato', sans-serif;
     text-align: center;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+
   } 
 
   img {
     width: 6%;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
     margin-top: 2%;
+
   }
 
 /* Zoom area */
@@ -80,15 +89,15 @@ div.container-fluid {
 /* end zoom area */
 
   p {
-    margin: 9px 0px 9px 0px;  
+    margin-bottom: 9em; 
     font-size: 1.3em;
     color: #483a20;
-    font-weight: bold
   }
 
   #reservaConc{
     color: #483a20;
     font-weight: bold;
+    margin-bottom: 30px;
   }
 #footer-copyright {
     font-size: 1em;

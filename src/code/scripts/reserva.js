@@ -1,7 +1,7 @@
 /* SABER SE ESTÁ LOGADO OU NÃO */
 if(localStorage.getItem("token") == null){
 	alert("Para acessar esta página, você precisa entrar em uma conta.")
-	window.location.href = "../html/entrar.html"
+	window.location.href = "./entrar-cadastrar.html"
 	document.getElementById("abaCadastrar").click();
 }
 
@@ -26,12 +26,29 @@ function validEmail(field) {
 }
 
 function functionOne(){
+    var email = document.querySelector(".email");
+    var telefone = document.querySelector(".telefone").value;
+    var cadeira = document.querySelector(".cadeira").value;
+    var data = document.querySelector(".data").value;
+    
 
-    if (validEmail && validarTel && validarCad && validarData){
-        alert("Reservando...")
+     if ((usuario.length >=1) && 
+     (dominio.length >=3) && 
+     (usuario.search("@")==-1) && 
+     (dominio.search("@")==-1) && 
+     (usuario.search(" ")==-1) && 
+     (dominio.search(" ")==-1) && 
+     (dominio.search(".")!=-1) && 
+     (dominio.indexOf(".") >=1) && 
+     (dominio.lastIndexOf(".") < dominio.length - 1) && 
+     (email) &&  
+     (telefone) && 
+     (data) &&
+     (cadeira >=1)){
+        alert("Estamos realizando a sua reserva. Aguarde...")
         window.location.href = "../html/reservaConcluida.html"
     } else{
-        alert("Revise os dados...")
+        alert("Por favor, revise os dados inseridos...");
     }
 }
 

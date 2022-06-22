@@ -28,7 +28,7 @@ function configureButtonClicks() {
 
 async function getRestaurantsFromDatabase() {
     console.log("Chamou a função getRestaurantsFromDatabase");
-    const response = await fetch("../database/restaurants.json");
+    const response = await fetch("src/code/database/restaurants.json");
     const restaurantsDatabaseJson = await response.json();
     console.log(restaurantsDatabaseJson);
     return restaurantsDatabaseJson.restaurants;
@@ -159,7 +159,7 @@ function restaurantCardHtml(restaurant) {
         `<div class="card" onclick="openPage('info-restaurante.html?id=${restaurant.id}')">
 
         <!-- Imagem do local. -->
-        <img class="card-image" src="../imgs/${restaurant.image}" alt="${restaurant.name}">
+        <img class="card-image" src="src/code/imgs/${restaurant.image}" alt="${restaurant.name}">
 
         <!--  Informações principais do restaurante. -->
         <div class="card-info-group">
