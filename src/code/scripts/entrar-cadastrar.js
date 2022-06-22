@@ -4,6 +4,7 @@ function Pg() {
 	const BtnConfirm = document.querySelector("#verConfirmarSenha")
 	const BtnSenhaCadastro = document.querySelector("#verSenhaCadastro")
 	const BtnEntrar = document.querySelector("#btnEntrar")
+	
 	/* Inputs */
 	const InputSenha = document.querySelector("#senha")
 	const InputEmail = document.querySelector("#email")
@@ -12,23 +13,36 @@ function Pg() {
 	const InputEmailCadastro = document.querySelector("#emailCadastro")
 	const InputSenhaCadastro = document.querySelector("#senhaCadastro")
 	const InputConfirmarSenha = document.querySelector("#confirmarSenhaCadastro")
+	
 	/* Validações */
 	var validNome = false
 	var validData = false
 	var validEmail = false
 	var validSenhaCadastro = false
 	var validConfirmarSenha = false
+	
 	/* Labels */
 	const LabelNome	= document.querySelector("#labelNome")
 	const LabelData	= document.querySelector("#labelData")
 	const LabelEmail	= document.querySelector("#labelEmail")
 	const LabelSenhaCadastro	= document.querySelector("#labelSenhaCadastro")
 	const LabelConfirmarSenha	= document.querySelector("#labelConfirmarSenha")
+	
 	/* Mensagens */
 	const msgEntrar = document.querySelector("#msgEntrar")		
 	const msgCadastro = document.querySelector("#msgCadastro")
-	/* Abas */
-	const main = document.querySelector("#conteudoMain")
+	
+	/* LocalStorage */
+	let	listaUserP =
+				{
+					"nomeCad": "Lucas Teste",
+					"dataCad": "10-11-1997",
+					"emailCad": "luketas@gmail.com",
+					"senhaCad": "654321"
+				}
+		localStorage.setItem("listaUserP", JSON.stringify(listaUserP))
+		
+			/* console.log(JSON.parse(JSON.stringify(listaUser))) */
 
 	function NavegacaoAbas() {
     
@@ -196,7 +210,7 @@ function Pg() {
 		}
 
 		/* Validação Nome */
-		InputNome.addEventListener("keyup", ()=>{
+		InputNome.addEventListener("change", ()=>{
 
 			if(InputNome.value.length <= 7){
 				LabelNome.textContent = "Nome * Insira seu nome e sobrenome"
@@ -218,7 +232,7 @@ function Pg() {
 		})
 
 		/* Validação Email */
-		InputEmailCadastro.addEventListener("keyup", ()=>{
+		InputEmailCadastro.addEventListener("change", ()=>{
 
 			if(!InputEmailCadastro.checkValidity()){
 				LabelEmail.textContent = "Email * Este email não é válido"
@@ -235,7 +249,7 @@ function Pg() {
 		})
 
 		/* Validação Senha */
-		InputSenhaCadastro.addEventListener("keyup", ()=>{
+		InputSenhaCadastro.addEventListener("change", ()=>{
 
 			if(InputSenhaCadastro.value.length <= 5){
 				LabelSenhaCadastro.textContent = "Senha * Insira no mínimo 6 dígitos"
@@ -252,7 +266,7 @@ function Pg() {
 
 		/* Validação Confirmar Senha */
 
-		InputData.addEventListener("keyup", () =>{
+		InputData.addEventListener("change", () =>{
 			validaData();
 		})
 
@@ -321,7 +335,6 @@ function Pg() {
 		let listaUser = []
 
 		let contaValid = {
-			nome: '',
 			email: '',
 			senha: ''
 		}
@@ -337,14 +350,6 @@ function Pg() {
 				}
 			}
 		})
-
-		if(listaUser.value == null){
-			InputEmail.setAttribute ("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
-			InputSenha.setAttribute ("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
-			msgEntrar.setAttribute ("style", "display: block; text-shadow: 0px 0px 1px crimson; color: crimson")
-			msgEntrar.textContent = "Email ou senha incorretos."
-			InputEmail.focus()
-		}
 
 		if (email.value == contaValid.email && senha.value == contaValid.senha){
 			InputEmail.setAttribute ("style", "box-shadow: 0px 0px 3px green; border-color: green")
@@ -377,7 +382,8 @@ function Pg() {
 
 	function cadastrar() {
 		if(validNome && validData && validEmail && validSenhaCadastro && validConfirmarSenha){
-			let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]")
+		
+		let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]") 
 
 			listaUser.push(
 				{
