@@ -201,6 +201,17 @@ header {
     text-decoration: none;
 }
 
+.form-control{
+    width: 60%!important;
+}
+@media(min-width: 576px){
+.form-control{
+    width: 360px!important;
+}
+}
+
+
+
 /* logo */
 #bref {
     text-align: center;
