@@ -30,9 +30,10 @@ Pode-se considerar como objetivos específicos:
 
 ## Instruções de utilização
 
-* Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
-* Descompacte o arquivo em uma pasta específica;
-* Abra a pasta descompactada
+* Acesse o site https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-bref/
+* Para pesquisar um restaurante, digite o nome na barra de busca e clique em pesquisar
+* Para reservar, entre na informação de algum restaurante e clique em reservar
+* Você deve estar logado para ir à página de reserva. Se não tiver cadastro, cadastre-se e faça login. 
 
 # Documentação
 

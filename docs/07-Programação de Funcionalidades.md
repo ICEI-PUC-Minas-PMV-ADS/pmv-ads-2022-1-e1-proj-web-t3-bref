@@ -24,11 +24,8 @@ O site possui uma página em que o usuário poderá cadastrar e entrar em sua co
 
 #### *Instruções de acesso*
 
-* Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
-* Descompacte o arquivo em uma pasta específica;
-* Abra a pasta descompactada
-* Abra o arquvivo ./src/code/html/entrar.html
-* Para a página de recuperar senha: ./src/code/html/recuperar-senha.html ou entre em entrar.html e clique em "Esqueceu a senha?"
+* Acesse https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-bref/entrar-cadastrar.html
+* Para a página de recuperar senha: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-bref/recuperar-senha.html ou entre em entrar-cadastrar.html e clique em "Esqueceu a senha?"
 
 ## F02 - Filtros de busca
 
@@ -50,10 +47,7 @@ RF-008 O site deve apresentar um menu de categorias, para categorizar os restaur
 
 #### *Instruções de acesso*
 
-* Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
-* Descompacte o arquivo em uma pasta específica;
-* Abra a pasta descompactada
-* Abra o arquvivo ./src/code/html/listagem-restaurantes.html
+* Acesse https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-bref/listagem-restaurantes.html
 
 ## F03 - Função Lupa
 
@@ -67,15 +61,12 @@ Essa ferramenta do site é voltada às pessoas que querem uma fonte de tamanho m
 
 #### *Artefato da funcionalidade*
 
-* Em todas as páginas, com exceção da página entrar.html, no cabeçalho.
+* Em todas as páginas html que possuírem no cabeçalho a barra de 'font-|font+|reset'
 
 
 #### *Instruções de acesso*
 
-* Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
-* Descompacte o arquivo em uma pasta específica;
-* Abra a pasta descompactada
-* Abra um dos arquvivos html na pasta ./src/code/html
+* Acesse https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-bref
 
 
 ## F04 - Barra de busca
@@ -95,10 +86,7 @@ A barra de busca serve para encontrar um restaurante. Ela retorna o restaurante 
 
 #### *Instruções de acesso*
 
-* Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
-* Descompacte o arquivo em uma pasta específica;
-* Abra a pasta descompactada;
-* Abra o arquvivo ./src/code/html/listagem-restaurantes.html
+* Acesse https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-bref/listagem-restaurantes.html
 * Digite na barra de busca a esquerda o restaurante desejado.
 
 
@@ -120,10 +108,7 @@ Essa página permite que o usuário consiga entrar em contato com os responsáve
 
 #### *Instruções de acesso*
 
-* Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
-* Descompacte o arquivo em uma pasta específica;
-* Abra a pasta descompactada
-* Abra o arquvivo ./src/code/html/fale-conosco.html
+* Acesse https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-bref/fale-conosco.html
 
 
 ## F06 - Apresentação das informações dos restaurantes
@@ -147,10 +132,7 @@ A funcionalidade tem por objetivo retornar todas as informações do restaurante
 
 #### *Instruções de acesso*
 
-* Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
-* Descompacte o arquivo em uma pasta específica;
-* Abra a pasta descompactada
-* Abra o arquvivo html com um parâmetro id. Ex.: ./src/code/html/info-restaurante.html?id=1
+* Acesse a página info-restaurante.html com o parâmetro id. Ex.: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-bref/info-restaurante.html?id=3
 
 ## F07 - Tempo de espera
 
@@ -170,10 +152,7 @@ Na página de listagem de restaurantes, aparecerá nos cards o tempo de espera d
 
 #### *Instruções de acesso*
 
-* Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
-* Descompacte o arquivo em uma pasta específica;
-* Abra a pasta descompactada
-* Abra o arquvivo ./src/code/html/listagem-restaurantes.html
+* Acesse https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-bref/listagem-restaurantes.html
 
 ## F08 - Reservar Restaurante
 
@@ -195,10 +174,7 @@ A ferramenta permite que o usuário reserve um horário no restaurante seleciona
 
 #### *Instruções de acesso*
 
-* Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
-* Descompacte o arquivo em uma pasta específica;
-* Abra a pasta descompactada
-* Abra o arquvivo ./src/code/html/reserva.html
+* Acesse https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-bref/reserva.html
 
 ## F09 - Contato com o restaurante
 
@@ -220,10 +196,7 @@ A ferramenta permite que o usuário seja redirecionado a uma API do WhatsApp par
 * ../bootstrap-css/bootstrap.min.css
 #### *Instruções de acesso*
 
-* Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
-* Descompacte o arquivo em uma pasta específica;
-* Abra a pasta descompactada
-* Abra o arquvivo html com um parâmetro id. Ex.: ./src/code/html/info-restaurante.html?id=1
+* Acesse a página info-restaurante.html com o parâmetro id. Ex.: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-bref/info-restaurante.html?id=3
 * Clique no botão "Contato"
 
 ## F10 - Avaliação do restaurante
@@ -249,9 +222,6 @@ A ferramenta permite que o usuário possa avaliar o restaurante selecionado, faz
 
 #### *Instruções de acesso*
 
-* Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
-* Descompacte o arquivo em uma pasta específica;
-* Abra a pasta descompactada
-* Abra o arquvivo html com um parâmetro id. Ex.: ./src/code/html/info-restaurante.html?id=1
+* Acesse a página info-restaurante.html com o parâmetro id. Ex.: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-bref/info-restaurante.html?id=3
 * Clique no botão "Avaliacao"
-* Ou pode abrir diretamente o arquivo avaliacao.html com o parâmetro name. Ex.: /src/code/html/avaliacao.html?name=%27Madero%27
+* Ou pode acessar diretamente a página avaliacao.html com o parâmetro name. Ex.: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-bref/avaliacao.html?name=%27Madero%27
