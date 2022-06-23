@@ -25,6 +25,8 @@ function validEmail(field) {
     }
 }
 
+
+
 function functionOne(){
     var email = document.querySelector(".email");
     var telefone = document.querySelector(".telefone").value;
