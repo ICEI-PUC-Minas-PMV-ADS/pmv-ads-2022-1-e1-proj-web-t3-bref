@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
-
 /*
     LINKS IMPORTANTES USADOS COMO REFERÊNCIA NO DESENVOLVIMENTO
 
@@ -16,7 +14,7 @@
 body {
     background-color: white;
     font-family: 'Lato', sans-serif;
-    color: #271e07;
+    color: #483A20;
     font-size: 1em;
     min-width: fit-content;
 }
@@ -56,7 +54,7 @@ body {
     border: outset;
     font-weight: bold;
     justify-content: flex-end;
-    color: #271e07;
+    color: #483A20;
     background-color: #FFC300;
     border: none;
 }

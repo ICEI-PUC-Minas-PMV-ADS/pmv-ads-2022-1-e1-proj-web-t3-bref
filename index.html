@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="src/code/css/reset.css">
     <link rel="stylesheet" href="src/code/css/index.css">
 
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="src/code/bootstrap-css/bootstrap.min.css">
     <!-- Footer e Header -->
@@ -61,7 +66,7 @@
                 </ul>
                 <form action="listagem-restaurantes.html" method="get" id="pesq" class="form-inline">
                     <input class="form-control mr-sm-2" type="text" name="pesq" id="pesq_bar" placeholder="Nome do restaurante" aria-label="Search">
-                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Pesquisar</button>
+                    <button id="btnPesquisar" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Pesquisar</button>
                   </form>
                 <!-- <form action="./listagem-restaurantes.html" method="get" id="pesq">
                     <input type="text" name="pesq" id="pesq_bar">
@@ -159,11 +164,11 @@
                 </ul>
                 </li>
                 <li id="footer-links">
-                    <a href="sobre-nos.html">Sobre nós</a>
+                    <a class="nav-link-footer" href="sobre-nos.html">Sobre nós</a>
                     <span class="footer-ponto">&#9679;</span>
-                    <a href="fale-conosco.html">Fale conosco</a>
+                    <a class="nav-link-footer" href="fale-conosco.html">Fale conosco</a>
                     <span class="footer-ponto">&#9679;</span>
-                    <a href="entrar-cadastrar.html">Entrar/Cadastrar</a>
+                    <a class="nav-link-footer" href="entrar-cadastrar.html">Entrar/Cadastrar</a>
                 </li>
                 <li>
                 <p id="footer-copyright">© 2022 Bref Company LTDA</p>

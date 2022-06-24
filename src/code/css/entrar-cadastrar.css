@@ -1,6 +1,6 @@
 body {
 	background: #FFFFF4;
-	color: #271e07;
+	color: #483A20;
 	font-family: 'Lato', sans-serif;
 }
 .container {
@@ -52,7 +52,7 @@ body {
 
 .fa-eye {
 	cursor: pointer;
-	color: #271e07;
+	color: #483A20;
 }
 
 #verSenha {
@@ -221,7 +221,7 @@ aside {
 }
 
 button {
-	color: #271e07;
+	color: #483A20;
 	border: none;
 	outline: none;
 	background: none;

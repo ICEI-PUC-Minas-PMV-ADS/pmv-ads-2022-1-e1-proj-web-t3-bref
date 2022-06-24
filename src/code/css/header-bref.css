@@ -22,3 +22,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 div.collapse.navbar-collapse#navbarSupportedContent > ul.navbar-nav.mr-auto > li > a {
     color: #FFC300;
 }
+
+/* Alterações Lucas */
+
+.nav-link:hover,
+.nav-link-footer:hover,
+#logo-bref:hover{
+    color: #FFC300;
+    text-shadow: 0 0 3px #f8d35b;
+}
