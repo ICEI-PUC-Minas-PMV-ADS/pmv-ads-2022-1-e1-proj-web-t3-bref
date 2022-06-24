@@ -23,14 +23,14 @@ body{
     border: outset;
     font-weight: bold;
     justify-content: flex-end;
-    color: #483A20;
+    color: #271e07;
     background-color: #FFC300;
     border: none;
 }
 
 .changeFontsButtons:hover {
     color: #FFFFF4;
-    background-color: #483A20;
+    background-color: #271e07;
 }
 
 /* End zoom area */
@@ -59,7 +59,7 @@ div.collapse.navbar-collapse#navbarSupportedContent > ul.navbar-nav.mr-auto
     padding: 12px 0;
 }
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
-    background-color: #483A20!important;
+    background-color: #271e07!important;
 }
 
 
@@ -105,7 +105,7 @@ div.container-fluid > div.row > div.col-md-12.boas-vindas {
 
 div.container-fluid > div.row > div.col-md-12.boas-vindas > div {
     background-color: transparent;
-    box-shadow: #483A20;
+    box-shadow: #271e07;
     width: fit-content;
     margin: 180px 0 0 130px;
 }
@@ -135,9 +135,9 @@ div.container-fluid > div.row > div.row > div.col-md-12.nossos-valores {
 }
 
 div.container-fluid > div.row > div.row > div.col-md-12.nossos-valores > h2.font-weight-bold {
-    color: #483A20;
+    color: #271e07;
     font-size: 3em;
-    text-shadow: 0 1px 1px #483A20;
+    text-shadow: 0 1px 1px #271e07;
 }
 
 div.container-fluid > div.row > div.row > div.card-deck{

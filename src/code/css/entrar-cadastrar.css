@@ -1,6 +1,6 @@
 body {
 	background: #FFFFF4;
-	color: #483A20;
+	color: #271e07;
 	font-family: 'Lato', sans-serif;
 }
 .container {
@@ -52,7 +52,7 @@ body {
 
 .fa-eye {
 	cursor: pointer;
-	color: #483A20;
+	color: #271e07;
 }
 
 #verSenha {
@@ -144,7 +144,7 @@ input:focus:invalid {
 }
 
 .botoes {
-	background: #483A20;
+	background: #271e07;
 	transition: 1.5s all;
 }
 
@@ -221,7 +221,7 @@ aside {
 }
 
 button {
-	color: #483A20;
+	color: #271e07;
 	border: none;
 	outline: none;
 	background: none;

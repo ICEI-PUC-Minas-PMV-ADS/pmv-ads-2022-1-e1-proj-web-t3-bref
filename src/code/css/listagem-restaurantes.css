@@ -16,7 +16,7 @@
 body {
     background-color: white;
     font-family: 'Lato', sans-serif;
-    color: #483A20;
+    color: #271e07;
     font-size: 1em;
     min-width: fit-content;
 }
@@ -33,7 +33,7 @@ body {
 
  */
 .header {
-    background-color: #483A20;
+    background-color: #271e07;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -56,14 +56,14 @@ body {
     border: outset;
     font-weight: bold;
     justify-content: flex-end;
-    color: #483A20;
+    color: #271e07;
     background-color: #FFC300;
     border: none;
 }
 
 .changeFontsButtons:hover {
     color: #FFFFF4;
-    background-color: #483A20;
+    background-color: #271e07;
 }
 
 /* End zoom area */
@@ -296,7 +296,7 @@ input[type="range"]::-webkit-slider-thumb {
 .card-item {
     display: flex;
     font-size: 1.25em;
-    color: #483A20;
+    color: #271e07;
     display: flex;
     flex-direction: column;
     padding: 5px;
@@ -309,7 +309,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* Footer */
 #footer {
-    background-color: #483A20;
+    background-color: #271e07;
     padding: 15px;
 }
 

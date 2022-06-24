@@ -32,14 +32,14 @@ body {
     font-size: 1em;
     font-weight: bold;
     justify-content: flex-end;
-    color: #483A20;
+    color: #271e07;
     background-color: #FFC300;
     border: none;
 }
 
     .changeFontsButtons:hover {
         color: #FFFFF4;
-        background-color: #483A20;
+        background-color: #271e07;
     }
 
 /* End zoom area */
@@ -115,6 +115,7 @@ body {
     margin: 0px;
     font-size: 5em;
     font-weight: bolder;
+    font-style: Oswald, sans-serif ;
 }
 
 /* End BREFF Logo style */
@@ -139,7 +140,7 @@ body {
     cursor: pointer;
     transition: 0.4s all;
     color: #fff;
-    background: #483A20;
+    background: #271e07;
     margin: 10px;
 }
 

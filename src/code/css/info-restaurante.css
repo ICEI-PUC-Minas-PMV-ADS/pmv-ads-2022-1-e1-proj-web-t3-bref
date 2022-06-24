@@ -34,7 +34,7 @@ body {
 }
 
 #head {
-    background-color: #483A20;
+    background-color: #271e07;
     height: 8vh;
 }
 
@@ -135,7 +135,7 @@ body {
 
 #menuType {
     font-size: 3vh;
-    background-color: #483A20;
+    background-color: #271e07;
     height: 5vh;
     color: white;
     text-align: center;
@@ -143,7 +143,7 @@ body {
 }
 
 #middle_menu {
-    background-color: #483A20;
+    background-color: #271e07;
     border: 0px;
     color: white;
 }

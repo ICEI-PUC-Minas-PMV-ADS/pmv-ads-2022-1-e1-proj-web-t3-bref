@@ -21,12 +21,12 @@ body {
 }
 
 header {
-    background: #483A20;
+    background: #271e07;
 }
 
 #header {
     width: 100%;
-    background-color: #483A20;
+    background-color: #271e07;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -38,14 +38,14 @@ header {
     border: outset;
     font-weight: bold;
     justify-content: flex-end;
-    color: #483A20  ;
+    color: #271e07  ;
     background-color: #FFC300;
     border: none;
 }
 
 .changeFontsButtons:hover {
     color: #FFFFF4;
-    background-color: #483A20;
+    background-color: #271e07;
 }
 
 #barColor {
@@ -109,7 +109,7 @@ header {
 
 #o-main {
     background-color: #FFFFF4;  
-    color: #483A20;
+    color: #271e07;
     text-align: center;
     font-family: 'Lato', sans-serif;
     height: 76vh;
@@ -132,7 +132,7 @@ input {
 
 #togglePassword {
     cursor: pointer;
-	color: #483A20;
+	color: #271e07;
     position: relative;
     left: 8.5em;
     bottom: 5.9em;
@@ -140,7 +140,7 @@ input {
 
 #secondtogglePassword{
     cursor: pointer;
-	color: #483A20;
+	color: #271e07;
     position: relative;
     left: 8.5em;
     bottom: 3.5em;
@@ -170,7 +170,7 @@ input:focus:invalid {
 }
 
 .botoes {
-	background: #483A20;
+	background: #271e07;
 	transition: 1.5s all;
 }
 
@@ -207,7 +207,7 @@ input:focus:invalid {
 
 .button {
     cursor: pointer;
-    background: #483A20;
+    background: #271e07;
     transition: 0.8s all;
     color: #fff;
     border: 0px;

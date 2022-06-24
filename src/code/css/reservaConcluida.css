@@ -24,7 +24,7 @@ div.container-fluid {
 }
 
 #link .btn {
-    background-color: #483A20;
+    background-color: #271e07;
     color: white;
     border-radius: 4px;
     width: 10em;
@@ -76,14 +76,14 @@ div.container-fluid {
   border: outset;
   font-weight: bold;
   justify-content: flex-end;
-  color: #483A20;
+  color: #271e07;
   background-color: #FFC300;
   border: none;
 }
 
 .changeFontsButtons:hover {
   color: #FFFFF4;
-  background-color: #483A20;
+  background-color: #271e07;
 }
 
 /* end zoom area */
@@ -91,11 +91,11 @@ div.container-fluid {
   p {
     margin-bottom: 9em; 
     font-size: 1.3em;
-    color: #483a20;
+    color: #271e07;
   }
 
   #reservaConc{
-    color: #483a20;
+    color: #271e07;
     font-weight: bold;
     margin-bottom: 30px;
   }
@@ -109,5 +109,5 @@ div.container-fluid {
 
 #reservaConc{
   font-weight: bold;
-  color: #483A20;
+  color: #271e07;
 }
