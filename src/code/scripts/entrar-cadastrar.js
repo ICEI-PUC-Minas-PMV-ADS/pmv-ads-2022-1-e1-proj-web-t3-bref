@@ -33,14 +33,14 @@ function Pg() {
 	const msgCadastro = document.querySelector("#msgCadastro")
 	
 	/* LocalStorage */
-	let	listaUserP =
+	/* let	listaUserP =
 				{
 					"nomeCad": "Lucas Teste",
 					"dataCad": "10-11-1997",
 					"emailCad": "luketas@gmail.com",
 					"senhaCad": "654321"
 				}
-		localStorage.setItem("listaUserP", JSON.stringify(listaUserP))
+		localStorage.setItem("listaUserP", JSON.stringify(listaUserP)) */
 		
 			/* console.log(JSON.parse(JSON.stringify(listaUser))) */
 
@@ -404,7 +404,7 @@ function Pg() {
 				}, 3000)
 
 		} else {
-			msgCadastro.textContent = "Preencha todos os campos corretamente para cadastrar"
+			msgCadastro.textContent = "Preencha todos os campos corretamente"
 			msgCadastro.setAttribute("style" , "display: block; text-shadow: 0px 0px 1px crimson; color: crimson")
 		}
 	}
