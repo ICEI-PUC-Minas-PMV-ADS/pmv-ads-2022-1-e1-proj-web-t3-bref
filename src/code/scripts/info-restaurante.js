@@ -28,7 +28,7 @@ function start() {
     document.getElementById("waitTime").innerHTML = `Tempo de Espera: ${waitTime} minutos`;
     document.getElementById("telephone").innerHTML = `Telefone: ${tele}`;
     document.getElementById("whatsapp").innerHTML = `Whatsapp: ${whatsapp}`;
-    document.getElementById("address").innerHTML = `Endereço: ${address}`;
+    document.getElementById("address").innerHTML = `End: ${address}`;
     document.getElementById("rest-img").src=`./src/code/imgs/${imgRest}`;
 
     // avaliacao url
@@ -49,7 +49,7 @@ function main_plate() {
         document.getElementById(`preco${index+1}`).innerHTML = `Preço: R$ ${preco}`;
         document.getElementById(`tempo${index+1}`).innerHTML = `Tempo de Preparo: ${timePrep} minutos`;
         document.getElementById(`classi${index+1}`).innerHTML = `Classificação: ${classification} Estrelas`;
-        document.getElementById(`item-img${index+1}`).src=`./src/code/imgs/${imagePlate}`;
+        document.getElementById(`item-img${index+1}`).src=`src/code/imgs${imagePlate}`;
     }
 }
 
