@@ -38,7 +38,7 @@ header {
     border: outset;
     font-weight: bold;
     justify-content: flex-end;
-    color: #271e07  ;
+    color: #483A20  ;
     background-color: #FFC300;
     border: none;
 }
@@ -109,7 +109,7 @@ header {
 
 #o-main {
     background-color: #FFFFF4;  
-    color: #271e07;
+    color: #483A20;
     text-align: center;
     font-family: 'Lato', sans-serif;
     height: 76vh;
@@ -132,7 +132,7 @@ input {
 
 #togglePassword {
     cursor: pointer;
-	color: #271e07;
+	color: #483A20;
     position: relative;
     left: 8.5em;
     bottom: 5.9em;
@@ -140,7 +140,7 @@ input {
 
 #secondtogglePassword{
     cursor: pointer;
-	color: #271e07;
+	color: #483A20;
     position: relative;
     left: 8.5em;
     bottom: 3.5em;

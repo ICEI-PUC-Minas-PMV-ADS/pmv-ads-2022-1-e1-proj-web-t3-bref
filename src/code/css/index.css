@@ -66,7 +66,7 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
 
     padding: 2.25rem;
-    color: #271e07;
+    color: #483A20;
 }
 
 #barra-apresentacao > div.card-img-overlay > h2.card-title{
@@ -90,7 +90,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 
 #barra-apresentacao{
     background-color: #FFC300;
-    color: #271e07;
+    color: #483A20;
     height: 300px;
 }
 
@@ -212,7 +212,7 @@ header {
 /* logo */
 #bref {
     text-align: center;
-    color: #271e07;
+    color: #483A20;
     background-color: #FFC300;
     grid-column-start: 1;
     grid-column-end: 6;
@@ -301,3 +301,13 @@ header {
     grid-row-end: 4;
 }
  */
+
+ /* Alterações Lucas */
+ #btnPesquisar {
+    color: #483A20;
+    border-color:#483A20;
+ }
+ #btnPesquisar:hover {
+    color: #FFFFF4;
+    background: rgb(110, 79, 22);
+ }
