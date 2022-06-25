@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@500&display=swap');
-
 /* Ajustes Bootstrap */
 * {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
@@ -34,7 +32,7 @@ body {
 }
 
 #head {
-    background-color: #483A20;
+    background-color: #271e07;
     height: 8vh;
 }
 
@@ -50,7 +48,7 @@ body {
 
 /* text retangule layout */
 #restname {
-    font-size: 25px;
+    font-size: 3vh;
     display: grid;
     align-content: center;
     text-align: center;
@@ -60,7 +58,7 @@ body {
 }
 
 #subtitle1 {
-    font-size: 20px;
+    font-size: 2.5vh;
     display: grid;
     align-content: center;
     text-align: center;
@@ -85,7 +83,7 @@ body {
 }
 
 #subtitle3 {
-    font-size: 18px;
+    font-size: 2.5vh;
     align-content: center;
     text-align: center;
     background-color: #f4b01ea4;
@@ -103,6 +101,7 @@ body {
 }
 
 #buttom1 {
+    font-size: 2.5vh;
     display: grid;
     align-content: center;
     text-align: center;
@@ -110,22 +109,20 @@ body {
     color: white;
     border-radius: 5px;
     margin-top: 7px;
-    height: 40px;
+    height: 6vh;
 }
 
 #rest-img {
     display: inline-block;
     width: 14vw;
     height: 25vh;
-    min-width: 185px;
-    min-height: 160px;
     border-radius: 8px;
 }
 
 #item-img1, #item-img2, #item-img3 {
     display: inline-flex;
-    height: 100px;
-    width: 100px;
+    height: 13.5vh;
+    width: 7vw;
     text-align: center;
     align-content: center;
     margin-top: 10px;
@@ -135,7 +132,7 @@ body {
 
 #menuType {
     font-size: 3vh;
-    background-color: #483A20;
+    background-color: #271e07;
     height: 5vh;
     color: white;
     text-align: center;
@@ -143,22 +140,22 @@ body {
 }
 
 #middle_menu {
-    background-color: #483A20;
+    background-color: #271e07;
     border: 0px;
     color: white;
 }
 
 #menu {
-    background-color: aliceblue;
-    height: 400px;
+    background-color: #FFF;
+    height: 55vh;
     align-content: center;
 }
 
 #menuline1 {
     margin-left: 20px;
     margin-right: 10px;
-    background-color: #f4b01e53;
-    height: 120px;
+    background-color: rgb(245, 240, 240);
+    height: 16.5vh;
     border-radius: 5px;
 }
 
@@ -167,21 +164,13 @@ body {
     margin-bottom: 1.5vh;
     margin-left: 20px;
     margin-right: 10px;
-    background-color: #f4b01e53;
-    height: 120px;
+    background-color: rgb(245, 240, 240);
+    height: 16.5vh;
     border-radius: 5px;
 }
 
 #menuseparator {
     height: 12px;
-}
-
-#item-img {
-    width: 118px;
-    height: 103px;
-    border-radius: 8px;
-    margin-top: 7px;
-    margin-left: -80px;
 }
 
 #sep02 {
@@ -199,7 +188,7 @@ body {
     }
 
     #head {
-        height: 40px;
+        height: 50px;
     }
 
     #yellow {

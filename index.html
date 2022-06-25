@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/code/css/reset.css">
-    <link rel="stylesheet" href="./src/code/css/index.css">
+    <link rel="stylesheet" href="src/code/css/reset.css">
+    <link rel="stylesheet" href="src/code/css/index.css">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="./src/code/bootstrap-css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/code/bootstrap-css/bootstrap.min.css">
     <!-- Footer e Header -->
-    <link rel="stylesheet" href="./src/code/css/footer.css">
-    <link rel="stylesheet" href="./src/code/css/header-bref.css">
+    <link rel="stylesheet" href="src/code/css/footer.css">
+    <link rel="stylesheet" href="src/code/css/header-bref.css">
 
     <title>Bref - Economize seu Tempo</title>
 </head>
@@ -19,7 +24,7 @@
     <div class="container-fluid">
         <!-- NAV --> 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" id="logo-bref" href="./index.html">BREF</a>
+            <a class="navbar-brand" id="logo-bref" href="index.html">BREF</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,10 +32,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="./fale-conosco.html">Fale Conosco</a>
+                    <a class="nav-link" href="fale-conosco.html">Fale Conosco</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./entrar-cadastrar.html">Entrar/Cadastrar</a>
+                    <a class="nav-link" href="entrar-cadastrar.html">Entrar/Cadastrar</a>
                 </li>
               </ul>
             </div>
@@ -59,9 +64,13 @@
                         <p><h3>Aqui você encontra as melhores ofertas!</h3>Faça sua busca e veja as informações dos seus restaurantes favoritos</p>
                     </li>
                 </ul>
-                <form action="./listagem-restaurantes.html" method="get" id="pesq">
+                <form action="listagem-restaurantes.html" method="get" id="pesq" class="form-inline">
+                    <input class="form-control mr-sm-2" type="text" name="pesq" id="pesq_bar" placeholder="Nome do restaurante" aria-label="Search">
+                    <button id="btnPesquisar" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Pesquisar</button>
+                  </form>
+                <!-- <form action="./listagem-restaurantes.html" method="get" id="pesq">
                     <input type="text" name="pesq" id="pesq_bar">
-                </form>
+                </form> -->
             </div>
         </div>
         
@@ -72,7 +81,7 @@
         </div>
         <div class="row" id="cards-demo"> 
             <div class="col-md-4">
-                <img class="place-img" src="./src/code/imgs/place5.jpg" alt="Place 01">
+                <img class="place-img" src="src/code/imgs/place5.jpg" alt="Place 01">
                 <b> <h2>Madero</h2></b>
                 <p>
                     <b> Gastronomia:</b> Australiana <br>
@@ -81,7 +90,7 @@
                 </p>
             </div>
             <div class="col-md-4">
-                <img class="place-img" src="./src/code/imgs/place9.jpg" alt="Place 02">
+                <img class="place-img" src="src/code/imgs/place9.jpg" alt="Place 02">
                 <b> <h2>Spoleto</h2></b>
                 <p>
                     <b> Gastronomia:</b> Brasileiro <br>
@@ -90,7 +99,7 @@
                 </p>
             </div>
             <div class="col-md-4">
-                <img class="place-img" src="./src/code/imgs/place10.jpg" alt="Place 03">
+                <img class="place-img" src="src/code/imgs/place10.jpg" alt="Place 03">
                 <b> <h2>Sushi Japa Chan</h2></b>
                 <p>
                     <b> Gastronomia:</b> Japonês <br>
@@ -146,7 +155,7 @@
         <div class="row" id="footer">
             <div class="col-md-12">
             <ul>
-                <li><a id="logo-bref" href="./index.html">BREF</a></li>
+                <li><a id="logo-bref" href="index.html">BREF</a></li>
                 <li>
                 <ul class="share">
                     <a href="#"><li id="facebook-icon"></li></a>
@@ -155,11 +164,11 @@
                 </ul>
                 </li>
                 <li id="footer-links">
-                    <a href="./sobre-nos.html">Sobre nós</a>
+                    <a class="nav-link-footer" href="sobre-nos.html">Sobre nós</a>
                     <span class="footer-ponto">&#9679;</span>
-                    <a href="./fale-conosco.html">Fale conosco</a>
+                    <a class="nav-link-footer" href="fale-conosco.html">Fale conosco</a>
                     <span class="footer-ponto">&#9679;</span>
-                    <a href="./entrar-cadastrar.html">Entrar/Cadastrar</a>
+                    <a class="nav-link-footer" href="entrar-cadastrar.html">Entrar/Cadastrar</a>
                 </li>
                 <li>
                 <p id="footer-copyright">© 2022 Bref Company LTDA</p>

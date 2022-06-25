@@ -15,10 +15,19 @@ div.collapse.navbar-collapse#navbarSupportedContent > ul.navbar-nav.mr-auto
     padding: 12px 0;
 }
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
-    background-color: #483A20!important;
+    background-color: #271e07!important;
 }
 
 /* links da barra de navegação */
 div.collapse.navbar-collapse#navbarSupportedContent > ul.navbar-nav.mr-auto > li > a {
     color: #FFC300;
+}
+
+/* Alterações Lucas */
+
+.nav-link:hover,
+.nav-link-footer:hover,
+#logo-bref:hover{
+    color: #FFC300;
+    text-shadow: 0 0 3px #f8d35b;
 }
