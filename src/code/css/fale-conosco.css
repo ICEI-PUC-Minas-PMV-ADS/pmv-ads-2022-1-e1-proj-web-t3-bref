@@ -46,7 +46,6 @@ body {
 /* End zoom area */
 
 /* Flex direction control */
-
 #main {
     display: flex;
     flex-direction: row;
@@ -93,7 +92,6 @@ body {
 .titlePage {
     font-weight: bolder;
     font-size: 2em;
-    margin-top: 15px;
 }
 
 /* End title's style */
@@ -178,6 +176,24 @@ body {
         width: 100%;
     }
 }
+
+/* Alterações Lucas */
+#l-conteudo,
+#msgInput,
+#inputName,
+#inputEmail,
+#inputTelefone{
+    outline: 0;
+    border-width: 1px;
+    border-radius: 3px;
+    background-color: #FFFFF4;
+}
+
+#l-conteudo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 
 
 /* Resolução Tela Lucas */

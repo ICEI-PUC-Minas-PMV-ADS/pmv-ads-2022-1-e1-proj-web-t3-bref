@@ -48,33 +48,34 @@
                 <button class="changeFontsButtons" onclick="changeSizeAllItems(true);">Font +</button>
                 <button class="changeFontsButtons" onclick="resetDocumentSizes();">Reset</button>
             </div>
+            <div id="l-conteudo">
+                <p id="title" class="titlePage">Fale conosco</p>
 
-            <p id="title" class="titlePage">Fale conosco</p>
-
-            <div id="main">
-                <div id="sideLeft">
-                    <div class="containerInput">
-                        <p class="titleInfo">Nome completo</p>
-                        <input class="inputInfo" id="inputName" type="text" placeholder="Seu nome">
+                <div id="main">
+                    <div id="sideLeft">
+                        <div class="containerInput">
+                            <p class="titleInfo">Nome completo</p>
+                            <input class="inputInfo" id="inputName" type="text" placeholder="Seu nome">
+                        </div>
+                        <div class="containerInput">
+                            <p class="titleInfo">Email</p>
+                            <input class="inputInfo" id="inputEmail" placeholder="Seu email">
+                        </div>
+                        <div class="containerInput">
+                            <p class="titleInfo">Telefone</p>
+                            <input class="inputInfo" type="text" onkeypress="maskPhone()" maxlength="16" id="inputTelefone" placeholder="(XX) X XXXX-XXXX">
+                        </div>
+                        <div class="containerInput">
+                            <p class="titleInfo">Mensagem</p>
+                            <textarea rows="10" id="msgInput" type="text" class="inputInfo"></textarea>
+                        </div>
+                        <div id="buttonFlex">
+                            <a id="btnEnviar" onclick="sendMessage()" class="btn">Enviar</a>
+                        </div>
                     </div>
-                    <div class="containerInput">
-                        <p class="titleInfo">Email</p>
-                        <input class="inputInfo" id="inputEmail" placeholder="Seu email">
+                    <div id="sideRigth">
+                        <p id="r-bref" class="breffLogoStyle">BREF</p>
                     </div>
-                    <div class="containerInput">
-                        <p class="titleInfo">Telefone</p>
-                        <input class="inputInfo" type="text" onkeypress="maskPhone()" maxlength="16" id="inputTelefone" placeholder="(XX) X XXXX-XXXX">
-                    </div>
-                    <div class="containerInput">
-                        <p class="titleInfo">Mensagem</p>
-                        <textarea rows="10" id="msgInput" type="text" class="inputInfo"></textarea>
-                    </div>
-                    <div id="buttonFlex">
-                        <a id="btnEnviar" onclick="sendMessage()" class="btn">Enviar</a>
-                    </div>
-                </div>
-                <div id="sideRigth">
-                    <p id="r-bref" class="breffLogoStyle">BREF</p>
                 </div>
             </div>
 
