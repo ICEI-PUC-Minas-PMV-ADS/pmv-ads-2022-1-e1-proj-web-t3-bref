@@ -33,14 +33,14 @@ function Pg() {
 	const msgCadastro = document.querySelector("#msgCadastro")
 	
 	/* LocalStorage */
-	let	listaUserP =
+	/* let	listaUserP =
 				{
 					"nomeCad": "Lucas Teste",
 					"dataCad": "10-11-1997",
 					"emailCad": "luketas@gmail.com",
 					"senhaCad": "654321"
 				}
-		localStorage.setItem("listaUserP", JSON.stringify(listaUserP))
+		localStorage.setItem("listaUserP", JSON.stringify(listaUserP)) */
 		
 			/* console.log(JSON.parse(JSON.stringify(listaUser))) */
 
@@ -205,9 +205,12 @@ function Pg() {
 	function ValidacaoInputs() {
 		
 		function validarEmail() {
-			if(!InputEmailCadastro.checkValidity()){
+			let email = inputEmail.value;
+			if (email.search('@') != -1 && email.search('.com') != -1) {
+					validEmail = true;
 			}
-		}
+			validEmail = false;
+	}
 
 		/* Validação Nome */
 		InputNome.addEventListener("keyup", ()=>{
@@ -286,16 +289,19 @@ function Pg() {
 			var nasc  = new Date(data);
 			var idade = hoje.getFullYear() - nasc.getFullYear();
 			var m = hoje.getMonth() - nasc.getMonth();
-			if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())){
-			validData = true;
-			} idade-- 
+			if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())){ 
+			} idade --
 			
-			
-			
-			if(idade < 16 || InputData.value == null){
-				alert("Pessoas menores de 16 não podem se cadastrar.");
+			if(idade < 20 || idade > 80 || InputData.value == null){
+				LabelData.textContent = "Data de Nascimento * Você precisa ter entre 20 a 60 anos"
+				LabelData.setAttribute("style" , "text-shadow: 0px 0px 1px crimson; color: crimson")
+				InputData.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 				validData = false
-				return false;
+			} else {
+				LabelData.textContent = "Data de Nascimento"
+				LabelData.setAttribute("style" , "text-shadow: 0px 0px 1px green; color: green")
+				InputData.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
+				validData = true
 			}
 		}
 
@@ -381,7 +387,7 @@ function Pg() {
 	} */
 
 	function cadastrar() {
-		if(validNome && validData && validEmail && validSenhaCadastro && validConfirmarSenha){
+		if(validNome && validData && validSenhaCadastro && validEmail && validConfirmarSenha){
 		
 		let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]") 
 
@@ -404,7 +410,7 @@ function Pg() {
 				}, 3000)
 
 		} else {
-			msgCadastro.textContent = "Preencha todos os campos corretamente para cadastrar"
+			msgCadastro.textContent = "Preencha todos os campos corretamente"
 			msgCadastro.setAttribute("style" , "display: block; text-shadow: 0px 0px 1px crimson; color: crimson")
 		}
 	}

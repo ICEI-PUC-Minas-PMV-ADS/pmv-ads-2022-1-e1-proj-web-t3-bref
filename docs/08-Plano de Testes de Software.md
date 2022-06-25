@@ -33,7 +33,7 @@ Caso de teste | CT-04 - Visualização das informações do restaurante
 ------------- | -----------------------
 Requisito Associado | RF-001 O site deve apresentar de forma clara o cardápio e formas de pagamentos dos restaurantes. 
 Objetivo do teste | Verificar se as informações do restaurante são informadas na página info-restaurante.html
-Passos | <p>1) Entrar na página info-restaurante.html com o parâmetro id do restaurante. Ex.: ./html/info-restaurante.html?id=1</p>
+Passos | <p>1) Entrar na página info-restaurante.html com o parâmetro id do restaurante. Ex.: ./info-restaurante.html?id=1</p>
 Critérios de êxito | * A página deve mostrar o conteúdo de acordo com os registros no arquivo JSON.
 
 Caso de teste | CT-05 - Cadastro e login de usuário
@@ -61,7 +61,7 @@ Caso de teste | CT-08 - Teste para a página de reserva
 ------------- | -----------------------
 Requisito Associado | RF-004 O site deve oferecer ao usuário entrar na fila online ou fazer uma reserva quando o restaurante disponibilizar esse serviço.
 Objetivo do teste | Verificar se a página de informações dos restaurantes redireciona o usuário à página de reserva
-Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./html/info-restaurante.html?id=3<br/>2) Clicar em reserva<br>3) Fazer login no site<br>4) Preencher os campos de acordo com os requisitos de cada campo<br>5) Clicar em reservar.
+Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./info-restaurante.html?id=3<br/>2) Clicar em reserva<br>3) Fazer login no site<br>4) Preencher os campos de acordo com os requisitos de cada campo<br>5) Clicar em reservar.
 Critérios de êxito | * Ao final dos passos, o usuário deve estar na página de Reserva Concluída.
 
 
@@ -69,14 +69,14 @@ Caso de teste | CT-09 - Contato com o restaurante
 ------------- | -----------------------
 Requisito Associado | RF-009 O site deve permitir que o cliente tenha meios de contato direto com os restaurantes escolhidos.
 Objetivo do teste | Verificar se o botão de contato redireciona para o contato do restaurante via WhatsApp.
-Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./html/info-restaurante.html?id=3<br/>2) Clicar em contato<br>3) Ser redirecionado à API do whatsapp com o número do restaurante
+Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./info-restaurante.html?id=3<br/>2) Clicar em contato<br>3) Ser redirecionado à API do whatsapp com o número do restaurante
 Critérios de êxito | * Ao final dos passos, o usuário deve ser redirecionado à API do whatsapp para contado com o restaurante.
 
 Caso de teste | CT-10 - Endereço do Restaurante
 ------------- | -----------------------
 Requisito Associado | RF-002 O site deve apresentar, para cada restaurante, o seu endereço.
 Objetivo do teste | Verificar a página info-restaurante está carregando o endereço correspondente ao id referenciado da página listagem-restaurantes.
-Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./html/info-restaurante.html?id=3<br/>2) A informação correspondente ao id do restaurante será carregada na parte superior direita da página.
+Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./info-restaurante.html?id=3<br/>2) A informação correspondente ao id do restaurante será carregada na parte superior direita da página.
 Critérios de êxito | * Uma vez carregada, a página deve mostrar o endereço correto do restaurante.
 
 
@@ -84,6 +84,6 @@ Caso de teste | CT-11 - Avaliação do restaurante
 ------------- | -----------------------
 Requisito Associado | RF-010 O site deve permitir que usuários possam dar avaliações sobre os restaurantes.
 Objetivo do teste | Atestar que a página de avaliações esteja com os campos funcionando corretamente.
-Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./html/info-restaurante.html?id=3<br/>2) Clicar no botão "Avaliação"<br>3) Preencher todos os campos<br>4) Cliar em enviar.
+Passos | 1) Entrar na informação de um restaurante.<br> Ex.: ./info-restaurante.html?id=3<br/>2) Clicar no botão "Avaliação"<br>3) Preencher todos os campos<br>4) Cliar em enviar.
 Critérios de êxito | * Deve retornar uma mensagem de sucesso caso a avaliação tenha sido enviada. <br>* Deve retornar uma mensagem de erro para os campos que não atenderem os requisitos.
 

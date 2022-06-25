@@ -25,6 +25,8 @@ function validEmail(field) {
     }
 }
 
+
+
 function functionOne(){
     var email = document.querySelector(".email");
     var telefone = document.querySelector(".telefone").value;
@@ -46,7 +48,7 @@ function functionOne(){
      (data) &&
      (cadeira >=1)){
         alert("Estamos realizando a sua reserva. Aguarde...")
-        window.location.href = "../html/reservaConcluida.html"
+        window.location.href = "./reservaConcluida.html"
     } else{
         alert("Por favor, revise os dados inseridos...");
     }
