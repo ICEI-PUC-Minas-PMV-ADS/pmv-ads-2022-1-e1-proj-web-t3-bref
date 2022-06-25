@@ -298,7 +298,6 @@ function Pg() {
 			if(idade < 16 || InputData.value == null){
 				alert("Pessoas menores de 16 não podem se cadastrar.");
 				validData = false
-				return false;
 			}
 		}
 
@@ -384,7 +383,7 @@ function Pg() {
 	} */
 
 	function cadastrar() {
-		if(validNome && validData && validEmail && validSenhaCadastro && validConfirmarSenha){
+		if(validNome && validSenhaCadastro && validConfirmarSenha){
 		
 		let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]") 
 
