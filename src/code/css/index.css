@@ -28,6 +28,10 @@ body {
     row-gap: 5px;
 }
 
+#l-conteudo{
+    background: #FFFFF4
+}
+
 /* header  cabeçalho */
 #header{
     background-color: #271e07;
@@ -129,7 +133,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 
 /* Cards de demonstração */
 #cards-demo{
-    background-color: #FFFFFA;
     margin: 0 20px 40px 20px;
 }
 
@@ -303,11 +306,23 @@ header {
  */
 
  /* Alterações Lucas */
- #btnPesquisar {
+#btnPesquisar {
     color: #483A20;
     border-color:#483A20;
- }
- #btnPesquisar:hover {
+}
+
+#btnPesquisar:hover {
     color: #FFFFF4;
     background: rgb(110, 79, 22);
- }
+}
+
+#l-conteudo {
+    color: #483A20;
+    background: #FFFFF4;    
+    padding: 20px 40px 20px 40px;
+}
+
+#pesq_bar {
+    background: #FFFFF4;
+    border-color: #483A20;
+}

@@ -200,3 +200,14 @@ div.container-fluid > div.row > div.row > div.card-deck > div.card > div.card-bo
 #texto-missao{
     margin: auto;
 }
+
+/* Alterações Lucas */
+#card1,
+#card2,
+#card3 {
+    box-shadow: 0 0 1.5em black;
+}
+
+#l-info{
+    background: #FFFFF4;
+}

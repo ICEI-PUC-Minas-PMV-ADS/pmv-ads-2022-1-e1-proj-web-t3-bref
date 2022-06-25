@@ -13,7 +13,7 @@ div.container-fluid {
 
 body {
     display: grid;
-    background-color: aliceblue;
+    background-color: #FFF;
     font-family: 'Lato', sans-serif;
     height: 100vh;
     width: 99vw;
@@ -114,6 +114,7 @@ body {
     background-color: #271e07;
     border: 0px;
     color: white;
+    transition: 0.3s;
 }
 
 #menu {
@@ -317,5 +318,36 @@ button:hover {
     color: #271e07;
     position: relative;
     left: 3em;
-    
+}
+
+#middle_menu:hover {
+    color: #FFC300;
+}
+
+#menu {
+    animation: up 2s;
+}
+
+#animacaoRest {
+    animation: left 2s;
+}
+
+@keyframes up {
+	from {
+			opacity: 0;
+			transform: translateY(600px);
+	}
+	to {
+			opacity: 1;
+	}
+}
+
+@keyframes left {
+	from {
+			opacity: -20;
+			transform: translateX(1200px);
+	}
+	to {
+			opacity: 100;
+	}
 }
