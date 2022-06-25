@@ -191,7 +191,6 @@ body {
 
 #l-conteudo {
     padding-top: 15px;
-    padding-bottom: 15px;
 }
 
 
@@ -225,12 +224,7 @@ body {
     .btn#btnEnviar:hover{
         transform: scale(1.05);
     }
-} */
-
-
-/* Alterações Lucas */
-
-    
+} */ 
 
 /* End Media querys */
 
