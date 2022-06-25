@@ -385,7 +385,7 @@ function Pg() {
 	} */
 
 	function cadastrar() {
-		if(validNome && validData && validSenhaCadastro && validEmail && validConfirmarSenha){
+		if(validNome && validSenhaCadastro && validEmail && validConfirmarSenha){
 		
 		let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]") 
 
