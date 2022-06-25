@@ -289,16 +289,18 @@ function Pg() {
 			var nasc  = new Date(data);
 			var idade = hoje.getFullYear() - nasc.getFullYear();
 			var m = hoje.getMonth() - nasc.getMonth();
-			if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())){ idade --
-			validData = true;
-			} else {
-			validData = false
-			}
+			if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())){ 
+			} idade --
 			
-			if(idade < 16 || InputData.value == null){
-				alert("Pessoas menores de 16 não podem se cadastrar.");
+			if(idade < 20 || idade > 80 || InputData.value == null){
+				LabelData.textContent = "Data * Você precisa ter entre 20 a 60 anos"
+				LabelData.setAttribute("style" , "text-shadow: 0px 0px 1px crimson; color: crimson")
+				InputData.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 				validData = false
 			} else {
+				LabelData.textContent = "Data"
+				LabelData.setAttribute("style" , "text-shadow: 0px 0px 1px green; color: green")
+				InputData.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
 				validData = true
 			}
 		}
@@ -385,7 +387,7 @@ function Pg() {
 	} */
 
 	function cadastrar() {
-		if(validNome && validSenhaCadastro && validEmail && validConfirmarSenha){
+		if(validNome && validData && validSenhaCadastro && validEmail && validConfirmarSenha){
 		
 		let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]") 
 
