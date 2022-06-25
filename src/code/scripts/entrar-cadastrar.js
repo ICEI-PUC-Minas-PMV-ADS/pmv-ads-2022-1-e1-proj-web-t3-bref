@@ -298,8 +298,6 @@ function Pg() {
 			if(idade < 16 || InputData.value == null){
 				alert("Pessoas menores de 16 não podem se cadastrar.");
 				validData = false
-			} else {
-				validData = true
 			}
 		}
 
