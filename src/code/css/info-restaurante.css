@@ -42,54 +42,35 @@ body {
 }
 
 #restaurant {
-    background-color: aliceblue;
+    background: rgb(245, 240, 240);
     height: 28vh;
 }
 
 /* text retangule layout */
 #restname {
+    color: #483A20;
     font-size: 3vh;
     display: grid;
     align-content: center;
     text-align: center;
-    background-color: #F4B11E;
-    color: white;
     border-radius: 5px;
+    font-family: 'Lato', sans-serif;
 }
 
 #subtitle1 {
+    color: #271e07;
     font-size: 2.5vh;
     display: grid;
     align-content: center;
     text-align: center;
-    background-color: #F4B11E;
-    color: white;
     border-radius: 5px;
     margin-top: 10px;
 }
 
-#subtitle2 {
-    font-size: 2.5vh;
-    align-content: center;
-    text-align: center;
-    background-color: #f4b01ea4;
-    color: white;
-    border-radius: 5px;
-    margin-top: 1vh;
-}
+
 
 #subtitle2 b {
     margin-left: 10px;
-}
-
-#subtitle3 {
-    font-size: 2.5vh;
-    align-content: center;
-    text-align: center;
-    background-color: #f4b01ea4;
-    color: white;
-    border-radius: 5px;
-    margin-top: 10px;
 }
 
 #subtitle3 b {
@@ -98,18 +79,6 @@ body {
 
 #column1 {
     padding-right: 50px;
-}
-
-#buttom1 {
-    font-size: 2.5vh;
-    display: grid;
-    align-content: center;
-    text-align: center;
-    background-color: #F4B11E;
-    color: white;
-    border-radius: 5px;
-    margin-top: 7px;
-    height: 6vh;
 }
 
 #rest-img {
@@ -231,15 +200,6 @@ body {
         padding-right: 15px;
     }
 
-    #buttom1 {
-        margin-left: 10%;
-        width: 80%;
-        height: 23px;
-        margin-top: 1px;
-        margin-bottom: 1px;
-
-    }
-
     #sep02 {
         display: block;
     }
@@ -286,12 +246,14 @@ body {
     }
 }    
 
+
+
 /* Alterações Lucas */
 button {
     color: #FFFFF4;
     background: #271e07;
-    width: 7em;
-    height: 2em;
+    width: 11.5em;
+    height: 2.3em;
     border: 0;
     border-radius: 4px;
     margin-right: 5px;
@@ -300,5 +262,55 @@ button {
 
 button:hover {
     background: rgb(110, 79, 22);
-    transform: scale(1.05)
+    transform: scale(1.01)
+}
+
+#namePlate1,
+#namePlate2,
+#namePlate3 {
+    color: #271e07;
+    align-items: center;
+    background: none;
+}
+
+#preco1,
+#tempo1,
+#classi1,
+#preco2,
+#tempo2,
+#classi2,
+#preco3,
+#tempo3,
+#classi3 {
+    color: #271e07;
+}
+
+#sep01 {
+    background: rgb(245, 240, 240);
+}
+
+#subtitle2 {
+    display: flex;
+    font-size: 1.3em;
+    margin: 2px;
+    padding: 1px;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+    border-radius: 3px;
+    border: solid 2px #483A20;
+    color: #271e07;
+}
+
+#subtitle3 {
+    display: flex;
+    margin: 2px;
+    padding: 2.5px;
+    font-size: 1.25em;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+    border-radius: 3px;
+    border: solid 2px #483A20;
+    color: #271e07;
 }

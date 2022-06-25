@@ -28,7 +28,7 @@ function start() {
     document.getElementById("waitTime").innerHTML = `Tempo de Espera: ${waitTime} minutos`;
     document.getElementById("telephone").innerHTML = `Telefone: ${tele}`;
     document.getElementById("whatsapp").innerHTML = `Whatsapp: ${whatsapp}`;
-    document.getElementById("address").innerHTML = `Endereço: ${address}`;
+    document.getElementById("address").innerHTML = `End: ${address}`;
     document.getElementById("rest-img").src=`./src/code/imgs/${imgRest}`;
 
     // avaliacao url

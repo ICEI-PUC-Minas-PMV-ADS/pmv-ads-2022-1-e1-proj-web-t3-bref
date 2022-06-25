@@ -295,7 +295,6 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex;
     font-size: 1.25em;
     color: #271e07;
-    display: flex;
     flex-direction: column;
     padding: 5px;
     align-items: center;
