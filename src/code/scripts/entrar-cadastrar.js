@@ -289,7 +289,7 @@ function Pg() {
 			var nasc  = new Date(data);
 			var idade = hoje.getFullYear() - nasc.getFullYear();
 			var m = hoje.getMonth() - nasc.getMonth();
-			if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())){
+			if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())){ idade --
 			validData = true;
 			} else {
 			validData = false
@@ -298,6 +298,8 @@ function Pg() {
 			if(idade < 16 || InputData.value == null){
 				alert("Pessoas menores de 16 não podem se cadastrar.");
 				validData = false
+			} else {
+				validData = true
 			}
 		}
 
