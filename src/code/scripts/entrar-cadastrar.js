@@ -291,13 +291,15 @@ function Pg() {
 			var m = hoje.getMonth() - nasc.getMonth();
 			if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())){
 			validData = true;
-			} idade-- 
-			
-			
+			} else {
+			validData = false
+			}
 			
 			if(idade < 16 || InputData.value == null){
 				alert("Pessoas menores de 16 não podem se cadastrar.");
 				validData = false
+			} else {
+				validData = true
 			}
 		}
 
