@@ -146,7 +146,7 @@ body {
 }
 
 #menu {
-    background-color: aliceblue;
+    background-color: #FFF;
     height: 55vh;
     align-content: center;
 }
@@ -154,7 +154,7 @@ body {
 #menuline1 {
     margin-left: 20px;
     margin-right: 10px;
-    background-color: #f4b01e53;
+    background-color: rgb(245, 240, 240);
     height: 16.5vh;
     border-radius: 5px;
 }
@@ -164,7 +164,7 @@ body {
     margin-bottom: 1.5vh;
     margin-left: 20px;
     margin-right: 10px;
-    background-color: #f4b01e53;
+    background-color: rgb(245, 240, 240);
     height: 16.5vh;
     border-radius: 5px;
 }
