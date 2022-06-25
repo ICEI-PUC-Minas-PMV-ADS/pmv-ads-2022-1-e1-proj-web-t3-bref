@@ -49,7 +49,7 @@ function main_plate() {
         document.getElementById(`preco${index+1}`).innerHTML = `Preço: R$ ${preco}`;
         document.getElementById(`tempo${index+1}`).innerHTML = `Tempo de Preparo: ${timePrep} minutos`;
         document.getElementById(`classi${index+1}`).innerHTML = `Classificação: ${classification} Estrelas`;
-        document.getElementById(`item-img${index+1}`).src=`./src/code/imgs/${imagePlate}`;
+        document.getElementById(`item-img${index+1}`).src=`src/code/imgs${imagePlate}`;
     }
 }
 

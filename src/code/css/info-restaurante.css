@@ -55,6 +55,10 @@ body {
     text-align: center;
     border-radius: 5px;
     font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+    left: -0.9em;
 }
 
 #subtitle1 {
@@ -66,8 +70,6 @@ body {
     border-radius: 5px;
     margin-top: 10px;
 }
-
-
 
 #subtitle2 b {
     margin-left: 10px;
@@ -291,9 +293,9 @@ button:hover {
 
 #subtitle2 {
     display: flex;
-    font-size: 1.3em;
     margin: 2px;
     padding: 1px;
+    font-size: 1.3em;
     flex-direction: column;
     align-items: center;
     white-space: nowrap;
@@ -308,9 +310,12 @@ button:hover {
     padding: 2.5px;
     font-size: 1.25em;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     white-space: nowrap;
     border-radius: 3px;
     border: solid 2px #483A20;
     color: #271e07;
+    position: relative;
+    left: 3em;
+    
 }
