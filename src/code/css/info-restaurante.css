@@ -265,7 +265,7 @@ body {
     }
 
     #menuline1 {
-        background-color: white;
+        background-color: rgb(245, 240, 240);
         margin-left: 20px;
         margin-right: 10px;
         border-radius: 5px;
@@ -276,7 +276,7 @@ body {
     #menuline2 {
         margin-top: 1px;
         margin-bottom: 1px;
-        background-color: white;
+        background-color: rgb(245, 240, 240);
         margin-left: 20px;
         margin-right: 10px;
         border-radius: 5px;
@@ -287,3 +287,20 @@ body {
         margin-top: 1px;
     }
 }    
+
+/* Alterações Lucas */
+button {
+    color: #FFFFF4;
+    background: #271e07;
+    width: 7em;
+    height: 2em;
+    border: 0;
+    border-radius: 4px;
+    margin-right: 5px;
+	transition: 1.0s all;
+}
+
+button:hover {
+    background: rgb(110, 79, 22);
+    transform: scale(1.05)
+}
