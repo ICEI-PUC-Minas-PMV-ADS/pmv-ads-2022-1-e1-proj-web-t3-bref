@@ -229,6 +229,7 @@ input:focus:invalid {
     color: crimson;
     height: 5px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 #NPC {
