@@ -205,9 +205,12 @@ function Pg() {
 	function ValidacaoInputs() {
 		
 		function validarEmail() {
-			if(!InputEmailCadastro.checkValidity()){
+			let email = inputEmail.value;
+			if (email.search('@') != -1 && email.search('.com') != -1) {
+					validEmail = true;
 			}
-		}
+			validEmail = false;
+	}
 
 		/* Validação Nome */
 		InputNome.addEventListener("keyup", ()=>{
