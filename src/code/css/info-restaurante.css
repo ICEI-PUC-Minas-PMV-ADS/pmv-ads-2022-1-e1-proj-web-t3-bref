@@ -318,6 +318,11 @@ body {
 #buttom1 {
     background-color: #483A20;
     transition: 1.5s;
+    animation: left 3s;
+}
+
+buttom1.a {
+    animation: left 3s;
 }
 
 #buttom1:hover {
@@ -356,22 +361,35 @@ a:hover {
     animation: left 2s;
 }
 
+#rest-img {
+    animation: aparecer 3s;
+}
+
 @keyframes up {
 	from {
 			opacity: 0;
 			transform: translateY(50px);
 	}
 	to {
-			opacity: 1.5s;
+			opacity: 1.5;
 	}
 }
 
 @keyframes left {
 	from {
-			opacity: -20;
+			opacity: 0;
 			transform: translateX(2000px);
 	}
 	to {
-			opacity: 100;
+			opacity: 1;
 	}
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to  {
+        opacity: 1;
+    }
 }
