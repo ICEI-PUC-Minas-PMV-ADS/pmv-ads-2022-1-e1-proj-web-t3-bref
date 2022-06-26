@@ -318,6 +318,10 @@ body {
     transform: scale(1.01);
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 #menu {
     background: #FFF;
 }
@@ -351,7 +355,7 @@ body {
 			transform: translateY(50px);
 	}
 	to {
-			opacity: 2;
+			opacity: 1.5s;
 	}
 }
 
