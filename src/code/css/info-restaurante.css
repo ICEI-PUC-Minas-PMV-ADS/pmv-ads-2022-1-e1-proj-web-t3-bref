@@ -83,6 +83,21 @@ body {
     padding-right: 50px;
 }
 
+#buttom1 {
+    display: grid;
+    align-content: center;
+    text-align: center;
+    background-color: #483A20;
+    color: white;
+    border-radius: 5px;
+    margin-top: 7px;
+    height: 40px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
 #rest-img {
     display: inline-block;
     width: 14vw;
@@ -247,79 +262,53 @@ body {
         height: 25px;
         margin-top: 1px;
     }
-}    
-
-
-
-/* Alterações Lucas */
-button {
-    color: #FFFFF4;
-    background: #271e07;
-    width: 11.5em;
-    height: 2.3em;
-    border: 0;
-    border-radius: 4px;
-    margin-right: 5px;
-	transition: 1.0s all;
-}
-
-button:hover {
-    background: rgb(110, 79, 22);
-    transform: scale(1.01)
-}
-
-#namePlate1,
-#namePlate2,
-#namePlate3 {
-    color: #271e07;
-    align-items: center;
-    background: none;
-}
-
-#preco1,
-#tempo1,
-#classi1,
-#preco2,
-#tempo2,
-#classi2,
-#preco3,
-#tempo3,
-#classi3 {
-    color: #271e07;
 }
 
 #sep01 {
     background: rgb(245, 240, 240);
 }
 
-#subtitle2 {
-    display: flex;
-    margin: 2px;
-    padding: 1px;
-    font-size: 1.3em;
-    flex-direction: column;
-    align-items: center;
-    white-space: nowrap;
-    border-radius: 3px;
-    border: solid 2px #483A20;
-    color: #271e07;
+#restaurant {
+    background: rgb(245, 240, 240);
 }
 
+#restname,
+#subtitle1 {
+    background: none;
+    color: #483A20;
+    font-weight: bold;
+}
+
+#subtitle2,
 #subtitle3 {
-    display: flex;
-    margin: 2px;
-    padding: 2.5px;
-    font-size: 1.25em;
-    flex-direction: column;
-    text-align: center;
-    white-space: nowrap;
-    border-radius: 3px;
-    border: solid 2px #483A20;
-    color: #271e07;
-    position: relative;
-    left: 3em;
+    color: #483A20;
+    background: none;
+    border: solid 2px gray;
 }
 
+#buttom1 {
+    background-color: #483A20;
+    transition: 1.5s;
+}
+
+#buttom1:hover {
+    background-color: rgb(110, 79, 22);
+    transform: scale(1.01);
+}
+
+#menu {
+    background: #FFF;
+}
+
+#item-img {
+    border-radius: 5px;
+}
+
+#menuline1,
+#menuline2 {
+    background:rgb(245, 240, 240);
+    border-radius: 8px;
+}
 #middle_menu:hover {
     color: #FFC300;
 }
