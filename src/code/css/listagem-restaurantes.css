@@ -414,7 +414,7 @@ input[type="range"]::-webkit-slider-thumb {
 @keyframes up {
 	from {
 			opacity: 0;
-			transform: translateY(1000px);
+			transform: translateY(150px);
 	}
 	to {
 			opacity: 1;
