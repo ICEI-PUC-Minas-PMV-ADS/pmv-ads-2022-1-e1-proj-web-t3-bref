@@ -44,6 +44,7 @@ body {
 #restaurant {
     background-color: aliceblue;
     height: 28vh;
+    width: 100%;
     margin-bottom: 25px;
 }
 
@@ -123,6 +124,7 @@ body {
     font-size: 3vh;
     background-color: #483A20;
     height: 5vh;
+    width: 101%;
     color: white;
     text-align: center;
     align-content: center;
@@ -137,6 +139,7 @@ body {
 #menu {
     background-color: aliceblue;
     height: 400px;
+    width: 101%;
     align-content: center;
 }
 
