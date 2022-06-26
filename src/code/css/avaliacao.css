@@ -10,6 +10,7 @@ div.container-fluid {
 /* Conteúdo principal */
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #FFFFF4;
 }
 
 /* Zoom area */
@@ -206,3 +207,18 @@ body {
   .star-rating.star-3 i {width: 33.33%;}
   .star-rating.star-3 i ~ i {width: 66.66%;}
   .star-rating.star-3 i ~ i ~ i {width: 100%;}
+
+/* Alterações Lucas */
+
+.container-main,
+input,
+textarea {
+    background: #FFFFF4;
+}
+
+input,
+textarea {
+    outline: 0;
+    border-width: 1px;
+    border-radius: 3px;
+}
