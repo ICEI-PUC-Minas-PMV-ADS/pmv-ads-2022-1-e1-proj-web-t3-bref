@@ -224,6 +224,7 @@ body {
 #restaurant-list {
     background-color: white;
     flex-grow: 5;
+    min-height: 50vw;
 }
 
 input[type=range] {
