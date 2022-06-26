@@ -224,6 +224,7 @@ body {
 #restaurant-list {
     background-color: white;
     flex-grow: 5;
+    min-height: 50vw;
 }
 
 input[type=range] {
@@ -402,11 +403,6 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 /* Alteração Lucas */
-
-#footer {
-    position: absolute;
-    width: 100%;
-}
 
 #bar-color {
     position: absolute;

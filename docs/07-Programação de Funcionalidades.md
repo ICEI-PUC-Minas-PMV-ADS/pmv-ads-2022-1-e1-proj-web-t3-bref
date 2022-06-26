@@ -73,7 +73,7 @@ Essa ferramenta do site é voltada às pessoas que querem uma fonte de tamanho m
 
 A barra de busca serve para encontrar um restaurante. Ela retorna o restaurante que buscou ou, caso não encontre, retorna uma lista de restaurantes recomendados.
 
-<img src="img/imagens_secao_7/retorno-madero.jpeg" width="70%" height="70%">
+<img src="img/PesquisaMadero.png" width="70%" height="70%">
 <img src="img/imagens_secao_7/retorno-random.jpeg" width="70%" height="70%">
 
 #### *Requisito atendido*
@@ -115,7 +115,7 @@ Essa página permite que o usuário consiga entrar em contato com os responsáve
 
 A funcionalidade tem por objetivo retornar todas as informações do restaurante para o usuário que estiver acessando a página com o id do restaurante.
 
-<img src="img/imagens_secao_7/info.jpeg" width="70%" height="70%">
+<img src="img/info-restaurant-layout.png" width="70%" height="70%">
 
 #### *Requisito atendido*
 
@@ -180,7 +180,7 @@ A ferramenta permite que o usuário reserve um horário no restaurante seleciona
 
 A ferramenta permite que o usuário seja redirecionado a uma API do WhatsApp para que ele possa entrar em contato com o restaurante selecionado
 
-<img src="img/imagens_secao_7/info.jpeg" width="70%" height="70%">
+<img src="img/info-restaurant-layout.png" width="70%" height="70%">
 <img src="img/imagens_secao_7/contato-restaurante-sucesso.PNG" width="70%" height="70%">
 
 #### *Requisito atendido*
@@ -203,7 +203,7 @@ A ferramenta permite que o usuário seja redirecionado a uma API do WhatsApp par
 
 A ferramenta permite que o usuário possa avaliar o restaurante selecionado, fazendo comentários e dando estrelas.
 
-<img src="img/imagens_secao_7/info.jpeg" width="70%" height="70%">
+<img src="img/info-restaurant-layout.png" width="70%" height="70%">
 <img src="img/imagens_secao_7/avaliacao.jpeg" width="70%" height="70%">
 
 #### *Requisito atendido*
