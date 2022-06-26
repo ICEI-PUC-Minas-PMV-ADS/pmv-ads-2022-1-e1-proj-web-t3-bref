@@ -13,10 +13,10 @@ div.container-fluid {
 
 body {
     display: grid;
-    background-color: #FFF;
+    background-color: white;
     font-family: 'Lato', sans-serif;
     height: 100vh;
-    width: 99vw;
+    width: 100vw;
     color:#FFC300;
     margin-left: 0px;
     margin-right: 0px;
@@ -32,7 +32,7 @@ body {
 }
 
 #head {
-    background-color: #271e07;
+    background-color: #483A20;
     height: 8vh;
 }
 
@@ -42,37 +42,54 @@ body {
 }
 
 #restaurant {
-    background: rgb(245, 240, 240);
+    background-color: aliceblue;
     height: 28vh;
 }
 
 /* text retangule layout */
 #restname {
-    color: #483A20;
-    font-size: 3vh;
+    font-size: 25px;
     display: grid;
     align-content: center;
     text-align: center;
+    background-color: #F4B11E;
+    color: white;
     border-radius: 5px;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    margin-bottom: 15px;
-    position: relative;
-    left: -0.9em;
 }
 
 #subtitle1 {
-    color: #271e07;
-    font-size: 2.5vh;
+    font-size: 20px;
     display: grid;
     align-content: center;
     text-align: center;
+    background-color: #F4B11E;
+    color: white;
     border-radius: 5px;
     margin-top: 10px;
 }
 
+#subtitle2 {
+    font-size: 2.5vh;
+    align-content: center;
+    text-align: center;
+    background-color: #f4b01ea4;
+    color: white;
+    border-radius: 5px;
+    margin-top: 1vh;
+}
+
 #subtitle2 b {
     margin-left: 10px;
+}
+
+#subtitle3 {
+    font-size: 18px;
+    align-content: center;
+    text-align: center;
+    background-color: #f4b01ea4;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 #subtitle3 b {
@@ -87,38 +104,25 @@ body {
     display: grid;
     align-content: center;
     text-align: center;
-    background-color: #483A20;
+    background-color: #F4B11E;
     color: white;
     border-radius: 5px;
     margin-top: 7px;
     height: 40px;
 }
 
-a:hover{
-    text-decoration: none;
-}
-
 #rest-img {
     display: inline-block;
     width: 14vw;
     height: 25vh;
+    min-width: 185px;
+    min-height: 160px;
     border-radius: 8px;
 }
 
-#item-img1, #item-img2, #item-img3 {
-    display: inline-flex;
-    height: 13.5vh;
-    width: 7vw;
-    text-align: center;
-    align-content: center;
-    margin-top: 10px;
-    margin-left: -50px;
-    border-radius: 8px;
-} 
-
 #menuType {
     font-size: 3vh;
-    background-color: #271e07;
+    background-color: #483A20;
     height: 5vh;
     color: white;
     text-align: center;
@@ -126,23 +130,22 @@ a:hover{
 }
 
 #middle_menu {
-    background-color: #271e07;
+    background-color: #483A20;
     border: 0px;
     color: white;
-    transition: 0.3s;
 }
 
 #menu {
-    background-color: #FFF;
-    height: 55vh;
+    background-color: aliceblue;
+    height: 400px;
     align-content: center;
 }
 
 #menuline1 {
     margin-left: 20px;
     margin-right: 10px;
-    background-color: rgb(245, 240, 240);
-    height: 16.5vh;
+    background-color: #f4b01e53;
+    height: 120px;
     border-radius: 5px;
 }
 
@@ -151,8 +154,8 @@ a:hover{
     margin-bottom: 1.5vh;
     margin-left: 20px;
     margin-right: 10px;
-    background-color: rgb(245, 240, 240);
-    height: 16.5vh;
+    background-color: #f4b01e53;
+    height: 120px;
     border-radius: 5px;
 }
 
@@ -160,22 +163,25 @@ a:hover{
     height: 12px;
 }
 
+#item-img {
+    width: 118px;
+    height: 103px;
+    border-radius: 8px;
+    margin-top: 7px;
+    margin-left: -80px;
+}
+
 #sep02 {
     display: none;
 }
 
-#footer {
-    width: 101%;
-}
-
 @media screen and (max-width: 755px) {
-
     * {
         font-size: 15px;
     }
 
     #head {
-        height: 50px;
+        height: 40px;
     }
 
     #yellow {
@@ -197,12 +203,6 @@ a:hover{
         height: 0px;
     }
 
-    #item-img1, #item-img2, #item-img3 {
-        display: none;
-        height: 0px;
-        width: 0px;
-    } 
-
     #restname {
         margin-top: -55px;
     }
@@ -218,12 +218,17 @@ a:hover{
         padding-right: 15px;
     }
 
-    #sep02 {
-        display: block;
+    #buttom1 {
+        margin-left: 10%;
+        width: 80%;
+        height: 23px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+
     }
 
     #menuType {
-        display: block;
+        display: inline;
     }
 
     #menuType div {
@@ -241,7 +246,7 @@ a:hover{
     }
 
     #menuline1 {
-        background-color: rgb(245, 240, 240);
+        background-color: white;
         margin-left: 20px;
         margin-right: 10px;
         border-radius: 5px;
@@ -252,7 +257,7 @@ a:hover{
     #menuline2 {
         margin-top: 1px;
         margin-bottom: 1px;
-        background-color: rgb(245, 240, 240);
+        background-color: white;
         margin-left: 20px;
         margin-right: 10px;
         border-radius: 5px;
@@ -262,6 +267,19 @@ a:hover{
         height: 25px;
         margin-top: 1px;
     }
+}
+
+/* Alterações Lucas */
+
+#barColor {
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFC300;
+}
+
+#l-conteudo {
+    background: rgb(245, 240, 240);
 }
 
 #sep01 {
@@ -286,6 +304,10 @@ a:hover{
     border: solid 2px gray;
 }
 
+#subtitle3 {
+    font-size: 1em;
+}
+
 #buttom1 {
     background-color: #483A20;
     transition: 1.5s;
@@ -308,13 +330,15 @@ a:hover{
 #menuline2 {
     background:rgb(245, 240, 240);
     border-radius: 8px;
+    animation: up 2s;
 }
+
 #middle_menu:hover {
     color: #FFC300;
 }
 
-#menu {
-    animation: up 2s;
+#footer {
+    width: 100%;
 }
 
 #animacaoRest {
@@ -324,17 +348,17 @@ a:hover{
 @keyframes up {
 	from {
 			opacity: 0;
-			transform: translateY(600px);
+			transform: translateY(50px);
 	}
 	to {
-			opacity: 1;
+			opacity: 2;
 	}
 }
 
 @keyframes left {
 	from {
 			opacity: -20;
-			transform: translateX(1200px);
+			transform: translateX(2000px);
 	}
 	to {
 			opacity: 100;
