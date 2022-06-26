@@ -2,25 +2,31 @@
 
 ## F01 - Entrar, Cadastrar conta e Recuperar senha
 
-O site possui uma página em que o usuário poderá cadastrar e entrar em sua conta para ter acesso a todo o conteúdo.
+O site possui uma página em que o usuário poderá cadastrar e entrar em sua conta para ter acesso a todo o conteúdo, possui também uma página para recuperação e redefinição de senha.
 
 <img src="img/imagens_secao_7/entrar-default.PNG" width="70%" height="70%">
 
 <img src="img/imagens_secao_7/cadastro-default.PNG" width="70%" height="70%">
 
+<img src="img/Recuperarsenha.png" width="70%" height="70%">
+
+<img src="img/Redefinirsenhafinal.png" width="70%" height="70%">
+
+
 #### *Requisito atendido*
 
 **RF-013** O site deve ter uma página para entrar em uma conta ou cadastrar.<br>
-**RF-014** O site deve ter uma página para redefinição de senha.
+**RF-014** O site deve ter uma página para recuperação/redefinição de senha.<br>
 
 #### *Artefato da funcionalidade*
 
-* entrar.html
+* entrar-cadastrar.html
 * recuperar-senha.html
+* entrar-cadastrar.css
+* recuperar-senha.css
+* entrar-cadastrar.js
+* recuperar-senha.js
 * reset.css
-* entrar.css
-* entrar.js
-* recuperar-senha.html
 
 #### *Instruções de acesso*
 
