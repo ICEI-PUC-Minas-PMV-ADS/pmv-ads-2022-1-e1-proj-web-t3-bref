@@ -131,6 +131,10 @@ input {
     border-style: solid;
 }
 
+.fa-eye {
+    position: absolute;
+}
+
 #togglePassword {
     cursor: pointer;
 	color: #483A20;
