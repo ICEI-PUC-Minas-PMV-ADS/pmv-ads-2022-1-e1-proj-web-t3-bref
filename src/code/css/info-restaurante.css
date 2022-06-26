@@ -106,11 +106,15 @@ body {
     display: grid;
     align-content: center;
     text-align: center;
-    background-color: #F4B11E;
+    background-color: #483A20;
     color: white;
     border-radius: 5px;
     margin-top: 7px;
     height: 40px;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 #rest-img {
@@ -274,4 +278,52 @@ body {
         height: 25px;
         margin-top: 1px;
     }
-}    
+}
+
+/* Alterações Lucas */
+
+#sep01 {
+    background: rgb(245, 240, 240);
+}
+
+#restaurant {
+    background: rgb(245, 240, 240);
+}
+
+#restname,
+#subtitle1 {
+    background: none;
+    color: #483A20;
+    font-weight: bold;
+}
+
+#subtitle2,
+#subtitle3 {
+    color: #483A20;
+    background: none;
+    border: solid 2px gray;
+}
+
+#buttom1 {
+    background-color: #483A20;
+    transition: 1.5s;
+}
+
+#buttom1:hover {
+    background-color: rgb(110, 79, 22);
+    transform: scale(1.01);
+}
+
+#menu {
+    background: #FFF;
+}
+
+#item-img {
+    border-radius: 5px;
+}
+
+#menuline1,
+#menuline2 {
+    background:rgb(245, 240, 240);
+    border-radius: 8px;
+}
