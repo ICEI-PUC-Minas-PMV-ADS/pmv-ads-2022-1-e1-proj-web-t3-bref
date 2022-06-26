@@ -46,13 +46,12 @@ body {
 /* End zoom area */
 
 /* Flex direction control */
-
 #main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: stretch;
-    margin: 15px;
+    padding: 15px;
 }
 
 #sideLeft {
@@ -93,7 +92,6 @@ body {
 .titlePage {
     font-weight: bolder;
     font-size: 2em;
-    margin-top: 15px;
 }
 
 /* End title's style */
@@ -179,6 +177,23 @@ body {
     }
 }
 
+/* Alterações Lucas */
+#l-conteudo,
+#msgInput,
+#inputName,
+#inputEmail,
+#inputTelefone{
+    outline: 0;
+    border-width: 1px;
+    border-radius: 3px;
+    background-color: #FFFFF4;
+}
+
+#l-conteudo {
+    padding-top: 15px;
+}
+
+
 
 /* Resolução Tela Lucas */
 /* @media (min-width: 1918px){
@@ -209,12 +224,7 @@ body {
     .btn#btnEnviar:hover{
         transform: scale(1.05);
     }
-} */
-
-
-/* Alterações Lucas */
-
-    
+} */ 
 
 /* End Media querys */
 

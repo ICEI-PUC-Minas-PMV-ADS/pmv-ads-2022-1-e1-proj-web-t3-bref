@@ -293,12 +293,12 @@ function Pg() {
 			} idade --
 			
 			if(idade < 20 || idade > 80 || InputData.value == null){
-				LabelData.textContent = "Data de Nascimento * Você precisa ter entre 20 a 60 anos"
+				LabelData.textContent = "Data de Nasc. * Você precisa ter entre 20 a 60 anos"
 				LabelData.setAttribute("style" , "text-shadow: 0px 0px 1px crimson; color: crimson")
 				InputData.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
 				validData = false
 			} else {
-				LabelData.textContent = "Data de Nascimento"
+				LabelData.textContent = "Data de Nasc."
 				LabelData.setAttribute("style" , "text-shadow: 0px 0px 1px green; color: green")
 				InputData.setAttribute("style", "box-shadow: 0px 0px 3px green; border-color: green")
 				validData = true

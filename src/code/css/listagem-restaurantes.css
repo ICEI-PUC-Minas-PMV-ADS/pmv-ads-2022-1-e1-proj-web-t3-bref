@@ -400,3 +400,28 @@ input[type="range"]::-webkit-slider-thumb {
     color: #755f36;
     font-weight: bold;
 }
+
+/* Alteração Lucas */
+
+#footer {
+    position: absolute;
+    width: 100%;
+}
+
+#bar-color {
+    position: absolute;
+    width: 100%;
+}
+.card {
+    animation: up 1.5s;
+}
+
+@keyframes up {
+	from {
+			opacity: 0;
+			transform: translateY(1000px);
+	}
+	to {
+			opacity: 1;
+	}
+}
