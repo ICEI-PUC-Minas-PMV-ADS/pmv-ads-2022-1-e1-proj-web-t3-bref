@@ -27,21 +27,21 @@
                 "pratoPrincipal": [
                     {
                         "nomePrato": "Mc Trio",
-                        "plateImage":"plate01.jpg",
+                        "plateImage":"plate1.jpg",
                         "price": 150,
                         "timePrep": 20,
                         "classfication": 5
                     },
                     {
                         "nomePrato": "Chicken Trio",
-                        "plateImage":"plate02.jpg",
+                        "plateImage":"plate2.jpg",
                         "price": 100,
                         "timePrep": 12,
                         "classfication": 4
                     },
                     {
                         "nomePrato": "Batata Frita",
-                        "plateImage":"plate03.jpg",
+                        "plateImage":"plate3.jpg",
                         "price": 50,
                         "timePrep": 5,
                         "classfication": 3
@@ -57,14 +57,14 @@
                     },
                     {
                         "nomePrato": "Sprite",
-                        "plateImage":"plate05.jpg",
+                        "plateImage":"plate5.jpg",
                         "price": 10,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
                         "nomePrato": "Fanta Laranja",
-                        "plateImage":"plate06.jpg",
+                        "plateImage":"plate6.jpg",
                         "price": 5,
                         "timePrep": 0,
                         "classfication": 5
@@ -73,21 +73,21 @@
                 "sobremesa": [
                     {
                         "nomePrato": "Sorvete Oreo",
-                        "plateImage":"plate07.jpg",
+                        "plateImage":"plate7.jpg",
                         "price": 50,
                         "timePrep": 0,
                         "classfication": 5
                     },
                     {
                         "nomePrato": "Milkshake",
-                        "plateImage":"plate08.jpg",
+                        "plateImage":"plate8.jpg",
                         "price": 1,
                         "timePrep": 0,
                         "classfication": 4
                     },
                     {
                         "nomePrato": "Casquina",
-                        "plateImage":"plate09.jpg",
+                        "plateImage":"plate9.jpg",
                         "price": 5,
                         "timePrep": 0,
                         "classfication": 1

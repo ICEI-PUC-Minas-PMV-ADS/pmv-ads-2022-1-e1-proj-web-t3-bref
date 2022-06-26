@@ -13,7 +13,7 @@ div.container-fluid {
 
 body {
     display: grid;
-    background-color: white;
+    background-color: rgb(245, 240, 240);
     font-family: 'Lato', sans-serif;
     height: 100vh;
     width: 100vw;
@@ -44,6 +44,7 @@ body {
 #restaurant {
     background-color: aliceblue;
     height: 28vh;
+    margin-bottom: 25px;
 }
 
 /* text retangule layout */
@@ -115,8 +116,6 @@ body {
     display: inline-block;
     width: 14vw;
     height: 25vh;
-    min-width: 185px;
-    min-height: 160px;
     border-radius: 8px;
 }
 
@@ -163,7 +162,9 @@ body {
     height: 12px;
 }
 
-#item-img {
+#item-img1,
+#item-img2,
+#item-img3  {
     width: 118px;
     height: 103px;
     border-radius: 8px;
@@ -195,6 +196,10 @@ body {
     div.container-fluid {
         display: contents;
         padding: 0;
+    }
+
+    #restaurant {
+        margin-bottom: 60px;
     }
 
     #rest-img {
@@ -235,7 +240,9 @@ body {
         display: inline;
     }
 
-    #item-img {
+    #item-img1,
+    #item-img2,
+    #item-img3 {
         display: none;
         height: 0px;
         width: 0px;
