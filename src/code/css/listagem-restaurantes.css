@@ -224,6 +224,7 @@ body {
 #restaurant-list {
     background-color: white;
     flex-grow: 5;
+    min-height: 50vw;
 }
 
 input[type=range] {
@@ -308,6 +309,14 @@ input[type="range"]::-webkit-slider-thumb {
 #footer {
     background-color: #271e07;
     padding: 15px;
+
+
+/* 
+    position:absolute;
+    bottom: -100px;
+    width:100%;
+    height:60px;  
+    background:#6cf; */
 }
 
 #footer .col-md-12 {
