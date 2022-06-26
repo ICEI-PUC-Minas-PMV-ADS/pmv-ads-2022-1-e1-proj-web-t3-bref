@@ -31,6 +31,8 @@ function Pg() {
 	/* Mensagens */
 	const msgEntrar = document.querySelector("#msgEntrar")		
 	const msgCadastro = document.querySelector("#msgCadastro")
+	/* Teste */
+	const EscondeBotao = document.querySelector("#testebotao")
 	
 	/* LocalStorage */
 	/* let	listaUserP =
@@ -205,7 +207,7 @@ function Pg() {
 	function ValidacaoInputs() {
 		
 		function validarEmail() {
-			let email = inputEmail.value;
+			let email = InputEmailCadastro.value;
 			if (email.search('@') != -1 && email.search('.com') != -1) {
 					validEmail = true;
 			}
@@ -314,8 +316,6 @@ function Pg() {
 			iniciar
 		}
 	}
-
-	
 
 	function desativaBtnEntrar() {
 		InputEmail.addEventListener("keyup", ()=> {
