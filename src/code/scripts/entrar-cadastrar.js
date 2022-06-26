@@ -294,7 +294,7 @@ function Pg() {
 			if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())){ 
 			} idade --
 			
-			if(idade < 20 || idade > 80 || InputData.value == null){
+			if(idade < 20 || idade > 80){
 				LabelData.textContent = "Data de Nasc. * Você precisa ter entre 20 a 60 anos"
 				LabelData.setAttribute("style" , "text-shadow: 0px 0px 1px crimson; color: crimson")
 				InputData.setAttribute("style", "box-shadow: 0px 0px 3px crimson; border-color: crimson")
@@ -309,7 +309,6 @@ function Pg() {
 
 		function iniciar(){
 			validarEmail()
-			validaData()
 		}
 
 		return {
