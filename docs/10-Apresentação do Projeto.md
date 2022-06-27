@@ -10,3 +10,4 @@
 <img src="img/BREF SLIDE PUBLICO ALVO-REQUISITOS.jpg" width="70%" height="70%">
 <img src="img/BREF SLIDE CONCLUSAO.jpg" width="70%" height="70%">
 <img src="img/BREF SLIDE FIM.jpg" width="70%" height="70%">
+<img src="img/BREF SLIDE GRUPO.jpg" width="70%" height="70%">
