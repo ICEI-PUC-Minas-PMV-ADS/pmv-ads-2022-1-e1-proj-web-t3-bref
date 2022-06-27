@@ -1,12 +1,18 @@
 # Apresentação
+# BREF - Poupe seu tempo! 
 
-<span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
+<a href="../presentation/BREF.pdf"> Slide de apresentação BREF</a>
 
-Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do projeto contemplando todos os itens trabalhados nos demais artefatos.
+<img src="" width="70%" height="70%">
+<img src="img/BREF SLIDE INTRO.jpg" width="70%" height="70%">
+<img src="img/BREF SLIDE OBJETIVO.jpg" width="70%" height="70%">
+<img src="img/BREF SLIDE PROBLEMA.jpg" width="70%" height="70%">
+<img src="img/BREF SLIDE PUBLICO ALVO-REQUISITOS.jpg" width="70%" height="70%">
+<img src="img/BREF SLIDE CONCLUSAO.jpg" width="70%" height="70%">
+<img src="img/BREF SLIDE FIM.jpg" width="70%" height="70%">
 
-## Título do Projeto
 
-Nome e marca do projeto
+
 
 ## Identidade Visual (Marca, Design)
 
