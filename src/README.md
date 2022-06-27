@@ -1,9 +1,9 @@
 # Instruções de utilização
-1 - Deve-se acessar o site https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t3-bref no navegador;
-2 - Pode-se navegar entre as páginas;
-3 - Na tela inicial, é possível pesquisar por nome um restaurante;
-4 - Após a criação do cadastro, o usuário deve realizar o login para acessar funcionalidades como por exemplo, reserva;
-5 - Na tela de lista de restaurantes é possivel que o usuário filtre os restaurantes e entre nas informaçoes do mesmo.
+1 - Deve-se acessar o site https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t3-bref no navegador;<br>
+2 - Pode-se navegar entre as páginas;<br>
+3 - Na tela inicial, é possível pesquisar por nome um restaurante;<br>
+4 - Após a criação do cadastro, o usuário deve realizar o login para acessar funcionalidades como por exemplo, reserva;<br>
+5 - Na tela de lista de restaurantes é possivel que o usuário filtre os restaurantes e entre nas informaçoes do mesmo.<br>
 
 ## Instalação do Site
 
