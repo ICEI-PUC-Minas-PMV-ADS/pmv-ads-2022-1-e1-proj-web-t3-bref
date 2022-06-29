@@ -57,4 +57,4 @@ Pode-se considerar como objetivos específicos:
 
 # Apresentação
 
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+<li><a href="presentation/BREF.pdf"> Apresentação da solução</a></li>
