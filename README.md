@@ -16,13 +16,13 @@ Pode-se considerar como objetivos específicos:
 
 ## Integrantes
 
-* Bruno de Melo Ruas
-* Diego Menezes Soares
-* Gabriel da Silva Oliveira
-* Lucas Célio Neves Silva
-* Marina Gonçalves Duque
-* Mikaelly da Silva Carneiro
-* Thassia Diandra Ferreira
+* [Bruno de Melo Ruas](https://www.linkedin.com/in/brunoruas2/)
+* [Diego Menezes Soares](https://www.linkedin.com/in/diego-soares-1913451b7)
+* [Gabriel da Silva Oliveira](https://www.linkedin.com/in/gsogabriel/)
+* [Lucas Célio Neves Silva](https://www.linkedin.com/in/lucascns/)
+* [Marina Gonçalves Duque](https://www.linkedin.com/in/marina-duque-1b2ab6156)
+* [Mikaelly da Silva Carneiro](https://www.linkedin.com/in/MikaellyCarneiro)
+* [Thassia Diandra Ferreira](https://www.linkedin.com/in/thassiaferr)
 
 ## Orientador
 
