@@ -30,10 +30,20 @@ Pode-se considerar como objetivos específicos:
 
 ## Instruções de utilização
 
-* Acesse o site https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-bref/
-* Para pesquisar um restaurante, digite o nome na barra de busca e clique em pesquisar
-* Para reservar, entre na informação de algum restaurante e clique em reservar
-* Você deve estar logado para ir à página de reserva. Se não tiver cadastro, cadastre-se e faça login. 
+* Deve-se acessar o site (https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-bref/) no navegador;<br>
+* Pode-se navegar entre as páginas;<br>
+* Na tela inicial, é possível pesquisar por nome um restaurante, conhecer sobre o site, ter acesso ao fale conosco e fazer o login/cadastro;<br>
+* Na página de login, caso o usuário tenha problemas no acesso, deve clicar no "Esqueceu a senha?" e será redirecionado para a página de Recuperação de senha;<br>
+* Na página de recuperação de senha, deve preencher com o email e seguir para a redefinição de senha;<br>
+* Após a redefinição de senha, será redirecionado para realizar o login;<br>
+* Caso não tenha cadastro, é só realizá-lo clicando na aba "Cadastro";<br>
+* Após a criação do cadastro, o usuário deve realizar o login para acessar funcionalidades como por exemplo, reserva;<br>
+* Na tela de lista de restaurantes é possivel que o usuário filtre os restaurantes e entre nas informaçoes do mesmo;<br>
+* Na tela informações de restaurantes é possível que o usuário faça reserva, faça avaliação e tenha acesso ao contato do restaurante, com informações sobre o mesmo e seu cardápio;<br>
+* Na tela de reserva, deve preencher os campos, concluir a reserva e será redirecionado para página inicial;<br>
+* Na tela fale conosco, deve preencher os campos e enviar;<br>
+* Na tela de avaliação, deve preencher os campos e enviar;<br>
+* Na tela sobre nós, terá informações sobre o BREF.<br>
 
 # Documentação
 
