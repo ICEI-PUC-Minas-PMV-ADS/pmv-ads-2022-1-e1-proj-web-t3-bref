@@ -1,0 +1,27 @@
+message: Please cite this software using these metadata.
+title: Bref Site de restaurantes locais
+authors:
+  - family-names: de Melo Ruas
+    given-names: Bruno
+  - family-names: Menezes Soares
+    given-names: Diego
+  - family-names: da Silva Oliveira
+    given-names: Gabriel
+  - family-names: Célio Neves Silva
+    given-names: Lucas
+  - family-names: Gonçalves Duque
+    given-names: Marina
+  - family-names: da Silva Carneiro
+    given-names: Mikaela
+  - family-names: Diandra Ferreira
+    given-names: Thassia
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Christina De Paiva Carvalho
+    given-names: Joyce
+keywords:
+  - bref
+  - restaurante
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t3-bref
+version: 1.0.0
+date-released: 2022-06-30
